@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AlphaMarr — Seafood Export, Trading & Traceability from Mauritania</title>
+<meta name="description" content="AlphaMarr — seafood export & trading from Mauritania: own pirogue fleet, fishmeal & fish oil, export services and end-to-end traceability. Products for Asian and African markets.">
+<meta property="og:title" content="AlphaMarr — Frozen Seafood from Mauritania">
+<meta property="og:description" content="Sardinella, mullet, red snapper, horse mackerel — frozen and shipped from Nouadhibou.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-weight='900' fill='%230b1a2b'%3Eα%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b1a2b;--sky:#4fb3e8;--sky-d:#1f8ecb;--sea:#0e3a5c;--sand:#f5f1ea;--muted:#5b6b7c;--line:#e3e8ee;--wa:#25D366;--wc:#07C160;--li:#0A66C2}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,"Noto Sans SC","Noto Sans Arabic",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:-.5px}
+.logo .a{color:var(--sky)}
+.menu{display:flex;gap:18px;font-weight:500;font-size:15px;white-space:nowrap}
+.lang{min-width:64px}
+.langsel{position:relative}
+.langsel .lang{display:flex;align-items:center;gap:6px;min-width:0;padding:6px 10px}
+.langsel svg{width:26px;height:17px;display:block;border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
+.langsel .car{font-size:10px;color:var(--muted)}
+.langmenu{display:none;position:absolute;top:calc(100% + 6px);right:0;background:#fff;border:1px solid var(--line);border-radius:12px;padding:6px;box-shadow:0 10px 30px rgba(0,0,0,.12);z-index:60;gap:4px;flex-direction:column}
+.langsel.open .langmenu{display:flex}
+.langmenu button{border:0;background:none;padding:6px 8px;border-radius:8px;cursor:pointer}
+.langmenu button:hover,.langmenu button.on{background:#eef6fb}
+.langmenu button svg{width:32px;height:21px}
+html[dir=rtl] .langmenu{right:auto;left:0}
+html[dir=rtl] body{font-family:"Noto Sans Arabic",Inter,system-ui,sans-serif}
+html[dir=rtl] .fl li{padding-left:0;padding-right:28px}html[dir=rtl] .fl li::before{left:auto;right:0}
+html[dir=rtl] .stk th{text-align:right}
+html[dir=rtl] .latin{direction:ltr;text-align:right;unicode-bidi:isolate}
+@media(max-width:1440px) and (min-width:901px){.menu a[href="#gallery"],.menu a[href="#markets"]{display:none}}@media(max-width:1200px) and (min-width:901px){.menu a[href="#news"]{display:none}}@media(max-width:1100px) and (min-width:901px){.menu a[href="#fleet"]{display:none}}
+.menu a:hover{color:var(--sky-d)}
+.right{display:flex;align-items:center;gap:10px}
+.lang{border:1px solid var(--line);border-radius:999px;padding:7px 12px;font:600 13px Inter,sans-serif;background:#fff;cursor:pointer;color:var(--ink)}
+.btn{white-space:nowrap;display:inline-flex;align-items:center;gap:8px;background:var(--sky-d);color:#fff;font-weight:600;padding:12px 22px;border-radius:10px;transition:.2s;border:0;cursor:pointer;font-size:15px;font-family:inherit}
+.btn:hover{background:var(--sea)}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.7)}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.btn.wa{background:var(--wa)}.btn.wa:hover{background:#1da851}
+.btn.wc{background:var(--wc)}.btn.li{background:var(--li)}
+.btn svg{width:18px;height:18px;fill:currentColor}
+.burger{display:none;background:none;border:0;font-size:26px;cursor:pointer}
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden;background:linear-gradient(135deg,#0b1a2b 0%,#0e3a5c 55%,#1f8ecb 130%)}
+.hero video,.hero .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,26,43,.92) 0%,rgba(11,26,43,.55) 60%,rgba(11,26,43,.2) 100%)}
+.hero .wrap{position:relative;z-index:1;padding:100px 20px 110px;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.tag{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sky);margin-bottom:14px}
+.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.08;font-weight:800;letter-spacing:-1.5px;margin-bottom:20px}
+.hero p{font-size:18px;color:#c9d8e6;max-width:580px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:20px;padding:26px;backdrop-filter:blur(6px)}
+.hero-card h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--sky);margin-bottom:14px}
+.stat{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.1);font-size:15px}
+.stat:last-child{border:0}.stat span{color:#b8cadb}.stat b{text-align:right}
+/* strip */
+.strip{background:var(--ink);color:#c9d8e6;font-size:14px;font-weight:500}
+.strip .wrap{display:flex;justify-content:center;flex-wrap:wrap;gap:10px 34px;padding:16px 20px}
+.strip b{color:var(--sky)}
+section{padding:88px 0}
+.head{max-width:700px;margin-bottom:44px}
+.head h2{font-size:clamp(28px,3.6vw,40px);font-weight:800;letter-spacing:-1px;line-height:1.15;margin-bottom:12px}
+.head p{color:var(--muted);font-size:17px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:16px;padding:24px;background:#fff;transition:.2s}
+.card:hover{box-shadow:0 14px 34px rgba(11,26,43,.09);transform:translateY(-3px)}
+.pimg{height:190px;border-radius:12px;margin-bottom:18px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#fff;border:1px solid var(--line)}
+.pimg img{width:100%;height:100%;object-fit:contain;background:#fff}
+.pimg svg{width:70%}
+.card h3{font-size:19px;font-weight:700;margin-bottom:2px}
+.latin{font-style:italic;color:var(--muted);font-size:13px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:15px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{font-size:12px;font-weight:600;background:var(--sand);padding:4px 10px;border-radius:999px;color:var(--sea)}
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px;margin-bottom:10px}
+.badge.av{background:#e3f7ea;color:#157a3b}.badge.ss{background:#fff3dc;color:#9a6200}
+.pask{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
+.pask a{font-size:13px;font-weight:600;padding:8px 12px;border-radius:8px;border:1px solid var(--line)}
+.pask a.w{background:var(--wa);color:#fff;border-color:var(--wa)}
+.alt{background:var(--sand)}
+.evlogo{display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:8px;height:38px;padding:4px 10px;flex:0 0 auto;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.evlogo img{height:30px;max-width:140px;width:auto;object-fit:contain;display:block}
+.evlogo.sm{height:auto;padding:0;box-shadow:none;background:none;margin-bottom:6px;justify-content:flex-start}.evlogo.sm img{height:26px;max-width:150px}
+@media(max-width:600px){.evbar .evlogo{order:0;height:32px}.evbar .evlogo img{height:24px;max-width:110px}}
+.evbar{background:linear-gradient(90deg,var(--sea),var(--sky-d));color:#fff;font-size:14px;overflow:hidden;max-height:0;transition:max-height .5s ease}
+.evbar.on{max-height:120px}
+.evbar .wrap{display:flex;align-items:center;gap:14px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+.evbar .evlb{display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.15);padding:4px 10px;border-radius:999px}
+.evbar .evlb i{width:8px;height:8px;border-radius:50%;background:#5ef08f;animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(94,240,143,.7)}70%{box-shadow:0 0 0 8px rgba(94,240,143,0)}100%{box-shadow:0 0 0 0 rgba(94,240,143,0)}}
+.evbar .tx{flex:1;min-width:200px}.evbar .tx b{font-weight:800}.evbar .tx span{color:#cfeaf8}
+.evbar .cd{font-weight:800;background:#fff;color:var(--sea);padding:4px 12px;border-radius:999px;font-size:13px;white-space:nowrap}
+.evbar .cd.live{color:#128a43}
+.evbar a.bk{font-weight:700;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.evbar .x{background:none;border:0;color:#fff;font-size:20px;cursor:pointer;opacity:.8;line-height:1}
+@media(max-width:600px){.evbar{font-size:13px}.evbar .wrap{gap:8px 10px}.evbar .tx{flex-basis:calc(100% - 40px);order:2}.evbar .x{order:1;margin-inline-start:auto}.evbar .cd,.evbar a.bk{order:3}}
+
+
+.ngrid{display:grid;grid-template-columns:1fr 1.25fr;gap:28px;align-items:start}
+@media(max-width:900px){.ngrid{grid-template-columns:1fr}.ngrid .ncol:last-child{order:-1}}
+.nh{display:flex;align-items:center;gap:10px;font-size:19px;font-weight:800;margin-bottom:16px}.nh small{margin-inline-start:auto;font-size:12px;font-weight:500;color:var(--muted)}
+.evlist,.nlist{display:grid;gap:12px}
+.ev{display:flex;gap:16px;align-items:center;border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:#fff;transition:.2s}
+.ev:hover,.nw:hover{border-color:var(--sky);box-shadow:0 6px 20px rgba(15,58,92,.08)}
+.evd{flex:0 0 62px;text-align:center;border-radius:10px;background:var(--sea);color:#fff;padding:8px 0;line-height:1.1}
+.evd b{display:block;font-size:22px;font-weight:800}.evd span{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:#bfe3f7}
+.evb{flex:1;min-width:0}.evb h4{font-size:16px;font-weight:700}.evb p{font-size:13px;color:var(--muted)}
+.evc{flex:0 0 auto;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px;background:#eef6fb;color:var(--sky-d);white-space:nowrap}
+.evc.live{background:#e7f8ee;color:#128a43}
+.nw{display:block;border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:#fff;transition:.2s}
+.nw h4{font-size:15px;font-weight:600;line-height:1.4}.nw p{font-size:12px;color:var(--muted);margin-top:6px}
+.nempty{color:var(--muted);font-size:14px;padding:18px;border:1px dashed var(--line);border-radius:14px}
+@media(max-width:600px){.ev{display:grid;grid-template-columns:62px 1fr;column-gap:14px;row-gap:8px}.evd{grid-row:span 2}.evc{justify-self:start}.nh{flex-wrap:wrap}.nh span:nth-child(2){flex:1}.nh small{flex-basis:100%;margin:0}}
+
+.ico{width:46px;height:46px;border-radius:12px;background:var(--ink);color:var(--sky);display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+.n{font-size:13px;font-weight:700;color:var(--sky-d);letter-spacing:.08em;margin-bottom:6px}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:12px}
+.gal .it{border-radius:14px;overflow:hidden;position:relative;background:linear-gradient(135deg,#0e3a5c,#1f8ecb);cursor:pointer}
+.gal .it.big{grid-column:span 2;grid-row:span 2}
+.gal img,.gal video{width:100%;height:100%;object-fit:cover;transition:.4s}
+.gal .it:hover img,.gal .it:hover video{transform:scale(1.04)}
+.gal .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#cfe3f2;font-size:14px;gap:6px;text-align:center;padding:12px}
+.gal .ph b{font-size:30px}
+.gal .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:44px;color:#fff;text-shadow:0 2px 12px rgba(0,0,0,.5);pointer-events:none}
+.lb{position:fixed;inset:0;background:rgba(5,12,20,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.lb.on{display:flex}.lb img,.lb video{max-width:100%;max-height:90vh;border-radius:10px}
+.lb .x{position:absolute;top:16px;right:22px;color:#fff;font-size:34px;cursor:pointer;background:none;border:0}
+.markets{display:flex;flex-wrap:wrap;gap:10px}
+.mk{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;font-weight:600}
+.mk small{display:block;font-weight:400;color:var(--muted);font-size:13px}
+/* contact */
+.contact{background:var(--ink);color:#fff}
+.contact .head p{color:#b8cadb}
+.cgrid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px}
+.channels{display:grid;gap:10px;margin-bottom:26px}
+.channels .btn{justify-content:flex-start;width:100%;max-width:340px}
+.info small{display:block;color:var(--sky);font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:600;margin-bottom:2px}
+.info div{margin-bottom:16px}.info a,.info span{font-size:17px;font-weight:600}
+form{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:18px;padding:26px;display:grid;gap:14px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{font-size:13px;color:#b8cadb;display:block;margin-bottom:6px}
+input,select,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;font:inherit;font-size:15px}
+select option{color:var(--ink)}
+textarea{min-height:100px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--sky);border-color:transparent}
+.fbtns{display:flex;gap:10px;flex-wrap:wrap}
+footer{background:#07121e;color:#7f93a8;font-size:14px;padding:28px 0}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
+footer .soc{display:flex;gap:14px}footer a:hover{color:#fff}
+/* floating */
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;flex-direction:column;gap:10px}
+.fab a,.fab button{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);border:0;cursor:pointer;transition:.2s}
+.fab a:hover,.fab button:hover{transform:scale(1.08)}
+.fab svg{width:28px;height:28px;fill:#fff}
+.fab .w{background:var(--wa)}.fab .c{background:var(--wc)}
+.modal{position:fixed;inset:0;background:rgba(5,12,20,.7);display:none;align-items:center;justify-content:center;z-index:110;padding:20px}
+.modal.on{display:flex}
+.modal .box{background:#fff;border-radius:18px;padding:28px;max-width:340px;width:100%;text-align:center}
+.modal .box h3{margin-bottom:6px}.modal .box p{color:var(--muted);font-size:14px;margin-bottom:14px}
+.modal .box img{width:200px;height:200px;margin:0 auto 12px;display:block}
+.modal .id{font-size:20px;font-weight:800;background:var(--sand);padding:10px;border-radius:10px;margin-bottom:14px}
+[dir=rtl]{}
+@media(max-width:900px){
+ .hero .wrap,.cgrid{grid-template-columns:1fr}
+ .grid3,.grid4{grid-template-columns:1fr 1fr}
+ .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
+ .menu{display:none;position:absolute;top:68px;left:0;right:0;background:#fff;flex-direction:column;padding:18px 20px;gap:14px;border-bottom:1px solid var(--line)}
+ .menu.open{display:flex}.burger{display:block}.nav .btn{display:none}
+}
+@media(max-width:560px){.grid3,.grid4,.row2{grid-template-columns:1fr}section{padding:64px 0}.hero .wrap{padding:64px 20px 80px}.gal .it.big{grid-column:span 2;grid-row:span 1}}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:-16px 0 28px}
+.tabs button{border:1px solid var(--line);background:#fff;padding:10px 18px;border-radius:999px;font:600 14px Inter,"Noto Sans SC",sans-serif;cursor:pointer;color:var(--ink)}
+.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pimg .emo{font-size:64px}
+.trace{margin-top:40px;background:var(--ink);color:#fff;border-radius:20px;padding:30px}
+.trace h3{font-size:20px;margin-bottom:18px}
+.tl{list-style:none;display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.tl li{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:14px;font-size:14px;color:#c9d8e6}
+.tl b{display:flex;width:28px;height:28px;border-radius:50%;background:var(--sky-d);color:#fff;align-items:center;justify-content:center;font-size:13px;margin-bottom:8px}
+.fleet{background:linear-gradient(135deg,#0b1a2b,#0e3a5c);color:#fff}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.fleet h2{font-size:clamp(28px,3.6vw,40px);font-weight:800;letter-spacing:-1px;line-height:1.15;margin-bottom:14px}
+.fleet p{color:#c9d8e6;font-size:17px;margin-bottom:18px}
+.fl{list-style:none;display:grid;gap:10px}.fl li{padding-left:28px;position:relative;color:#e3edf5}.fl li::before{content:"✓";position:absolute;left:0;color:var(--sky);font-weight:800}
+.fmedia{aspect-ratio:16/10;border-radius:18px;overflow:hidden;position:relative;background:linear-gradient(135deg,#123e60,#1f8ecb)}
+.fmedia img,.fmedia video{width:100%;height:100%;object-fit:cover}
+.fmedia .ph{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#cfe3f2}.fmedia .ph b{font-size:44px}
+@media(max-width:900px){.tl{grid-template-columns:repeat(3,1fr)}.fgrid{grid-template-columns:1fr}}
+@media(max-width:560px){.tl{grid-template-columns:1fr 1fr}}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.6);animation:pulse 1.8s infinite;margin-right:6px;vertical-align:middle}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(34,197,94,.6)}70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+.livelink{font-weight:600}
+.stbar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin:-16px 0 18px}
+.upd{font-size:13px;color:var(--muted)}
+.tblw{overflow-x:auto;border:1px solid var(--line);border-radius:16px}
+table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
+.stk th{text-align:left;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:#f8fafc;padding:14px 16px;border-bottom:1px solid var(--line)}
+.stk td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:middle}
+.stk tr:last-child td{border:0}
+.stk td b{display:block}.stk td small{color:var(--muted);font-style:italic}
+.st{display:inline-block;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.st.available{background:#e3f7ea;color:#157a3b}.st.on_order,.st.season{background:#fff3dc;color:#9a6200}.st.sold_out{background:#fde8e8;color:#b42318}
+.stk a.ask{font-size:13px;font-weight:600;padding:7px 12px;border-radius:8px;background:var(--wa);color:#fff;white-space:nowrap}
+.stk a.ask.m{background:var(--sky-d)}
+.badge.sold_out{background:#fde8e8;color:#b42318}
+.qty{font-size:13px;color:var(--sea);font-weight:600;margin-top:8px}
+.sttype{display:inline-flex;background:#eef2f6;border-radius:14px;padding:5px;gap:4px;margin:-12px 0 10px}
+.sttype button{border:0;background:transparent;padding:12px 22px;border-radius:10px;font:700 15px Inter,"Noto Sans SC",sans-serif;cursor:pointer;color:var(--muted)}
+.sttype button.on{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(11,26,43,.12)}
+.stnote{color:var(--muted);font-size:14px;margin:0 0 26px;max-width:720px}
+.stk td.empty{text-align:center;color:var(--muted);padding:34px}
+.pimg{position:relative}
+</style>
+</head>
+<body>
+
+<div class="evbar" id="evbar" role="region" aria-live="polite"></div>
+<header>
+ <div class="wrap nav">
+  <a href="#top" class="logo" aria-label="AlphaMarr">
+   <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path d="M44 16c-3 14-8 32-22 32C12 48 8 40 8 32s5-16 14-16c12 0 16 18 26 32" fill="none" stroke="#0b1a2b" stroke-width="8" stroke-linecap="round"/><path d="M22 29l4 4-4 4-4-4z" fill="#4fb3e8"/><path d="M52 6l6 6-6 6-6-6z" fill="#4fb3e8"/></svg>
+   <span><span class="a">alpha</span>marr</span>
+  </a>
+  <nav class="menu" id="menu">
+   <a href="#services" data-i="nav_services"></a>
+   <a href="#products" data-i="nav_products"></a>
+   <a href="#stock" class="livelink"><i class="dot"></i><span data-i="nav_stock"></span></a>
+   <a href="#fleet" data-i="nav_fleet"></a>
+      <a href="#markets" data-i="nav_markets"></a>
+   <a href="#news" data-i="nav_news"></a>
+   <a href="https://market.alphamarr.com" data-i="nav_market"></a>
+  </nav>
+  <div class="right">
+   <div class="langsel" id="langsel">
+    <button type="button" class="lang" id="langBtn" aria-label="Language" onclick="event.stopPropagation();document.getElementById('langsel').classList.toggle('open')"><span id="langFlag"></span><span class="car">▾</span></button>
+    <div class="langmenu"><button type="button" data-l="en" title="English" aria-label="English" onclick="setLang('en');closeLang()"><svg viewBox="0 0 60 30"><clipPath id="u"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="t"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#u)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></button><button type="button" data-l="fr" title="Français" aria-label="Français" onclick="setLang('fr');closeLang()"><svg viewBox="0 0 3 2"><path fill="#ED2939" d="M0 0h3v2H0z"/><path fill="#fff" d="M0 0h2v2H0z"/><path fill="#002395" d="M0 0h1v2H0z"/></svg></button><button type="button" data-l="es" title="Español" aria-label="Español" onclick="setLang('es');closeLang()"><svg viewBox="0 0 3 2"><path fill="#AA151B" d="M0 0h3v2H0z"/><path fill="#F1BF00" d="M0 .5h3v1H0z"/></svg></button><button type="button" data-l="zh" title="中文" aria-label="中文" onclick="setLang('zh');closeLang()"><svg viewBox="0 0 30 20"><path fill="#DE2910" d="M0 0h30v20H0z"/><path fill="#ffde00" d="M5 3l.9 2.7h2.8L6.4 7.4l.9 2.7L5 8.4 2.7 10.1l.9-2.7L1.3 5.7h2.8z"/><circle cx="10" cy="2" r=".8" fill="#ffde00"/><circle cx="12" cy="4" r=".8" fill="#ffde00"/><circle cx="12" cy="7" r=".8" fill="#ffde00"/><circle cx="10" cy="9" r=".8" fill="#ffde00"/></svg></button><button type="button" data-l="ar" title="العربية" aria-label="العربية" onclick="setLang('ar');closeLang()"><svg viewBox="0 0 30 20"><path fill="#D01C1F" d="M0 0h30v20H0z"/><path fill="#00A95C" d="M0 3h30v14H0z"/><path fill="#FFD700" d="M9.2 8.6a5.8 5.8 0 0 0 11.6 0 6.4 5.6 0 0 1-11.6 0z"/><path fill="#FFD700" d="M15 5l.6 1.8h1.9l-1.5 1.1.6 1.8-1.6-1.1-1.6 1.1.6-1.8-1.5-1.1h1.9z"/></svg></button></div>
+   </div>
+   <a href="#contact" class="btn" data-i="quote"></a>
+   <button class="burger" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Menu">☰</button>
+  </div>
+ </div>
+</header>
+
+<section class="hero" id="top">
+ <!-- HERO MEDIA: put a video (media/hero.mp4) or photo here once available -->
+ <div id="heroMedia"></div>
+ <div class="wrap">
+  <div>
+   <span class="tag" data-i="hero_tag"></span>
+   <h1 data-i="hero_h1"></h1>
+   <p data-i="hero_p"></p>
+   <div class="cta">
+    <a href="#contact" class="btn" data-i="quote"></a>
+    <a class="btn wa js-wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
+    <a href="#stock" class="btn ghost"><i class="dot"></i><span data-i="see_stock"></span></a>
+   </div>
+  </div>
+  <div class="hero-card">
+   <h3 data-i="glance"></h3>
+   <div class="stat"><span data-i="g_origin"></span><b>Nouadhibou · Nouakchott</b></div>
+   <div class="stat"><span data-i="g_fleet"></span><b data-i="g_fleet_v"></b></div>
+   <div class="stat"><span data-i="g_prod"></span><b data-i="g_prod_v"></b></div>
+   <div class="stat"><span data-i="g_trace"></span><b data-i="g_trace_v"></b></div>
+   <div class="stat"><span data-i="g_markets"></span><b data-i="g_markets_v"></b></div>
+  </div>
+ </div>
+</section>
+
+<div class="strip"><div class="wrap">
+ <span>🚤 <span data-i="s1"></span></span>
+ <span>🌾 <span data-i="s2"></span></span>
+ <span>🔎 <span data-i="s3"></span></span>
+ <span>🚢 <span data-i="s4"></span></span>
+</div></div>
+
+<section id="services">
+ <div class="wrap">
+  <div class="head">
+   <span class="tag" data-i="nav_services"></span>
+   <h2 data-i="sv_h2"></h2>
+   <p data-i="sv_p"></p>
+  </div>
+  <div class="grid4 svc">
+   <div class="card"><div class="ico">🐟</div><h3 data-i="sv1t"></h3><p data-i="sv1"></p></div>
+   <div class="card"><div class="ico">🤝</div><h3 data-i="sv2t"></h3><p data-i="sv2"></p></div>
+   <div class="card"><div class="ico">🔎</div><h3 data-i="sv3t"></h3><p data-i="sv3"></p></div>
+   <div class="card"><div class="ico">🌾</div><h3 data-i="sv4t"></h3><p data-i="sv4"></p></div>
+  </div>
+  <div class="trace">
+   <h3 data-i="tr_h"></h3>
+   <ol class="tl">
+    <li><b>1</b><span data-i="tr1"></span></li><li><b>2</b><span data-i="tr2"></span></li><li><b>3</b><span data-i="tr3"></span></li>
+    <li><b>4</b><span data-i="tr4"></span></li><li><b>5</b><span data-i="tr5"></span></li><li><b>6</b><span data-i="tr6"></span></li>
+   </ol>
+  </div>
+ </div>
+</section>
+
+<section id="products" class="alt">
+ <div class="wrap">
+  <div class="head">
+   <span class="tag" data-i="nav_products"></span>
+   <h2 data-i="p_h2"></h2>
+   <p data-i="p_p"></p>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid3" id="plist"></div>
+ </div>
+</section>
+
+<section id="stock">
+ <div class="wrap">
+  <div class="head">
+   <span class="tag"><i class="dot"></i> <span data-i="st_tag"></span></span>
+   <h2 data-i="st_h2"></h2>
+   <p data-i="st_p"></p>
+  </div>
+  <div class="sttype" id="stType"></div>
+  <p class="stnote" id="stNote"></p>
+  <div class="stbar">
+   <div class="tabs" id="stTabs" style="margin:0"></div>
+   <div class="upd" id="stUpd"></div>
+  </div>
+  <div class="tblw"><table class="stk">
+   <thead><tr><th data-i="c_prod"></th><th data-i="c_status"></th><th data-i="c_qty"></th><th data-i="c_sizes"></th><th data-i="c_pack"></th><th data-i="c_origin"></th><th></th></tr></thead>
+   <tbody id="stBody"></tbody>
+  </table></div>
+ </div>
+</section>
+
+<section id="fleet" class="fleet">
+ <div class="wrap fgrid">
+  <div>
+   <span class="tag" data-i="nav_fleet"></span>
+   <h2 data-i="fl_h2"></h2>
+   <p data-i="fl_p"></p>
+   <ul class="fl">
+    <li data-i="fl1"></li><li data-i="fl2"></li><li data-i="fl3"></li>
+   </ul>
+  </div>
+  <div class="fmedia" id="fleetMedia"><div class="ph"><b>🚤</b><span data-i="fl_ph"></span></div></div>
+ </div>
+</section>
+
+
+
+<section id="why">
+ <div class="wrap">
+  <div class="head">
+   <span class="tag" data-i="nav_why"></span>
+   <h2 data-i="w_h2"></h2>
+  </div>
+  <div class="grid4">
+   <div class="card"><div class="ico">⚓</div><h3 data-i="w1t"></h3><p data-i="w1"></p></div>
+   <div class="card"><div class="ico">❄️</div><h3 data-i="w2t"></h3><p data-i="w2"></p></div>
+   <div class="card"><div class="ico">📸</div><h3 data-i="w3t"></h3><p data-i="w3"></p></div>
+   <div class="card"><div class="ico">📄</div><h3 data-i="w4t"></h3><p data-i="w4"></p></div>
+  </div>
+  <div class="head" style="margin-top:72px">
+   <span class="tag" data-i="how_tag"></span>
+   <h2 data-i="how_h2"></h2>
+  </div>
+  <div class="grid4">
+   <div class="card"><div class="n">01</div><h3 data-i="h1t"></h3><p data-i="h1"></p></div>
+   <div class="card"><div class="n">02</div><h3 data-i="h2t"></h3><p data-i="h2"></p></div>
+   <div class="card"><div class="n">03</div><h3 data-i="h3t"></h3><p data-i="h3"></p></div>
+   <div class="card"><div class="n">04</div><h3 data-i="h4t"></h3><p data-i="h4"></p></div>
+  </div>
+ </div>
+</section>
+
+<section id="markets" class="alt">
+ <div class="wrap">
+  <div class="head">
+   <span class="tag" data-i="nav_markets"></span>
+   <h2 data-i="m_h2"></h2>
+  </div>
+  <div class="markets" id="mlist"></div>
+ </div>
+</section>
+
+<section id="news">
+ <div class="wrap">
+  <div class="head">
+   <span class="tag" data-i="n_tag"></span>
+   <h2 data-i="n_h2"></h2>
+   <p data-i="n_p"></p>
+  </div>
+  <div class="ngrid">
+   <div class="ncol">
+    <h3 class="nh"><span>📅</span><span data-i="ev_title"></span></h3>
+    <div id="evlist" class="evlist"></div>
+   </div>
+   <div class="ncol">
+    <h3 class="nh"><span>📰</span><span data-i="news_title"></span><small id="nupd"></small></h3>
+    <div id="nlist" class="nlist"></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="wrap cgrid">
+  <div>
+   <div class="head">
+    <span class="tag" data-i="c_tag"></span>
+    <h2 data-i="quote"></h2>
+    <p data-i="c_p"></p>
+   </div>
+   <div class="channels">
+    <a class="btn wa js-wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><span data-i="ch_wa"></span></a>
+    <button class="btn wc js-wc" onclick="openWc()"><svg viewBox="0 0 24 24"><use href="#i-wc"/></svg><span data-i="ch_wc"></span></button>
+    <a class="btn li js-li" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-li"/></svg><span data-i="ch_li"></span></a>
+   </div>
+   <div class="info">
+    <div><small>Email</small><a class="js-mail"></a></div>
+    <div class="js-phone-wrap"><small data-i="phone"></small><a class="js-phone"></a></div>
+    <div><small data-i="loc"></small><span>Nouadhibou, <span data-i="mr"></span></span></div>
+   </div>
+  </div>
+  <form id="qform" onsubmit="return false">
+   <div class="row2">
+    <div><label data-i="f_company"></label><input name="company" required></div>
+    <div><label data-i="f_name"></label><input name="name" required></div>
+   </div>
+   <div class="row2">
+    <div><label>Email</label><input type="email" name="email"></div>
+    <div><label data-i="f_country"></label><input name="country"></div>
+   </div>
+   <div class="row2">
+    <div><label data-i="f_product"></label><select name="product" id="psel"></select></div>
+    <div><label data-i="f_qty"></label><input name="qty"></div>
+   </div>
+   <div><label data-i="f_msg"></label><textarea name="msg"></textarea></div>
+   <div class="fbtns">
+    <button class="btn wa js-wa-form" type="button" onclick="sendQuote('wa')"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><span data-i="send_wa"></span></button>
+    <button class="btn" type="button" onclick="sendQuote('mail')" data-i="send_mail"></button>
+   </div>
+  </form>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <span>© <span id="yr"></span> AlphaMarr · Nouadhibou, <span data-i="mr"></span><br><small style="opacity:.7">Photos : AlphaMarr ; illustrations seiche, liche, courbine et farine via Wikimedia Commons — Thomon, Bernard Dupont, Phu Thinh Co (CC BY-SA), M. Lepage (domaine public).</small></span>
+  <div class="soc">
+   <a class="js-mail"></a>
+   <a class="js-li" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+ </div>
+</footer>
+
+<div class="fab">
+ <button class="c js-wc" onclick="openWc()" aria-label="WeChat"><svg viewBox="0 0 24 24"><use href="#i-wc"/></svg></button>
+ <a class="w js-wa" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a>
+</div>
+
+<div class="modal" id="wcModal" onclick="if(event.target===this)this.classList.remove('on')">
+ <div class="box">
+  <h3>WeChat</h3>
+  <p data-i="wc_p"></p>
+  <img id="wcQr" alt="WeChat QR" style="display:none">
+  <div class="id" id="wcId"></div>
+  <button class="btn wc" onclick="copyWc()" data-i="copy"></button>
+ </div>
+</div>
+
+<div class="lb" id="lb" onclick="if(event.target===this)closeLb()"><button class="x" onclick="closeLb()">×</button><div id="lbc"></div></div>
+
+<svg width="0" height="0" style="position:absolute">
+ <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.02c-.24.68-1.42 1.3-1.95 1.35-.5.05-.97.23-3.27-.68-2.77-1.09-4.52-3.93-4.66-4.11-.13-.18-1.1-1.47-1.1-2.8s.7-1.99.95-2.26c.24-.27.53-.34.71-.34l.51.01c.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.07.14.11.29.02.47-.09.18-.13.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.55.16.27.7 1.15 1.5 1.86 1.03.92 1.9 1.2 2.17 1.34.27.13.43.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.25.09 1.56.74 1.83.87.27.13.45.2.51.31.07.11.07.64-.17 1.32z"/></symbol>
+ <symbol id="i-wc" viewBox="0 0 24 24"><path d="M9.1 3.5C4.9 3.5 1.5 6.3 1.5 9.8c0 2 1.1 3.8 2.9 5l-.7 2.2 2.6-1.3c.9.3 1.8.4 2.8.4h.5a5.6 5.6 0 0 1-.2-1.6c0-3.4 3.2-6.1 7.2-6.1h.5C16.4 5.6 13.1 3.5 9.1 3.5zM6.6 8.6a.9.9 0 1 1 0-1.8.9.9 0 0 1 0 1.8zm5 0a.9.9 0 1 1 0-1.8.9.9 0 0 1 0 1.8zm10.9 5.9c0-2.9-2.9-5.3-6.4-5.3s-6.4 2.4-6.4 5.3 2.9 5.3 6.4 5.3c.8 0 1.5-.1 2.2-.3l2 1.1-.5-1.8c1.6-1 2.7-2.6 2.7-4.3zm-8.5-.9a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6zm4.2 0a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6z"/></symbol>
+ <symbol id="i-li" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+</svg>
+
+<script>
+/* =====================================================================
+   SETTINGS — edit here to update the site (contacts, products, media)
+   ===================================================================== */
+const CONFIG = {
+  email:    'contact@alphamarr.com',
+  whatsapp: '',            // international format, digits only, e.g. '22236000000'
+  wechat:   '',            // WeChat ID, e.g. 'alphamarr'
+  wechatQr: '',            // optional: 'media/wechat-qr.png'
+  linkedin: '',            // e.g. 'https://www.linkedin.com/company/alphamarr'
+  heroVideo:'',            // e.g. 'media/hero.mp4'
+  heroImage:'',            // e.g. 'media/hero.jpg'
+  stockSheetId:'1Q0WPEy0Yf9Ky9sABkIkAcfdCEN1LKrWsT6ZSjc82dYg',         // Google Sheet ID for live stock (shared: anyone with link can view)
+  fleetMedia:'fleet.webp'            // e.g. 'media/pirogues.jpg' or '.mp4'
+};
+
+// market: 'asia' | 'africa' | 'meal'   ·   status: 'available' | 'season' | ''   ·   img: 'media/xxx.jpg'
+const PRODUCTS = [
+
+ // ---------- EUROPEAN MARKETS (cephalopods, lobster, pelagics) ----------
+ {id:'octopus',markets:['europe','asia'],status:'available',img:'octopus-card.webp',latin:'Octopus vulgaris',color:['#b0707a','#f6e3e6'],icon:'🐙',
+  name:{en:'Octopus',fr:'Poulpe',es:'Pulpo',zh:'章鱼'},
+  desc:{en:'Common octopus from Mauritania, one of the most sought-after origins in Europe. Whole, cleaned, graded T1–T8.',fr:'Poulpe de Mauritanie, l\u2019une des origines les plus recherchées en Europe. Entier, nettoyé, calibré T1–T8.',es:'Pulpo de Mauritania, uno de los orígenes más buscados en Europa. Entero, limpio, calibrado T1–T8.',zh:'毛里塔尼亚真蛸，欧洲最受欢迎的产地之一。整只、清洗，T1–T8 分级。'},
+  chips:{en:['Whole cleaned','T1–T8','IQF / Block'],fr:['Entier nettoyé','T1–T8','IQF / Bloc'],es:['Entero limpio','T1–T8','IQF / Bloque'],zh:['整只清洗','T1–T8','单冻 / 块冻']}},
+ {id:'squid',markets:['europe','asia'],status:'season',img:'squid-card.webp',latin:'Loligo spp.',color:['#c9a5b5','#f7eef2'],icon:'🦑',
+  name:{en:'Squid',fr:'Calamar',es:'Calamar',zh:'鱿鱼'},
+  desc:{en:'European squid, whole round, sea-frozen or land-frozen.',fr:'Calamar européen, entier, congelé à bord ou à terre.',es:'Calamar europeo, entero, congelado a bordo o en tierra.',zh:'欧洲枪乌贼，整只，船冻或岸冻。'},
+  chips:{en:['Whole round','Graded'],fr:['Entier','Calibré'],es:['Entero','Calibrado'],zh:['整只','分级']}},
+ {id:'cuttlefish',markets:['europe','asia'],status:'available',img:'cuttlefish-card.webp',latin:'Sepia officinalis',color:['#a58f7a','#f2ece5'],icon:'🦑',
+  name:{en:'Cuttlefish',fr:'Seiche (choco)',es:'Sepia / Choco',zh:'墨鱼'},
+  desc:{en:'Whole or cleaned cuttlefish, graded by size, for Spain, Italy and Portugal.',fr:'Seiche entière ou nettoyée, calibrée, pour l\u2019Espagne, l\u2019Italie et le Portugal.',es:'Sepia entera o limpia, calibrada, para España, Italia y Portugal.',zh:'整只或清洗墨鱼，按规格分级，销往西班牙、意大利和葡萄牙。'},
+  chips:{en:['Whole / Cleaned','Graded'],fr:['Entière / Nettoyée','Calibrée'],es:['Entera / Limpia','Calibrada'],zh:['整只 / 清洗','分级']}},
+
+ {id:'mulletroe',markets:['asia','europe'],status:'available',img:'mulletroe-card.webp',latin:'Mugil cephalus — roe',color:['#e0a030','#fbefd6'],
+  name:{en:'Mullet roe',fr:'Œufs de mulet (poutargue)',es:'Huevas de mújol (botarga)',zh:'乌鱼子'},
+  desc:{en:'Raw grey mullet roe sacs, graded by pieces per kg, packed in individual boxes — for karasumi and bottarga producers.',fr:'Poches d\u2019œufs de mulet crues, calibrées au nombre de pièces/kg, en boîtes individuelles — pour la poutargue (bottarga, karasumi).',es:'Huevas crudas de mújol, calibradas por piezas/kg, en cajas individuales — para botarga y karasumi.',zh:'生鲻鱼卵，按每公斤个数分级，独立盒装——适合乌鱼子/Bottarga 加工。'},
+  chips:{en:['6/8 · 8/9 · 10 up','Boxed'],fr:['6/8 · 8/9 · 10 up','En boîte'],es:['6/8 · 8/9 · 10 up','En caja'],zh:['6/8 · 8/9 · 10 up','盒装']}},
+ {id:'skate',markets:['europe','asia'],status:'on_order',img:'skate-card.webp',latin:'Raja spp.',color:['#b07a6a','#f6e6e0'],
+  name:{en:'Skate wings',fr:'Ailes de raie',es:'Alas de raya',zh:'鳐鱼翅 (鳐鱼翼)'},
+  desc:{en:'Skin-on skate wings, cut and frozen, for European and Korean markets.',fr:'Ailes de raie avec peau, découpées et congelées, pour l\u2019Europe et la Corée.',es:'Alas de raya con piel, cortadas y congeladas, para Europa y Corea.',zh:'带皮鳐鱼翼，切割冷冻，销往欧洲和韩国。'},
+  chips:{en:['Skin-on','IQF'],fr:['Avec peau','IQF'],es:['Con piel','IQF'],zh:['带皮','单冻']}},
+
+ {id:'johndory',markets:['europe','asia'],status:'season',img:'johndory-card.webp',latin:'Zeus faber',color:['#8a8f6a','#eef0e4'],
+  name:{en:'John Dory',fr:'Saint-Pierre',es:'Pez de San Pedro',zh:'海鲂 (圣彼得鱼)'},
+  desc:{en:'Premium whitefish highly valued by European restaurants, whole round, carefully handled.',fr:'Poisson blanc haut de gamme très apprécié de la restauration européenne, entier, manipulé avec soin.',es:'Pescado blanco de alta gama muy apreciado en la restauración europea, entero, manipulado con cuidado.',zh:'欧洲餐饮高度青睐的高档白肉鱼，整条，精心处理。'},
+  chips:{en:['Whole round','Premium'],fr:['Entier','Premium'],es:['Entero','Premium'],zh:['整条','高端']}},
+ // ---------- ASIAN MARKETS ----------
+ {id:'cymbium',markets:['asia'],status:'season',img:'cymbium-card.webp',latin:'Cymbium spp.',color:['#b58a5e','#f4e8da'],
+  name:{en:'Cymbium (sea snail)',fr:'Cymbium (Yet)',es:'Cymbium (caracol marino)',zh:'涡螺 (Cymbium)'},
+  desc:{en:'Large West African sea snail, cleaned meat — a premium item for Asian markets.',fr:'Grand gastéropode ouest-africain, chair nettoyée — produit premium pour l’Asie.',es:'Gran caracol marino de África occidental, carne limpia — producto premium para Asia.',zh:'西非大型海螺，净肉——亚洲市场高端产品。'},
+  chips:{en:['Meat','Frozen'],fr:['Chair','Congelé'],es:['Carne','Congelado'],zh:['螺肉','冷冻']}},
+ {id:'ribbonfish',markets:['asia'],status:'available',img:'ribbonfish-card.webp',latin:'Trichiurus lepturus',color:['#aab8c4','#eef2f5'],
+  name:{en:'Ribbonfish',fr:'Poisson ceinture (sabre)',es:'Pez sable',zh:'带鱼'},
+  desc:{en:'Silver ribbonfish, whole round, graded by width — a staple in China and Korea.',fr:'Poisson ceinture argenté, entier, calibré par largeur — incontournable en Chine et en Corée.',es:'Pez sable plateado, entero, calibrado por ancho — básico en China y Corea.',zh:'银色带鱼，整条，按宽度分级——中韩市场主流产品。'},
+  chips:{en:['Whole round','Graded'],fr:['Entier','Calibré'],es:['Entero','Calibrado'],zh:['整条','分级']}},
+ {id:'sole',markets:['asia'],status:'available',img:'sole-card.webp',latin:'Solea spp. · Cynoglossus spp.',color:['#b59b7a','#f3ece3'],
+  name:{en:'Sole fish',fr:'Sole',es:'Lenguado',zh:'鳎鱼'},
+  desc:{en:'Wild Atlantic sole, whole or gutted, carefully packed.',fr:'Sole sauvage de l’Atlantique, entière ou vidée, soigneusement emballée.',es:'Lenguado salvaje del Atlántico, entero o eviscerado, cuidadosamente embalado.',zh:'大西洋野生鳎鱼，整条或去脏，精心包装。'},
+  chips:{en:['Whole / Gutted','IQF'],fr:['Entière / Vidée','IQF'],es:['Entero / Eviscerado','IQF'],zh:['整条 / 去脏','单冻']}},
+ {id:'lobster',markets:['europe','asia'],status:'season',img:'lobster-card.webp',latin:'Panulirus spp.',color:['#d9674f','#fbe2dc'],
+  name:{en:'Rock lobster',fr:'Langouste rouge',es:'Langosta roja',zh:'红龙虾'},
+  desc:{en:'Spiny lobster from Mauritanian waters, whole frozen, graded by weight.',fr:'Langouste des eaux mauritaniennes, entière congelée, calibrée au poids.',es:'Langosta de aguas mauritanas, entera congelada, calibrada por peso.',zh:'毛里塔尼亚海域龙虾，整只冷冻，按重量分级。'},
+  chips:{en:['Whole frozen','Premium'],fr:['Entière congelée','Premium'],es:['Entera congelada','Premium'],zh:['整只冷冻','高端']}},
+ {id:'leatherjacket',markets:['asia'],status:'available',img:'leatherjacket-card.webp',latin:'Stephanolepis hispidus · Aluterus spp.',color:['#8f9a78','#eef1e6'],
+  name:{en:'Leather jacket fish',fr:'Alutère (Leather jacket)',es:'Pez lija (leather jacket)',zh:'马面鱼'},
+  desc:{en:'Whole round or skinned, strongly demanded in China and Southeast Asia.',fr:'Entier ou pelé, très demandé en Chine et en Asie du Sud-Est.',es:'Entero o pelado, muy demandado en China y el sudeste asiático.',zh:'整条或去皮，中国及东南亚需求旺盛。'},
+  chips:{en:['Whole round','Skinned'],fr:['Entier','Pelé'],es:['Entero','Pelado'],zh:['整条','去皮']}},
+ // ---------- AFRICAN MARKETS ----------
+ {id:'sardinella',markets:['europe','africa'],status:'available',img:'sardinella-card.webp',latin:'Sardinella aurita',color:['#7fa7c4','#dfe9f2'],
+  name:{en:'Round sardinella (Aurita)',fr:'Sardinelle ronde (Aurita)',es:'Alacha (Aurita)',zh:'圆小沙丁鱼 (Aurita)'},
+  desc:{en:'Our core volume product, caught by our own pirogue fleet. Big sizes available.',fr:'Notre produit de volume, pêché par notre propre flotte de pirogues. Gros calibres disponibles.',es:'Nuestro producto de volumen, capturado por nuestra flota. Tallas grandes disponibles.',zh:'由自有船队捕捞的主力产品，有大规格。'},
+  chips:{en:['Whole round','Block / IQF','Big sizes'],fr:['Entier','Bloc / IQF','Gros calibres'],es:['Entero','Bloque / IQF','Tallas grandes'],zh:['整条','块冻 / 单冻','大规格']}},
+ {id:'pilchardus',markets:['europe','africa'],status:'available',img:'pilchardus-card.webp',latin:'Sardina pilchardus',color:['#7fa7c4','#dfe9f2'],
+  name:{en:'European sardine (Pilchardus)',fr:'Sardine (Pilchardus)',es:'Sardina (Pilchardus)',zh:'欧洲沙丁鱼 (Pilchardus)'},
+  desc:{en:'True sardine, whole round, for canneries and fresh-frozen markets.',fr:'Vraie sardine, entière, pour la conserverie et les marchés du congelé.',es:'Sardina auténtica, entera, para conserveras y mercados de congelado.',zh:'正宗沙丁鱼，整条，供罐头厂及冷冻市场。'},
+  chips:{en:['Whole round','Block / IQF'],fr:['Entier','Bloc / IQF'],es:['Entero','Bloque / IQF'],zh:['整条','块冻 / 单冻']}},
+ {id:'eba',markets:['africa','asia'],status:'available',img:'eba-card.webp',latin:'Sardinella eba',color:['#7fa7c4','#dfe9f2'],
+  name:{en:'Flat sardinella (Eba)',fr:'Sardinelle plate (Eba)',es:'Sardinela plana (Eba)',zh:'扁小沙丁鱼 (Eba)'},
+  desc:{en:'Flat sardinella, whole round, large volumes for African and Asian markets.',fr:'Sardinelle plate, entière, gros volumes pour l\u2019Afrique et l\u2019Asie.',es:'Sardinela plana, entera, grandes volúmenes para África y Asia.',zh:'扁小沙丁鱼，整条，大批量供应非洲和亚洲市场。'},
+  chips:{en:['Whole round','Block frozen'],fr:['Entier','Bloc'],es:['Entero','Bloque'],zh:['整条','块冻']}},
+ {id:'bonito',markets:['europe','africa','asia'],status:'season',img:'bonito-card.webp',latin:'Sarda sarda',color:['#5f7a8f','#e0e8ef'],
+  name:{en:'Atlantic bonito',fr:'Bonite',es:'Bonito',zh:'狐鲣'},
+  desc:{en:'Atlantic bonito, whole round, firm red flesh — for fresh-frozen markets and canneries.',fr:'Bonite à dos rayé, entière, chair rouge et ferme — pour le congelé et la conserverie.',es:'Bonito del Atlántico, entero, carne roja y firme — para congelado y conserveras.',zh:'大西洋狐鲣，整条，红肉紧实——供冷冻市场及罐头厂。'},
+  chips:{en:['Whole round','Block / IQF'],fr:['Entier','Bloc / IQF'],es:['Entero','Bloque / IQF'],zh:['整条','块冻 / 单冻']}},
+ {id:'horse',markets:['europe','africa'],status:'available',img:'horse-card.webp',latin:'Trachurus trachurus · T. trecae',color:['#6f8fa8','#dde7ef'],
+  name:{en:'Horse mackerel',fr:'Chinchard',es:'Jurel',zh:'竹荚鱼'},
+  desc:{en:'Large volumes for West and Central African markets.',fr:'Gros volumes pour l’Afrique de l’Ouest et centrale.',es:'Grandes volúmenes para África occidental y central.',zh:'大批量供应西非和中非市场。'},
+  chips:{en:['Whole round','Block frozen'],fr:['Entier','Bloc'],es:['Entero','Bloque'],zh:['整条','块冻']}},
+ {id:'mackerel',markets:['europe','africa'],status:'available',img:'mackerel-card.webp',latin:'Scomber scombrus · S. colias',color:['#5f8a8b','#dfecec'],
+  name:{en:'Mackerel',fr:'Maquereau',es:'Caballa',zh:'鲭鱼'},
+  desc:{en:'Atlantic chub mackerel, whole round, several size grades.',fr:'Maquereau espagnol, entier, plusieurs calibres.',es:'Estornino del Atlántico, entero, varios calibres.',zh:'大西洋鲐鱼，整条，多种规格。'},
+  chips:{en:['Whole round','Graded'],fr:['Entier','Calibré'],es:['Entero','Calibrado'],zh:['整条','分级']}},
+ {id:'mullet',markets:['africa'],status:'available',img:'mullet-card.webp',latin:'Mugil cephalus',color:['#8d9aa6','#e4e8ec'],
+  name:{en:'Grey mullet',fr:'Mulet gris',es:'Lisa / Mújol',zh:'鲻鱼'},
+  desc:{en:'Firm white flesh, whole round in several size grades.',fr:'Chair blanche et ferme, entier en plusieurs calibres.',es:'Carne blanca y firme, entero en varios calibres.',zh:'肉质洁白紧实，整条，多种规格。'},
+  chips:{en:['Whole round','Block frozen'],fr:['Entier','Bloc'],es:['Entero','Bloque'],zh:['整条','块冻']}},
+
+ // ---------- FRESH FISH ----------
+ {id:'fresh',markets:['fresh','europe'],status:'available',img:'fresh-card.webp',latin:'Sparidae · Dorade, pagre, sar…',color:['#9aa7b0','#eaeef1'],
+  name:{en:'Fresh fish (chilled)',fr:'Poisson frais',es:'Pescado fresco',zh:'冰鲜鱼'},
+  desc:{en:'Sea bream and other fresh species, packed on ice in insulated boxes and shipped by air or reefer truck.',fr:'Dorades et autres espèces fraîches, conditionnées sous glace en caisses isothermes, expédiées par avion ou camion frigorifique.',es:'Doradas y otras especies frescas, envasadas con hielo en cajas isotérmicas y enviadas por avión o camión frigorífico.',zh:'鲷鱼等冰鲜鱼，保温箱加冰包装，空运或冷藏车运输。'},
+  chips:{en:['On ice','Air freight','Daily catch'],fr:['Sous glace','Fret aérien','Pêche du jour'],es:['Con hielo','Carga aérea','Pesca del día'],zh:['加冰','空运','当日捕捞']}},
+
+ {id:'spinylobster',markets:['europe','asia'],status:'season',img:'spinylobster-card.webp',latin:'Panulirus versicolor',color:['#6f8f5a','#e8f0e0'],
+  name:{en:'Spiny lobster',fr:'Langouste verte',es:'Langosta verde',zh:'青龙虾'},
+  desc:{en:'Green spiny lobster, whole frozen, graded by weight — premium for Asian and European markets.',fr:'Langouste verte, entière congelée, calibrée au poids — produit premium pour l\u2019Asie et l\u2019Europe.',es:'Langosta verde, entera congelada, calibrada por peso — producto premium para Asia y Europa.',zh:'青龙虾，整只冷冻，按重量分级——亚洲和欧洲高端产品。'},
+  chips:{en:['Whole frozen','Premium'],fr:['Entière congelée','Premium'],es:['Entera congelada','Premium'],zh:['整只冷冻','高端']}},
+ {id:'snapper',markets:['asia','europe','africa'],status:'season',img:'snapper-card.webp',latin:'Lutjanus spp.',color:['#e07a6a','#fbe3de'],
+  name:{en:'Red snapper',fr:'Vivaneau rouge',es:'Pargo rojo',zh:'红鲷鱼'},
+  desc:{en:'High-value red snapper, whole round or gutted, for restaurants and retail.',fr:'Vivaneau rouge à forte valeur, entier ou vidé, pour la restauration et la distribution.',es:'Pargo rojo de alto valor, entero o eviscerado, para restauración y distribución.',zh:'高价值红鲷鱼，整条或去脏，适合餐饮和零售。'},
+  chips:{en:['Whole / Gutted','IQF'],fr:['Entier / Vidé','IQF'],es:['Entero / Eviscerado','IQF'],zh:['整条 / 去脏','单冻']}},
+ {id:'croaker',markets:['africa','asia'],status:'available',img:'croaker-card.webp',latin:'Pseudotolithus spp.',color:['#b8b08a','#f2f0e6'],
+  name:{en:'Croaker',fr:'Courbine / Otolithe',es:'Corvina',zh:'黄鱼 (石首鱼)'},
+  desc:{en:'West African croaker, whole round, firm white flesh — very popular in Africa and Asia.',fr:'Courbine ouest-africaine, entière, chair blanche et ferme — très demandée en Afrique et en Asie.',es:'Corvina de África occidental, entera, carne blanca y firme — muy demandada en África y Asia.',zh:'西非黄鱼，整条，肉质洁白紧实——非洲和亚洲热销。'},
+  chips:{en:['Whole round','Block / IQF'],fr:['Entier','Bloc / IQF'],es:['Entero','Bloque / IQF'],zh:['整条','块冻 / 单冻']}},
+ {id:'seabream',markets:['europe','fresh','africa'],status:'available',img:'seabream-card.webp',latin:'Sparus spp. · Pagrus spp.',color:['#c8a0a0','#f6ecec'],
+  name:{en:'Sea bream',fr:'Dorade / Pagre',es:'Dorada / Pargo',zh:'鲷鱼'},
+  desc:{en:'Wild sea bream, fresh on ice or frozen, for European and African markets.',fr:'Dorade sauvage, fraîche sous glace ou congelée, pour l\u2019Europe et l\u2019Afrique.',es:'Dorada salvaje, fresca con hielo o congelada, para Europa y África.',zh:'野生鲷鱼，冰鲜或冷冻，销往欧洲和非洲。'},
+  chips:{en:['Fresh / Frozen','Whole round'],fr:['Frais / Congelé','Entier'],es:['Fresco / Congelado','Entero'],zh:['冰鲜 / 冷冻','整条']}},
+ {id:'shad',markets:['asia','africa'],status:'season',img:'shad-card.webp',latin:'Anodontostoma chacunda',color:['#9fb0c4','#e8eef4'],
+  name:{en:'Dotted gizzard shad',fr:'Alose tachetée (gizzard shad)',es:'Sábalo moteado',zh:'斑鰶'},
+  desc:{en:'Gizzard shad, whole round, for Asian markets.',fr:'Alose (gizzard shad), entière, pour les marchés asiatiques.',es:'Sábalo, entero, para mercados asiáticos.',zh:'斑鰶，整条，供应亚洲市场。'},
+  chips:{en:['Whole round','Block frozen'],fr:['Entier','Bloc'],es:['Entero','Bloque'],zh:['整条','块冻']}},
+ // ---------- FISHMEAL & FISH OIL ----------
+ {id:'fishmeal',markets:['meal'],status:'available',img:'fishmeal-card.webp',latin:'Nouakchott · Nouadhibou',color:['#a88a5a','#f3ead9'],icon:'🌾',
+  name:{en:'Fishmeal',fr:'Farine de poisson',es:'Harina de pescado',zh:'鱼粉'},
+  desc:{en:'Fishmeal for aquaculture and animal feed, sourced from plants in Nouakchott and Nouadhibou. Analysis certificates on request.',fr:'Farine de poisson pour l’aquaculture et l’alimentation animale, issue d’usines de Nouakchott et Nouadhibou. Certificats d’analyse sur demande.',es:'Harina de pescado para acuicultura y piensos, de plantas de Nuakchot y Nuadibú. Certificados de análisis bajo pedido.',zh:'用于水产养殖和饲料的鱼粉，来自努瓦克肖特和努瓦迪布工厂。可提供检测证书。'},
+  chips:{en:['Bulk / Bags','Analysis on request'],fr:['Vrac / Sacs','Analyse sur demande'],es:['Granel / Sacos','Análisis bajo pedido'],zh:['散装 / 袋装','可提供检测']}},
+ {id:'fishoil',markets:['meal'],status:'available',img:'',latin:'Nouakchott · Nouadhibou',color:['#c9a227','#f8f0d3'],icon:'🛢️',
+  name:{en:'Fish oil',fr:'Huile de poisson',es:'Aceite de pescado',zh:'鱼油'},
+  desc:{en:'Crude fish oil for feed and industrial uses, shipped in flexitanks or drums.',fr:'Huile de poisson brute pour l’alimentation animale et l’industrie, expédiée en flexitank ou en fûts.',es:'Aceite de pescado crudo para piensos e industria, en flexitanks o bidones.',zh:'粗鱼油，用于饲料和工业，可用柔性罐或桶装运输。'},
+  chips:{en:['Flexitank / Drums'],fr:['Flexitank / Fûts'],es:['Flexitank / Bidones'],zh:['柔性罐 / 桶装']}}
+];
+
+// Gallery: {type:'img'|'video', src:'media/xxx.jpg', big:true}
+const GALLERY = [];
+
+const MARKETS = [
+ {en:'Europe',fr:'Europe',es:'Europa',zh:'欧洲',s:{en:'Spain, Portugal, Italy, Greece…',fr:'Espagne, Portugal, Italie, Grèce…',es:'España, Portugal, Italia, Grecia…',zh:'西班牙、葡萄牙、意大利、希腊…'}},
+ {en:'West Africa',fr:'Afrique de l’Ouest',es:'África occidental',zh:'西非',s:{en:'Nigeria, Ghana, Côte d’Ivoire…',fr:'Nigeria, Ghana, Côte d’Ivoire…',es:'Nigeria, Ghana, Costa de Marfil…',zh:'尼日利亚、加纳、科特迪瓦…'}},
+ {en:'Central Africa',fr:'Afrique centrale',es:'África central',zh:'中非',s:{en:'Cameroon, Congo…',fr:'Cameroun, Congo…',es:'Camerún, Congo…',zh:'喀麦隆、刚果…'}},
+ {en:'South Asia',fr:'Asie du Sud',es:'Sur de Asia',zh:'南亚',s:{en:'Bangladesh, India, Sri Lanka…',fr:'Bangladesh, Inde, Sri Lanka…',es:'Bangladés, India, Sri Lanka…',zh:'孟加拉国、印度、斯里兰卡…'}},
+ {en:'East & Southeast Asia',fr:'Asie de l’Est & du Sud-Est',es:'Asia oriental y sudeste',zh:'东亚及东南亚',s:{en:'China, Vietnam, Thailand…',fr:'Chine, Vietnam, Thaïlande…',es:'China, Vietnam, Tailandia…',zh:'中国、越南、泰国…'}},
+ {en:'Middle East',fr:'Moyen-Orient',es:'Oriente Medio',zh:'中东',s:{en:'UAE, Oman, Saudi Arabia…',fr:'Émirats, Oman, Arabie saoudite…',es:'EAU, Omán, Arabia Saudí…',zh:'阿联酋、阿曼、沙特阿拉伯…'}}
+];
+
+/* ============================ TRANSLATIONS ============================ */
+const T = {
+en:{nav_products:'Products',nav_gallery:'Gallery',nav_why:'Why us',nav_markets:'Markets',nav_market:'Marketplace',quote:'Request a quote',view_products:'View products',
+ hero_tag:'Nouadhibou · Mauritania',hero_h1:'Premium frozen seafood from the Atlantic coast of Mauritania',hero_p:'AlphaMarr supplies importers and distributors with sardinella (hilsa), grey mullet, red snapper, horse mackerel and more — graded, frozen and shipped in reefer containers.',
+ glance:'At a glance',g_origin:'Origin',g_area:'Fishing area',g_ship:'Shipping',g_ship_v:'40’ reefer · FOB / CFR',g_store:'Storage',g_markets:'Markets',g_markets_v:'Africa · Asia · Middle East',
+ s1:'cold chain',s2:'40’ reefer containers',s3:'Dated photo & video QC',s4:'Full export documents',
+ p_h2:'Whole round frozen fish, graded by size',p_p:'Specifications, sizes and packing are adapted to your market. Ask us for current availability and prices.',
+ av:'Available now',ss:'Seasonal',ask_wa:'Ask on WhatsApp',details:'Get price',
+ g_h2:'See our products and loading',g_p:'Real photos and videos of our cartons, cold stores and container loading.',g_soon:'Photo coming soon',v_soon:'Video coming soon',
+ w_h2:'A reliable partner on the ground in Nouadhibou',w1t:'At the source',w1:'Based in Mauritania’s main fishing port, close to landings and cold stores.',w2t:'Cold chain',w2:'Frozen and stored at −18 °C, loaded in temperature-monitored reefers.',w3t:'Transparent QC',w3:'Dated photos and videos of your actual cartons before loading.',w4t:'Export paperwork',w4:'Health certificate, certificate of origin, packing list and B/L handled for you.',
+ how_tag:'How we work',how_h2:'From enquiry to delivery in four steps',h1t:'Enquiry',h1:'Tell us the species, size, quantity and destination port.',h2t:'Offer',h2:'We send a price offer (FOB or CFR) with specifications and photos.',h3t:'Inspection',h3:'Goods are checked and photographed; loading is documented.',h4t:'Shipment',h4:'The container sails and full export documents are sent to you.',
+ m_h2:'Serving importers in Africa, Asia and the Middle East',
+ c_tag:'Contact',c_p:'Reach us directly on WhatsApp, WeChat or LinkedIn, or send your requirements below.',ch_wa:'Chat on WhatsApp',ch_wc:'Add us on WeChat',ch_li:'Follow us on LinkedIn',phone:'Phone / WhatsApp',loc:'Location',mr:'Mauritania',
+ f_company:'Company',f_name:'Your name',f_country:'Country',f_product:'Product',f_qty:'Quantity (containers / tons)',f_msg:'Details (size, packing, destination port)',send_wa:'Send via WhatsApp',send_mail:'Send by email',
+ wc_p:'Scan the QR code or add our WeChat ID:',copy:'Copy ID',copied:'Copied!',msg_hello:'Hello AlphaMarr, I am interested in'},
+fr:{nav_products:'Produits',nav_gallery:'Galerie',nav_why:'Pourquoi nous',nav_markets:'Marchés',nav_market:'Marketplace',quote:'Demander un devis',view_products:'Voir les produits',
+ hero_tag:'Nouadhibou · Mauritanie',hero_h1:'Produits de la mer congelés, directement de la côte atlantique mauritanienne',hero_p:'AlphaMarr fournit importateurs et distributeurs en sardinelle (hilsa), mulet gris, vivaneau, chinchard et autres espèces — calibrés, congelés et expédiés en conteneurs frigorifiques.',
+ glance:'En bref',g_origin:'Origine',g_area:'Zone de pêche',g_ship:'Expédition',g_ship_v:'Reefer 40’ · FOB / CFR',g_store:'Stockage',g_markets:'Marchés',g_markets_v:'Afrique · Asie · Moyen-Orient',
+ s1:'chaîne du froid',s2:'Conteneurs reefer 40’',s3:'Contrôle photo & vidéo daté',s4:'Documents export complets',
+ p_h2:'Poisson entier congelé, calibré par taille',p_p:'Spécifications, calibres et emballage adaptés à votre marché. Demandez-nous la disponibilité et les prix du moment.',
+ av:'Disponible',ss:'Saisonnier',ask_wa:'Demander sur WhatsApp',details:'Obtenir le prix',
+ g_h2:'Nos produits et nos chargements',g_p:'Photos et vidéos réelles de nos cartons, entrepôts frigorifiques et chargements de conteneurs.',g_soon:'Photo bientôt disponible',v_soon:'Vidéo bientôt disponible',
+ w_h2:'Un partenaire fiable, sur place à Nouadhibou',w1t:'À la source',w1:'Basés dans le premier port de pêche du pays, au plus près des débarquements et des entrepôts frigorifiques.',w2t:'Chaîne du froid',w2:'Congelé et stocké à −18 °C, chargé en conteneurs reefer sous contrôle de température.',w3t:'Contrôle transparent',w3:'Photos et vidéos datées de vos cartons réels avant chargement.',w4t:'Documents export',w4:'Certificat sanitaire, certificat d’origine, liste de colisage et connaissement pris en charge.',
+ how_tag:'Notre méthode',how_h2:'De la demande à la livraison en quatre étapes',h1t:'Demande',h1:'Indiquez l’espèce, le calibre, la quantité et le port de destination.',h2t:'Offre',h2:'Nous envoyons une offre de prix (FOB ou CFR) avec spécifications et photos.',h3t:'Inspection',h3:'La marchandise est contrôlée et photographiée ; le chargement est documenté.',h4t:'Expédition',h4:'Le conteneur part et tous les documents export vous sont envoyés.',
+ m_h2:'Au service des importateurs en Afrique, en Asie et au Moyen-Orient',
+ c_tag:'Contact',c_p:'Contactez-nous directement sur WhatsApp, WeChat ou LinkedIn, ou envoyez votre besoin ci-dessous.',ch_wa:'Discuter sur WhatsApp',ch_wc:'Nous ajouter sur WeChat',ch_li:'Nous suivre sur LinkedIn',phone:'Téléphone / WhatsApp',loc:'Adresse',mr:'Mauritanie',
+ f_company:'Société',f_name:'Votre nom',f_country:'Pays',f_product:'Produit',f_qty:'Quantité (conteneurs / tonnes)',f_msg:'Détails (calibre, emballage, port de destination)',send_wa:'Envoyer par WhatsApp',send_mail:'Envoyer par email',
+ wc_p:'Scannez le QR code ou ajoutez notre identifiant WeChat :',copy:'Copier l’ID',copied:'Copié !',msg_hello:'Bonjour AlphaMarr, je suis intéressé par'},
+es:{nav_products:'Productos',nav_gallery:'Galería',nav_why:'Por qué nosotros',nav_markets:'Mercados',nav_market:'Marketplace',quote:'Solicitar cotización',view_products:'Ver productos',
+ hero_tag:'Nouadhibou · Mauritania',hero_h1:'Pescado congelado de primera calidad desde la costa atlántica de Mauritania',hero_p:'AlphaMarr abastece a importadores y distribuidores con sardinela (hilsa), lisa, pargo rojo, jurel y más — calibrado, congelado y enviado en contenedores refrigerados.',
+ glance:'En resumen',g_origin:'Origen',g_area:'Zona de pesca',g_ship:'Envío',g_ship_v:'Reefer 40’ · FOB / CFR',g_store:'Almacenamiento',g_markets:'Mercados',g_markets_v:'África · Asia · Oriente Medio',
+ s1:'cadena de frío',s2:'Contenedores reefer de 40’',s3:'Control con fotos y vídeos fechados',s4:'Documentación de exportación completa',
+ p_h2:'Pescado entero congelado, calibrado por tamaño',p_p:'Especificaciones, tallas y embalaje adaptados a su mercado. Consúltenos disponibilidad y precios actuales.',
+ av:'Disponible',ss:'De temporada',ask_wa:'Preguntar por WhatsApp',details:'Pedir precio',
+ g_h2:'Nuestros productos y cargas',g_p:'Fotos y vídeos reales de nuestras cajas, cámaras frigoríficas y carga de contenedores.',g_soon:'Foto próximamente',v_soon:'Vídeo próximamente',
+ w_h2:'Un socio fiable sobre el terreno en Nouadhibou',w1t:'En origen',w1:'Situados en el principal puerto pesquero de Mauritania, cerca de los desembarques y las cámaras frigoríficas.',w2t:'Cadena de frío',w2:'Congelado y almacenado a −18 °C, cargado en contenedores con control de temperatura.',w3t:'Control transparente',w3:'Fotos y vídeos fechados de sus cajas reales antes de la carga.',w4t:'Documentación',w4:'Certificado sanitario, certificado de origen, lista de empaque y B/L gestionados por nosotros.',
+ how_tag:'Cómo trabajamos',how_h2:'De la consulta a la entrega en cuatro pasos',h1t:'Consulta',h1:'Indíquenos especie, talla, cantidad y puerto de destino.',h2t:'Oferta',h2:'Enviamos una oferta de precio (FOB o CFR) con especificaciones y fotos.',h3t:'Inspección',h3:'La mercancía se revisa y fotografía; la carga queda documentada.',h4t:'Envío',h4:'El contenedor zarpa y le enviamos toda la documentación de exportación.',
+ m_h2:'Al servicio de importadores en África, Asia y Oriente Medio',
+ c_tag:'Contacto',c_p:'Contáctenos directamente por WhatsApp, WeChat o LinkedIn, o envíe su solicitud abajo.',ch_wa:'Chatear por WhatsApp',ch_wc:'Agréguenos en WeChat',ch_li:'Síganos en LinkedIn',phone:'Teléfono / WhatsApp',loc:'Ubicación',mr:'Mauritania',
+ f_company:'Empresa',f_name:'Su nombre',f_country:'País',f_product:'Producto',f_qty:'Cantidad (contenedores / toneladas)',f_msg:'Detalles (talla, embalaje, puerto de destino)',send_wa:'Enviar por WhatsApp',send_mail:'Enviar por email',
+ wc_p:'Escanee el código QR o agregue nuestro ID de WeChat:',copy:'Copiar ID',copied:'¡Copiado!',msg_hello:'Hola AlphaMarr, me interesa'},
+zh:{nav_products:'产品',nav_gallery:'图库',nav_why:'为什么选择我们',nav_markets:'市场',nav_market:'交易平台',quote:'获取报价',view_products:'查看产品',
+ hero_tag:'努瓦迪布 · 毛里塔尼亚',hero_h1:'来自毛里塔尼亚大西洋海岸的优质冷冻海产品',hero_p:'AlphaMarr 为进口商和经销商供应小沙丁鱼（鲥鱼）、鲻鱼、红鲷鱼、竹荚鱼等品种——按规格分级、冷冻，并以冷藏集装箱发运。',
+ glance:'概览',g_origin:'原产地',g_area:'捕捞海域',g_ship:'运输',g_ship_v:'40尺冷柜 · FOB / CFR',g_store:'储存',g_markets:'市场',g_markets_v:'非洲 · 亚洲 · 中东',
+ s1:'冷链',s2:'40尺冷藏集装箱',s3:'带日期的照片与视频验货',s4:'全套出口单证',
+ p_h2:'整条冷冻鱼，按规格分级',p_p:'规格、尺寸和包装可根据您的市场调整。欢迎咨询当前货源和价格。',
+ av:'现货',ss:'季节性',ask_wa:'WhatsApp 咨询',details:'询价',
+ g_h2:'我们的产品与装柜',g_p:'我们的纸箱、冷库和集装箱装货的真实照片和视频。',g_soon:'照片即将上线',v_soon:'视频即将上线',
+ w_h2:'在努瓦迪布当地的可靠合作伙伴',w1t:'源头供货',w1:'位于毛里塔尼亚最大渔港，紧邻卸货码头和冷库。',w2t:'冷链',w2:'−18 °C 冷冻储存，装入温控冷藏集装箱。',w3t:'透明验货',w3:'装货前提供您实际货物纸箱的带日期照片和视频。',w4t:'出口单证',w4:'卫生证书、原产地证、装箱单和提单均由我们办理。',
+ how_tag:'合作流程',how_h2:'从询价到交货，四个步骤',h1t:'询价',h1:'告诉我们品种、规格、数量和目的港。',h2t:'报价',h2:'我们发送附规格和照片的报价（FOB 或 CFR）。',h3t:'验货',h3:'货物经检验并拍照，装货过程全程记录。',h4t:'发运',h4:'集装箱起航，全套出口单证寄送给您。',
+ m_h2:'服务非洲、亚洲和中东的进口商',
+ c_tag:'联系我们',c_p:'通过 WhatsApp、微信或领英直接联系我们，或在下方提交您的需求。',ch_wa:'WhatsApp 聊天',ch_wc:'添加微信',ch_li:'关注我们的领英',phone:'电话 / WhatsApp',loc:'地址',mr:'毛里塔尼亚',
+ f_company:'公司',f_name:'您的姓名',f_country:'国家',f_product:'产品',f_qty:'数量（柜数 / 吨）',f_msg:'详情（规格、包装、目的港）',send_wa:'通过 WhatsApp 发送',send_mail:'通过邮件发送',
+ wc_p:'扫描二维码或添加我们的微信号：',copy:'复制微信号',copied:'已复制！',msg_hello:'您好 AlphaMarr，我对以下产品感兴趣：'}
+};
+
+/* ---- Company positioning texts (override / extend T) ---- */
+const T2 = {
+en:{nav_services:'Services',nav_fleet:'Our fleet',
+ hero_tag:'Seafood export · Trading · Export services',
+ hero_h1:'From Mauritanian waters to your port — sourced, traced and delivered.',
+ hero_p:'AlphaMarr is a seafood export and trading company based in Nouadhibou. We fish with our own pirogue fleet, trade fishmeal and fish oil, and help any company export from Mauritania — with full traceability from the boat to your warehouse.',
+ g_origin:'Based in',g_fleet:'Fleet',g_fleet_v:'Own purse-seine pirogues',g_prod:'We supply',g_prod_v:'Seafood · Fishmeal · Fish oil',g_trace:'Traceability',g_trace_v:'Boat → your port',
+ s1:'Own pirogue fleet',s2:'Fishmeal & fish oil trading',s3:'End-to-end traceability',s4:'Export services from Mauritania',
+ sv_h2:'One partner for every step of your Mauritanian supply',sv_p:'Whether you buy from us or from another exporter, AlphaMarr makes sourcing from Mauritania simple, transparent and secure.',
+ sv1t:'Export & trading',sv1:'Frozen seafood selected for Asian and African markets, from our own catches and trusted local plants.',
+ sv2t:'Export services',sv2:'For any company exporting from Mauritania: sourcing, cold storage, inspection, customs, documents and shipping handled on the ground.',
+ sv3t:'Traceability',sv3:'We act as your eyes in Mauritania — linking buyer and exporter and following every stage until the final delivery.',
+ sv4t:'Fishmeal & fish oil',sv4:'Trading of fishmeal and fish oil from plants in Nouakchott and Nouadhibou, with analysis certificates on request.',
+ tr_h:'How our traceability works',tr1:'Catch & landing',tr2:'Processing & freezing',tr3:'Cold storage & QC',tr4:'Container loading',tr5:'Sailing & documents',tr6:'Arrival at your port',
+ p_h2:'Our product range by market',p_p:'Specifications, sizes and packing are adapted to each market. Ask us for current availability and prices.',
+ tab_all:'All',tab_asia:'Asian markets',tab_africa:'African markets',tab_meal:'Fishmeal & oil',tab_fresh:'Fresh fish',
+ fl_h2:'Our own pirogue fleet',fl_p:'Every season, our purse-seine pirogues come from Senegal to fish off the Mauritanian coast. Owning our fleet means we control supply, freshness and volumes from the very first step.',
+ fl1:'Purse-seine (senne tournante) pirogues, operating every year',fl2:'Direct supply of small pelagics: sardinella, horse mackerel, mackerel',fl3:'Fish landed and frozen quickly for maximum freshness',fl_ph:'Fleet photo coming soon',
+ w_h2:'Why importers choose AlphaMarr'},
+fr:{nav_services:'Services',nav_fleet:'Notre flotte',
+ hero_tag:'Export · Trading · Services à l’export',
+ hero_h1:'Des eaux mauritaniennes jusqu’à votre port — sourcé, tracé et livré.',
+ hero_p:'AlphaMarr est une société d’export et de trading de produits de la mer basée à Nouadhibou. Nous pêchons avec notre propre flotte de pirogues, faisons le trading de farine et d’huile de poisson, et accompagnons toute société qui veut exporter depuis la Mauritanie — avec une traçabilité complète, du bateau jusqu’à votre entrepôt.',
+ g_origin:'Basés à',g_fleet:'Flotte',g_fleet_v:'Pirogues sennes tournantes',g_prod:'Nous fournissons',g_prod_v:'Poisson · Farine · Huile',g_trace:'Traçabilité',g_trace_v:'Du bateau à votre port',
+ s1:'Notre propre flotte de pirogues',s2:'Trading farine & huile de poisson',s3:'Traçabilité de bout en bout',s4:'Services à l’export depuis la Mauritanie',
+ sv_h2:'Un seul partenaire pour chaque étape de votre approvisionnement',sv_p:'Que vous achetiez chez nous ou chez un autre exportateur, AlphaMarr rend l’approvisionnement en Mauritanie simple, transparent et sécurisé.',
+ sv1t:'Export & trading',sv1:'Produits de la mer congelés sélectionnés pour les marchés asiatiques et africains, issus de nos pêches et d’usines locales de confiance.',
+ sv2t:'Services à l’export',sv2:'Pour toute société qui exporte depuis la Mauritanie : sourcing, stockage frigorifique, inspection, douane, documents et expédition gérés sur place.',
+ sv3t:'Traçabilité',sv3:'Nous sommes vos yeux en Mauritanie : nous faisons le lien entre client et exportateur et suivons chaque étape jusqu’à la livraison finale.',
+ sv4t:'Farine & huile de poisson',sv4:'Trading de farine et d’huile de poisson depuis les usines de Nouakchott et Nouadhibou, certificats d’analyse sur demande.',
+ tr_h:'Comment fonctionne notre traçabilité',tr1:'Pêche & débarquement',tr2:'Traitement & congélation',tr3:'Stockage & contrôle qualité',tr4:'Chargement du conteneur',tr5:'Départ & documents',tr6:'Arrivée à votre port',
+ p_h2:'Notre gamme par marché',p_p:'Spécifications, calibres et emballage adaptés à chaque marché. Demandez-nous la disponibilité et les prix du moment.',
+ tab_all:'Tout',tab_asia:'Marchés asiatiques',tab_africa:'Marchés africains',tab_meal:'Farine & huile',tab_fresh:'Poisson frais',
+ fl_h2:'Notre propre flotte de pirogues',fl_p:'Chaque saison, nos pirogues sennes tournantes viennent du Sénégal pour pêcher au large des côtes mauritaniennes. Avoir notre flotte nous permet de maîtriser l’approvisionnement, la fraîcheur et les volumes dès la première étape.',
+ fl1:'Pirogues sennes tournantes, présentes chaque année',fl2:'Approvisionnement direct en petits pélagiques : sardinelle, chinchard, maquereau',fl3:'Poisson débarqué et congelé rapidement pour une fraîcheur maximale',fl_ph:'Photo de la flotte bientôt disponible',
+ w_h2:'Pourquoi les importateurs choisissent AlphaMarr'},
+es:{nav_services:'Servicios',nav_fleet:'Nuestra flota',
+ hero_tag:'Exportación · Trading · Servicios de exportación',
+ hero_h1:'De las aguas de Mauritania a su puerto — con origen, trazabilidad y entrega.',
+ hero_p:'AlphaMarr es una empresa de exportación y trading de productos del mar con sede en Nuadibú. Pescamos con nuestra propia flota de piraguas, comercializamos harina y aceite de pescado y ayudamos a cualquier empresa a exportar desde Mauritania — con trazabilidad completa del barco a su almacén.',
+ g_origin:'Sede',g_fleet:'Flota',g_fleet_v:'Piraguas de cerco propias',g_prod:'Suministramos',g_prod_v:'Pescado · Harina · Aceite',g_trace:'Trazabilidad',g_trace_v:'Del barco a su puerto',
+ s1:'Flota propia de piraguas',s2:'Trading de harina y aceite de pescado',s3:'Trazabilidad de principio a fin',s4:'Servicios de exportación desde Mauritania',
+ sv_h2:'Un solo socio para cada etapa de su suministro',sv_p:'Compre a nosotros o a otro exportador, AlphaMarr hace que abastecerse en Mauritania sea sencillo, transparente y seguro.',
+ sv1t:'Exportación y trading',sv1:'Productos del mar congelados seleccionados para mercados asiáticos y africanos, de nuestras capturas y plantas locales de confianza.',
+ sv2t:'Servicios de exportación',sv2:'Para cualquier empresa que exporte desde Mauritania: abastecimiento, frío, inspección, aduanas, documentos y envío gestionados en origen.',
+ sv3t:'Trazabilidad',sv3:'Somos sus ojos en Mauritania: conectamos comprador y exportador y seguimos cada etapa hasta la entrega final.',
+ sv4t:'Harina y aceite de pescado',sv4:'Trading de harina y aceite de pescado de plantas en Nuakchot y Nuadibú, con certificados de análisis bajo pedido.',
+ tr_h:'Cómo funciona nuestra trazabilidad',tr1:'Captura y desembarque',tr2:'Procesado y congelación',tr3:'Almacén frío y control',tr4:'Carga del contenedor',tr5:'Salida y documentos',tr6:'Llegada a su puerto',
+ p_h2:'Nuestra gama por mercado',p_p:'Especificaciones, tallas y embalaje adaptados a cada mercado. Consúltenos disponibilidad y precios actuales.',
+ tab_all:'Todo',tab_asia:'Mercados asiáticos',tab_africa:'Mercados africanos',tab_meal:'Harina y aceite',tab_fresh:'Pescado fresco',
+ fl_h2:'Nuestra propia flota de piraguas',fl_p:'Cada temporada, nuestras piraguas de cerco llegan desde Senegal para faenar frente a la costa mauritana. Tener flota propia nos permite controlar el suministro, la frescura y los volúmenes desde el primer paso.',
+ fl1:'Piraguas de cerco (senne tournante), activas cada año',fl2:'Suministro directo de pequeños pelágicos: sardinela, jurel, caballa',fl3:'Pescado desembarcado y congelado rápidamente para máxima frescura',fl_ph:'Foto de la flota próximamente',
+ w_h2:'Por qué los importadores eligen AlphaMarr'},
+zh:{nav_services:'服务',nav_fleet:'自有船队',
+ hero_tag:'海产品出口 · 贸易 · 出口服务',
+ hero_h1:'从毛里塔尼亚海域到您的港口——源头采购、全程追溯、安全交付。',
+ hero_p:'AlphaMarr 是一家总部位于努瓦迪布的海产品出口与贸易公司。我们拥有自己的渔船队，经营鱼粉和鱼油贸易，并为所有希望从毛里塔尼亚出口的企业提供服务——从渔船到您的仓库全程可追溯。',
+ g_origin:'总部',g_fleet:'船队',g_fleet_v:'自有围网渔船',g_prod:'供应',g_prod_v:'海产品 · 鱼粉 · 鱼油',g_trace:'可追溯',g_trace_v:'渔船 → 您的港口',
+ s1:'自有渔船队',s2:'鱼粉与鱼油贸易',s3:'全程可追溯',s4:'毛里塔尼亚出口服务',
+ sv_h2:'毛里塔尼亚采购，每一步都有我们',sv_p:'无论您从我们还是其他出口商采购，AlphaMarr 都让毛里塔尼亚采购简单、透明、安全。',
+ sv1t:'出口与贸易',sv1:'为亚洲和非洲市场精选的冷冻海产品，来自自有捕捞和可靠的本地工厂。',
+ sv2t:'出口服务',sv2:'为所有从毛里塔尼亚出口的企业提供本地服务：采购、冷库、验货、报关、单证和运输。',
+ sv3t:'全程追溯',sv3:'我们是您在毛里塔尼亚的眼睛：连接买家与出口商，跟进每个环节直至最终交付。',
+ sv4t:'鱼粉与鱼油',sv4:'经营来自努瓦克肖特和努瓦迪布工厂的鱼粉和鱼油，可提供检测证书。',
+ tr_h:'我们的追溯流程',tr1:'捕捞与卸货',tr2:'加工与冷冻',tr3:'冷库储存与质检',tr4:'集装箱装货',tr5:'起运与单证',tr6:'抵达您的港口',
+ p_h2:'按市场划分的产品系列',p_p:'规格、尺寸和包装可根据各市场调整。欢迎咨询当前货源和价格。',
+ tab_all:'全部',tab_asia:'亚洲市场',tab_africa:'非洲市场',tab_meal:'鱼粉与鱼油',tab_fresh:'冰鲜鱼',
+ fl_h2:'我们的自有船队',fl_p:'每个渔季，我们的围网渔船从塞内加尔来到毛里塔尼亚沿海作业。拥有自有船队，让我们从第一步就掌控货源、鲜度和数量。',
+ fl1:'围网渔船，每年作业',fl2:'直接供应小型中上层鱼类：小沙丁鱼、竹荚鱼、鲭鱼',fl3:'快速卸货并冷冻，确保最佳鲜度',fl_ph:'船队照片即将上线',
+ w_h2:'进口商为什么选择 AlphaMarr'}
+};
+for(const k in T2) Object.assign(T[k],T2[k]);
+let TAB='all';
+function setTab(x){TAB=x;render()}
+
+const T3={
+en:{nav_stock:'Live stock',see_stock:'See live stock',tab_europe:'European markets',g_markets_v:'Europe · Asia · Africa',m_h2:'Serving importers in Europe, Asia and Africa',
+ st_tag:'Live availability',st_h2:'What is available right now',st_p:'This table is updated directly by our team. Check what is in stock today and ask for an offer in one click.',
+ c_prod:'Product',c_status:'Status',c_qty:'Quantity',c_sizes:'Sizes',c_pack:'Packing',available:'Available',on_order:'On order',sold_out:'Sold out',season:'Seasonal',
+ upd:'Last update',live_off:'Indicative availability — contact us to confirm.',ask:'Ask',tons:'t'},
+fr:{nav_stock:'Stock en direct',see_stock:'Voir le stock en direct',tab_europe:'Marchés européens',g_markets_v:'Europe · Asie · Afrique',m_h2:'Au service des importateurs en Europe, en Asie et en Afrique',
+ st_tag:'Disponibilité en direct',st_h2:'Ce qui est disponible en ce moment',st_p:'Ce tableau est mis à jour directement par notre équipe. Voyez le stock du jour et demandez une offre en un clic.',
+ c_prod:'Produit',c_status:'Statut',c_qty:'Quantité',c_sizes:'Calibres',c_pack:'Emballage',available:'Disponible',on_order:'Sur commande',sold_out:'Épuisé',season:'Saisonnier',
+ upd:'Dernière mise à jour',live_off:'Disponibilité indicative — contactez-nous pour confirmer.',ask:'Demander',tons:'t'},
+es:{nav_stock:'Stock en vivo',see_stock:'Ver stock en vivo',tab_europe:'Mercados europeos',g_markets_v:'Europa · Asia · África',m_h2:'Al servicio de importadores en Europa, Asia y África',
+ st_tag:'Disponibilidad en vivo',st_h2:'Lo que está disponible ahora mismo',st_p:'Esta tabla la actualiza directamente nuestro equipo. Consulte el stock de hoy y pida una oferta con un clic.',
+ c_prod:'Producto',c_status:'Estado',c_qty:'Cantidad',c_sizes:'Tallas',c_pack:'Embalaje',available:'Disponible',on_order:'Bajo pedido',sold_out:'Agotado',season:'De temporada',
+ upd:'Última actualización',live_off:'Disponibilidad indicativa — contáctenos para confirmar.',ask:'Consultar',tons:'t'},
+zh:{nav_stock:'实时库存',see_stock:'查看实时库存',tab_europe:'欧洲市场',g_markets_v:'欧洲 · 亚洲 · 非洲',m_h2:'服务欧洲、亚洲和非洲的进口商',
+ st_tag:'实时货源',st_h2:'当前可供货产品',st_p:'此表由我们的团队直接更新。查看今日库存，一键询价。',
+ c_prod:'产品',c_status:'状态',c_qty:'数量',c_sizes:'规格',c_pack:'包装',available:'现货',on_order:'可订货',sold_out:'售罄',season:'季节性',
+ upd:'最近更新',live_off:'供货情况仅供参考——请联系我们确认。',ask:'询价',tons:'吨'}
+};
+for(const k in T3) Object.assign(T[k],T3[k]);
+
+/* ---------- LIVE STOCK (Google Sheet) ----------
+   Sheet columns: id | product | status | quantity_t | sizes | packing | updated
+   status = available | on_order | sold_out                                      */
+const T4={
+en:{st_stock:'In stock',st_trading:'Trading offers',c_origin:'Origin',note_stock:'Products from our own stock and fleet, ready to load from Nouadhibou.',note_trading:'Offers we source and trade from partner plants and exporters, with our traceability and inspection.',no_offer:'No offer published at the moment — contact us for your requirement.'},
+fr:{st_stock:'En stock',st_trading:'Offres trading',c_origin:'Origine',note_stock:'Produits de notre propre stock et de notre flotte, prêts à charger depuis Nouadhibou.',note_trading:'Offres que nous sourçons et négocions auprès d\u2019usines et d\u2019exportateurs partenaires, avec notre traçabilité et notre contrôle.',no_offer:'Aucune offre publiée pour le moment — contactez-nous pour votre besoin.'},
+es:{st_stock:'En stock',st_trading:'Ofertas de trading',c_origin:'Origen',note_stock:'Productos de nuestro propio stock y flota, listos para cargar desde Nuadibú.',note_trading:'Ofertas que obtenemos y comercializamos de plantas y exportadores asociados, con nuestra trazabilidad e inspección.',no_offer:'No hay ofertas publicadas por el momento — contáctenos con su necesidad.'},
+zh:{st_stock:'现货库存',st_trading:'贸易报价',c_origin:'产地',note_stock:'来自我们自有库存和船队的产品，可从努瓦迪布直接装运。',note_trading:'我们从合作工厂和出口商采购并贸易的报价，附带我们的追溯与验货。',no_offer:'目前暂无发布的报价——请联系我们提交需求。'}};
+for(const k in T4) Object.assign(T[k],T4[k]);
+/* ---------- ARABIC ---------- */
+const TAR={nav_products:'المنتجات',nav_gallery:'المعرض',nav_why:'لماذا نحن',nav_markets:'الأسواق',nav_market:'المنصة التجارية',quote:'اطلب عرض سعر',view_products:'عرض المنتجات',
+hero_tag:'تصدير المنتجات البحرية · تجارة · خدمات التصدير',hero_h1:'من المياه الموريتانية إلى ميناءكم — مصدر موثوق، تتبع كامل، وتسليم مضمون.',
+hero_p:'ألفا مار شركة لتصدير وتجارة المنتجات البحرية مقرها نواذيبو. نصطاد بأسطولنا الخاص من الزوارق، ونتاجر في دقيق وزيت السمك، ونساعد أي شركة على التصدير من موريتانيا — مع تتبع كامل من القارب إلى مستودعكم.',
+glance:'لمحة سريعة',g_origin:'المقر',g_area:'منطقة الصيد',g_ship:'الشحن',g_ship_v:'حاوية مبردة 40 قدم · FOB / CFR',g_store:'التخزين',g_markets:'الأسواق',g_markets_v:'أوروبا · آسيا · أفريقيا',
+s1:'أسطول زوارق خاص بنا',s2:'تجارة دقيق وزيت السمك',s3:'تتبع شامل من البداية إلى النهاية',s4:'خدمات التصدير من موريتانيا',
+p_h2:'تشكيلة منتجاتنا حسب السوق',p_p:'المواصفات والأحجام والتغليف تتكيف مع كل سوق. اسألونا عن التوفر والأسعار الحالية.',
+av:'متوفر الآن',ss:'موسمي',ask_wa:'اسأل عبر واتساب',details:'اطلب السعر',
+w_h2:'لماذا يختار المستوردون ألفا مار',w1t:'من المصدر',w1:'مقرنا في أهم ميناء صيد في موريتانيا، بالقرب من نقاط الإنزال والمخازن المبردة.',w2t:'سلسلة التبريد',w2:'تجميد وتخزين عند −18 درجة مئوية، وتحميل في حاويات مبردة مراقبة الحرارة.',w3t:'مراقبة جودة شفافة',w3:'صور وفيديوهات مؤرخة لكراتينكم الفعلية قبل التحميل.',w4t:'وثائق التصدير',w4:'الشهادة الصحية وشهادة المنشأ وقائمة التعبئة وبوليصة الشحن نتكفل بها.',
+how_tag:'طريقة عملنا',how_h2:'من الطلب إلى التسليم في أربع خطوات',h1t:'الطلب',h1:'أخبرونا بالنوع والحجم والكمية وميناء الوصول.',h2t:'العرض',h2:'نرسل عرض سعر (FOB أو CFR) مع المواصفات والصور.',h3t:'الفحص',h3:'تُفحص البضاعة وتُصوَّر، ويُوثَّق التحميل.',h4t:'الشحن',h4:'تبحر الحاوية وتُرسل إليكم جميع وثائق التصدير.',
+m_h2:'نخدم المستوردين في أوروبا وآسيا وأفريقيا',
+c_tag:'اتصل بنا',c_p:'تواصلوا معنا مباشرة عبر واتساب أو وي تشات أو لينكدإن، أو أرسلوا طلبكم أدناه.',ch_wa:'تحدث عبر واتساب',ch_wc:'أضفنا على وي تشات',ch_li:'تابعنا على لينكدإن',phone:'الهاتف / واتساب',loc:'العنوان',mr:'موريتانيا',
+f_company:'الشركة',f_name:'الاسم',f_country:'البلد',f_product:'المنتج',f_qty:'الكمية (حاويات / أطنان)',f_msg:'التفاصيل (الحجم، التغليف، ميناء الوصول)',send_wa:'إرسال عبر واتساب',send_mail:'إرسال بالبريد الإلكتروني',
+wc_p:'امسح رمز QR أو أضف معرف وي تشات الخاص بنا:',copy:'نسخ المعرف',copied:'تم النسخ!',msg_hello:'مرحباً ألفا مار، أنا مهتم بـ',
+nav_services:'الخدمات',nav_fleet:'أسطولنا',g_fleet:'الأسطول',g_fleet_v:'زوارق صيد بالشباك الدوارة',g_prod:'نوفّر',g_prod_v:'منتجات بحرية · دقيق · زيت',g_trace:'التتبع',g_trace_v:'من القارب إلى ميناءكم',
+sv_h2:'شريك واحد لكل مرحلة من توريدكم من موريتانيا',sv_p:'سواء اشتريتم منا أو من مصدّر آخر، تجعل ألفا مار التوريد من موريتانيا بسيطاً وشفافاً وآمناً.',
+sv1t:'التصدير والتجارة',sv1:'منتجات بحرية مجمدة مختارة للأسواق الآسيوية والأفريقية والأوروبية، من صيدنا ومن مصانع محلية موثوقة.',
+sv2t:'خدمات التصدير',sv2:'لأي شركة تصدّر من موريتانيا: التوريد، التخزين المبرد، الفحص، الجمارك، الوثائق والشحن على أرض الواقع.',
+sv3t:'التتبع',sv3:'نحن عيونكم في موريتانيا — نربط المشتري بالمصدّر ونتابع كل مرحلة حتى التسليم النهائي.',
+sv4t:'دقيق وزيت السمك',sv4:'تجارة دقيق وزيت السمك من مصانع نواكشوط ونواذيبو، مع شهادات تحليل عند الطلب.',
+tr_h:'كيف يعمل نظام التتبع لدينا',tr1:'الصيد والإنزال',tr2:'المعالجة والتجميد',tr3:'التخزين المبرد ومراقبة الجودة',tr4:'تحميل الحاوية',tr5:'الإبحار والوثائق',tr6:'الوصول إلى ميناءكم',
+tab_all:'الكل',tab_asia:'الأسواق الآسيوية',tab_africa:'الأسواق الأفريقية',tab_meal:'دقيق وزيت السمك',tab_fresh:'سمك طازج',tab_europe:'الأسواق الأوروبية',
+fl_h2:'أسطول زوارقنا الخاص',fl_p:'في كل موسم، تأتي زوارقنا العاملة بالشباك الدوارة من السنغال للصيد قبالة السواحل الموريتانية. امتلاك أسطولنا يمكّننا من التحكم في الإمداد والطزاجة والكميات منذ الخطوة الأولى.',
+fl1:'زوارق بالشباك الدوارة، تعمل كل عام',fl2:'إمداد مباشر بالأسماك السطحية الصغيرة: السردينيلا، الشرن، الماكريل',fl3:'إنزال السمك وتجميده بسرعة لأقصى درجات الطزاجة',fl_ph:'صورة الأسطول قريباً',
+nav_stock:'المخزون المباشر',see_stock:'شاهد المخزون المباشر',st_tag:'التوفر المباشر',st_h2:'ما هو متوفر الآن',st_p:'يُحدَّث هذا الجدول مباشرة من قبل فريقنا. اطلعوا على مخزون اليوم واطلبوا عرضاً بنقرة واحدة.',
+c_prod:'المنتج',c_status:'الحالة',c_qty:'الكمية',c_sizes:'الأحجام',c_pack:'التغليف',available:'متوفر',on_order:'حسب الطلب',sold_out:'نفد',season:'موسمي',
+upd:'آخر تحديث',live_off:'التوفر تقديري — تواصلوا معنا للتأكيد.',ask:'اطلب',tons:'طن',
+st_stock:'في المخزون',st_trading:'عروض تجارية',c_origin:'المنشأ',note_stock:'منتجات من مخزوننا وأسطولنا الخاص، جاهزة للتحميل من نواذيبو.',note_trading:'عروض نوفرها ونتاجر بها من مصانع ومصدرين شركاء، مع تتبعنا وفحصنا.',no_offer:'لا توجد عروض منشورة حالياً — تواصلوا معنا لطلبكم.'};
+const CHAR={'Whole round':'كامل','Whole cleaned':'كامل منظف','IQF / Block':'IQF / كتلة','Block / IQF':'كتلة / IQF','Graded':'مصنف بالحجم','Whole / Cleaned':'كامل / منظف','Boxed':'في علب','Skin-on':'بالجلد','IQF':'IQF','Premium':'فاخر','Meat':'لحم','Frozen':'مجمد','Whole / Gutted':'كامل / منزوع الأحشاء','Whole frozen':'كامل مجمد','Skinned':'منزوع الجلد','Big sizes':'أحجام كبيرة','Block frozen':'مجمد كتلة','On ice':'على الثلج','Air freight':'شحن جوي','Daily catch':'صيد اليوم','Fresh / Frozen':'طازج / مجمد','Bulk / Bags':'سائب / أكياس','Analysis on request':'تحليل عند الطلب','Flexitank / Drums':'فليكسي تانك / براميل','T1–T8':'T1–T8','6/8 · 8/9 · 10 up':'6/8 · 8/9 · 10 up'};
+const PAR={octopus:['أخطبوط','أخطبوط موريتاني، من أكثر المناشئ طلباً في أوروبا. كامل، منظف، مصنف T1–T8.'],
+squid:['حبار (كالامار)','حبار أوروبي، كامل، مجمد على متن السفينة أو في البر.'],
+cuttlefish:['سيبيا (شوكو)','سيبيا كاملة أو منظفة، مصنفة حسب الحجم، لإسبانيا وإيطاليا والبرتغال.'],
+mulletroe:['بطارخ البوري','أكياس بطارخ البوري الخام، مصنفة حسب عدد القطع في الكيلوغرام، معبأة في علب فردية — لمنتجي البطارخ المجففة.'],
+skate:['أجنحة الراي','أجنحة الراي بالجلد، مقطعة ومجمدة، للأسواق الأوروبية والكورية.'],
+johndory:['سمك القديس بطرس','سمك أبيض فاخر يحظى بتقدير كبير في المطاعم الأوروبية، كامل، يُعامل بعناية.'],
+cymbium:['حلزون السيمبيوم (ييت)','حلزون بحري كبير من غرب أفريقيا، لحم منظف — منتج فاخر للأسواق الآسيوية.'],
+ribbonfish:['سمك الحزام (السيف)','سمك الحزام الفضي، كامل، مصنف حسب العرض — أساسي في الصين وكوريا.'],
+sole:['سمك موسى','سمك موسى أطلسي بري، كامل أو منزوع الأحشاء، معبأ بعناية.'],
+lobster:['جراد البحر الأحمر','جراد بحر من المياه الموريتانية، كامل مجمد، مصنف حسب الوزن.'],
+leatherjacket:['سمك الجلد (ليذر جاكيت)','كامل أو منزوع الجلد، مطلوب بقوة في الصين وجنوب شرق آسيا.'],
+sardinella:['سردينيلا مستديرة (أوريتا)','منتجنا الرئيسي من حيث الكميات، يصطاده أسطول زوارقنا. تتوفر أحجام كبيرة.'],
+pilchardus:['سردين أوروبي (بيلشاردوس)','سردين حقيقي، كامل، لمصانع التعليب وأسواق المجمدات.'],
+eba:['سردينيلا مسطحة (إيبا)','سردينيلا مسطحة، كاملة، كميات كبيرة للأسواق الأفريقية والآسيوية.'],
+bonito:['سمك البونيت','بونيت أطلسي، كامل، لحم أحمر متماسك — لأسواق المجمدات ومصانع التعليب.'],
+horse:['سمك الشرن','كميات كبيرة لأسواق غرب ووسط أفريقيا.'],
+mackerel:['سمك الماكريل','ماكريل أطلسي، كامل، بأحجام متعددة.'],
+mullet:['سمك البوري الرمادي','لحم أبيض متماسك، كامل بأحجام متعددة.'],
+fresh:['سمك طازج (مبرد)','الدنيس وأنواع طازجة أخرى، معبأة على الثلج في صناديق عازلة وتُشحن جواً أو بشاحنات مبردة.'],
+spinylobster:['جراد البحر الأخضر','جراد بحر أخضر، كامل مجمد، مصنف حسب الوزن — فاخر للأسواق الآسيوية والأوروبية.'],
+snapper:['سمك النهاش الأحمر','نهاش أحمر عالي القيمة، كامل أو منزوع الأحشاء، للمطاعم والتجزئة.'],
+croaker:['سمك الكوربين','كوربين غرب أفريقي، كامل، لحم أبيض متماسك — مطلوب جداً في أفريقيا وآسيا.'],
+seabream:['سمك الدنيس','دنيس بري، طازج على الثلج أو مجمد، للأسواق الأوروبية والأفريقية.'],
+shad:['سمك الصابوغ المرقط','صابوغ، كامل، للأسواق الآسيوية.'],
+fishmeal:['دقيق السمك','دقيق سمك لتربية الأحياء المائية والأعلاف، من مصانع نواكشوط ونواذيبو. شهادات التحليل عند الطلب.'],
+fishoil:['زيت السمك','زيت سمك خام للأعلاف والاستخدامات الصناعية، يُشحن في فليكسي تانك أو براميل.']};
+const MAR=[['أوروبا','إسبانيا، البرتغال، إيطاليا، اليونان…'],['غرب أفريقيا','نيجيريا، غانا، ساحل العاج…'],['وسط أفريقيا','الكاميرون، الكونغو…'],['جنوب آسيا','بنغلاديش، الهند، سريلانكا…'],['شرق وجنوب شرق آسيا','الصين، فيتنام، تايلاند…'],['الشرق الأوسط','الإمارات، عمان، السعودية…']];
+T.ar=Object.assign({},T.en,TAR);
+PRODUCTS.forEach(p=>{const a=PAR[p.id];if(a){p.name.ar=a[0];p.desc.ar=a[1]}p.chips.ar=(p.chips.en||[]).map(c=>CHAR[c]||c)});
+MARKETS.forEach((m,i)=>{if(MAR[i]){m.ar=MAR[i][0];m.s.ar=MAR[i][1]}});
+
+/* ===== NEWS & EXPOS ===== */
+const T5={
+en:{nav_news:'News',n_tag:'Industry watch',n_h2:'Seafood news & upcoming trade shows',n_p:'The latest from the fishing and seafood industry — markets, prices, regulations — and the major expos where you can meet us.',ev_title:'Upcoming trade shows',news_title:'Latest industry news',ev_in:'in {n} days',ev_tomorrow:'tomorrow',ev_live:'Happening now',n_upd:'Updated {d}',n_loading:'Loading news…',n_none:'News will appear here shortly.'},
+fr:{nav_news:'Actualités',n_tag:'Veille du secteur',n_h2:'Actualités de la pêche & salons à venir',n_p:'Les dernières nouvelles du secteur de la pêche et des produits de la mer — marchés, prix, réglementation — et les grands salons où nous rencontrer.',ev_title:'Salons à venir',news_title:'Dernières actualités du secteur',ev_in:'dans {n} jours',ev_tomorrow:'demain',ev_live:'En cours',n_upd:'Mis à jour {d}',n_loading:'Chargement des actualités…',n_none:'Les actualités apparaîtront ici sous peu.'},
+es:{nav_news:'Noticias',n_tag:'Vigilancia del sector',n_h2:'Noticias pesqueras y próximas ferias',n_p:'Lo último del sector pesquero y de productos del mar — mercados, precios, normativa — y las grandes ferias donde encontrarnos.',ev_title:'Próximas ferias',news_title:'Últimas noticias del sector',ev_in:'en {n} días',ev_tomorrow:'mañana',ev_live:'En curso',n_upd:'Actualizado {d}',n_loading:'Cargando noticias…',n_none:'Las noticias aparecerán aquí en breve.'},
+zh:{nav_news:'行业资讯',n_tag:'行业动态',n_h2:'渔业资讯与即将举办的展会',n_p:'渔业和水产品行业的最新动态——市场、价格、法规——以及可与我们会面的主要展会。',ev_title:'即将举办的展会',news_title:'最新行业新闻',ev_in:'{n} 天后',ev_tomorrow:'明天',ev_live:'正在进行',n_upd:'更新于 {d}',n_loading:'正在加载新闻…',n_none:'新闻即将显示。'},
+ar:{nav_news:'الأخبار',n_tag:'رصد القطاع',n_h2:'أخبار الصيد البحري والمعارض القادمة',n_p:'آخر مستجدات قطاع الصيد والمنتجات البحرية — الأسواق والأسعار والتنظيمات — وأهم المعارض التي يمكنكم لقاؤنا فيها.',ev_title:'المعارض القادمة',news_title:'آخر أخبار القطاع',ev_in:'بعد {n} يومًا',ev_tomorrow:'غدًا',ev_live:'جارٍ الآن',n_upd:'تحديث {d}',n_loading:'جارٍ تحميل الأخبار…',n_none:'ستظهر الأخبار هنا قريبًا.'}
+};
+for(const k in T5) if(T[k]) Object.assign(T[k],T5[k]);
+// Trade shows — past ones hide automatically. Add new ones here (dates YYYY-MM-DD).
+const EVENTS=[
+ {n:'Conxemar',l:'https://www.conxemar.com/wp-content/uploads/2022/11/conxemar_logo-300x78.png',c:'Vigo, España',s:'2026-10-06',e:'2026-10-08',u:'https://www.conxemar.com/en/exhibition/',k:'Frozen seafood'},
+ {n:'SIAL Paris',c:'Paris-Nord Villepinte, France',s:'2026-10-17',e:'2026-10-21',u:'https://www.sialparis.com/',k:'Food'},
+ {n:'China Fisheries & Seafood Expo',l:'https://chinaseafoodexpo.com/wp-content/uploads/2025/12/CFSE_Aquaculture_Seafood-Technology_2026_Logo_Red.png',c:'Qingdao, China',s:'2026-10-28',e:'2026-10-30',u:'https://chinaseafoodexpo.com/',k:'Seafood'},
+ {n:'Salon Halieutis',c:'Agadir, Maroc',s:'2027-01-27',e:'2027-01-31',u:'https://www.salonhalieutis.com/',k:'Fisheries'},
+ {n:'Seafood Expo North America',l:'https://divcomevents3-static.s3.amazonaws.com/uploads/sites/19/2022/06/SENASPNA_horiz_4c_w-1-1.svg',c:'Boston, USA',s:'2027-03-07',e:'2027-03-09',u:'https://www.seafoodexpo.com/north-america/',k:'Seafood'},
+ {n:'Gulfood',l:'https://cdn.asp.events/CLIENT_Dubai_Wo_4B15F265_5056_B739_54F3125D47F0BC95/sites/gulfood-2026/media/Gulfood-logo_lockup_2027-01.png',c:'Dubai, UAE',s:'2027-03-15',e:'2027-03-19',u:'https://www.gulfood.com/',k:'Food'},
+ {n:'Seafood Expo Global',l:'https://divcomevents3-static.s3.amazonaws.com/uploads/sites/19/2020/07/SEGSPG_horiz_4c_400.png',c:'Barcelona, España',s:'2027-04-20',e:'2027-04-22',u:'https://www.seafoodexpo.com/global/',k:'Seafood'},
+ {n:'Anuga',c:'Köln, Deutschland',s:'2027-10-09',e:'2027-10-13',u:'https://www.anuga.com/',k:'Food'}
+];
+// Google News queries per language (used as live fallback when news.json is not available)
+const NEWS_Q={
+ en:'seafood industry OR fisheries export OR fishmeal market',
+ fr:'"produits de la mer" OR "pêche maritime" OR "farine de poisson" OR Mauritanie pêche',
+ es:'"productos del mar" OR "sector pesquero" OR "harina de pescado"',
+ zh:'水产品 OR 渔业 OR 鱼粉',
+ ar:'الصيد البحري OR صادرات الأسماك OR موريتانيا الصيد'
+};
+const NEWS_GL={en:'US:en',fr:'FR:fr',es:'ES:es',zh:'CN:zh-Hans',ar:'MA:ar'};
+let NEWS=null,NEWS_TRY={};
+const LOC={en:'en-GB',fr:'fr-FR',es:'es-ES',zh:'zh-CN',ar:'ar'};
+function fmtD(d,o){try{return new Date(d).toLocaleDateString(LOC[L]||'en',o)}catch(e){return d}}
+function esc(x){return String(x||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function renderEvents(){
+ const today=new Date();today.setHours(0,0,0,0);
+ const ev=EVENTS.filter(e=>new Date(e.e+'T23:59:59')>=today).sort((a,b)=>a.s<b.s?-1:1).slice(0,6);
+ $('#evlist').innerHTML=ev.map(e=>{
+  const s=new Date(e.s+'T00:00:00'),n=Math.round((s-today)/864e5);
+  const lab=n<=0?`<span class="evc live">● ${t('ev_live')}</span>`:`<span class="evc">${n===1?t('ev_tomorrow'):t('ev_in').replace('{n}',n)}</span>`;
+  const range=fmtD(e.s,{day:'numeric',month:'short'})+' – '+fmtD(e.e,{day:'numeric',month:'short',year:'numeric'});
+  return `<a class="ev" href="${e.u}" target="_blank" rel="noopener"><div class="evd"><b>${s.getDate()}</b><span>${fmtD(e.s,{month:'short'})}</span></div><div class="evb">${evLogo(e,'evlogo sm')}<h4>${esc(e.n)}</h4><p>📍 ${esc(e.c)} · ${range}</p></div>${lab}</a>`}).join('');
+}
+function renderNews(){
+ renderEvents();
+ if($("#evbar")&&$("#evbar").innerHTML)renderPop();
+ const box=$('#nlist');if(!box)return;
+ const items=NEWS&&NEWS.items&&(NEWS.items[L]||[]);
+ if(!items||!items.length){box.innerHTML=`<div class="nempty">${t(NEWS?'n_none':'n_loading')}</div>`;$('#nupd').textContent='';if(NEWS&&!NEWS_TRY[L])liveNews(L);return}
+ box.innerHTML=items.slice(0,8).map(x=>`<a class="nw" href="${esc(x.u)}" target="_blank" rel="noopener"><h4>${esc(x.t)}</h4><p>${esc(x.s||'')}${x.d?' · '+fmtD(x.d,{day:'numeric',month:'short',year:'numeric'}):''}</p></a>`).join('');
+ $('#nupd').textContent=NEWS.updated?t('n_upd').replace('{d}',fmtD(NEWS.updated,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})):'';
+}
+// Live fallback: Google News RSS through rss2json (used only if news.json has nothing for this language)
+async function liveNews(l){
+ NEWS_TRY[l]=1;
+ const g=NEWS_GL[l].split(':');const rss='https://news.google.com/rss/search?q='+encodeURIComponent(NEWS_Q[l]+' when:14d')+'&hl='+g[1]+'&gl='+g[0]+'&ceid='+NEWS_GL[l];
+ try{const r=await fetch('https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent(rss));const j=await r.json();
+  if(j.items&&j.items.length){NEWS.items=NEWS.items||{};NEWS.items[l]=j.items.map(i=>{const m=i.title.match(/^(.*) - ([^-]+)$/);return{t:m?m[1]:i.title,s:m?m[2]:(i.author||''),u:i.link,d:(i.pubDate||'').replace(' ','T')+'Z'}});NEWS.updated=NEWS.updated||new Date().toISOString();if(l===L)renderNews()}}catch(e){}
+}
+Object.assign(T.en,{ev_next:'Next trade show',ev_meet:'Meet AlphaMarr there',ev_all:'All shows',ev_book:'Book a meeting',close:'Close'});
+Object.assign(T.fr,{ev_next:'Prochain salon',ev_meet:'Rencontrez AlphaMarr sur place',ev_all:'Tous les salons',ev_book:'Prendre RDV',close:'Fermer'});
+Object.assign(T.es,{ev_next:'Próxima feria',ev_meet:'Reúnase con AlphaMarr allí',ev_all:'Todas las ferias',ev_book:'Pedir cita',close:'Cerrar'});
+Object.assign(T.zh,{ev_next:'下一场展会',ev_meet:'欢迎在展会与 AlphaMarr 会面',ev_all:'全部展会',ev_book:'预约会面',close:'关闭'});
+Object.assign(T.ar,{ev_next:'المعرض القادم',ev_meet:'التقوا بألفا مار هناك',ev_all:'كل المعارض',ev_book:'حجز موعد',close:'إغلاق'});
+// Event logo: official logo (l) → site icon via Google favicon service → hidden
+function evLogo(e,cls){const d=(e.u.match(/\/\/([^/]+)/)||[])[1]||'';const fav='https://www.google.com/s2/favicons?sz=128&domain='+d;
+ return `<span class="${cls}"><img src="${e.l||fav}" alt="${esc(e.n)}" loading="eager" referrerpolicy="no-referrer" onerror="if(!this.dataset.f&&'${e.l?1:''}'){this.dataset.f=1;this.src='${fav}'}else{this.parentNode.style.display='none'}"></span>`}
+function nextEvent(){const td=new Date();td.setHours(0,0,0,0);return EVENTS.filter(e=>new Date(e.e+'T23:59:59')>=td).sort((a,b)=>a.s<b.s?-1:1)[0]}
+function renderPop(){
+ const e=nextEvent(),box=$('#evbar');if(!e||!box)return false;
+ const td=new Date();td.setHours(0,0,0,0);const s=new Date(e.s+'T00:00:00'),n=Math.round((s-td)/864e5);
+ const cd=n<=0?`<span class="cd live">● ${t('ev_live')}</span>`:`<span class="cd">⏳ ${n===1?t('ev_tomorrow'):t('ev_in').replace('{n}',n)}</span>`;
+ const range=fmtD(e.s,{day:'numeric',month:'short'})+' – '+fmtD(e.e,{day:'numeric',month:'short',year:'numeric'});
+ box.innerHTML=`<div class="wrap"><span class="evlb"><i></i>${t('ev_next')}</span>
+ ${evLogo(e,'evlogo')}<a class="tx" href="${e.u}" target="_blank" rel="noopener"><b>${esc(e.n)}</b> <span>· 📍 ${esc(e.c)} · ${range} — ${t('ev_meet')}</span></a>
+ ${cd}<a class="bk" href="#contact">${t('ev_book')} ${L==='ar'?'←':'→'}</a><button class="x" aria-label="${t('close')}" onclick="closePop()">×</button></div>`;
+ return true;
+}
+function closePop(){$('#evbar').classList.remove('on');try{sessionStorage.setItem('am_bar','1')}catch(e){}}
+function showPop(){let seen=null;try{seen=sessionStorage.getItem('am_bar')}catch(e){}if(seen)return;if(renderPop())setTimeout(()=>$('#evbar').classList.add('on'),400)}
+async function loadNews(){
+ try{const r=await fetch('news.json?'+Math.floor(Date.now()/36e5),{cache:'no-store'});if(!r.ok)throw 0;NEWS=await r.json()}catch(e){NEWS={items:{}}}
+ renderNews();
+}
+
+
+let STOCK={}, STOCK_ROWS=[], STOCK_TIME='', STOCK_LIVE=false, STTAB='all', STTYPE='stock';
+function parseCSV(txt){const rows=[];let r=[],f='',q=false;for(let i=0;i<txt.length;i++){const c=txt[i];
+ if(q){if(c=='"'){if(txt[i+1]=='"'){f+='"';i++}else q=false}else f+=c}
+ else if(c=='"')q=true;else if(c==','){r.push(f);f=''}else if(c=='\n'){r.push(f);rows.push(r);r=[];f=''}else if(c!='\r')f+=c}
+ if(f||r.length){r.push(f);rows.push(r)}return rows}
+/* Sheet columns: id | product | type | status | quantity_t | sizes | packing | origin | updated
+   type = stock (our own stock) | trading (trading offer)                              */
+async function loadStock(){
+ if(!CONFIG.stockSheetId){STOCK_LIVE=false;return render()}
+ try{const res=await fetch(`https://docs.google.com/spreadsheets/d/${CONFIG.stockSheetId}/gviz/tq?tqx=out:csv&t=${Date.now()}`);
+  const rows=parseCSV(await res.text());const h=rows.shift().map(x=>x.trim().toLowerCase());
+  const ix=k=>h.findIndex(x=>x.startsWith(k));const g=(r,k)=>{const i=ix(k);return i<0?'':(r[i]||'').trim()};
+  STOCK={};STOCK_ROWS=[];let last='';
+  rows.forEach(r=>{const id=g(r,'id'),prod=g(r,'product');if(!id&&!prod)return;
+   const typ=(g(r,'type')||'stock').toLowerCase().startsWith('trad')?'trading':'stock';
+   const o={id,product:prod,type:typ,status:g(r,'status').toLowerCase().replace(/\s+/g,'_'),qty:g(r,'quantity'),sizes:g(r,'sizes'),packing:g(r,'packing'),origin:g(r,'origin'),updated:g(r,'updated')};
+   STOCK_ROWS.push(o); if(typ==='stock'&&id)STOCK[id]=o; if(o.updated>last)last=o.updated});
+  STOCK_TIME=last;STOCK_LIVE=true}catch(e){STOCK_LIVE=false}
+ render()}
+const stOf=p=>(STOCK[p.id]&&STOCK[p.id].status)||p.status||'on_order';
+function renderStock(){
+ $('#stType').innerHTML=['stock','trading'].map(x=>`<button class="${STTYPE===x?'on':''}" onclick="STTYPE='${x}';render()">${x==='stock'?'📦 ':'🤝 '}${t('st_'+x)}</button>`).join('');
+ $('#stNote').textContent=t('note_'+STTYPE);
+ $('#stTabs').innerHTML=['all','europe','asia','africa','fresh','meal'].map(x=>`<button class="${STTAB===x?'on':''}" onclick="STTAB='${x}';render()">${t('tab_'+x)}</button>`).join('');
+ const order={available:0,on_order:1,season:1,sold_out:2};
+ const P=id=>PRODUCTS.find(p=>p.id===id);
+ let rows;
+ if(STTYPE==='stock'){
+  rows=PRODUCTS.filter(p=>STTAB==='all'||p.markets.includes(STTAB)).map(p=>({p,s:STOCK[p.id]||{},st:stOf(p)}));
+ }else{
+  rows=STOCK_ROWS.filter(o=>o.type==='trading').map(o=>({p:P(o.id),s:o,st:o.status||'available'})).filter(x=>STTAB==='all'||!x.p||x.p.markets.includes(STTAB));
+ }
+ rows.sort((a,b)=>(order[a.st]??1)-(order[b.st]??1));
+ if(!rows.length){$('#stBody').innerHTML=`<tr><td colspan="7" class="empty">${t('no_offer')}</td></tr>`}
+ else $('#stBody').innerHTML=rows.map(({p,s,st})=>{const nm=p?(p.name[L]||p.name.en):s.product;const en=p?p.name.en:s.product;const lat=p?p.latin:(s.product&&p?'':'');
+  const q=s.qty?(isNaN(s.qty)?s.qty:s.qty+' '+t('tons')):'—';
+  const msg=t('msg_hello')+' '+en+(s.sizes?' ('+s.sizes+')':'')+(STTYPE==='trading'?' — '+t('st_trading'):'');
+  const link=CONFIG.whatsapp?`<a class="ask" target="_blank" rel="noopener" href="${waLink(msg)}">${t('ask')}</a>`:`<a class="ask m" href="#contact" ${p?`onclick="$('#psel').value='${p.id}'"`:''}>${t('ask')}</a>`;
+  return `<tr><td><b>${nm||'—'}</b>${p?`<small>${p.latin}</small>`:''}</td><td><span class="st ${st}">${t(st)}</span></td><td>${q}</td><td>${s.sizes||'—'}</td><td>${s.packing||(p?(p.chips[L]||p.chips.en).join(', '):'—')}</td><td>${s.origin||(STTYPE==='stock'?'Nouadhibou':'—')}</td><td>${st==='sold_out'?'':link}</td></tr>`}).join('');
+ $('#stUpd').innerHTML=STOCK_LIVE?`<i class="dot"></i>${t('upd')} : ${STOCK_TIME||'—'}`:t('live_off');
+}
+setInterval(()=>{if(CONFIG.stockSheetId)loadStock()},5*60*1000);
+
+/* ============================== LOGIC ============================== */
+let L='en';
+const $=s=>document.querySelector(s), $$=s=>document.querySelectorAll(s);
+const t=k=>(T[L]&&T[L][k])||T.en[k]||'';
+const waLink=txt=>CONFIG.whatsapp?`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(txt||'')}`:'#contact';
+const fishSvg=(c1,c2)=>`<svg viewBox="0 0 200 80"><path d="M20 40 Q70 5 140 30 L185 12 L175 40 L185 68 L140 50 Q70 75 20 40Z" fill="${c1}"/><path d="M40 40 Q80 22 135 36" stroke="${c2}" stroke-width="3" fill="none" opacity=".6"/><circle cx="42" cy="36" r="4" fill="#0b1a2b"/></svg>`;
+
+function render(){
+ $$('[data-i]').forEach(e=>e.textContent=t(e.dataset.i));
+ $('#tabs').innerHTML=['all','europe','asia','africa','fresh','meal'].map(x=>`<button class="${TAB===x?'on':''}" onclick="setTab('${x}')">${t('tab_'+x)}</button>`).join('');
+ $('#plist').innerHTML=PRODUCTS.filter(p=>TAB==='all'||p.markets.includes(TAB)).map(p=>`<div class="card">
+  <div class="pimg">${p.img?`<img src="${p.img}" alt="${p.name[L]||p.name.en}" loading="lazy">`:(p.icon?`<span class="emo">${p.icon}</span>`:fishSvg(p.color[0],p.color[1]))}</div>
+  ${(()=>{const st=stOf(p);return `<span class="badge ${st==='available'?'av':st==='sold_out'?'sold_out':'ss'}">${t(st)}</span>`})()}
+  <h3>${p.name[L]||p.name.en}</h3><div class="latin">${p.latin}</div>
+  <p>${p.desc[L]||p.desc.en}</p>${STOCK[p.id]&&STOCK[p.id].qty&&stOf(p)!=='sold_out'?`<div class="qty">● ${isNaN(STOCK[p.id].qty)?STOCK[p.id].qty:STOCK[p.id].qty+' '+t('tons')}${STOCK[p.id].sizes?' · '+STOCK[p.id].sizes:''}</div>`:''}
+  <div class="chips">${(p.chips[L]||p.chips.en).map(c=>`<span class="chip">${c}</span>`).join('')}</div>
+  <div class="pask">${CONFIG.whatsapp?`<a class="w" target="_blank" rel="noopener" href="${waLink(t('msg_hello')+' '+(p.name.en))}">${t('ask_wa')}</a>`:''}<a href="#contact" onclick="$('#psel').value='${p.id}'">${t('details')}</a></div>
+ </div>`).join('');
+ $('#psel').innerHTML=PRODUCTS.map(p=>`<option value="${p.id}">${p.name[L]||p.name.en}</option>`).join('');
+ renderStock();
+ renderNews();
+ $('#mlist').innerHTML=MARKETS.map(m=>`<div class="mk">${m[L]||m.en}<small>${m.s[L]||m.s.en}</small></div>`).join('');
+ if($('#gal'))$('#gal').innerHTML=GALLERY.map((g,i)=>`<div class="it${g.big?' big':''}" onclick="openLb(${i})">${
+   g.src?(g.type==='video'?`<video src="${g.src}" muted loop playsinline preload="metadata"></video><div class="play">▶</div>`:`<img src="${g.src}" alt="AlphaMarr" loading="lazy">`)
+   :`<div class="ph"><b>${g.type==='video'?'🎬':'📷'}</b>${t(g.type==='video'?'v_soon':'g_soon')}</div>`}</div>`).join('');
+ $$('.js-wa').forEach(a=>{a.href=waLink(t('msg_hello')+' AlphaMarr');a.style.display=CONFIG.whatsapp?'':'none'});
+ $$('.js-wa-form').forEach(a=>a.style.display=CONFIG.whatsapp?'':'none');
+ $$('.js-wc').forEach(a=>a.style.display=CONFIG.wechat?'':'none');
+ $$('.js-li').forEach(a=>{a.href=CONFIG.linkedin||'#';a.style.display=CONFIG.linkedin?'':'none'});
+ $$('.js-mail').forEach(a=>{a.href='mailto:'+CONFIG.email;a.textContent=CONFIG.email});
+ $('.js-phone-wrap').style.display=CONFIG.whatsapp?'':'none';
+ $('.js-phone').textContent='+'+CONFIG.whatsapp;$('.js-phone').href=waLink('');
+ $('#wcId').textContent=CONFIG.wechat;
+ if(CONFIG.wechatQr){$('#wcQr').src=CONFIG.wechatQr;$('#wcQr').style.display='block'}
+}
+const FLAGS={};document.querySelectorAll('.langmenu button').forEach(b=>FLAGS[b.dataset.l]=b.innerHTML);
+function closeLang(){document.getElementById('langsel').classList.remove('open')}
+document.addEventListener('click',closeLang);
+function setLang(l){L=T[l]?l:'en';document.documentElement.lang=L==='zh'?'zh-CN':L;document.documentElement.dir=L==='ar'?'rtl':'ltr';$('#langFlag').innerHTML=FLAGS[L]||'';document.querySelectorAll('.langmenu button').forEach(b=>b.classList.toggle('on',b.dataset.l===L));try{localStorage.setItem('am_lang',L)}catch(e){};render()}
+function openWc(){$('#wcModal').classList.add('on')}
+function copyWc(){try{navigator.clipboard.writeText(CONFIG.wechat)}catch(e){};const b=event.target;b.textContent=t('copied');setTimeout(()=>b.textContent=t('copy'),1500)}
+function openLb(i){const g=GALLERY[i];if(!g.src)return;$('#lbc').innerHTML=g.type==='video'?`<video src="${g.src}" controls autoplay playsinline></video>`:`<img src="${g.src}" alt="">`;$('#lb').classList.add('on')}
+function closeLb(){$('#lb').classList.remove('on');$('#lbc').innerHTML=''}
+function sendQuote(via){
+ const f=new FormData($('#qform'));const prod=PRODUCTS.find(p=>p.id===f.get('product'));
+ const body=`${t('f_company')}: ${f.get('company')}\n${t('f_name')}: ${f.get('name')}\nEmail: ${f.get('email')}\n${t('f_country')}: ${f.get('country')}\n${t('f_product')}: ${prod?prod.name.en:''}\n${t('f_qty')}: ${f.get('qty')}\n\n${f.get('msg')}`;
+ if(via==='wa'&&CONFIG.whatsapp){window.open(waLink(body),'_blank');return}
+ location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent('Quote request – '+(prod?prod.name.en:'')+' – '+f.get('company'))}&body=${encodeURIComponent(body)}`;
+}
+// hero media
+if(CONFIG.heroVideo)$('#heroMedia').innerHTML=`<video src="${CONFIG.heroVideo}" autoplay muted loop playsinline></video>`;
+else if(CONFIG.heroImage)$('#heroMedia').innerHTML=`<img class="bgimg" src="${CONFIG.heroImage}" alt="">`;
+if(CONFIG.fleetMedia)$('#fleetMedia').innerHTML=/\.mp4|\.webm/i.test(CONFIG.fleetMedia)?`<video src="${CONFIG.fleetMedia}" autoplay muted loop playsinline></video>`:`<img src="${CONFIG.fleetMedia}" alt="AlphaMarr fleet">`;
+$('#yr').textContent=new Date().getFullYear();
+let start='en';try{start=localStorage.getItem('am_lang')||''}catch(e){}
+if(!start){const n=(navigator.language||'en').slice(0,2);start=T[n]?n:'en'}
+setLang(start);
+loadStock();loadNews();showPop();
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLb();$('#wcModal').classList.remove('on')}});
+</script>
+</body>
+</html>
