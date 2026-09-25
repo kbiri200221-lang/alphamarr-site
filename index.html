@@ -463,7 +463,9 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    </div>
    <div class="info">
     <div><small>Email</small><a class="js-mail"></a></div>
-    <div class="js-phone-wrap"><small data-i="phone"></small><a class="js-phone"></a></div>
+    <div class="js-phone-wrap"><small data-i="l_wa"></small><a class="js-phone" target="_blank" rel="noopener"></a></div>
+    <div><small data-i="l_tel"></small><a href="tel:+22245749314" dir="ltr">+222 45 74 93 14</a></div>
+    <div><small data-i="l_fax"></small><span dir="ltr">+222 49 82 38 30</span></div>
     <div><small data-i="loc"></small><span>AlphaMarr SARL<br><span data-i="addr"></span>, <span data-i="mr"></span></span></div>
     <div><small data-i="reg"></small><span><span data-i="rc_l"></span> : 114439/GU/35448/4629 · <span data-i="nif_l"></span> : 01201011</span></div>
    </div>
@@ -529,10 +531,10 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    ===================================================================== */
 const CONFIG = {
   email:    'contact@alphamarr.com',
-  whatsapp: '',            // international format, digits only, e.g. '22236000000'
+  whatsapp: '22249823828',  // international format, digits only
   wechat:   '',            // WeChat ID, e.g. 'alphamarr'
   wechatQr: '',            // optional: 'media/wechat-qr.png'
-  linkedin: '',            // e.g. 'https://www.linkedin.com/company/alphamarr'
+  linkedin: 'https://www.linkedin.com/in/ahmed-najem-546b9b259',
   heroVideo:'',            // e.g. 'media/hero.mp4'
   heroImage:'',            // e.g. 'media/hero.jpg'
   stockSheetId:'1Q0WPEy0Yf9Ky9sABkIkAcfdCEN1LKrWsT6ZSjc82dYg',         // Google Sheet ID for live stock (shared: anyone with link can view)
@@ -978,6 +980,16 @@ Object.assign(T.en,{"addr": "Nouadhibou Industrial Zone", "rc_l": "Trade Reg. No
 Object.assign(T.es,{"addr": "Zona Industrial de Nuadibú", "rc_l": "Registro Mercantil", "nif_l": "NIF", "reg": "Registro"});
 Object.assign(T.zh,{"addr": "努瓦迪布工业区", "rc_l": "商业注册号", "nif_l": "税号 (NIF)", "reg": "注册信息"});
 Object.assign(T.ar,{"addr": "المنطقة الصناعية لنواذيبو", "rc_l": "السجل التجاري", "nif_l": "الرقم الضريبي", "reg": "التسجيل"});
+Object.assign(T.fr,{"l_wa": "WhatsApp", "l_tel": "Téléphone", "l_fax": "Fax"});
+Object.assign(T.en,{"l_wa": "WhatsApp", "l_tel": "Phone", "l_fax": "Fax"});
+Object.assign(T.es,{"l_wa": "WhatsApp", "l_tel": "Teléfono", "l_fax": "Fax"});
+Object.assign(T.zh,{"l_wa": "WhatsApp", "l_tel": "电话", "l_fax": "传真"});
+Object.assign(T.ar,{"l_wa": "واتساب", "l_tel": "الهاتف", "l_fax": "الفاكس"});
+T.fr.c_p1="Contactez-nous directement sur WhatsApp ou LinkedIn, ou envoyez votre besoin ci-dessous.";
+T.en.c_p1="Reach us directly on WhatsApp or LinkedIn, or send your requirements below.";
+T.es.c_p1="Contáctenos directamente por WhatsApp o LinkedIn, o envíe su solicitud abajo.";
+T.zh.c_p1="通过 WhatsApp 或领英直接联系我们，或在下方提交您的需求。";
+T.ar.c_p1="تواصلوا معنا مباشرة عبر واتساب أو لينكدإن، أو أرسلوا طلبكم أدناه.";
 function nextEvent(){const td=new Date();td.setHours(0,0,0,0);return EVENTS.filter(e=>new Date(e.e+'T23:59:59')>=td).sort((a,b)=>a.s<b.s?-1:1)[0]}
 function renderPop(){
  const e=nextEvent(),box=$('#evbar');if(!e||!box)return false;
@@ -1087,9 +1099,10 @@ function render(){
  $$('.js-li').forEach(a=>{a.href=CONFIG.linkedin||'#';a.style.display=CONFIG.linkedin?'':'none'});
  $$('.js-mail').forEach(a=>{a.href='mailto:'+CONFIG.email;a.textContent=CONFIG.email});
  $('.js-phone-wrap').style.display=CONFIG.whatsapp?'':'none';
- $('.js-phone').textContent='+'+CONFIG.whatsapp;$('.js-phone').href=waLink('');
+ $('.js-phone').textContent='+222 49 82 38 28';$('.js-phone').setAttribute('dir','ltr');$('.js-phone').href=waLink('');
  $('#wcId').textContent=CONFIG.wechat;
  if(!CONFIG.whatsapp&&!CONFIG.wechat&&!CONFIG.linkedin)$$('[data-i="c_p"]').forEach(e=>e.textContent=t('c_p0'));
+ else if(!CONFIG.wechat)$$('[data-i="c_p"]').forEach(e=>e.textContent=t('c_p1'));
  if(CONFIG.wechatQr){$('#wcQr').src=CONFIG.wechatQr;$('#wcQr').style.display='block'}
 }
 const FLAGS={};document.querySelectorAll('.langmenu button').forEach(b=>FLAGS[b.dataset.l]=b.innerHTML);
