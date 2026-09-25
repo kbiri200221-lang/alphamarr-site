@@ -531,7 +531,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    ===================================================================== */
 const CONFIG = {
   email:    'contact@alphamarr.com',
-  whatsapp: '22249823828',  // international format, digits only
+  whatsapp: '',  // retiré (non affiché sur le site)
   wechat:   '',            // WeChat ID, e.g. 'alphamarr'
   wechatQr: '',            // optional: 'media/wechat-qr.png'
   linkedin: 'https://www.linkedin.com/in/ahmed-najem-546b9b259',
@@ -985,11 +985,11 @@ Object.assign(T.en,{"l_wa": "WhatsApp", "l_tel": "Phone", "l_fax": "Fax"});
 Object.assign(T.es,{"l_wa": "WhatsApp", "l_tel": "Teléfono", "l_fax": "Fax"});
 Object.assign(T.zh,{"l_wa": "WhatsApp", "l_tel": "电话", "l_fax": "传真"});
 Object.assign(T.ar,{"l_wa": "واتساب", "l_tel": "الهاتف", "l_fax": "الفاكس"});
-T.fr.c_p1="Contactez-nous directement sur WhatsApp ou LinkedIn, ou envoyez votre besoin ci-dessous.";
-T.en.c_p1="Reach us directly on WhatsApp or LinkedIn, or send your requirements below.";
-T.es.c_p1="Contáctenos directamente por WhatsApp o LinkedIn, o envíe su solicitud abajo.";
-T.zh.c_p1="通过 WhatsApp 或领英直接联系我们，或在下方提交您的需求。";
-T.ar.c_p1="تواصلوا معنا مباشرة عبر واتساب أو لينكدإن، أو أرسلوا طلبكم أدناه.";
+T.fr.c_p1="Contactez-nous par téléphone, par email ou sur LinkedIn, ou envoyez votre besoin avec le formulaire ci-dessous.";
+T.en.c_p1="Reach us by phone, email or LinkedIn, or send your requirements with the form below.";
+T.es.c_p1="Contáctenos por teléfono, email o LinkedIn, o envíe su solicitud con el formulario de abajo.";
+T.zh.c_p1="欢迎通过电话、电子邮件或领英联系我们，或使用下方表格提交您的需求。";
+T.ar.c_p1="تواصلوا معنا عبر الهاتف أو البريد الإلكتروني أو لينكدإن، أو أرسلوا طلبكم عبر النموذج أدناه.";
 function nextEvent(){const td=new Date();td.setHours(0,0,0,0);return EVENTS.filter(e=>new Date(e.e+'T23:59:59')>=td).sort((a,b)=>a.s<b.s?-1:1)[0]}
 function renderPop(){
  const e=nextEvent(),box=$('#evbar');if(!e||!box)return false;
@@ -1101,7 +1101,7 @@ function render(){
  $('.js-phone-wrap').style.display=CONFIG.whatsapp?'':'none';
  $('.js-phone').textContent='+222 49 82 38 28';$('.js-phone').setAttribute('dir','ltr');$('.js-phone').href=waLink('');
  $('#wcId').textContent=CONFIG.wechat;
- if(!CONFIG.whatsapp&&!CONFIG.wechat&&!CONFIG.linkedin)$$('[data-i="c_p"]').forEach(e=>e.textContent=t('c_p0'));
+ if(!CONFIG.wechat&&!CONFIG.linkedin)$$('[data-i="c_p"]').forEach(e=>e.textContent=t('c_p0'));
  else if(!CONFIG.wechat)$$('[data-i="c_p"]').forEach(e=>e.textContent=t('c_p1'));
  if(CONFIG.wechatQr){$('#wcQr').src=CONFIG.wechatQr;$('#wcQr').style.display='block'}
 }
