@@ -119,6 +119,7 @@ section{padding:88px 0}
 .evc.live{background:#e7f8ee;color:#128a43}
 .nw{display:block;border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:#fff;transition:.2s}
 .nw h4{font-size:15px;font-weight:600;line-height:1.4}.nw p{font-size:12px;color:var(--muted);margin-top:6px}
+.ntabs{display:flex;gap:8px;margin:-4px 0 14px;flex-wrap:wrap}.ntabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font:600 13px inherit;font-family:inherit;cursor:pointer;color:var(--ink)}.ntabs button{display:inline-flex;align-items:center;gap:6px}.ntabs .nf svg{width:20px;height:13px;display:block;border-radius:2px}.ntabs button.on{background:var(--sea);color:#fff;border-color:var(--sea)}
 .nempty{color:var(--muted);font-size:14px;padding:18px;border:1px dashed var(--line);border-radius:14px}
 @media(max-width:600px){.ev{display:grid;grid-template-columns:62px 1fr;column-gap:14px;row-gap:8px}.evd{grid-row:span 2}.evc{justify-self:start}.nh{flex-wrap:wrap}.nh span:nth-child(2){flex:1}.nh small{flex-basis:100%;margin:0}}
 
@@ -404,7 +405,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    </div>
    <div class="ncol">
     <h3 class="nh"><span>📰</span><span data-i="news_title"></span><small id="nupd"></small></h3>
-    <div id="nlist" class="nlist"></div>
+    <div class="ntabs" id="ntabs"></div><div id="nlist" class="nlist"></div>
    </div>
   </div>
  </div>
@@ -879,7 +880,7 @@ const NEWS_Q={
  ar:'الصيد البحري OR صادرات الأسماك OR موريتانيا الصيد'
 };
 const NEWS_GL={en:'US:en',fr:'FR:fr',es:'ES:es',zh:'CN:zh-Hans',ar:'MA:ar'};
-let NEWS=null,NEWS_TRY={};
+let NEWS=null,NEWS_TRY={},NTAB='local';function setNTab(x){NTAB=x;renderNews()}
 const LOC={en:'en-GB',fr:'fr-FR',es:'es-ES',zh:'zh-CN',ar:'ar'};
 function fmtD(d,o){try{return new Date(d).toLocaleDateString(LOC[L]||'en',o)}catch(e){return d}}
 function esc(x){return String(x||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
@@ -896,8 +897,11 @@ function renderNews(){
  renderEvents();
  if($("#evbar")&&$("#evbar").innerHTML)renderPop();
  const box=$('#nlist');if(!box)return;
- const items=NEWS&&NEWS.items&&(NEWS.items[L]||[]);
- if(!items||!items.length){box.innerHTML=`<div class="nempty">${t(NEWS?'n_none':'n_loading')}</div>`;$('#nupd').textContent='';if(NEWS&&!NEWS_TRY[L])liveNews(L);return}
+ const LT={fr:'Mauritanie',en:'Mauritania',es:'Mauritania',zh:'毛里塔尼亚',ar:'موريتانيا'},IT={fr:'🌍 International',en:'🌍 International',es:'🌍 Internacional',zh:'🌍 国际',ar:'🌍 دولي'};
+ $('#ntabs').innerHTML=['local','intl'].map(k=>`<button class="${NTAB===k?'on':''}" onclick="setNTab('${k}')">${k==='local'?'<span class="nf">'+(FLAGS.ar||'')+'</span>':''}${(k==='local'?LT:IT)[L]||(k==='local'?LT:IT).en}</button>`).join('');
+ const loc=NTAB==='local',pool=NEWS&&(loc?NEWS.local:NEWS.items);
+ const items=pool&&(pool[L]||(loc?pool[L==='ar'?'ar':L==='fr'?'fr':'en']||pool.fr:null)||[]);
+ if(!items||!items.length){box.innerHTML=`<div class="nempty">${t(NEWS?'n_none':'n_loading')}</div>`;$('#nupd').textContent='';if(NEWS&&!loc&&!NEWS_TRY[L])liveNews(L);return}
  box.innerHTML=items.slice(0,8).map(x=>`<a class="nw" href="${esc(x.u)}" target="_blank" rel="noopener"><h4>${esc(x.t)}</h4><p>${esc(x.s||'')}${x.d?' · '+fmtD(x.d,{day:'numeric',month:'short',year:'numeric'}):''}</p></a>`).join('');
  $('#nupd').textContent=NEWS.updated?t('n_upd').replace('{d}',fmtD(NEWS.updated,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})):'';
 }
