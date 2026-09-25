@@ -465,6 +465,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
     <div><small>Email</small><a class="js-mail"></a></div>
     <div class="js-phone-wrap"><small data-i="phone"></small><a class="js-phone"></a></div>
     <div><small data-i="loc"></small><span>AlphaMarr SARL<br><span data-i="addr"></span>, <span data-i="mr"></span></span></div>
+    <div><small data-i="reg"></small><span><span data-i="rc_l"></span> : 114439/GU/35448/4629 · <span data-i="nif_l"></span> : 01201011</span></div>
    </div>
   </div>
   <form id="qform" onsubmit="return false">
@@ -491,7 +492,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
 
 <footer>
  <div class="wrap">
-  <span>© <span id="yr"></span> AlphaMarr SARL · <span data-i="addr"></span>, <span data-i="mr"></span><br><small style="opacity:.7"><span data-i="credits"></span> <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" style="text-decoration:underline">CC BY-SA</a></small></span>
+  <span>© <span id="yr"></span> AlphaMarr SARL · <span data-i="addr"></span>, <span data-i="mr"></span><br><small style="opacity:.8"><span data-i="rc_l"></span> : 114439/GU/35448/4629 · <span data-i="nif_l"></span> : 01201011</small><br><small style="opacity:.7"><span data-i="credits"></span> <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" style="text-decoration:underline">CC BY-SA</a></small></span>
   <div class="soc">
    <a class="js-mail"></a>
    <a class="js-li" target="_blank" rel="noopener">LinkedIn</a>
@@ -972,11 +973,11 @@ Object.assign(T.en,{"cities": "Nouadhibou · Nouakchott", "credits": "Photos and
 Object.assign(T.es,{"cities": "Nuadibú · Nuakchot", "credits": "Fotos y visuales: AlphaMarr. Foto de harina de pescado: Phu Thinh Co, vía Wikimedia Commons (licencia CC BY-SA).", "c_p0": "Envíenos su solicitud con el formulario de abajo o por email y le responderemos con una oferta a medida."});
 Object.assign(T.zh,{"cities": "努瓦迪布 · 努瓦克肖特", "credits": "照片与视觉：AlphaMarr。鱼粉照片：Phu Thinh Co，来自 Wikimedia Commons（CC BY-SA 许可）。", "c_p0": "请通过下方表格或电子邮件发送您的需求，我们将为您提供量身定制的报价。"});
 Object.assign(T.ar,{"cities": "نواذيبو · نواكشوط", "credits": "الصور والمرئيات: ألفا مار. صورة دقيق السمك: Phu Thinh Co عبر ويكيميديا كومنز (رخصة CC BY-SA).", "c_p0": "أرسلوا لنا طلبكم عبر النموذج أدناه أو بالبريد الإلكتروني، وسنرد عليكم بعرض مناسب."});
-T.fr.addr="Zone franche de Nouadhibou";
-T.en.addr="Nouadhibou Free Zone";
-T.es.addr="Zona Franca de Nuadibú";
-T.zh.addr="努瓦迪布自由区";
-T.ar.addr="المنطقة الحرة لنواذيبو";
+Object.assign(T.fr,{"addr": "Zone industrielle de Nouadhibou", "rc_l": "RC", "nif_l": "NIF", "reg": "Immatriculation"});
+Object.assign(T.en,{"addr": "Nouadhibou Industrial Zone", "rc_l": "Trade Reg. No.", "nif_l": "Tax ID (NIF)", "reg": "Registration"});
+Object.assign(T.es,{"addr": "Zona Industrial de Nuadibú", "rc_l": "Registro Mercantil", "nif_l": "NIF", "reg": "Registro"});
+Object.assign(T.zh,{"addr": "努瓦迪布工业区", "rc_l": "商业注册号", "nif_l": "税号 (NIF)", "reg": "注册信息"});
+Object.assign(T.ar,{"addr": "المنطقة الصناعية لنواذيبو", "rc_l": "السجل التجاري", "nif_l": "الرقم الضريبي", "reg": "التسجيل"});
 function nextEvent(){const td=new Date();td.setHours(0,0,0,0);return EVENTS.filter(e=>new Date(e.e+'T23:59:59')>=td).sort((a,b)=>a.s<b.s?-1:1)[0]}
 function renderPop(){
  const e=nextEvent(),box=$('#evbar');if(!e||!box)return false;
