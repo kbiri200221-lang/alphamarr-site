@@ -19,11 +19,19 @@ LOCAL = {
     "fr": ("FR", "fr", ["Mauritanie pêche OR Nouadhibou OR \"pêche artisanale\" Mauritanie",
                         "Mauritanie poulpe OR \"farine de poisson\" Mauritanie OR SMCP OR IMROP",
                         "Nouakchott port pêche OR Sénégal pirogues Mauritanie"]),
-    "ar": ("MA", "ar", ["موريتانيا الصيد OR نواذيبو", "الصيد التقليدي موريتانيا OR الأخطبوط موريتانيا"]),
+    "ar": ("MA", "ar", ["موريتانيا الصيد البحري", "نواذيبو الصيد OR الأخطبوط موريتانيا", "الصيد التقليدي موريتانيا OR دقيق السمك موريتانيا"]),
     "en": ("US", "en", ["Mauritania fisheries OR Nouadhibou OR Mauritania fishmeal",
                         "Mauritania octopus OR Senegal Mauritania fishing"]),
 }
 MAX = 12
+# Keep only headlines that are really about fishing / seafood
+KW = {
+    "fr": re.compile(r"p[êe]che|poisson|poulpe|c[ée]phalopode|pirogue|halieut|farine|huile de poisson|sardin|pélagique|pelagique|chalut|armateur|produits de la mer|crevette|thon|IMROP|SMCP|aquacult|mareyeur|langouste|seiche|calamar", re.I),
+    "en": re.compile(r"fish|seafood|octopus|squid|cephalopod|trawl|vessel|aquacult|shrimp|tuna|sardin|mackerel|pelagic|lobster|maritime", re.I),
+    "es": re.compile(r"pesc|pesquer|mariscos|productos del mar|pulpo|calamar|sepia|harina de pescado|atún|sardin|langost|acuicult|arrastre|conxemar", re.I),
+    "zh": re.compile(r"渔|鱼|水产|海鲜|章鱼|鱿鱼|虾|捕捞|养殖|海产"),
+    "ar": re.compile(r"الصيد|السمك|الأسماك|سمك|أسماك|الأخطبوط|أخطبوط|البحري|البحرية|الزوارق|قوارب|مصايد|الموانئ|ميناء|الرخويات|السردين"),
+}
 
 def fetch(q, gl, hl):
     url = ("https://news.google.com/rss/search?q=" + urllib.parse.quote(q + " when:14d")
@@ -65,12 +73,12 @@ def collect(queries, old):
             try:
                 for x in fetch(q, gl, hl):
                     k = norm(x["t"])
-                    if k and k not in seen:
+                    if k and k not in seen and KW[lang].search(x["t"]):
                         seen.add(k); res.append(x)
             except Exception as e:
                 print("WARN", lang, q, e)
         res.sort(key=lambda x: x["d"], reverse=True)
-        items[lang] = res[:MAX] or old.get(lang, [])
+        items[lang] = res[:MAX] or [x for x in old.get(lang, []) if KW[lang].search(x["t"])]
         print(lang, len(items[lang]))
     return items
 
