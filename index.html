@@ -120,6 +120,14 @@ section{padding:88px 0}
 .nw{display:block;border:1px solid var(--line);border-radius:14px;padding:14px 16px;background:#fff;transition:.2s}
 .nw h4{font-size:15px;font-weight:600;line-height:1.4}.nw p{font-size:12px;color:var(--muted);margin-top:6px}
 .ntabs{display:flex;gap:8px;margin:-4px 0 14px;flex-wrap:wrap}.ntabs button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:7px 14px;font:600 13px inherit;font-family:inherit;cursor:pointer;color:var(--ink)}.ntabs button{display:inline-flex;align-items:center;gap:6px}.ntabs .nf svg{width:20px;height:13px;display:block;border-radius:2px}.ntabs button.on{background:var(--sea);color:#fff;border-color:var(--sea)}
+.lots{margin-top:40px}.lotgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.lot{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;display:flex;flex-direction:column}
+.lot .ph{position:relative;aspect-ratio:4/3;background:#f1f5f8;cursor:zoom-in;overflow:hidden}.lot .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.lot .n{position:absolute;inset-inline-end:10px;bottom:10px;background:rgba(11,26,43,.75);color:#fff;font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px}
+.lot .ty{position:absolute;inset-inline-start:10px;top:10px;background:#fff;color:var(--sea);font-size:11px;font-weight:800;padding:4px 9px;border-radius:999px;text-transform:uppercase;letter-spacing:.05em}
+.lot .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}.lot h4{font-size:16px;font-weight:800}.lot p{font-size:13px;color:var(--muted)}
+.lot .ask{margin-top:auto;align-self:flex-start;font-size:13px;font-weight:700;padding:8px 14px;border-radius:10px;background:var(--sky-d);color:#fff}
+#lbc .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.9);border:0;width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer}#lbc .nav.p{left:12px}#lbc .nav.nx{right:12px}
 .nempty{color:var(--muted);font-size:14px;padding:18px;border:1px dashed var(--line);border-radius:14px}
 @media(max-width:600px){.ev{display:grid;grid-template-columns:62px 1fr;column-gap:14px;row-gap:8px}.evd{grid-row:span 2}.evc{justify-self:start}.nh{flex-wrap:wrap}.nh span:nth-child(2){flex:1}.nh small{flex-basis:100%;margin:0}}
 
@@ -337,6 +345,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    <thead><tr><th data-i="c_prod"></th><th data-i="c_status"></th><th data-i="c_qty"></th><th data-i="c_sizes"></th><th data-i="c_pack"></th><th data-i="c_origin"></th><th></th></tr></thead>
    <tbody id="stBody"></tbody>
   </table></div>
+  <div class="lots" id="lotsWrap" hidden><h3 class="nh"><span>📸</span><span data-i="ph_title"></span></h3><p class="stnote" data-i="ph_sub"></p><div class="lotgrid" id="lots"></div></div>
  </div>
 </section>
 
@@ -920,6 +929,11 @@ Object.assign(T.ar,{ev_next:'المعرض القادم',ev_meet:'التقوا ب
 // Event logo: official logo (l) → site icon via Google favicon service → hidden
 function evLogo(e,cls){const d=(e.u.match(/\/\/([^/]+)/)||[])[1]||'';const fav='https://www.google.com/s2/favicons?sz=128&domain='+d;
  return `<span class="${cls}"><img src="${e.l||fav}" alt="${esc(e.n)}" loading="eager" referrerpolicy="no-referrer" onerror="if(!this.dataset.f&&'${e.l?1:''}'){this.dataset.f=1;this.src='${fav}'}else{this.parentNode.style.display='none'}"></span>`}
+Object.assign(T.en,{ph_title:'Latest stock photos',ph_sub:'Real photos of lots currently available — ask for any lot directly.',ph_ask:'Ask for this lot'});
+Object.assign(T.fr,{ph_title:'Photos du stock récent',ph_sub:'Photos réelles des lots actuellement disponibles — demandez directement le lot qui vous intéresse.',ph_ask:'Demander ce lot'});
+Object.assign(T.es,{ph_title:'Fotos del stock reciente',ph_sub:'Fotos reales de los lotes disponibles — solicite directamente el lote que le interese.',ph_ask:'Solicitar este lote'});
+Object.assign(T.zh,{ph_title:'最新库存照片',ph_sub:'当前可供货批次的实拍照片——可直接询问您感兴趣的批次。',ph_ask:'询问此批次'});
+Object.assign(T.ar,{ph_title:'صور المخزون الحالي',ph_sub:'صور حقيقية للدفعات المتوفرة حاليًا — اطلبوا مباشرة الدفعة التي تهمكم.',ph_ask:'اطلب هذه الدفعة'});
 function nextEvent(){const td=new Date();td.setHours(0,0,0,0);return EVENTS.filter(e=>new Date(e.e+'T23:59:59')>=td).sort((a,b)=>a.s<b.s?-1:1)[0]}
 function renderPop(){
  const e=nextEvent(),box=$('#evbar');if(!e||!box)return false;
@@ -954,11 +968,26 @@ async function loadStock(){
   STOCK={};STOCK_ROWS=[];let last='';
   rows.forEach(r=>{const id=g(r,'id'),prod=g(r,'product');if(!id&&!prod)return;
    const typ=(g(r,'type')||'stock').toLowerCase().startsWith('trad')?'trading':'stock';
-   const o={id,product:prod,type:typ,status:g(r,'status').toLowerCase().replace(/\s+/g,'_'),qty:g(r,'quantity'),sizes:g(r,'sizes'),packing:g(r,'packing'),origin:g(r,'origin'),updated:g(r,'updated')};
+   const o={id,product:prod,type:typ,status:g(r,'status').toLowerCase().replace(/\s+/g,'_'),qty:g(r,'quantity'),sizes:g(r,'sizes'),packing:g(r,'packing'),origin:g(r,'origin'),updated:g(r,'updated'),photos:toImgs(g(r,'photo'))};
    STOCK_ROWS.push(o); if(typ==='stock'&&id)STOCK[id]=o; if(o.updated>last)last=o.updated});
   STOCK_TIME=last;STOCK_LIVE=true}catch(e){STOCK_LIVE=false}
  render()}
 const stOf=p=>(STOCK[p.id]&&STOCK[p.id].status)||p.status||'on_order';
+// Photos from the Sheet "photo" column: Google Drive share links or direct image URLs (several separated by space/comma)
+function toImgs(v){return (v||'').split(/[\s,;]+/).filter(Boolean).map(u=>{const m=u.match(/\/d\/([\w-]{20,})/)||u.match(/[?&]id=([\w-]{20,})/);return m?'https://lh3.googleusercontent.com/d/'+m[1]+'=w1400':(/^https?:\/\//.test(u)?u:'')}).filter(Boolean)}
+let LOTS=[];
+function renderLots(){
+ const P=id=>PRODUCTS.find(p=>p.id===id);
+ LOTS=STOCK_ROWS.filter(o=>o.photos&&o.photos.length&&o.status!=='sold_out');
+ const w=$('#lotsWrap');if(!w)return;w.hidden=!LOTS.length;if(!LOTS.length)return;
+ $('#lots').innerHTML=LOTS.map((o,i)=>{const p=P(o.id);const nm=p?(p.name[L]||p.name.en):o.product;const q=o.qty?(isNaN(o.qty)?o.qty:o.qty+' '+t('tons')):'';
+  const info=[q,o.sizes,o.packing].filter(Boolean).join(' · ');
+  return `<div class="lot"><div class="ph" onclick="openLot(${i},0)"><img src="${esc(o.photos[0])}" alt="${esc(nm)}" loading="lazy" referrerpolicy="no-referrer">${o.photos.length>1?`<span class="n">📷 ${o.photos.length}</span>`:''}<span class="ty">${t('st_'+o.type)}</span></div>
+  <div class="bd"><h4>${esc(nm||'')}</h4>${info?`<p>${esc(info)}</p>`:''}<p>📍 ${esc(o.origin||'Nouadhibou')}${o.updated?' · '+esc(o.updated):''}</p>
+  <a class="ask" href="#contact" ${p?`onclick="$('#psel').value='${p.id}'"`:''}>${t('ph_ask')}</a></div></div>`}).join('');
+}
+function openLot(i,k){const o=LOTS[i];if(!o)return;const n=o.photos.length;k=(k+n)%n;
+ $('#lbc').innerHTML=`<img src="${esc(o.photos[k])}" alt="" referrerpolicy="no-referrer">${n>1?`<button class="nav p" onclick="openLot(${i},${k-1})">‹</button><button class="nav nx" onclick="openLot(${i},${k+1})">›</button>`:''}`;$('#lb').classList.add('on')}
 function renderStock(){
  $('#stType').innerHTML=['stock','trading'].map(x=>`<button class="${STTYPE===x?'on':''}" onclick="STTYPE='${x}';render()">${x==='stock'?'📦 ':'🤝 '}${t('st_'+x)}</button>`).join('');
  $('#stNote').textContent=t('note_'+STTYPE);
@@ -978,6 +1007,7 @@ function renderStock(){
   const msg=t('msg_hello')+' '+en+(s.sizes?' ('+s.sizes+')':'')+(STTYPE==='trading'?' — '+t('st_trading'):'');
   const link=CONFIG.whatsapp?`<a class="ask" target="_blank" rel="noopener" href="${waLink(msg)}">${t('ask')}</a>`:`<a class="ask m" href="#contact" ${p?`onclick="$('#psel').value='${p.id}'"`:''}>${t('ask')}</a>`;
   return `<tr><td><b>${nm||'—'}</b>${p?`<small>${p.latin}</small>`:''}</td><td><span class="st ${st}">${t(st)}</span></td><td>${q}</td><td>${s.sizes||'—'}</td><td>${s.packing||(p?(p.chips[L]||p.chips.en).join(', '):'—')}</td><td>${s.origin||(STTYPE==='stock'?'Nouadhibou':'—')}</td><td>${st==='sold_out'?'':link}</td></tr>`}).join('');
+ renderLots();
  $('#stUpd').innerHTML=STOCK_LIVE?`<i class="dot"></i>${t('upd')} : ${STOCK_TIME||'—'}`:t('live_off');
 }
 setInterval(()=>{if(CONFIG.stockSheetId)loadStock()},5*60*1000);
