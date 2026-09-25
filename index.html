@@ -492,7 +492,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
 
 <footer>
  <div class="wrap">
-  <span>© <span id="yr"></span> AlphaMarr SARL · <span data-i="addr"></span>, <span data-i="mr"></span><br><small style="opacity:.8"><span data-i="rc_l"></span> : 114439/GU/35448/4629 · <span data-i="nif_l"></span> : 01201011</small><br><small style="opacity:.7"><span data-i="credits"></span> <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener" style="text-decoration:underline">CC BY-SA</a></small></span>
+  <span>© <span id="yr"></span> AlphaMarr SARL · <span data-i="addr"></span>, <span data-i="mr"></span><br><small style="opacity:.8"><span data-i="rc_l"></span> : 114439/GU/35448/4629 · <span data-i="nif_l"></span> : 01201011</small></span>
   <div class="soc">
    <a class="js-mail"></a>
    <a class="js-li" target="_blank" rel="noopener">LinkedIn</a>
@@ -1067,7 +1067,7 @@ function render(){
  $$('[data-i]').forEach(e=>e.textContent=t(e.dataset.i));
  $('#tabs').innerHTML=['all','europe','asia','africa','fresh','meal'].map(x=>`<button class="${TAB===x?'on':''}" onclick="setTab('${x}')">${t('tab_'+x)}</button>`).join('');
  $('#plist').innerHTML=PRODUCTS.filter(p=>TAB==='all'||p.markets.includes(TAB)).map(p=>`<div class="card">
-  <div class="pimg">${p.img?`<img src="${p.img}" alt="${p.name[L]||p.name.en}" loading="lazy">`:(p.icon?`<span class="emo">${p.icon}</span>`:fishSvg(p.color[0],p.color[1]))}</div>
+  <div class="pimg">${p.img?`<img src="${p.img}" alt="${p.name[L]||p.name.en}" loading="lazy"${p.id==='fishmeal'?' title="Photo: Phu Thinh Co / Wikimedia Commons (CC BY-SA)"':''}>`:(p.icon?`<span class="emo">${p.icon}</span>`:fishSvg(p.color[0],p.color[1]))}</div>
   ${(()=>{const st=stOf(p);return `<span class="badge ${st==='available'?'av':st==='sold_out'?'sold_out':'ss'}">${t(st)}</span>`})()}
   <h3>${p.name[L]||p.name.en}</h3><div class="latin">${p.latin}</div>
   <p>${p.desc[L]||p.desc.en}</p>${STOCK[p.id]&&STOCK[p.id].qty&&stOf(p)!=='sold_out'?`<div class="qty">● ${isNaN(STOCK[p.id].qty)?STOCK[p.id].qty:STOCK[p.id].qty+' '+t('tons')}${STOCK[p.id].sizes?' · '+STOCK[p.id].sizes:''}</div>`:''}
