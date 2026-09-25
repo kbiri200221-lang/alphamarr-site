@@ -15,6 +15,14 @@ QUERIES = {
     "zh": ("CN", "zh-Hans", ["水产品 OR 渔业 OR 鱼粉", "毛里塔尼亚 渔业 OR 章鱼 进口"]),
     "ar": ("MA", "ar", ["الصيد البحري OR صادرات الأسماك", "موريتانيا الصيد OR دقيق السمك"]),
 }
+LOCAL = {
+    "fr": ("FR", "fr", ["Mauritanie pêche OR Nouadhibou OR \"pêche artisanale\" Mauritanie",
+                        "Mauritanie poulpe OR \"farine de poisson\" Mauritanie OR SMCP OR IMROP",
+                        "Nouakchott port pêche OR Sénégal pirogues Mauritanie"]),
+    "ar": ("MA", "ar", ["موريتانيا الصيد OR نواذيبو", "الصيد التقليدي موريتانيا OR الأخطبوط موريتانيا"]),
+    "en": ("US", "en", ["Mauritania fisheries OR Nouadhibou OR Mauritania fishmeal",
+                        "Mauritania octopus OR Senegal Mauritania fishing"]),
+}
 MAX = 12
 
 def fetch(q, gl, hl):
@@ -44,8 +52,14 @@ def main():
         old = json.load(open("news.json", encoding="utf-8"))
     except Exception:
         old = {"items": {}}
+    items = collect(QUERIES, old.get("items", {}))
+    local = collect(LOCAL, old.get("local", {}))
+    json.dump({"updated": datetime.now(timezone.utc).isoformat(timespec="minutes"), "items": items, "local": local},
+              open("news.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+
+def collect(queries, old):
     items = {}
-    for lang, (gl, hl, qs) in QUERIES.items():
+    for lang, (gl, hl, qs) in queries.items():
         seen, res = set(), []
         for q in qs:
             try:
@@ -56,10 +70,9 @@ def main():
             except Exception as e:
                 print("WARN", lang, q, e)
         res.sort(key=lambda x: x["d"], reverse=True)
-        items[lang] = res[:MAX] or old.get("items", {}).get(lang, [])
+        items[lang] = res[:MAX] or old.get(lang, [])
         print(lang, len(items[lang]))
-    json.dump({"updated": datetime.now(timezone.utc).isoformat(timespec="minutes"), "items": items},
-              open("news.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    return items
 
 if __name__ == "__main__":
     main()
