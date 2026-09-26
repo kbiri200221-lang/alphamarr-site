@@ -53,7 +53,7 @@ html[dir=rtl] .latin{direction:ltr;text-align:right;unicode-bidi:isolate}
 .hero{position:relative;color:#fff;overflow:hidden;background:linear-gradient(135deg,#0b1a2b 0%,#0e3a5c 55%,#1f8ecb 130%)}
 .hero video,.hero .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,26,43,.92) 0%,rgba(11,26,43,.55) 60%,rgba(11,26,43,.2) 100%)}
-.hero .wrap{position:relative;z-index:1;padding:100px 20px 110px;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
+.hero .wrap{position:relative;z-index:1;padding:64px 20px 76px;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
 .tag{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sky);margin-bottom:14px}
 .hero h1{font-size:clamp(34px,5vw,58px);line-height:1.08;font-weight:800;letter-spacing:-1.5px;margin-bottom:20px}
 .hero p{font-size:18px;color:#c9d8e6;max-width:580px;margin-bottom:30px}
@@ -239,6 +239,57 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
 .stnote{color:var(--muted);font-size:14px;margin:0 0 26px;max-width:720px}
 .stk td.empty{text-align:center;color:var(--muted);padding:34px}
 .pimg{position:relative}
+
+/* ===== Phase 1: intents, stock filters, RFQ, lot passport ===== */
+.intents{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px;max-width:640px}
+.intent{display:flex;flex-direction:column;gap:6px;padding:16px 16px 14px;border-radius:14px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;transition:.2s}
+.intent:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
+.intent b{font-size:24px;line-height:1}
+.intent strong{font-size:15px;line-height:1.25}
+.intent small{font-size:12.5px;opacity:.85;line-height:1.35}
+.intent.pri{background:var(--sky-d);border-color:var(--sky-d)}
+@media(max-width:640px){.intents{grid-template-columns:1fr}.intent{flex-direction:row;align-items:center;gap:12px}.intent small{display:none}}
+.stf{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 14px}
+.stf input,.stf select{width:auto;flex:1 1 200px;max-width:320px;background:#fff;color:var(--ink);border:1px solid var(--line)}
+.stf select{flex:0 1 200px}
+.stk .acts{display:flex;gap:6px;justify-content:flex-end;flex-wrap:wrap}
+.stk .acts button{font:600 13px Inter,sans-serif;padding:7px 12px;border-radius:8px;border:0;cursor:pointer;white-space:nowrap}
+.stk .acts .rq{background:var(--sky-d);color:#fff}
+.stk .acts .pp{background:#eef2f6;color:var(--ink)}
+#rfq .rform{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;box-shadow:0 10px 30px rgba(11,26,43,.06)}
+#rfq .rg{display:grid;grid-template-columns:repeat(3,1fr);gap:14px 16px}
+#rfq .rg .w2{grid-column:span 2}#rfq .rg .w3{grid-column:1/-1}
+#rfq label{color:var(--muted);font-weight:600}
+#rfq input,#rfq select,#rfq textarea{background:#fff;color:var(--ink);border:1px solid var(--line)}
+#rfq input:focus,#rfq select:focus,#rfq textarea:focus{outline:2px solid var(--sky);border-color:var(--sky)}
+#rfq textarea{min-height:90px}
+#rfq .qrow{display:flex;gap:8px}#rfq .qrow input{flex:1 1 55%;min-width:0}#rfq .qrow select{flex:1 1 45%;min-width:0}
+#rfq .rsep{grid-column:1/-1;border-top:1px dashed var(--line);margin:4px 0 0;padding-top:10px;font-weight:700;font-size:14px}
+#rfq .rbtn{margin-top:18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+#rfq .rbtn small{color:var(--muted)}
+#rfq .rok{margin-top:16px;padding:14px 16px;border-radius:12px;background:#e3f7ea;color:#157a3b;font-weight:600}
+@media(max-width:800px){#rfq .rg{grid-template-columns:1fr}#rfq .rg .w2{grid-column:auto}#rfq .rform{padding:18px}}
+.ppov{position:fixed;inset:0;z-index:120;background:rgba(11,26,43,.72);display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:30px 14px}
+.ppov.on{display:flex}
+.ppcard{background:#fff;color:var(--ink);border-radius:18px;max-width:760px;width:100%;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.pphd{background:linear-gradient(135deg,var(--sea),var(--ink));color:#fff;padding:22px 24px;display:flex;justify-content:space-between;gap:16px;align-items:flex-start}
+.pphd small{letter-spacing:2px;font-weight:700;color:var(--sky);font-size:12px}
+.pphd h3{font-size:24px;margin:4px 0 2px}.pphd .ln{font-family:ui-monospace,Menlo,monospace;font-size:15px;opacity:.9}
+.pphd .x{background:rgba(255,255,255,.15);border:0;color:#fff;width:34px;height:34px;border-radius:50%;font-size:20px;cursor:pointer}
+.ppbd{display:grid;grid-template-columns:1fr 190px;gap:22px;padding:22px 24px}
+.ppt{width:100%;border-collapse:collapse;font-size:14.5px}
+.ppt th{text-align:start;color:var(--muted);font-weight:600;padding:8px 10px 8px 0;width:42%;border-bottom:1px solid var(--line);vertical-align:top}
+.ppt td{padding:8px 0;border-bottom:1px solid var(--line);font-weight:600}
+.ppqr{text-align:center}.ppqr #ppQr{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px;display:inline-block;min-height:170px;min-width:170px}
+.ppqr #ppQr svg,.ppqr #ppQr img{width:150px;height:150px;display:block}
+.ppqr small{display:block;color:var(--muted);margin-top:8px;font-size:12px;line-height:1.4}
+.ppdocs{padding:0 24px 18px}.ppdocs h4{font-size:15px;margin-bottom:8px}
+.ppdocs ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:6px 14px}.ppdocs li{font-size:14px}
+.ppdocs p{font-size:12.5px;color:var(--muted);margin-top:8px}
+.ppft{display:flex;gap:10px;flex-wrap:wrap;padding:16px 24px 22px;border-top:1px solid var(--line)}
+.ppft .btn.sec{background:#eef2f6;color:var(--ink)}
+@media(max-width:640px){.ppbd{grid-template-columns:1fr}.ppdocs ul{grid-template-columns:1fr}}
+@media print{body>*:not(#pp){display:none!important}#pp{position:static;display:block;background:#fff;padding:0}.ppcard{box-shadow:none;max-width:none}.ppft,.pphd .x{display:none}}
 </style>
 </head>
 <body>
@@ -265,7 +316,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
     <button type="button" class="lang" id="langBtn" aria-label="Language" onclick="event.stopPropagation();document.getElementById('langsel').classList.toggle('open')"><span id="langFlag"></span><span class="car">▾</span></button>
     <div class="langmenu"><button type="button" data-l="en" title="English" aria-label="English" onclick="setLang('en');closeLang()"><svg viewBox="0 0 60 30"><clipPath id="u"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="t"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#u)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></button><button type="button" data-l="fr" title="Français" aria-label="Français" onclick="setLang('fr');closeLang()"><svg viewBox="0 0 3 2"><path fill="#ED2939" d="M0 0h3v2H0z"/><path fill="#fff" d="M0 0h2v2H0z"/><path fill="#002395" d="M0 0h1v2H0z"/></svg></button><button type="button" data-l="es" title="Español" aria-label="Español" onclick="setLang('es');closeLang()"><svg viewBox="0 0 3 2"><path fill="#AA151B" d="M0 0h3v2H0z"/><path fill="#F1BF00" d="M0 .5h3v1H0z"/></svg></button><button type="button" data-l="zh" title="中文" aria-label="中文" onclick="setLang('zh');closeLang()"><svg viewBox="0 0 30 20"><path fill="#DE2910" d="M0 0h30v20H0z"/><path fill="#ffde00" d="M5 3l.9 2.7h2.8L6.4 7.4l.9 2.7L5 8.4 2.7 10.1l.9-2.7L1.3 5.7h2.8z"/><circle cx="10" cy="2" r=".8" fill="#ffde00"/><circle cx="12" cy="4" r=".8" fill="#ffde00"/><circle cx="12" cy="7" r=".8" fill="#ffde00"/><circle cx="10" cy="9" r=".8" fill="#ffde00"/></svg></button><button type="button" data-l="ar" title="العربية" aria-label="العربية" onclick="setLang('ar');closeLang()"><svg viewBox="0 0 30 20"><path fill="#D01C1F" d="M0 0h30v20H0z"/><path fill="#00A95C" d="M0 3h30v14H0z"/><path fill="#FFD700" d="M9.2 8.6a5.8 5.8 0 0 0 11.6 0 6.4 5.6 0 0 1-11.6 0z"/><path fill="#FFD700" d="M15 5l.6 1.8h1.9l-1.5 1.1.6 1.8-1.6-1.1-1.6 1.1.6-1.8-1.5-1.1h1.9z"/></svg></button></div>
    </div>
-   <a href="#contact" class="btn" data-i="quote"></a>
+   <a href="#rfq" class="btn" data-i="quote"></a>
    <button class="burger" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Menu">☰</button>
   </div>
  </div>
@@ -279,10 +330,10 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    <span class="tag" data-i="hero_tag"></span>
    <h1 data-i="hero_h1"></h1>
    <p data-i="hero_p"></p>
-   <div class="cta">
-    <a href="#contact" class="btn" data-i="quote"></a>
-    <a class="btn wa js-wa" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg><span>WhatsApp</span></a>
-    <a href="#stock" class="btn ghost"><i class="dot"></i><span data-i="see_stock"></span></a>
+   <div class="intents">
+    <a href="#rfq" class="intent pri"><b>🛒</b><span><strong data-i="in_buy"></strong><br><small data-i="in_buy_s"></small></span></a>
+    <a href="#stock" class="intent"><b>📦</b><span><strong data-i="in_av"></strong><br><small data-i="in_av_s"></small></span></a>
+    <a href="#contact" class="intent" onclick="meetUs()"><b>🤝</b><span><strong data-i="in_meet"></strong><br><small data-i="in_meet_s"></small></span></a>
    </div>
   </div>
   <div class="hero-card">
@@ -369,11 +420,42 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    <div class="tabs" id="stTabs" style="margin:0"></div>
    <div class="upd" id="stUpd"></div>
   </div>
+  <div class="stf"><input id="stQ" type="search" oninput="STQ=this.value;renderStock()" autocomplete="off"><select id="stS" onchange="STS=this.value;renderStock()"></select></div>
   <div class="tblw"><table class="stk">
    <thead><tr><th data-i="c_prod"></th><th data-i="c_status"></th><th data-i="c_qty"></th><th data-i="c_sizes"></th><th data-i="c_pack"></th><th data-i="c_origin"></th><th></th></tr></thead>
    <tbody id="stBody"></tbody>
   </table></div>
   <div class="lots" id="lotsWrap" hidden><h3 class="nh"><span>📸</span><span data-i="ph_title"></span></h3><p class="stnote" data-i="ph_sub"></p><div class="lotgrid" id="lots"></div></div>
+ </div>
+</section>
+
+<section id="rfq" class="alt">
+ <div class="wrap">
+  <div class="head">
+   <span class="tag" data-i="rq_tag"></span>
+   <h2 data-i="rq_h2"></h2>
+   <p data-i="rq_p"></p>
+  </div>
+  <form id="rform" class="rform" onsubmit="sendRfq(event)">
+   <div class="rg">
+    <div><label data-i="rq_species"></label><select name="species" id="rqSp" required></select></div>
+    <div><label data-i="rq_size"></label><input name="size" placeholder="T3 · 1–2 kg · 300/500 g"></div>
+    <div><label data-i="rq_form"></label><select name="form" id="rqForm"></select></div>
+    <div><label data-i="rq_qty"></label><div class="qrow"><input name="qty" required inputmode="decimal"><select name="unit" id="rqUnit"></select></div></div>
+    <div><label data-i="rq_dest"></label><input name="dest" required></div>
+    <div><label data-i="rq_deliv"></label><input name="deliv" type="month"></div>
+    <div><label data-i="rq_inco"></label><select name="inco" id="rqInco"></select></div>
+    <div class="w2"><label data-i="rq_pack"></label><input name="pack"></div>
+    <div class="rsep" data-i="rq_you"></div>
+    <div><label data-i="f_company"></label><input name="company" required></div>
+    <div><label data-i="f_name"></label><input name="name" required></div>
+    <div><label>Email</label><input name="email" type="email" required></div>
+    <div><label data-i="rq_phone"></label><input name="phone" type="tel" dir="ltr"></div>
+    <div class="w2"><label data-i="rq_notes"></label><textarea name="notes"></textarea></div>
+   </div>
+   <div class="rbtn"><button class="btn" type="submit" data-i="rq_send"></button><small data-i="rq_hint"></small></div>
+   <div class="rok" id="rqOk" hidden></div>
+  </form>
  </div>
 </section>
 
@@ -537,6 +619,7 @@ const CONFIG = {
   linkedin: 'https://www.linkedin.com/company/alphamarr/',
   heroVideo:'',            // e.g. 'media/hero.mp4'
   heroImage:'',            // e.g. 'media/hero.jpg'
+  rfqEndpoint:'',           // optional: Google Apps Script URL that stores RFQs in a Sheet (else: email)
   stockSheetId:'1Q0WPEy0Yf9Ky9sABkIkAcfdCEN1LKrWsT6ZSjc82dYg',         // Google Sheet ID for live stock (shared: anyone with link can view)
   fleetMedia:'fleet.webp'            // e.g. 'media/pirogues.jpg' or '.mp4'
 };
@@ -980,6 +1063,11 @@ Object.assign(T.en,{"addr": "Nouadhibou Industrial Zone", "rc_l": "Trade Reg. No
 Object.assign(T.es,{"addr": "Zona Industrial de Nuadibú", "rc_l": "Registro Mercantil", "nif_l": "NIF", "reg": "Registro"});
 Object.assign(T.zh,{"addr": "努瓦迪布工业区", "rc_l": "商业注册号", "nif_l": "税号 (NIF)", "reg": "注册信息"});
 Object.assign(T.ar,{"addr": "المنطقة الصناعية لنواذيبو", "rc_l": "السجل التجاري", "nif_l": "الرقم الضريبي", "reg": "التسجيل"});
+Object.assign(T.en,{"in_buy": "I want to buy", "in_buy_s": "Tell us the species, size and volume you need", "in_av": "See availability", "in_av_s": "Live stock from Nouadhibou, updated by our team", "in_meet": "Meet AlphaMarr", "in_meet_s": "At a trade show or by video call", "sf_q": "Search a species or size", "sf_all": "All statuses", "req_lot": "Request this lot", "pp_btn": "Passport", "rq_tag": "Request a seafood", "rq_h2": "Tell us what you are looking for", "rq_p": "Not in our stock list? Describe your requirement — species, size, volume, destination — and we source it from Mauritanian vessels, plants and partner exporters. Each request gets a reference number and a reply from our sales team.", "rq_species": "Species", "rq_other": "Other species (specify in notes)", "rq_size": "Size / grade", "rq_form": "Product form", "rq_qty": "Quantity", "rq_dest": "Destination (country / port)", "rq_deliv": "Delivery month", "rq_inco": "Incoterm", "rq_pack": "Packing requirements", "rq_you": "Your company", "rq_phone": "Phone", "rq_notes": "Notes (quality, certificates, target price…)", "rq_send": "Send my request", "rq_hint": "No commitment — we reply with availability and an offer.", "rq_ok": "Request {r} received. Our sales team will reply to you by email.", "rq_ok2": "Your email app has opened with request {r}. If it did not open, write to {e} and quote this reference.", "fm_frozen": "Frozen", "fm_fresh": "Fresh / chilled", "fm_dried": "Dried / salted", "fm_meal": "Fishmeal", "fm_oil": "Fish oil", "u_mt": "MT (tons)", "u_c40": "× 40' reefer", "u_c20": "× 20' reefer", "u_kg": "kg", "inco_tbd": "To discuss", "pp_lot": "Lot", "pp_species": "Species", "pp_origin": "Origin", "pp_landing": "Landing / plant", "pp_catch": "Catch date", "pp_fao": "Catch area", "pp_size": "Size / grade", "pp_proc": "Processing", "pp_freeze": "Freezing", "pp_pack": "Packing", "pp_qty": "Quantity", "pp_cont": "Container", "pp_upd": "Last update", "pp_docs": "Documents for this lot", "pp_docs_n": "Documents are shared with the buyer of the lot on request — they are not published online.", "pp_print": "Print", "pp_copy": "Copy link", "pp_scan": "Scan to open this lot passport", "pp_nf": "This lot is no longer listed or the number is incorrect. Contact us with the lot number and we will send you its details.", "meet_msg": "I would like to schedule a meeting with AlphaMarr"});
+Object.assign(T.fr,{"in_buy": "Je veux acheter", "in_buy_s": "Indiquez l'espèce, le calibre et le volume recherchés", "in_av": "Voir la disponibilité", "in_av_s": "Stock en direct de Nouadhibou, mis à jour par notre équipe", "in_meet": "Rencontrer AlphaMarr", "in_meet_s": "Sur un salon ou en visioconférence", "sf_q": "Rechercher une espèce ou un calibre", "sf_all": "Tous les statuts", "req_lot": "Demander ce lot", "pp_btn": "Passeport", "rq_tag": "Demande de produit", "rq_h2": "Dites-nous ce que vous recherchez", "rq_p": "Pas dans notre liste de stock ? Décrivez votre besoin — espèce, calibre, volume, destination — et nous le sourçons auprès des navires, usines et exportateurs partenaires en Mauritanie. Chaque demande reçoit un numéro de référence et une réponse de notre équipe commerciale.", "rq_species": "Espèce", "rq_other": "Autre espèce (préciser en notes)", "rq_size": "Calibre / taille", "rq_form": "Présentation", "rq_qty": "Quantité", "rq_dest": "Destination (pays / port)", "rq_deliv": "Mois de livraison", "rq_inco": "Incoterm", "rq_pack": "Exigences d'emballage", "rq_you": "Votre société", "rq_phone": "Téléphone", "rq_notes": "Notes (qualité, certificats, prix cible…)", "rq_send": "Envoyer ma demande", "rq_hint": "Sans engagement — nous répondons avec la disponibilité et une offre.", "rq_ok": "Demande {r} reçue. Notre équipe commerciale vous répondra par email.", "rq_ok2": "Votre messagerie s'est ouverte avec la demande {r}. Si elle ne s'est pas ouverte, écrivez à {e} en indiquant cette référence.", "fm_frozen": "Congelé", "fm_fresh": "Frais / réfrigéré", "fm_dried": "Séché / salé", "fm_meal": "Farine de poisson", "fm_oil": "Huile de poisson", "u_mt": "T (tonnes)", "u_c40": "× conteneur 40' reefer", "u_c20": "× conteneur 20' reefer", "u_kg": "kg", "inco_tbd": "À discuter", "pp_lot": "Lot", "pp_species": "Espèce", "pp_origin": "Origine", "pp_landing": "Débarquement / usine", "pp_catch": "Date de capture", "pp_fao": "Zone de capture", "pp_size": "Calibre", "pp_proc": "Transformation", "pp_freeze": "Congélation", "pp_pack": "Emballage", "pp_qty": "Quantité", "pp_cont": "Conteneur", "pp_upd": "Mise à jour", "pp_docs": "Documents du lot", "pp_docs_n": "Les documents sont transmis à l'acheteur du lot sur demande — ils ne sont pas publiés en ligne.", "pp_print": "Imprimer", "pp_copy": "Copier le lien", "pp_scan": "Scannez pour ouvrir ce passeport de lot", "pp_nf": "Ce lot n'est plus affiché ou le numéro est incorrect. Contactez-nous avec le numéro de lot et nous vous enverrons ses informations.", "meet_msg": "Je souhaite organiser une rencontre avec AlphaMarr"});
+Object.assign(T.es,{"in_buy": "Quiero comprar", "in_buy_s": "Indíquenos la especie, talla y volumen que necesita", "in_av": "Ver disponibilidad", "in_av_s": "Stock en vivo desde Nuadibú, actualizado por nuestro equipo", "in_meet": "Reunirse con AlphaMarr", "in_meet_s": "En una feria o por videollamada", "sf_q": "Buscar una especie o talla", "sf_all": "Todos los estados", "req_lot": "Solicitar este lote", "pp_btn": "Pasaporte", "rq_tag": "Solicitud de producto", "rq_h2": "Díganos qué está buscando", "rq_p": "¿No está en nuestra lista de stock? Describa su necesidad — especie, talla, volumen, destino — y la conseguimos de buques, plantas y exportadores asociados en Mauritania. Cada solicitud recibe un número de referencia y una respuesta de nuestro equipo comercial.", "rq_species": "Especie", "rq_other": "Otra especie (indicar en notas)", "rq_size": "Talla / calibre", "rq_form": "Presentación", "rq_qty": "Cantidad", "rq_dest": "Destino (país / puerto)", "rq_deliv": "Mes de entrega", "rq_inco": "Incoterm", "rq_pack": "Requisitos de embalaje", "rq_you": "Su empresa", "rq_phone": "Teléfono", "rq_notes": "Notas (calidad, certificados, precio objetivo…)", "rq_send": "Enviar mi solicitud", "rq_hint": "Sin compromiso — respondemos con disponibilidad y una oferta.", "rq_ok": "Solicitud {r} recibida. Nuestro equipo comercial le responderá por email.", "rq_ok2": "Su correo se ha abierto con la solicitud {r}. Si no se abrió, escriba a {e} indicando esta referencia.", "fm_frozen": "Congelado", "fm_fresh": "Fresco / refrigerado", "fm_dried": "Seco / salado", "fm_meal": "Harina de pescado", "fm_oil": "Aceite de pescado", "u_mt": "T (toneladas)", "u_c40": "× contenedor 40' reefer", "u_c20": "× contenedor 20' reefer", "u_kg": "kg", "inco_tbd": "A negociar", "pp_lot": "Lote", "pp_species": "Especie", "pp_origin": "Origen", "pp_landing": "Desembarque / planta", "pp_catch": "Fecha de captura", "pp_fao": "Zona de captura", "pp_size": "Talla", "pp_proc": "Procesamiento", "pp_freeze": "Congelación", "pp_pack": "Embalaje", "pp_qty": "Cantidad", "pp_cont": "Contenedor", "pp_upd": "Actualización", "pp_docs": "Documentos del lote", "pp_docs_n": "Los documentos se envían al comprador del lote bajo solicitud — no se publican en línea.", "pp_print": "Imprimir", "pp_copy": "Copiar enlace", "pp_scan": "Escanee para abrir este pasaporte de lote", "pp_nf": "Este lote ya no está publicado o el número es incorrecto. Contáctenos con el número de lote y le enviaremos sus datos.", "meet_msg": "Deseo concertar una reunión con AlphaMarr"});
+Object.assign(T.zh,{"in_buy": "我要采购", "in_buy_s": "告诉我们您需要的品种、规格和数量", "in_av": "查看现货", "in_av_s": "努瓦迪布实时库存，由团队更新", "in_meet": "与 AlphaMarr 会面", "in_meet_s": "展会现场或视频会议", "sf_q": "搜索品种或规格", "sf_all": "全部状态", "req_lot": "询价此批次", "pp_btn": "批次护照", "rq_tag": "采购需求", "rq_h2": "告诉我们您在找什么", "rq_p": "库存列表中没有？请描述您的需求——品种、规格、数量、目的地——我们将从毛里塔尼亚渔船、工厂和合作出口商处为您采购。每个需求都会获得参考编号，并由我们的销售团队回复。", "rq_species": "品种", "rq_other": "其他品种（请在备注中说明）", "rq_size": "规格 / 等级", "rq_form": "产品形态", "rq_qty": "数量", "rq_dest": "目的地（国家 / 港口）", "rq_deliv": "交货月份", "rq_inco": "贸易条款", "rq_pack": "包装要求", "rq_you": "贵公司信息", "rq_phone": "电话", "rq_notes": "备注（质量、证书、目标价格…）", "rq_send": "提交需求", "rq_hint": "无任何义务——我们将回复供货情况和报价。", "rq_ok": "已收到需求 {r}。我们的销售团队将通过电子邮件回复您。", "rq_ok2": "您的邮件应用已打开需求 {r}。如未打开，请发送邮件至 {e} 并注明此编号。", "fm_frozen": "冷冻", "fm_fresh": "鲜品 / 冰鲜", "fm_dried": "干制 / 盐渍", "fm_meal": "鱼粉", "fm_oil": "鱼油", "u_mt": "吨", "u_c40": "× 40尺冷柜", "u_c20": "× 20尺冷柜", "u_kg": "公斤", "inco_tbd": "可商议", "pp_lot": "批次", "pp_species": "品种", "pp_origin": "原产地", "pp_landing": "卸货地 / 工厂", "pp_catch": "捕捞日期", "pp_fao": "捕捞区域", "pp_size": "规格", "pp_proc": "加工方式", "pp_freeze": "冷冻方式", "pp_pack": "包装", "pp_qty": "数量", "pp_cont": "集装箱", "pp_upd": "更新日期", "pp_docs": "本批次单证", "pp_docs_n": "单证仅应要求提供给该批次买家——不在网上公开。", "pp_print": "打印", "pp_copy": "复制链接", "pp_scan": "扫码打开此批次护照", "pp_nf": "该批次已下架或编号有误。请提供批次编号联系我们，我们将发送详细信息。", "meet_msg": "我希望与 AlphaMarr 安排会面"});
+Object.assign(T.ar,{"in_buy": "أريد الشراء", "in_buy_s": "حدّدوا النوع والمقاس والكمية المطلوبة", "in_av": "عرض المتوفر", "in_av_s": "مخزون مباشر من نواذيبو يحدّثه فريقنا", "in_meet": "لقاء ألفا مار", "in_meet_s": "في معرض أو عبر مكالمة فيديو", "sf_q": "ابحث عن نوع أو مقاس", "sf_all": "كل الحالات", "req_lot": "اطلب هذه الدفعة", "pp_btn": "جواز الدفعة", "rq_tag": "طلب منتج بحري", "rq_h2": "أخبرونا بما تبحثون عنه", "rq_p": "ليس في قائمة مخزوننا؟ صِفوا طلبكم — النوع والمقاس والكمية والوجهة — ونوفّره لكم من السفن والمصانع والمصدّرين الشركاء في موريتانيا. يحصل كل طلب على رقم مرجعي ورد من فريق المبيعات.", "rq_species": "النوع", "rq_other": "نوع آخر (حدّدوه في الملاحظات)", "rq_size": "المقاس / الدرجة", "rq_form": "شكل المنتج", "rq_qty": "الكمية", "rq_dest": "الوجهة (البلد / الميناء)", "rq_deliv": "شهر التسليم", "rq_inco": "شرط التسليم", "rq_pack": "متطلبات التعبئة", "rq_you": "شركتكم", "rq_phone": "الهاتف", "rq_notes": "ملاحظات (الجودة، الشهادات، السعر المستهدف…)", "rq_send": "إرسال طلبي", "rq_hint": "دون التزام — نرد بالتوفر وعرض سعر.", "rq_ok": "تم استلام الطلب {r}. سيرد عليكم فريق المبيعات بالبريد الإلكتروني.", "rq_ok2": "فُتح بريدكم الإلكتروني بالطلب {r}. إن لم يُفتح، راسلونا على {e} مع ذكر هذا المرجع.", "fm_frozen": "مجمّد", "fm_fresh": "طازج / مبرّد", "fm_dried": "مجفّف / مملّح", "fm_meal": "دقيق السمك", "fm_oil": "زيت السمك", "u_mt": "طن", "u_c40": "× حاوية مبرّدة 40 قدم", "u_c20": "× حاوية مبرّدة 20 قدم", "u_kg": "كغ", "inco_tbd": "للنقاش", "pp_lot": "الدفعة", "pp_species": "النوع", "pp_origin": "المنشأ", "pp_landing": "الإنزال / المصنع", "pp_catch": "تاريخ الصيد", "pp_fao": "منطقة الصيد", "pp_size": "المقاس", "pp_proc": "التحويل", "pp_freeze": "التجميد", "pp_pack": "التعبئة", "pp_qty": "الكمية", "pp_cont": "الحاوية", "pp_upd": "آخر تحديث", "pp_docs": "وثائق الدفعة", "pp_docs_n": "تُرسل الوثائق إلى مشتري الدفعة عند الطلب — ولا تُنشر على الإنترنت.", "pp_print": "طباعة", "pp_copy": "نسخ الرابط", "pp_scan": "امسحوا الرمز لفتح جواز هذه الدفعة", "pp_nf": "هذه الدفعة لم تعد معروضة أو الرقم غير صحيح. تواصلوا معنا برقم الدفعة وسنرسل لكم تفاصيلها.", "meet_msg": "أرغب في ترتيب لقاء مع ألفا مار"});
 Object.assign(T.fr,{"l_wa": "WhatsApp", "l_tel": "Téléphone", "l_fax": "Fax"});
 Object.assign(T.en,{"l_wa": "WhatsApp", "l_tel": "Phone", "l_fax": "Fax"});
 Object.assign(T.es,{"l_wa": "WhatsApp", "l_tel": "Teléfono", "l_fax": "Fax"});
@@ -998,7 +1086,7 @@ function renderPop(){
  const range=fmtD(e.s,{day:'numeric',month:'short'})+' – '+fmtD(e.e,{day:'numeric',month:'short',year:'numeric'});
  box.innerHTML=`<div class="wrap"><span class="evlb"><i></i>${t('ev_next')}</span>
  ${evLogo(e,'evlogo')}<a class="tx" href="${e.u}" target="_blank" rel="noopener"><b>${esc(e.n)}</b> <span>· 📍 ${esc(e.c)} · ${range} — ${t('ev_meet')}</span></a>
- ${cd}<a class="bk" href="#contact">${t('ev_book')} ${L==='ar'?'←':'→'}</a><button class="x" aria-label="${t('close')}" onclick="closePop()">×</button></div>`;
+ ${cd}<a class="bk" href="#contact" onclick="meetUs()">${t('ev_book')} ${L==='ar'?'←':'→'}</a><button class="x" aria-label="${t('close')}" onclick="closePop()">×</button></div>`;
  return true;
 }
 function closePop(){$('#evbar').classList.remove('on');try{sessionStorage.setItem('am_bar','1')}catch(e){}}
@@ -1009,6 +1097,7 @@ async function loadNews(){
 }
 
 
+let STQ='',STS='all';
 let STOCK={}, STOCK_ROWS=[], STOCK_TIME='', STOCK_LIVE=false, STTAB='all', STTYPE='stock';
 function parseCSV(txt){const rows=[];let r=[],f='',q=false;for(let i=0;i<txt.length;i++){const c=txt[i];
  if(q){if(c=='"'){if(txt[i+1]=='"'){f+='"';i++}else q=false}else f+=c}
@@ -1024,10 +1113,10 @@ async function loadStock(){
   STOCK={};STOCK_ROWS=[];let last='';
   rows.forEach(r=>{const id=g(r,'id'),prod=g(r,'product');if(!id&&!prod)return;
    const typ=(g(r,'type')||'stock').toLowerCase().startsWith('trad')?'trading':'stock';
-   const o={id,product:prod,type:typ,status:g(r,'status').toLowerCase().replace(/\s+/g,'_'),qty:g(r,'quantity'),sizes:g(r,'sizes'),packing:g(r,'packing'),origin:g(r,'origin'),updated:g(r,'updated'),photos:toImgs(g(r,'photo'))};
+   const o={id,product:prod,type:typ,status:g(r,'status').toLowerCase().replace(/\s+/g,'_'),qty:g(r,'quantity'),sizes:g(r,'sizes'),packing:g(r,'packing'),origin:g(r,'origin'),updated:g(r,'updated'),photos:toImgs(g(r,'photo')),lot:g(r,'lot'),catch:g(r,'catch'),landing:g(r,'landing'),fao:g(r,'fao'),proc:g(r,'process'),freeze:g(r,'freez'),cont:g(r,'container'),docs:g(r,'doc')};
    STOCK_ROWS.push(o); if(typ==='stock'&&id)STOCK[id]=o; if(o.updated>last)last=o.updated});
   STOCK_TIME=last;STOCK_LIVE=true}catch(e){STOCK_LIVE=false}
- render()}
+ render();checkPassUrl()}
 const stOf=p=>(STOCK[p.id]&&STOCK[p.id].status)||p.status||'on_order';
 // Photos from the Sheet "photo" column: Google Drive share links or direct image URLs (several separated by space/comma)
 function toImgs(v){return (v||'').split(/[\s,;]+/).filter(Boolean).map(u=>{const m=u.match(/\/d\/([\w-]{20,})/)||u.match(/[?&]id=([\w-]{20,})/);return m?'https://lh3.googleusercontent.com/d/'+m[1]+'=w1400':(/^https?:\/\//.test(u)?u:'')}).filter(Boolean)}
@@ -1040,7 +1129,7 @@ function renderLots(){
   const info=[q,o.sizes,o.packing].filter(Boolean).join(' · ');
   return `<div class="lot"><div class="ph" onclick="openLot(${i},0)"><img src="${esc(o.photos[0])}" alt="${esc(nm)}" loading="lazy" referrerpolicy="no-referrer">${o.photos.length>1?`<span class="n">📷 ${o.photos.length}</span>`:''}<span class="ty">${t('st_'+o.type)}</span></div>
   <div class="bd"><h4>${esc(nm||'')}</h4>${info?`<p>${esc(info)}</p>`:''}<p>📍 ${esc(o.origin||'Nouadhibou')}${o.updated?' · '+esc(o.updated):''}</p>
-  <a class="ask" href="#contact" ${p?`onclick="$('#psel').value='${p.id}'"`:''}>${t('ph_ask')}</a></div></div>`}).join('');
+  <a class="ask" href="#rfq" onclick="reqLot('${p?p.id:''}',${STOCK_ROWS.indexOf(o)});return false">${t('ph_ask')}</a></div></div>`}).join('');
 }
 function openLot(i,k){const o=LOTS[i];if(!o)return;const n=o.photos.length;k=(k+n)%n;
  $('#lbc').innerHTML=`<img src="${esc(o.photos[k])}" alt="" referrerpolicy="no-referrer">${n>1?`<button class="nav p" onclick="openLot(${i},${k-1})">‹</button><button class="nav nx" onclick="openLot(${i},${k+1})">›</button>`:''}`;$('#lb').classList.add('on')}
@@ -1056,17 +1145,98 @@ function renderStock(){
  }else{
   rows=STOCK_ROWS.filter(o=>o.type==='trading').map(o=>({p:P(o.id),s:o,st:o.status||'available'})).filter(x=>STTAB==='all'||!x.p||x.p.markets.includes(STTAB));
  }
+ const nq=STQ.trim().toLowerCase();
+ if(nq)rows=rows.filter(({p,s})=>[p&&p.name[L],p&&p.name.en,p&&p.latin,s.product,s.sizes].filter(Boolean).join(' ').toLowerCase().includes(nq));
+ if(STS!=='all')rows=rows.filter(x=>STS==='on_order'?(x.st==='on_order'||x.st==='season'):x.st===STS);
+ $('#stQ').placeholder='🔎 '+t('sf_q');
+ $('#stS').innerHTML=['all','available','on_order'].map(x=>`<option value="${x}"${STS===x?' selected':''}>${x==='all'?t('sf_all'):t(x)}</option>`).join('');
  rows.sort((a,b)=>(order[a.st]??1)-(order[b.st]??1));
  if(!rows.length){$('#stBody').innerHTML=`<tr><td colspan="7" class="empty">${t('no_offer')}</td></tr>`}
  else $('#stBody').innerHTML=rows.map(({p,s,st})=>{const nm=p?(p.name[L]||p.name.en):s.product;const en=p?p.name.en:s.product;const lat=p?p.latin:(s.product&&p?'':'');
   const q=s.qty?(isNaN(s.qty)?s.qty:s.qty+' '+t('tons')):'—';
   const msg=t('msg_hello')+' '+en+(s.sizes?' ('+s.sizes+')':'')+(STTYPE==='trading'?' — '+t('st_trading'):'');
-  const link=CONFIG.whatsapp?`<a class="ask" target="_blank" rel="noopener" href="${waLink(msg)}">${t('ask')}</a>`:`<a class="ask m" href="#contact" ${p?`onclick="$('#psel').value='${p.id}'"`:''}>${t('ask')}</a>`;
+  const ri=STOCK_ROWS.indexOf(s);
+  const link=`<div class="acts">${s.lot?`<button class="pp" onclick="openPass('${esc(s.lot)}')">🔖 ${t('pp_btn')}</button>`:''}<button class="rq" onclick="reqLot('${p?p.id:''}',${ri})">${t('req_lot')}</button></div>`;
   return `<tr><td><b>${nm||'—'}</b>${p?`<small>${p.latin}</small>`:''}</td><td><span class="st ${st}">${t(st)}</span></td><td>${q}</td><td>${s.sizes||'—'}</td><td>${s.packing||(p?(p.chips[L]||p.chips.en).join(', '):'—')}</td><td>${s.origin||(STTYPE==='stock'?'Nouadhibou':'—')}</td><td>${st==='sold_out'?'':link}</td></tr>`}).join('');
  renderLots();
  $('#stUpd').innerHTML=STOCK_LIVE?`<i class="dot"></i>${t('upd')} : ${STOCK_TIME||'—'}`:t('live_off');
 }
 setInterval(()=>{if(CONFIG.stockSheetId)loadStock()},5*60*1000);
+
+/* ===== RFQ — "I'm looking for" ===== */
+function renderRfq(){
+ const keep=id=>{const e=$(id);return e?e.value:''};
+ const sp=keep('#rqSp'),fm=keep('#rqForm'),un=keep('#rqUnit'),ic=keep('#rqInco');
+ $('#rqSp').innerHTML=`<option value="">—</option>`+PRODUCTS.map(p=>`<option value="${p.id}">${p.name[L]||p.name.en}</option>`).join('')+`<option value="other">${t('rq_other')}</option>`;
+ $('#rqForm').innerHTML=['frozen','fresh','dried','meal','oil'].map(x=>`<option value="${x}">${t('fm_'+x)}</option>`).join('');
+ $('#rqUnit').innerHTML=['mt','c40','c20','kg'].map(x=>`<option value="${x}">${t('u_'+x)}</option>`).join('');
+ $('#rqInco').innerHTML=['tbd','FOB','CFR','CIF','EXW'].map(x=>`<option value="${x}">${x==='tbd'?t('inco_tbd'):x}</option>`).join('');
+ if(sp)$('#rqSp').value=sp;if(fm)$('#rqForm').value=fm;if(un)$('#rqUnit').value=un;if(ic)$('#rqInco').value=ic;
+}
+function reqLot(pid,ri){
+ const s=STOCK_ROWS[ri]||{};const f=$('#rform');
+ if(pid)$('#rqSp').value=pid;
+ if(s.sizes)f.size.value=s.sizes;
+ if(s.packing)f.pack.value=s.packing;
+ if(pid==='fishmeal')$('#rqForm').value='meal';else if(pid==='fishoil')$('#rqForm').value='oil';else if(pid==='fresh')$('#rqForm').value='fresh';else $('#rqForm').value='frozen';
+ if(s.lot)f.notes.value=(t('pp_lot')+' '+s.lot+'\n'+f.notes.value.replace(/^.*\n?/,m=>m.includes(s.lot)?'':m)).trim();
+ $('#rqOk').hidden=true;
+ document.getElementById('rfq').scrollIntoView({behavior:'smooth'});setTimeout(()=>f.qty.focus({preventScroll:true}),600);
+}
+function meetUs(){
+ const f=$('#qform');if(!f)return;
+ const ev=(typeof nextEvent==='function')?nextEvent():null;
+ f.msg.value=t('meet_msg')+(ev?' — '+ev.n+' ('+ev.c+')':'');
+}
+async function sendRfq(e){
+ e.preventDefault();const f=new FormData($('#rform'));const g=k=>(f.get(k)||'').toString().trim();
+ const pid=g('species');const p=PRODUCTS.find(x=>x.id===pid);const sp=p?p.name.en:(pid==='other'?'Other':'');
+ const d=new Date();const ref='RFQ-'+d.toISOString().slice(0,10).replace(/-/g,'')+'-'+Math.random().toString(36).slice(2,6).toUpperCase();
+ const E=k=>T.en[k]||k;
+ const lines=[
+  'REQUEST A SEAFOOD — '+ref,'',
+  'Species: '+sp,'Size: '+g('size'),'Form: '+E('fm_'+g('form')),
+  'Quantity: '+g('qty')+' '+E('u_'+g('unit')),'Destination: '+g('dest'),
+  'Delivery: '+g('deliv'),'Incoterm: '+(g('inco')==='tbd'?'To discuss':g('inco')),'Packing: '+g('pack'),'',
+  'Company: '+g('company'),'Name: '+g('name'),'Email: '+g('email'),'Phone: '+g('phone'),'',
+  'Notes: '+g('notes'),'','Language: '+L+' · Sent from alphamarr.com'];
+ const body=lines.join('\n');
+ const ok=$('#rqOk');
+ if(CONFIG.rfqEndpoint){
+  try{await fetch(CONFIG.rfqEndpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain'},body:JSON.stringify({ref,lang:L,species:sp,size:g('size'),form:g('form'),qty:g('qty'),unit:g('unit'),dest:g('dest'),deliv:g('deliv'),inco:g('inco'),pack:g('pack'),company:g('company'),name:g('name'),email:g('email'),phone:g('phone'),notes:g('notes')})});
+   ok.textContent='✅ '+t('rq_ok').replace('{r}',ref);ok.hidden=false;$('#rform').reset();renderRfq();return}catch(err){}
+ }
+ location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent(ref+' – '+sp+' – '+g('qty')+' '+E('u_'+g('unit'))+' – '+g('dest'))}&body=${encodeURIComponent(body)}`;
+ ok.textContent='✉️ '+t('rq_ok2').replace('{r}',ref).replace('{e}',CONFIG.email);ok.hidden=false;
+}
+
+/* ===== LOT PASSPORT ===== */
+let QRLIB=null;
+function loadQr(){if(QRLIB)return QRLIB;QRLIB=new Promise((res,rej)=>{const sc=document.createElement('script');sc.src='https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js';sc.onload=()=>res(window.qrcode);sc.onerror=rej;document.head.appendChild(sc)});return QRLIB}
+const passUrl=lot=>location.origin+location.pathname+'?lot='+encodeURIComponent(lot);
+let PASS_LOT='';
+function openPass(lot){PASS_LOT=lot;
+ const s=STOCK_ROWS.find(o=>o.lot&&o.lot.toLowerCase()===String(lot).toLowerCase());
+ const c=$('#ppCard');
+ if(!s){c.innerHTML=`<div class="pphd"><div><small>ALPHAMARR · LOT PASSPORT</small><h3>${esc(lot)}</h3></div><button class="x" onclick="closePass()" aria-label="${t('close')}">×</button></div><div class="ppbd" style="display:block"><p>${t('pp_nf')}</p></div><div class="ppft"><a class="btn" href="#rfq" onclick="closePass()">${t('quote')}</a></div>`;$('#pp').classList.add('on');return}
+ const p=PRODUCTS.find(x=>x.id===s.id);const nm=p?(p.name[L]||p.name.en):s.product;
+ const q=s.qty?(isNaN(s.qty)?s.qty:s.qty+' '+t('tons')):'';
+ const rows=[['pp_species',nm+(p?` <small style="color:var(--muted);font-weight:500"><i>${p.latin}</i></small>`:''),1],['pp_origin',t('mr')],['pp_landing',s.landing||s.origin],['pp_catch',s.catch],['pp_fao',s.fao],['pp_size',s.sizes],['pp_proc',s.proc],['pp_freeze',s.freeze],['pp_pack',s.packing],['pp_qty',q],['pp_cont',s.cont],['c_status',`<span class="st ${s.status}">${t(s.status)}</span>`,1],['pp_upd',s.updated]]
+  .filter(r=>r[1]).map(r=>`<tr><th>${t(r[0])}</th><td>${r[2]?r[1]:esc(r[1])}</td></tr>`).join('');
+ const docs=(s.docs||'').split(/[;,\n]+/).map(x=>x.trim()).filter(Boolean);
+ c.innerHTML=`<div class="pphd"><div><small>ALPHAMARR · LOT PASSPORT</small><h3>${esc(nm)}</h3><div class="ln">${t('pp_lot')} ${esc(s.lot)}</div></div><button class="x" onclick="closePass()" aria-label="${t('close')}">×</button></div>
+ <div class="ppbd"><table class="ppt">${rows}</table><div class="ppqr"><div id="ppQr"></div><small>${t('pp_scan')}</small></div></div>
+ ${docs.length?`<div class="ppdocs"><h4>📂 ${t('pp_docs')}</h4><ul>${docs.map(d=>`<li>📄 ${esc(d)}</li>`).join('')}</ul><p>${t('pp_docs_n')}</p></div>`:''}
+ <div class="ppft"><button class="btn" onclick="closePass();reqLot('${p?p.id:''}',${STOCK_ROWS.indexOf(s)})">${t('req_lot')}</button><button class="btn sec" onclick="window.print()">🖨 ${t('pp_print')}</button><button class="btn sec" onclick="navigator.clipboard&&navigator.clipboard.writeText(passUrl('${esc(s.lot)}'));this.textContent='✓'">🔗 ${t('pp_copy')}</button></div>`;
+ $('#pp').classList.add('on');
+ try{history.replaceState(null,'','?lot='+encodeURIComponent(s.lot)+location.hash)}catch(e){}
+ loadQr().then(qr=>{const o=qr(0,'M');o.addData(passUrl(s.lot));o.make();$('#ppQr').innerHTML=o.createSvgTag({cellSize:4,margin:2,scalable:true})}).catch(()=>{$('#ppQr').textContent=s.lot});
+}
+function closePass(){PASS_LOT='';$('#pp').classList.remove('on');try{history.replaceState(null,'',location.pathname+location.hash)}catch(e){}}
+let PASS_CHECKED=false;
+function checkPassUrl(){if(PASS_CHECKED)return;PASS_CHECKED=true;const lot=new URLSearchParams(location.search).get('lot');if(lot)openPass(lot)}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('#pp').classList.contains('on'))closePass()});
+
 
 /* ============================== LOGIC ============================== */
 let L='en';
@@ -1088,6 +1258,8 @@ function render(){
  </div>`).join('');
  $('#psel').innerHTML=PRODUCTS.map(p=>`<option value="${p.id}">${p.name[L]||p.name.en}</option>`).join('');
  renderStock();
+ renderRfq();
+ if(PASS_LOT&&$('#pp').classList.contains('on'))openPass(PASS_LOT);
  renderNews();
  $('#mlist').innerHTML=MARKETS.map(m=>`<div class="mk">${m[L]||m.en}<small>${m.s[L]||m.s.en}</small></div>`).join('');
  if($('#gal'))$('#gal').innerHTML=GALLERY.map((g,i)=>`<div class="it${g.big?' big':''}" onclick="openLb(${i})">${
@@ -1130,5 +1302,6 @@ setLang(start);
 loadStock();loadNews();showPop();
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLb();$('#wcModal').classList.remove('on')}});
 </script>
+<div class="ppov" id="pp" onclick="if(event.target===this)closePass()"><div class="ppcard" id="ppCard"></div></div>
 </body>
 </html>
