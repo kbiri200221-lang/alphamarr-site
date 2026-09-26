@@ -173,9 +173,20 @@ select option{color:var(--ink)}
 textarea{min-height:100px;resize:vertical}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--sky);border-color:transparent}
 .fbtns{display:flex;gap:10px;flex-wrap:wrap}
-footer{background:#07121e;color:#7f93a8;font-size:14px;padding:28px 0}
-footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;align-items:center}
-footer .soc{display:flex;gap:14px}footer a:hover{color:#fff}
+footer.ft{background:#16274a;color:#b9c6d8;font-size:14.5px;padding:0}
+.ftg{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:48px;padding-top:64px;padding-bottom:52px}
+.ftlogo{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;font-size:34px;letter-spacing:-1px}.ftlogo .a{color:var(--sky)}
+.ftsoc{display:flex;gap:14px;margin:26px 0 22px}.ftsoc a{width:40px;height:40px;border:1px solid rgba(255,255,255,.3);border-radius:10px;display:grid;place-items:center;color:#fff;transition:.2s}
+.ftsoc a:hover{background:rgba(255,255,255,.12)}.ftsoc svg{width:19px;height:19px;fill:currentColor}.ftsoc a:last-child svg{fill:none}
+.ft address{font-style:normal;line-height:1.75}.ft address a{color:#dfe7f1}
+.ftcols{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.ftcols h4{color:#fff;font-size:17px;font-weight:700;margin-bottom:12px}
+.ftcols a{display:block;padding:5px 0;color:#b9c6d8}
+.ft a:hover{color:#fff}.ft [dir=ltr]{unicode-bidi:isolate;display:inline-block}
+.ftbot{border-top:1px solid rgba(255,255,255,.14);padding:22px 0;font-size:13.5px;color:#9fb0c6}
+.ftbot .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:960px){.ftg{grid-template-columns:1fr;gap:34px;padding-top:48px}.ftcols{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.ftcols{grid-template-columns:1fr 1fr;gap:22px}.ftlogo{font-size:28px}}
 /* floating */
 .fab{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;flex-direction:column;gap:10px}
 .fab a,.fab button{width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25);border:0;cursor:pointer;transition:.2s}
@@ -574,14 +585,21 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
  </div>
 </section>
 
-<footer>
- <div class="wrap">
-  <span>© <span id="yr"></span> AlphaMarr SARL · <span data-i="addr"></span>, <span data-i="mr"></span><br><small style="opacity:.8"><span data-i="rc_l"></span> : 114439/GU/35448/4629 · <span data-i="nif_l"></span> : 01201011</small></span>
-  <div class="soc">
-   <a class="js-mail"></a>
-   <a class="js-li" target="_blank" rel="noopener">LinkedIn</a>
+<footer class="ft">
+ <div class="wrap ftg">
+  <div class="ftbrand">
+   <a href="#top" class="ftlogo" aria-label="AlphaMarr"><svg width="54" height="54" viewBox="0 0 64 64" aria-hidden="true"><path d="M44 16c-3 14-8 32-22 32C12 48 8 40 8 32s5-16 14-16c12 0 16 18 26 32" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/><path d="M22 29l4 4-4 4-4-4z" fill="#4fb3e8"/><path d="M52 6l6 6-6 6-6-6z" fill="#4fb3e8"/></svg><span><span class="a">alpha</span>marr</span></a>
+   <div class="ftsoc"><a class="js-li" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><use href="#i-li"/></svg></a><a class="js-mailic" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3.5 6l8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a></div>
+   <address>AlphaMarr SARL<br><span data-i="addr"></span><br><span data-i="mr"></span><br><br><a class="js-mail"></a><br><a href="tel:+22245749314" dir="ltr">+222 45 74 93 14</a><br><span data-i="l_fax"></span> : <span dir="ltr">+222 49 82 38 30</span></address>
+  </div>
+  <div class="ftcols">
+   <div><h4 data-i="ft_company"></h4><a href="#about" data-i="nav_about"></a><a href="#services" data-i="ft_trace"></a><a href="#fleet" data-i="nav_fleet"></a><a href="#markets" data-i="nav_markets"></a></div>
+   <div><h4 data-i="ft_act"></h4><a href="#services" data-i="sv1t"></a><a href="#services" data-i="sv4t"></a><a href="#services" data-i="sv2t"></a><a href="#products" data-i="nav_products"></a></div>
+   <div><h4 data-i="ft_buyers"></h4><a href="#stock" data-i="nav_stock"></a><a href="#rfq" data-i="rq_tag"></a><a href="#news" data-i="nav_news"></a><a href="https://market.alphamarr.com" data-i="nav_market"></a></div>
+   <div><h4 data-i="ft_contact"></h4><a href="#contact" data-i="ft_contact"></a><a href="#contact" onclick="meetUs()" data-i="ev_book"></a><a href="#rfq" data-i="quote"></a></div>
   </div>
  </div>
+ <div class="ftbot"><div class="wrap"><span>© <span id="yr"></span> AlphaMarr SARL · <span data-i="ft_rights"></span></span><span><span data-i="rc_l"></span> : <span dir="ltr">114439/GU/35448/4629</span> · <span data-i="nif_l"></span> : <span dir="ltr">01201011</span></span></div></div>
 </footer>
 
 <div class="fab">
@@ -1068,6 +1086,11 @@ Object.assign(T.fr,{"in_buy": "Je veux acheter", "in_buy_s": "Indiquez l'espèce
 Object.assign(T.es,{"in_buy": "Quiero comprar", "in_buy_s": "Indíquenos la especie, talla y volumen que necesita", "in_av": "Ver disponibilidad", "in_av_s": "Stock en vivo desde Nuadibú, actualizado por nuestro equipo", "in_meet": "Reunirse con AlphaMarr", "in_meet_s": "En una feria o por videollamada", "sf_q": "Buscar una especie o talla", "sf_all": "Todos los estados", "req_lot": "Solicitar este lote", "pp_btn": "Pasaporte", "rq_tag": "Solicitud de producto", "rq_h2": "Díganos qué está buscando", "rq_p": "¿No está en nuestra lista de stock? Describa su necesidad — especie, talla, volumen, destino — y la conseguimos de buques, plantas y exportadores asociados en Mauritania. Cada solicitud recibe un número de referencia y una respuesta de nuestro equipo comercial.", "rq_species": "Especie", "rq_other": "Otra especie (indicar en notas)", "rq_size": "Talla / calibre", "rq_form": "Presentación", "rq_qty": "Cantidad", "rq_dest": "Destino (país / puerto)", "rq_deliv": "Mes de entrega", "rq_inco": "Incoterm", "rq_pack": "Requisitos de embalaje", "rq_you": "Su empresa", "rq_phone": "Teléfono", "rq_notes": "Notas (calidad, certificados, precio objetivo…)", "rq_send": "Enviar mi solicitud", "rq_hint": "Sin compromiso — respondemos con disponibilidad y una oferta.", "rq_ok": "Solicitud {r} recibida. Nuestro equipo comercial le responderá por email.", "rq_ok2": "Su correo se ha abierto con la solicitud {r}. Si no se abrió, escriba a {e} indicando esta referencia.", "fm_frozen": "Congelado", "fm_fresh": "Fresco / refrigerado", "fm_dried": "Seco / salado", "fm_meal": "Harina de pescado", "fm_oil": "Aceite de pescado", "u_mt": "T (toneladas)", "u_c40": "× contenedor 40' reefer", "u_c20": "× contenedor 20' reefer", "u_kg": "kg", "inco_tbd": "A negociar", "pp_lot": "Lote", "pp_species": "Especie", "pp_origin": "Origen", "pp_landing": "Desembarque / planta", "pp_catch": "Fecha de captura", "pp_fao": "Zona de captura", "pp_size": "Talla", "pp_proc": "Procesamiento", "pp_freeze": "Congelación", "pp_pack": "Embalaje", "pp_qty": "Cantidad", "pp_cont": "Contenedor", "pp_upd": "Actualización", "pp_docs": "Documentos del lote", "pp_docs_n": "Los documentos se envían al comprador del lote bajo solicitud — no se publican en línea.", "pp_print": "Imprimir", "pp_copy": "Copiar enlace", "pp_scan": "Escanee para abrir este pasaporte de lote", "pp_nf": "Este lote ya no está publicado o el número es incorrecto. Contáctenos con el número de lote y le enviaremos sus datos.", "meet_msg": "Deseo concertar una reunión con AlphaMarr"});
 Object.assign(T.zh,{"in_buy": "我要采购", "in_buy_s": "告诉我们您需要的品种、规格和数量", "in_av": "查看现货", "in_av_s": "努瓦迪布实时库存，由团队更新", "in_meet": "与 AlphaMarr 会面", "in_meet_s": "展会现场或视频会议", "sf_q": "搜索品种或规格", "sf_all": "全部状态", "req_lot": "询价此批次", "pp_btn": "批次护照", "rq_tag": "采购需求", "rq_h2": "告诉我们您在找什么", "rq_p": "库存列表中没有？请描述您的需求——品种、规格、数量、目的地——我们将从毛里塔尼亚渔船、工厂和合作出口商处为您采购。每个需求都会获得参考编号，并由我们的销售团队回复。", "rq_species": "品种", "rq_other": "其他品种（请在备注中说明）", "rq_size": "规格 / 等级", "rq_form": "产品形态", "rq_qty": "数量", "rq_dest": "目的地（国家 / 港口）", "rq_deliv": "交货月份", "rq_inco": "贸易条款", "rq_pack": "包装要求", "rq_you": "贵公司信息", "rq_phone": "电话", "rq_notes": "备注（质量、证书、目标价格…）", "rq_send": "提交需求", "rq_hint": "无任何义务——我们将回复供货情况和报价。", "rq_ok": "已收到需求 {r}。我们的销售团队将通过电子邮件回复您。", "rq_ok2": "您的邮件应用已打开需求 {r}。如未打开，请发送邮件至 {e} 并注明此编号。", "fm_frozen": "冷冻", "fm_fresh": "鲜品 / 冰鲜", "fm_dried": "干制 / 盐渍", "fm_meal": "鱼粉", "fm_oil": "鱼油", "u_mt": "吨", "u_c40": "× 40尺冷柜", "u_c20": "× 20尺冷柜", "u_kg": "公斤", "inco_tbd": "可商议", "pp_lot": "批次", "pp_species": "品种", "pp_origin": "原产地", "pp_landing": "卸货地 / 工厂", "pp_catch": "捕捞日期", "pp_fao": "捕捞区域", "pp_size": "规格", "pp_proc": "加工方式", "pp_freeze": "冷冻方式", "pp_pack": "包装", "pp_qty": "数量", "pp_cont": "集装箱", "pp_upd": "更新日期", "pp_docs": "本批次单证", "pp_docs_n": "单证仅应要求提供给该批次买家——不在网上公开。", "pp_print": "打印", "pp_copy": "复制链接", "pp_scan": "扫码打开此批次护照", "pp_nf": "该批次已下架或编号有误。请提供批次编号联系我们，我们将发送详细信息。", "meet_msg": "我希望与 AlphaMarr 安排会面"});
 Object.assign(T.ar,{"in_buy": "أريد الشراء", "in_buy_s": "حدّدوا النوع والمقاس والكمية المطلوبة", "in_av": "عرض المتوفر", "in_av_s": "مخزون مباشر من نواذيبو يحدّثه فريقنا", "in_meet": "لقاء ألفا مار", "in_meet_s": "في معرض أو عبر مكالمة فيديو", "sf_q": "ابحث عن نوع أو مقاس", "sf_all": "كل الحالات", "req_lot": "اطلب هذه الدفعة", "pp_btn": "جواز الدفعة", "rq_tag": "طلب منتج بحري", "rq_h2": "أخبرونا بما تبحثون عنه", "rq_p": "ليس في قائمة مخزوننا؟ صِفوا طلبكم — النوع والمقاس والكمية والوجهة — ونوفّره لكم من السفن والمصانع والمصدّرين الشركاء في موريتانيا. يحصل كل طلب على رقم مرجعي ورد من فريق المبيعات.", "rq_species": "النوع", "rq_other": "نوع آخر (حدّدوه في الملاحظات)", "rq_size": "المقاس / الدرجة", "rq_form": "شكل المنتج", "rq_qty": "الكمية", "rq_dest": "الوجهة (البلد / الميناء)", "rq_deliv": "شهر التسليم", "rq_inco": "شرط التسليم", "rq_pack": "متطلبات التعبئة", "rq_you": "شركتكم", "rq_phone": "الهاتف", "rq_notes": "ملاحظات (الجودة، الشهادات، السعر المستهدف…)", "rq_send": "إرسال طلبي", "rq_hint": "دون التزام — نرد بالتوفر وعرض سعر.", "rq_ok": "تم استلام الطلب {r}. سيرد عليكم فريق المبيعات بالبريد الإلكتروني.", "rq_ok2": "فُتح بريدكم الإلكتروني بالطلب {r}. إن لم يُفتح، راسلونا على {e} مع ذكر هذا المرجع.", "fm_frozen": "مجمّد", "fm_fresh": "طازج / مبرّد", "fm_dried": "مجفّف / مملّح", "fm_meal": "دقيق السمك", "fm_oil": "زيت السمك", "u_mt": "طن", "u_c40": "× حاوية مبرّدة 40 قدم", "u_c20": "× حاوية مبرّدة 20 قدم", "u_kg": "كغ", "inco_tbd": "للنقاش", "pp_lot": "الدفعة", "pp_species": "النوع", "pp_origin": "المنشأ", "pp_landing": "الإنزال / المصنع", "pp_catch": "تاريخ الصيد", "pp_fao": "منطقة الصيد", "pp_size": "المقاس", "pp_proc": "التحويل", "pp_freeze": "التجميد", "pp_pack": "التعبئة", "pp_qty": "الكمية", "pp_cont": "الحاوية", "pp_upd": "آخر تحديث", "pp_docs": "وثائق الدفعة", "pp_docs_n": "تُرسل الوثائق إلى مشتري الدفعة عند الطلب — ولا تُنشر على الإنترنت.", "pp_print": "طباعة", "pp_copy": "نسخ الرابط", "pp_scan": "امسحوا الرمز لفتح جواز هذه الدفعة", "pp_nf": "هذه الدفعة لم تعد معروضة أو الرقم غير صحيح. تواصلوا معنا برقم الدفعة وسنرسل لكم تفاصيلها.", "meet_msg": "أرغب في ترتيب لقاء مع ألفا مار"});
+Object.assign(T.en,{"ft_company": "Company", "ft_trace": "Traceability & food safety", "ft_act": "Activities", "ft_buyers": "For buyers", "ft_contact": "Contact", "ft_rights": "All rights reserved"});
+Object.assign(T.fr,{"ft_company": "Société", "ft_trace": "Traçabilité & sécurité alimentaire", "ft_act": "Activités", "ft_buyers": "Espace acheteurs", "ft_contact": "Contact", "ft_rights": "Tous droits réservés"});
+Object.assign(T.es,{"ft_company": "Empresa", "ft_trace": "Trazabilidad y seguridad alimentaria", "ft_act": "Actividades", "ft_buyers": "Compradores", "ft_contact": "Contacto", "ft_rights": "Todos los derechos reservados"});
+Object.assign(T.zh,{"ft_company": "公司", "ft_trace": "可追溯与食品安全", "ft_act": "业务", "ft_buyers": "采购商", "ft_contact": "联系我们", "ft_rights": "版权所有"});
+Object.assign(T.ar,{"ft_company": "الشركة", "ft_trace": "التتبّع وسلامة الغذاء", "ft_act": "الأنشطة", "ft_buyers": "للمشترين", "ft_contact": "اتصل بنا", "ft_rights": "جميع الحقوق محفوظة"});
 Object.assign(T.fr,{"l_wa": "WhatsApp", "l_tel": "Téléphone", "l_fax": "Fax"});
 Object.assign(T.en,{"l_wa": "WhatsApp", "l_tel": "Phone", "l_fax": "Fax"});
 Object.assign(T.es,{"l_wa": "WhatsApp", "l_tel": "Teléfono", "l_fax": "Fax"});
@@ -1269,7 +1292,7 @@ function render(){
  $$('.js-wa-form').forEach(a=>a.style.display=CONFIG.whatsapp?'':'none');
  $$('.js-wc').forEach(a=>a.style.display=CONFIG.wechat?'':'none');
  $$('.js-li').forEach(a=>{a.href=CONFIG.linkedin||'#';a.style.display=CONFIG.linkedin?'':'none'});
- $$('.js-mail').forEach(a=>{a.href='mailto:'+CONFIG.email;a.textContent=CONFIG.email});
+ $$('.js-mail').forEach(a=>{a.href='mailto:'+CONFIG.email;a.textContent=CONFIG.email});$$('.js-mailic').forEach(a=>a.href='mailto:'+CONFIG.email);
  $('.js-phone-wrap').style.display=CONFIG.whatsapp?'':'none';
  $('.js-phone').textContent='+222 49 82 38 28';$('.js-phone').setAttribute('dir','ltr');$('.js-phone').href=waLink('');
  $('#wcId').textContent=CONFIG.wechat;
