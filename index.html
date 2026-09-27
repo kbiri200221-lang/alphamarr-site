@@ -178,7 +178,7 @@ footer.ft{background:#16274a;color:#b9c6d8;font-size:14.5px;padding:0}
 .ftlogo{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;font-size:34px;letter-spacing:-1px}.ftlogo .a{color:var(--sky)}
 .ftsoc{display:flex;gap:14px;margin:26px 0 22px}.ftsoc a{width:40px;height:40px;border:1px solid rgba(255,255,255,.3);border-radius:10px;display:grid;place-items:center;color:#fff;transition:.2s}
 .ftsoc a:hover{background:rgba(255,255,255,.12)}.ftsoc svg{width:19px;height:19px;fill:currentColor}.ftsoc a:last-child svg{fill:none}
-.ft address{font-style:normal;line-height:1.75}.ft address a{color:#dfe7f1}
+#ftcontact{scroll-margin-top:90px}#ftcontact.hl address{color:#fff;transition:color .3s}.ft address{font-style:normal;line-height:1.75}.ft address a{color:#dfe7f1}
 .ftcols{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
 .ftcols h4{color:#fff;font-size:17px;font-weight:700;margin-bottom:12px}
 .ftcols a{display:block;padding:5px 0;color:#b9c6d8}
@@ -320,7 +320,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    <a href="#fleet" data-i="nav_fleet"></a>
       <a href="#markets" data-i="nav_markets"></a>
    <a href="#news" data-i="nav_news"></a>
-   <a href="https://market.alphamarr.com" data-i="nav_market"></a>
+   <a href="#ftcontact" data-i="ft_contact"></a>
   </nav>
   <div class="right">
    <div class="langsel" id="langsel">
@@ -543,7 +543,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
 
 <footer class="ft">
  <div class="wrap ftg">
-  <div class="ftbrand">
+  <div class="ftbrand" id="ftcontact">
    <a href="#top" class="ftlogo" aria-label="AlphaMarr"><svg width="54" height="54" viewBox="0 0 64 64" aria-hidden="true"><path d="M44 16c-3 14-8 32-22 32C12 48 8 40 8 32s5-16 14-16c12 0 16 18 26 32" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/><path d="M22 29l4 4-4 4-4-4z" fill="#4fb3e8"/><path d="M52 6l6 6-6 6-6-6z" fill="#4fb3e8"/></svg><span><span class="a">alpha</span>marr</span></a>
    <div class="ftsoc"><a class="js-li" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><use href="#i-li"/></svg></a><a class="js-mailic" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3.5 6l8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a></div>
    <address>AlphaMarr SARL<br><span data-i="addr"></span><br><span data-i="mr"></span><br><br><a class="js-mail"></a><br><a href="tel:+22245749314" dir="ltr">+222 45 74 93 14</a><br><span data-i="l_fax"></span> : <span dir="ltr">+222 49 82 38 30</span></address>
@@ -551,8 +551,8 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
   <div class="ftcols">
    <div><h4 data-i="ft_company"></h4><a href="#about" data-i="nav_about"></a><a href="#services" data-i="ft_trace"></a><a href="#fleet" data-i="nav_fleet"></a><a href="#markets" data-i="nav_markets"></a></div>
    <div><h4 data-i="ft_act"></h4><a href="#services" data-i="sv1t"></a><a href="#services" data-i="sv4t"></a><a href="#services" data-i="sv2t"></a><a href="#products" data-i="nav_products"></a></div>
-   <div><h4 data-i="ft_buyers"></h4><a href="#stock" data-i="nav_stock"></a><a href="#rfq" data-i="rq_tag"></a><a href="#news" data-i="nav_news"></a><a href="https://market.alphamarr.com" data-i="nav_market"></a></div>
-   <div><h4 data-i="ft_contact"></h4><a href="#rfq" data-i="ft_contact"></a><a href="#rfq" onclick="meetUs()" data-i="ev_book"></a><a href="#rfq" data-i="quote"></a></div>
+   <div><h4 data-i="ft_buyers"></h4><a href="#stock" data-i="nav_stock"></a><a href="#rfq" data-i="rq_tag"></a><a href="#news" data-i="nav_news"></a></div>
+   <div><h4 data-i="ft_contact"></h4><a class="js-mail" data-i="ft_email"></a><a href="#rfq" onclick="meetUs()" data-i="ev_book"></a><a href="#rfq" data-i="quote"></a></div>
   </div>
  </div>
  <div class="ftbot"><div class="wrap"><span>© <span id="yr"></span> AlphaMarr SARL · <span data-i="ft_rights"></span></span><span><span data-i="rc_l"></span> : <span dir="ltr">114439/GU/35448/4629</span> · <span data-i="nif_l"></span> : <span dir="ltr">01201011</span></span></div></div>
@@ -1047,6 +1047,7 @@ Object.assign(T.fr,{"ft_company": "Société", "ft_trace": "Traçabilité & séc
 Object.assign(T.es,{"ft_company": "Empresa", "ft_trace": "Trazabilidad y seguridad alimentaria", "ft_act": "Actividades", "ft_buyers": "Compradores", "ft_contact": "Contacto", "ft_rights": "Todos los derechos reservados"});
 Object.assign(T.zh,{"ft_company": "公司", "ft_trace": "可追溯与食品安全", "ft_act": "业务", "ft_buyers": "采购商", "ft_contact": "联系我们", "ft_rights": "版权所有"});
 Object.assign(T.ar,{"ft_company": "الشركة", "ft_trace": "التتبّع وسلامة الغذاء", "ft_act": "الأنشطة", "ft_buyers": "للمشترين", "ft_contact": "اتصل بنا", "ft_rights": "جميع الحقوق محفوظة"});
+Object.assign(T.en,{"ft_email":"Email us"});Object.assign(T.fr,{"ft_email":"Nous écrire"});Object.assign(T.es,{"ft_email":"Escríbanos"});Object.assign(T.zh,{"ft_email":"发送邮件"});Object.assign(T.ar,{"ft_email":"راسلونا"});
 Object.assign(T.fr,{"l_wa": "WhatsApp", "l_tel": "Téléphone", "l_fax": "Fax"});
 Object.assign(T.en,{"l_wa": "WhatsApp", "l_tel": "Phone", "l_fax": "Fax"});
 Object.assign(T.es,{"l_wa": "WhatsApp", "l_tel": "Teléfono", "l_fax": "Fax"});
@@ -1162,6 +1163,7 @@ function reqLot(pid,ri){
  $('#rqOk').hidden=true;
  document.getElementById('rfq').scrollIntoView({behavior:'smooth'});setTimeout(()=>f.qty.focus({preventScroll:true}),600);
 }
+window.addEventListener('hashchange',()=>{if(location.hash==='#ftcontact'){const e=document.getElementById('ftcontact');e.classList.add('hl');setTimeout(()=>e.classList.remove('hl'),2000)}});
 function meetUs(){
  const f=$('#rform');if(!f)return;
  const ev=(typeof nextEvent==='function')?nextEvent():null;
@@ -1247,7 +1249,7 @@ function render(){
  $$('.js-wa-form').forEach(a=>a.style.display=CONFIG.whatsapp?'':'none');
  $$('.js-wc').forEach(a=>a.style.display=CONFIG.wechat?'':'none');
  $$('.js-li').forEach(a=>{a.href=CONFIG.linkedin||'#';a.style.display=CONFIG.linkedin?'':'none'});
- $$('.js-mail').forEach(a=>{a.href='mailto:'+CONFIG.email;a.textContent=CONFIG.email});$$('.js-mailic').forEach(a=>a.href='mailto:'+CONFIG.email);
+ $$('.js-mail').forEach(a=>{a.href='mailto:'+CONFIG.email;if(!a.dataset.i)a.textContent=CONFIG.email});$$('.js-mailic').forEach(a=>a.href='mailto:'+CONFIG.email);
  $('#wcId').textContent=CONFIG.wechat;
  if(!CONFIG.wechat&&!CONFIG.linkedin)$$('[data-i="c_p"]').forEach(e=>e.textContent=t('c_p0'));
  else if(!CONFIG.wechat)$$('[data-i="c_p"]').forEach(e=>e.textContent=t('c_p1'));
