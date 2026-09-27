@@ -1087,7 +1087,7 @@ function parseCSV(txt){const rows=[];let r=[],f='',q=false;for(let i=0;i<txt.len
    type = stock (our own stock) | trading (trading offer)                              */
 async function loadStock(){
  if(!CONFIG.stockSheetId){STOCK_LIVE=false;return render()}
- try{const res=await fetch(`https://docs.google.com/spreadsheets/d/${CONFIG.stockSheetId}/gviz/tq?tqx=out:csv&t=${Date.now()}`);
+ try{const res=await fetch(`https://docs.google.com/spreadsheets/d/${CONFIG.stockSheetId}/gviz/tq?tqx=out:csv&headers=1&t=${Date.now()}`);
   const rows=parseCSV(await res.text());const h=rows.shift().map(x=>x.trim().toLowerCase());
   const ix=k=>h.findIndex(x=>x.startsWith(k));const g=(r,k)=>{const i=ix(k);return i<0?'':(r[i]||'').trim()};
   STOCK={};STOCK_ROWS=[];let last='';
