@@ -9,7 +9,7 @@
 <meta property="og:description" content="Sardinella, mullet, red snapper, horse mackerel — frozen and shipped from Nouadhibou.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' font-weight='900' fill='%230b1a2b'%3Eα%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;600;800&family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{--ink:#0b1a2b;--sky:#4fb3e8;--sky-d:#1f8ecb;--sea:#0e3a5c;--sand:#f5f1ea;--muted:#5b6b7c;--line:#e3e8ee;--wa:#25D366;--wc:#07C160;--li:#0A66C2}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -1130,7 +1130,7 @@ function renderStock(){
  if(STS!=='all')rows=rows.filter(x=>STS==='on_order'?(x.st==='on_order'||x.st==='season'):x.st===STS);
  $('#stQ').placeholder='🔎 '+t('sf_q');
  $('#stS').innerHTML=['all','available','on_order'].map(x=>`<option value="${x}"${STS===x?' selected':''}>${x==='all'?t('sf_all'):t(x)}</option>`).join('');
- rows.sort((a,b)=>(order[a.st]??1)-(order[b.st]??1));
+ rows.sort((a,b)=>((order[a.st]!=null)?order[a.st]:1)-((order[b.st]!=null)?order[b.st]:1));
  if(!rows.length){$('#stBody').innerHTML=`<tr><td colspan="7" class="empty">${t('no_offer')}</td></tr>`}
  else $('#stBody').innerHTML=rows.map(({p,s,st})=>{const nm=p?(p.name[L]||p.name.en):s.product;const en=p?p.name.en:s.product;const lat=p?p.latin:(s.product&&p?'':'');
   const q=s.qty?(isNaN(s.qty)?s.qty:s.qty+' '+t('tons')):'—';
