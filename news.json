@@ -1,12 +1,18 @@
 {
- "updated": "2026-09-28T05:26+00:00",
+ "updated": "2026-09-28T13:57+00:00",
  "items": {
   "en": [
+   {
+    "t": "Sri Lanka seeks to boost seafood exports to Russia",
+    "s": "Daily Mirror - Sri Lanka",
+    "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNN1N1bkstbVVoYmh1TmpmSFp5YkJ4ZHpjTnBydEdwdmoxRldQX0tWRFotWC1hMWhNenVIdWRTeTNTWUxWejJmQUNZZGFNelU3R0FHd19mZTdlMGxscWpSOTB2STJNcUx4dmpFcmNZOUpzMm92bjYtajAwZHo0TkxKQ2p4NzB1alEtcU0tSlpqQ0l3dTBqazFyTURPUENWZ3B1ai1UNw?oc=5",
+    "d": "2026-09-28T11:04:00+00:00"
+   },
    {
     "t": "Can Pakistan turn its seafood into high-value export sector?",
     "s": "Profit by Pakistan Today",
     "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPS2NldlhaVFY4WjVLS2RtZlJyM3AxWDFWMUZ0S2VyTENnZUwxQ1NoNXFVMzlPSktOcTdBM25ackRNM0dzS0Z6WkUxYnJUYnd0bFpvWElRYVdXV3luNWZ2alhXLWhWUDEyVm9GSVMxcUEzY0JYZ2ZpS1dDQlB1aTk1YUNMcVJobFFGNEFDUFBTcTlXcmJiSllVR2pQYlFiRTZaTWRIWlNaTFNRYmgyaXpUdGlPRXVaQjlzcHc?oc=5",
-    "d": "2026-09-28T04:27:39+00:00"
+    "d": "2026-09-28T05:34:36+00:00"
    },
    {
     "t": "Cheap Vietnamese fish costs Brazil 44 million USD to import, Japan makes sushi",
@@ -67,12 +73,6 @@
     "s": "SeafoodSource",
     "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOdHNDV1lRNU4tbGwyWXl1cnVYSEtZbWRmb0hoS0I1clZaUmNWOXNtZ25BbExnSTBGbkdqS3A1SnI5WXVpZFI1YldpTzRIU2ZkSnlyeFF6a1FKMkJZRFdfUXhRYXJ4aVN6dnpYOFVyUjNDcWRDVGh0bFltajNBOENiaElYRVF1TnJQLVhCcS1TblY4SHNVRk00LUxjdldoSzBzbC05WVAwckEtOV9kOWxWcUV3NA?oc=5",
     "d": "2026-09-22T18:01:16+00:00"
-   },
-   {
-    "t": "How does Russia’s 2026 Food and Fisheries Trade Network",
-    "s": "Fresh Angle",
-    "u": "https://news.google.com/rss/articles/CBMisgJBVV95cUxPSDhZSnFYLXZMYjdWZEdFeUVEME4xTENlLW9mV05BVlkwMjM5emE4bnQwS2lmRVc1QjBWc0VFU1pzT2N5Skw4WEpiLVhfTU03YWktNDJhYUlWZmZyTVc5dVZsLUpFSTB3Znd0bnRWb1lZemRuSEt5MGk3RHhMdVlaQlZpMGJPWmNSNE43Q1E2eWt4T3YtTWx3eWhJbmUyajJReU5RTFdLblVqNG1takYzYjlidXFhcjk3RkRDMTJmaENJYlJic1F2d0lCWE1obDFjT0tUZGJDbnJQZ1dSTzg1UDRfdDlwUzBUWU4yVlZsMnRISVM0ZWE5SUxtSzh2Mk1DZ0loaXFrZnU4Ry12VjRzaTNwTnBfZWlET0QzYXFONGUtaXJ1M1FmTWQ4dXZscUtmTEE?oc=5",
-    "d": "2026-09-22T00:33:07+00:00"
    }
   ],
   "fr": [
@@ -151,82 +151,106 @@
   ],
   "es": [
    {
-    "t": "Conxemar 2026: la feria que reúne las tecnologías que están transformando el procesado de productos del mar",
-    "s": "Interempresas Media",
-    "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOUG13N3RURjlBa05FUERZS1duVVBDWnJ6UjZFOHlaUnpISkFLMVZiSzZjU0NuZlFZY2dsdmExY1BHcEt0LURUQlA4dS0wa3Q3d2oxSkt2M1Foc3pUdUV1YWRIRXJETFN3Tml5VlZtMkpRRlhpSXh3RUJhb1BtbXVUOHdQTjRrM2FISWJBRmtOS2V0eGxfWkw1b2YtTUdobW9aZjA1NjFfajBmYWJKaE85dmhiX3FDZkRhTlpkVTJrTFlvclk2T2pnQzhQUjdzcUgzRmdCQUxubHM?oc=5",
-    "d": "2026-09-27T22:00:09+00:00"
+    "t": "La flota marisquera de Anamar pide al Gobierno arbitrar ayudas ante la incertidumbre del acuerdo pesquero con Mauritania",
+    "s": "Europa Press",
+    "u": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPUG90RkhxZ0Y2QnIwRTZhUlpCVEotTVRqOExOajhwS09wLVJPeVJpNWRBLUhIVTNkUkU0eHdBQlVoS0NxZG9pLWtrQXZ2UHhaRTAwUEFzdW9BYUl3amRmNXp4UEVTNDlFZkR2S1Q5LTdpSFpBMDFGc2VNMlhkc1dsMzNhQ2tUTjhjR0hhc3RaSk5wR0FQMGN5aUtwSW1Tc1ZISHVJd2ZNYnV5X0I4SnZqdTJhdDlTdVlQRkNuaHE4a2FjbWhJeW9YSDdFQW4tS2NhOG5WVmpISFl1V2ZuS0RYQXFMSXl0VFNDVE9vdkJmM0hwdGxUSEs3MWtPZnhudEVuYWVJ?oc=5",
+    "d": "2026-09-28T13:05:03+00:00"
    },
    {
-    "t": "Abordaje integral fortaleció al sector pesquero de Delta Amacuro",
-    "s": "correodelorinoco.gob.ve",
-    "u": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNb3lSTW93Zm1PbGtTN0RfdHMzUWlmdVN0RHMyNTV3cVFuYTQ1MnMxSkE0SGxBQjBLdV9rYTNZcHphX3BSUDVMM2RlMjJsNnQ4TVpuTy03VkVLNElQOGVXdkFnTHVxcXAzSFpuRVFZNFIyRVdYcEZseENoRV9KLTlJX0pzWFFHTXNQU3RpczJJWGd2QWYwaFlYRUFCeWp5SkN6ZHMw?oc=5",
-    "d": "2026-09-27T18:49:21+00:00"
+    "t": "Javier Bello asiste a la reunión entre Autoridad Portuaria y el sector pesquero para avanzar en la solución a la lonja de El Puerto",
+    "s": "El Puerto al minuto",
+    "u": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPdmxXLS1ET0pOVTdPTlEySEdySENxTzVhbTRyTmV1VERaeVp1TTZiTm5vUERWMFYxZVRaTE9EbURMY2VRa01MLUN5RmVwMEVHQlhuTEFMMVlfWHhFcFBiamVIR0hNclhTRnFsazBKUk9NbGVWbkJjZ1pZLTUyaDcteE55NXlsYlVXX0d6X2twbHBtenN2eGh6RHdBVUdMS2E4aWhIdko1TFhGeThvTm1odlg2bzI4bFlzX25FSWkxQnExczBPbmZfTXJ5b2ZfeUhQZ18tdEJfRHVfTlZqWndrbUE3a2FWLUdIUDJNNF94UGROREkzM0xlTS1lNFRNdWs?oc=5",
+    "d": "2026-09-28T12:50:53+00:00"
    },
    {
-    "t": "En febrero de 2025, las exportaciones de productos del mar experimentaron un notable crecimiento de más del 42%.",
+    "t": "Fernández-Pacheco pide prorrogar ayudas para el sector pesquero por el precio del combustible",
+    "s": "ABC",
+    "u": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMWlQREhfU0VNWS14QWpYcjB3RjZvOXFRbUVheWNSTzVsTmpwVjlxQ09VV1BFU2JaV3FUNlFjUU1DdHN0dlhFcW1YMnhEOHF1ZnY1Q1hsTDdpQXVJT1hLZDdaQlRfdVpLVDZSOWZ4VDhkaERaV2hhYlp6a2hiMGVjQWtHaGhyM3RNRkdXdF83ZThBTHAxNktuaHlLb3dPcVNRUVhrNTEwWnppeUpOTlJfTlhR?oc=5",
+    "d": "2026-09-28T12:50:11+00:00"
+   },
+   {
+    "t": "Fernández-Pacheco pide prorrogar ayudas y adoptar medidas para el sector pesquero ante el precio del combustible",
+    "s": "Europa Press",
+    "u": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNVXBxdnhOLURaN2pseFRHZ3p4V2h4MmlXLUFWaVNER1gwWTlYeVU3dWZKUHE5MXRZdGRhODJtVEFXdVhQYjVFOVdqcEdBbFNBVWtGOHQ4OFdIQVlkb0VtMS1TNHBoVzBIVmlQNVZCNmpFT1BRNHgzM1ItQkhURkRhSjdpOWtySnlDLTlscXJhbG1DaEZxaFJ3OWR3aEh6VjktdU82RFJpdTdTZW1GZ01GM2dDLXpVVVZaS295SWx2Z3diZWpqa29rMjJoMHdnMlNtMUJ0eWw0eC12dG9BT0FSbjdKSVdiWjg0cEJoZmdKMFZUMFd5TXdMcw?oc=5",
+    "d": "2026-09-28T12:22:43+00:00"
+   },
+   {
+    "t": "Expertos se citan en Vigo para avanzar una base común de conocimiento y fomentar una gestión más responsable de la pesquería de Illex",
+    "s": "Industrias pesqueras",
+    "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5fb2ZfMmtrMVpSaWRJSmVfbEdtYkVhNzgwZkNpQnZVTFprLTk3WlNjSTVHS1B2Qy0zMmlhYXg2LWk2RHljNDBScjBJMWpYYW12RHdVUzVoWlBkYUxhRmVFZkhwazB1cjBFNUpsRjRWUzRtMnFackNXRlRacEJ2QQ?oc=5",
+    "d": "2026-09-28T12:02:38+00:00"
+   },
+   {
+    "t": "La Junta pone en valor en Adra (Almería) los más de 9,5 millones en nuevas ayudas al sector pesquero andaluz",
+    "s": "andaluciainformacion.es",
+    "u": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPSmNHZnJfNmlqQlJhbTBEVjFVbnlmc0VLSEh0T19JWkVTU2VUY0RQTV9TMWpqOU5RcnlieU5aeE9JdG1fNUNqZ29pSTllMTU0eVlXc3lzOXVXaklFNXk5emxKeWxtaGpzdnpZcGdZcVVyRlNsMWJWZXA1R3ZoZGo0VlliblZyNWZhVUFnTDVXaHBCZ0JweUgtUEJaM1NhMWY1MmRRa29odmZIc20zMWxMdDJlSEhYdHIxM19fYUFEVDhWa0dWcmtReW9Eak1DTmtDdVVFYmY0R2NJNEt6enFZem1EUzJJcnRvSDBUcEFIZ1Q0N0k0dFHSAfsBQVVfeXFMTzdZY05KaVZxb3F2Z2s4ZllsbFVxUDc1blZTenFNd0NLX1NpZ1YwdTR2dlBRTzN2b0JUZ0pwcHVtVlFJVk0xd2hFMmVMNFVjbHVTN204SGl1UTZKcDNlSmd6VW16cmZYRm8wV1B1VDdUTnlMcTltSEU0M0dsaUd6Mjh3QWhoSWhYbTZmUVJUV3NiVFlJZTJLaHA0NGsxbm5hclJWeEhvSjFKOWh6M2pVbVlJS3hHRDhBMWd1NGdOTzhqcTF0dVMzS09ZY1IxajljeUE2a3JYa3VfcHZSVS1ON3hSQ3hYTDBBbF9Bcmt0T0xVbVF1ZmFfVzNrX00?oc=5",
+    "d": "2026-09-28T11:55:50+00:00"
+   },
+   {
+    "t": "La Junta pone en valor en Adra las nuevas ayudas al sector pesquero andaluz",
+    "s": "diariodealmeria.es",
+    "u": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMlAzTWVVYkotSFVTa0trMi05SVJsdzdBZUgwcTRvZ1pFYm9qRk9ITFotLVduQVZYdjhpN0wyZmdSZUljSUZXQktGMk9DUnZoNTRoM0NpT3dod3R4dXIyR210dzU0UDA0akc2SFJxcTYtalkybHYyRklGZHRXRlJvTEZrQjJnRW5nVXltZE9xVVVPOGN2b2RBMlFjZklZRUlrSm1PQ2k2TFJRNnpIQlpZdnRKVGHSAbQBQVVfeXFMUDJQM01lVWJKLUhVU2tLazItOUlSbHc3QWVIMHE0b2daRWJvakZPSExaLS1XbkFWWHY4aTdMMmZnUmVJY0lGV0JLRjJPQ1J2aDU0aDNDaU93aHd0eHVyMkdtdHc1NFAwNGpHNkhScXE2LWpZMmx2MkZJRmR0V0ZSb0xGa0IyZ0VuZ1V5bWRPcVVVTzhjdm9kQTJRY2ZJWUVJa0ptT0NpNkxSUTZ6SEJaWXZ0SlRh?oc=5",
+    "d": "2026-09-28T11:50:54+00:00"
+   },
+   {
+    "t": "España pide a la UE que intensifique los contactos para renovar el pacto pesquero con Mauritania",
+    "s": "EFE - Agencia de noticias",
+    "u": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9yTlg2TVdxdERodnFMa3pTMlVNRURxZG1SZEIxb2JHemJ5RTlTMnNYR0Z0V3ZycXlKYTM0QlVrZGRLUm1QMGxfS1VEbHR2blY1d0dKWDhjZzV2UmtsQ3JkcnhYTXZMYlU?oc=5",
+    "d": "2026-09-28T09:14:48+00:00"
+   },
+   {
+    "t": "Benicarló prepara un mercado gastronómico con pinchos, música y productos del mar",
+    "s": "Castelló Extra",
+    "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNRkNqUGd0ZXJoYmRkVmZXa0xqR09KLXg5UkMxN0RqOXJOMFNVV1JoblNuNW5aQUtnU3B1TzF5VU8wazYwLVJjdEFZN1MwMXR0bVJScHRHN3dPREZLS3JXT3ZKWlNROXZjNm51RjRFODUtTjdXWkFlNktjbGRxck93Z1l2R2JscW5Xb0kxenZ2Q2QwUENON3JVSWJjYVY0dW1pSVpTX3ZBT0t6SVdHbzBza2NPMTlXcVdKTjVDUFdjSVBHNDEzNDR3Yk9aaURHMkpS?oc=5",
+    "d": "2026-09-28T09:11:30+00:00"
+   },
+   {
+    "t": "Sector pesquero se reúne en Vigo para la gestión sostenible de la pota argentina",
+    "s": "Ruta Pesquera",
+    "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTFlVZGFpVVppSjJnUXNxeDQ4ODlIT0JhbHRpdWVaUDlLU0didnZkLWVHb0RnZXRyWkJfRC1Dd0R1SHltNlBBdW1WZEV5cGdVczNKcTZEN0Y1ZmVURDZUWm0tN1JuSDNXNDkyNzFRbnYwVXJYbDlZU1hwMEx0dUVzYTBaZ2N2Rl9fREhMZUg4bmVMMEF2amdLdWxidHV3eVVtNUlBSzhEM2xHWVM2dzhj?oc=5",
+    "d": "2026-09-28T08:48:45+00:00"
+   },
+   {
+    "t": "Empresas de Los Lagos son convocadas a llevar su oferta de productos del mar a Boston",
+    "s": "Salmonexpert",
+    "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQZENoYTl4SkowQTdKUlF5Q0QteUFsUXNsZDFWS1picmhZQzIxR00xaUtzWnIxaGpRVTVPRDBYLTN1eUsyaWZJc0hCTVBmN0xPVTNKNFhnYzJNTG5XeWdwaU9xbG5wb2R3TXlpSDhiQU9KWkNNSUg5MDNaRFA3NUhrSEpwREJQQzFQUm5jVENzREdfaG5oaWhFa1VhdHd2SUZfVFJfUUV4Y0xVdVF6Y2hIcG5UWVBVcnZwTmZkWlZIajVjX09KZmp1eHVXaVIxeTBmQVBnZDlwem5XUlV5dTZBN0h3ZXJ3eTJJ?oc=5",
+    "d": "2026-09-28T08:30:00+00:00"
+   },
+   {
+    "t": "Eliminar las barreras relacionadas con el capital, la tierra y los mercados... para ayudar a que las exportaciones de productos del mar alcancen sus objetivos.",
     "s": "Vietnam.vn",
-    "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPbHpJdUdJU0xfUTV6Rm9kUG9Mc2ZtTXNNNWpQNUQ0WEhfWVVkbkNCeWhTR1RlVmNPcTQxbUdfQWEyRGRJS253aXBWOWhJTXN2dmtTeUhNU3g0UWtQNzRLRDRNZkpUS1JZcDkwcG1fOXBOMWRzUHQtcHZXSlE0TGlnbjFUTF8xakhBck1TeDVn?oc=5",
-    "d": "2026-09-27T15:06:08+00:00"
-   },
-   {
-    "t": "Eliminar los obstáculos para acelerar las exportaciones de productos del mar.",
-    "s": "Vietnam.vn",
-    "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBibzdhUzAtUEFKcVJoUzdRVU5kUXdOUXNXbzVsVmtBamJKS2Voclo2eXBMQjhSc1ZKSFU5aEZSamlyQTZBTXAzMVBMd3ViMFk1QmhqWkJiS1pMdWpteTVBeGFicmZZaDE3MkFXajd4Z3hULTZsMlVr?oc=5",
-    "d": "2026-09-27T09:16:48+00:00"
-   },
-   {
-    "t": "La geopolítica del pulpo: escasez en los bares de Madrid y millonada china para Las Palmas",
-    "s": "Vozpopuli",
-    "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNajdUUjNydGJ5dVBaajlzX1cxUVByRGE0d0F3T1pyUEQxam5VdjM0UEhYNnoxZE9CbUtQNnRGWWRxX3FON25XRGlLVDZzRnRYTUVzUkxqNV9yeEtQcU5PQVVHYTdnMG1wNmtnYjg5UVQ4RkdSY0JGWWN1NUZ5LUh2MUcxcjA4Rk9pTHlhUnRZSER4X2ZORzkxZlZqVmpoYW02bXZka0tZSWJ5M0FJbzlQSmJ6NkZaREo2RFFPd1pxM01NeXYzN2dQclV1S0tfNDh3MmtJVS1Pa9IB1wFBVV95cUxNajdUUjNydGJ5dVBaajlzX1cxUVByRGE0d0F3T1pyUEQxam5VdjM0UEhYNnoxZE9CbUtQNnRGWWRxX3FON25XRGlLVDZzRnRYTUVzUkxqNV9yeEtQcU5PQVVHYTdnMG1wNmtnYjg5UVQ4RkdSY0JGWWN1NUZ5LUh2MUcxcjA4Rk9pTHlhUnRZSER4X2ZORzkxZlZqVmpoYW02bXZka0tZSWJ5M0FJbzlQSmJ6NkZaREo2RFFPd1pxM01NeXYzN2dQclV1S0tfNDh3MmtJVS1Paw?oc=5",
-    "d": "2026-09-27T02:45:00+00:00"
-   },
-   {
-    "t": "Persiste escasez de pescados y mariscos en Cajeme",
-    "s": "Diario del Yaqui",
-    "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOSFZPcGxCbHlrQ1VkVTgzSVY5TXg5c0JzMDZ1SUpZa3ZDMkp3RFNGQ1BWVFo3ZTRTVkhGcTNZWGp0eVFFUHh5bU85UTdKeEx2OTVqQ0daMGZ5alJ2eElncjVnSXVwTnh6N0k4cEF1SmFNTHJaY0RSX1lEOE9xbi1FQ2xVQnR1cDhjRjRiX1NmRVFfZjNCaVJYX3ZRUmQ?oc=5",
-    "d": "2026-09-27T02:44:59+00:00"
-   },
-   {
-    "t": "El Niño: Más de 120 mil empleos en el sector pesquero se encuentran en riesgo -",
-    "s": "Perú Informa",
-    "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORnV4WHY2Z0toc2ZHcU9YeC1aTmVpX1N4QzdMdERmVFd4enFPNHlqR1lFaDhKMWptX21pLUs5czdDaW45WFFwcTR5aTZUeFM3c3RZVjNYeUNLTk50SjZQN0VxUjY2bmtFNFI4MzNrbzUtU3FVMF9BLThkLVNIdS0xNjlURE1iV3h4MDE0Vm4tRVBZSkl0MUFHRGZhU243eHgxcGdXcWZYR3k?oc=5",
-    "d": "2026-09-26T16:47:09+00:00"
-   },
-   {
-    "t": "El plan del PP para dar un respiro al sector pesquero: IVA al 0 % en alimentos y respaldo real al gasóleo",
-    "s": "eldebate.com",
-    "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQV9JS2FkZHR2UjNnMVJMaHM0RmlYMmVpTl9QV1g4bmxFS1Z0dXg2UERfNmFHMnpldUhZVTQtc0xxQjQ2Z3N6RHctbVpsME02N3RxRF9aY3UxWjRsblVIM1ZwRnBSY25IdGNSUGE5VlIzQlVnbDFobEdFaFpFeWtxeUF4V29iaU5wWGZWdm9vRWJTSWRrOW9CWTNQZF9iWGk2ZFhvUVFheTNXa3BzckV4SnQzdGVrdnlVeGZCbmV0Y2oyWU0xSEJJ0gHMAUFVX3lxTFA0VVdScHlIYk15Tk55aUZvN2dGYm1YcEVhV0VYOURkdWdpRHJWY0NJR2l2ZmFCRFFOdS1xVE5ocENySTg3VGg4cTI1bFNabjdSNERtNXFpeXlZbHV6R2dnV1U5OEZmYmNJa3NIMGVtcVc3Z1BPX0ItUEtiR1FreWFfNEo4eUxsZE1LbVhobjBOYUhVVzVqOUQzV2JyTWhpYzM4WmRUNHplLVhNd0xBc0hkenhkcnV6d2s2Z3hZa3hJV3E0RXVNWnktMGN4cA?oc=5",
-    "d": "2026-09-26T10:11:03+00:00"
-   },
-   {
-    "t": "El PP plantea rebajas fiscales, IVA cero en básicos y más apoyo al gasóleo pesquero",
-    "s": "Demócrata",
-    "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMHdfSnk5QTduRDF6b25POUxZdnF2azQySlZGcVRpSUc4UTgwamx3ZEhJbm0zemotWEZVMV95RTdhNWRZWVBPbGFRMVo0anpZZ0picDdtbnlCSmdHeVRnNFp0NExXMnN5YllXS2RiR3ItMkRxTFBkc2dndlF1UkNObVFpWG4tb3hSU1RJZmdOMnNCVXRXcU1oXzRocXpkNDAzSGVXQ2Y1bnBWa01aQ2ZPTmczVGszalhlVVhjVlpR0gG-AUFVX3lxTE0wd19KeTlBN25EMXpvbk85TFl2cXZrNDJKVkZxVGlJRzhRODBqbHdkSElubTN6ai1YRlUxX3lFN2E1ZFlZUE9sYVExWjRqellnSmJwN21ueUJKZ0d5VGc0WnQ0TFcyc3liWVdLZGJHci0yRHFMUGRzZ2d2UXVSQ05tUWlYbi1veFJTVElmZ04yc0JVdFdxTWhfNGhxemQ0MDNIZVdDZjVucFZrTVpDZk9OZzNUazNqWGVVWGNWWlE?oc=5",
-    "d": "2026-09-26T08:20:42+00:00"
-   },
-   {
-    "t": "Arona destina 75.000 euros a apoyar al sector pesquero artesanal en 2026",
-    "s": "La Voz Canaria",
-    "u": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObE9mUW0tOEZZbjhZVzVxdFc2MVd6eU9jb1kwN1NycTEwckYxOEx6ZWVKU2JmdkM2eV9xbmx2YlZBVW1BcVotNW0xRS1VMTF6LXltTUhscUJQT0xEX285RXhWcEIya2U1Nk5WeEVkN2dGTVZqYldNcTh0WHVrd2lVTVFpd2pYYzdOdTU2bFZnd3NtNmhON052N2o0RXp4M1NGODlSSnNQbzlGMXJvS3NmamN6YzNDYWU1Ny1NUQ?oc=5",
-    "d": "2026-09-26T06:01:52+00:00"
-   },
-   {
-    "t": "Sector pesquero tendrá respaldo y nuevos apoyos en Sinaloa: Guerra Mena",
-    "s": "Punto MX",
-    "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVGd4bDByLWNzRktLSkp4NEhvNDBzbHVCZGNjUmlHVkZRWWZ6eGVwbzRoNmZ0blduSVhXT3FSamNGNF9kQUJ4em8tcUFjVUhBRWZrbWlGb08yQlhoTXZ3S0c4NG5XNkF4ZE1sSjRTSG9sQ1JLZ1E0LUE5NTZBeEZKN1N1LWtOVlpsazhTX3BVMzJMWnNuSWJzSnhKOGZtaVBj0gGoAUFVX3lxTE9WVUw2VDJWZG9pSHRYXzhTa1RPMEt1UkkxZG9lUXZzc2RYcVZnU2hBZ01BTWgwVTZFOVdidTZEVmNQT3hsV3Z6STVqb1E0NVdlYnhDVFowTndlVTM2dklFRXVMTEtJY0hqUVFibW5LR2ZiNVlCa0xWYUxyR2JRaUp6c3FLZGduc3ZIWXJHbWJKRXp1aGFKVC12Qml0VDNvaklNTVRCRDA3aA?oc=5",
-    "d": "2026-09-26T04:01:48+00:00"
-   },
-   {
-    "t": "Nuevo impulso para las exportaciones de productos del mar.",
-    "s": "Vietnam.vn",
-    "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1hV2JKdUtUVHpULU40SVRuTzQ2QmVlZVNaSVlydlpjejRGN1p2bWkzZUV2el8tQmJlYjRDb2IwbUVuelpqSEJYcjRIUnlfLW9XSGJiY1RsVF9JdnVoVGxpcGx0NG1XTUE1OVROZmd3?oc=5",
-    "d": "2026-09-26T01:22:18+00:00"
+    "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTUZjTHptN0hSM0hESVlzM0JRN0d3LVk3S0U5Z1ZQR2thc0YzdHJtM1owc0FuelE2bUtEZVI5NDV2UzlIeTNCX3BPakZFSUUwckRUcGtjUDR4djZJSFpJTlpucFpkX0xqa0FvR2pLZjJILVhVZDVzME9xTVdJZE43cFZ4bGl2cXdLaXA4bkJMYTlMXy1xWXc?oc=5",
+    "d": "2026-09-28T04:36:29+00:00"
    }
   ],
   "zh": [
    {
+    "t": "国联水产：子公司出售美国房产收到全部转让款并完成过户_公司新闻_财经",
+    "s": "证券之星",
+    "u": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1SclRpXzBWZU8wTWp3TFhOZm9KTEMxZ2YwOUhjRm9JbEV1VDdZNms5VGhPb3hYeVBwd1EyRk4xNFlBN1gxLXFXU244OUtiY0VBS1ZBU19KZU9RWmN4Q1ZnNA?oc=5",
+    "d": "2026-09-28T09:20:18+00:00"
+   },
+   {
+    "t": "郑彧已任福建省海洋与渔业局局长- 中国日报网",
+    "s": "China Daily",
+    "u": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1iOGNvU1BXaDZxTU1WdHo5aFlxQ2tNVzNOWWh2c1ZkelFvWHpGMnlsQUlwV2FWT3NXRm8wMWV0eENXb2QzSzR5Z0JfbFI2akRkZFpwU1hycGgtamprVFp1b1psTUg0TVVfNlhwMUJrM3dGVGZFTnU2VHJBLVk?oc=5",
+    "d": "2026-09-28T08:24:10+00:00"
+   },
+   {
+    "t": "我国渔业资源与水域生态环境状况保持稳定，最新公报出炉",
+    "s": "京报网",
+    "u": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBDc3hyTGpfdDN6aVE1NU5IZjc4NWtZdWthVVhJM2hNQzc2bGZlWkpYZTRkdDJZa002aXhnaVhkSmRsdDZDbEN4ZVlhdXdCZmUzVDM3VmtpWDFRT3FGYmc?oc=5",
+    "d": "2026-09-28T05:35:22+00:00"
+   },
+   {
+    "t": "2026年9月28日龙门实业（集团）有限公司西三街农副水产品市场价格行情_综合资讯",
+    "s": "证券之星",
+    "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1rWFJkQ1Z6a0NyVjd1OUdHaGI2NnppREQzNWpCeG5Hbm9FTk5yMEpqdVAwa3lpZFluR2s1ZG5GbzFBU2hwRUpGNjhleWd4cmFpMW9ybnh6bjk3U1ktQnhCWGRFSDE?oc=5",
+    "d": "2026-09-28T05:11:06+00:00"
+   },
+   {
     "t": "2026年9月28日山东威海水产品批发市场价格行情_综合资讯",
-    "s": "futures.stockstar.com",
+    "s": "证券之星",
     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5jb3o2VXVSQW5zWHZVN2l4TU5hX0YtRFRlS3BYTDFnWEcxbWQ1NTVLYjBZM1VqRTc0ZnZ2emZsRXRpWEE2dWw5VGltZXYtTWFVT0FKUEQzUGdadkV4STBTMDZkdy0?oc=5",
     "d": "2026-09-28T05:04:51+00:00"
    },
@@ -237,6 +261,12 @@
     "d": "2026-09-28T03:46:34+00:00"
    },
    {
+    "t": "海洋部与渔业人士讨论CPTPP，倾听现场声音",
+    "s": "亚洲日报",
+    "u": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5CeGpSWVBxejZYbjhGM2xsYkV4MExwc1ZVcFd5T3FRYU5naTVfU1BRRTVtQXZfdVN4cllUdVkydTVUYnpPRnhBWTgtZ21Mc1RGa1RZZXhvN0lQRjA?oc=5",
+    "d": "2026-09-28T02:04:10+00:00"
+   },
+   {
     "t": "绿春：护好边疆碧水 生态渔产兴边富民",
     "s": "新浪财经",
     "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObkpKSVZPR2xUdHlHWnkyOURiMFhIb3NQWVBUT1dINkJLT2Vnd2wzbXRfZkxhYUdBNkdybEF4SnI0c1BfZjRQYk5fNWJlcTd5c1JYWV9UQ0liX3FjZmtHVVduRVFiN1BMOTU5cEpmUVhGUUUxM2NPY3ZYS3FUNVF2Q0lTX1dPdzNnbFFvWl9LLXpvSFJta0ZqOA?oc=5",
@@ -244,19 +274,19 @@
    },
    {
     "t": "郑彧已任福建省海洋与渔业局局长",
-    "s": "搜狐网",
-    "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQblEyV21odXZGZmZvek4yby15MVIwbDQzb0lNV29acUNSbmFhNk1sME8xWl8yUXBPUlZDRURMLWlDRzVJQUZyT1FNb0tWN2YyX0xrQUhGTEp1dGk0T1hhUTJaclk3bjVNbVhIUWMtMDNoWHlSS2hQQWtTbUctOS1HSDVfWXFwZDRZNkJJSHBXaw?oc=5",
-    "d": "2026-09-27T11:50:47+00:00"
+    "s": "新浪财经",
+    "u": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPOTFyM3o3UXBWRVpFRGZ2SmREMlMxSjhTcURXNV9YbUEwRWFZOFh6R3dOUTdMRTNBaUFIdThKbkg0cnE3RE1INmlybXR4QXA3TUE0Q1B4YjEyR1h1dEY5cEVRcmNHT2hLNHZ3UGwwcDE3RHJwOWV4TDBSWmNSamZjUE1scW9zQmc?oc=5",
+    "d": "2026-09-27T09:42:00+00:00"
    },
    {
     "t": "视频｜欧洲海域“高烧”不退 生态与渔业面临巨变",
-    "s": "news.cri.cn",
+    "s": "国际在线",
     "u": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBKVmJSUWVpcEZkb1NVU0I5ZnpBVklRRWtjYW5ydkYtS0k1dGdRZXA3S19CLTd3bXF5bWZzMjJaQTExMjltVDRLbTZKbWo1UWN4T0M3SXZRVEswaEFlTXVGWVIydFAta1ZtQUdieDM5X3FsWFozS0NiVjFB?oc=5",
     "d": "2026-09-27T09:01:08+00:00"
    },
    {
     "t": "2026年9月27日龙门实业（集团）有限公司西三街农副水产品市场价格行情_综合资讯",
-    "s": "futures.stockstar.com",
+    "s": "证券之星",
     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBsUEsycEhlS2NGeHNrTHd6YVBCTmpBdFFkUGY4NjBYYnlJZlphU2l6UEMxaFpSRkM5aWlIWG1Yei1xeFZXZE9FZGVFeWp2eW55bUdFampWd2xSSGVEWW5PV3Fsc3g?oc=5",
     "d": "2026-09-27T05:08:10+00:00"
    },
@@ -265,39 +295,33 @@
     "s": "生物通",
     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE9rdGRWVENKWEp0RDZBb1I2R2tIU2JWYXgxbUQxakZ2dXQ0U19nMGJCam4xdHl5MnFRcjFvcGFUUi03Q3FPSEdQZFlrNTNpLW91TFRiaGxfcVduZDI2bkRZVlRtd2t1UXdfMkdOLQ?oc=5",
     "d": "2026-09-27T04:26:19+00:00"
-   },
-   {
-    "t": "济州沿岸赤方头鱼（Branchiostegus japonicus）延绳钓渔业钩型尺寸选择性及其管理启示",
-    "s": "生物通",
-    "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTFB1X242eHQzUWFYUzl5TXZGUEViSjJFcHI4aXFkcWRVTGRIX0Zzd0FqWmFmenhDWHUxU3M0d1B4RG56UlhiZFdJRDEtR3o3ZXg0U3JEU1dyUnJac2REZm5XajgyZW55aUxWQkpuRw?oc=5",
-    "d": "2026-09-27T04:26:19+00:00"
-   },
-   {
-    "t": "多部门开展海洋渔业联合执法行动",
-    "s": "新浪财经",
-    "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQcWp3b1B3U1BtZEh3cXJVRmZ2akhSWk9HYVZVTEZMNlJLYzJvNG5GSURoSUIyN2FJN212aDNtdEM0RUFhd1E1NngzalhTRlpuRFppZ2wyYmlvQlk2Uk8wMHhPNmpJYkxuUkl6NmE3VGhpS2dCZlpaaDdqaWxTRUdPcjFrOXRqUQ?oc=5",
-    "d": "2026-09-27T03:45:00+00:00"
-   },
-   {
-    "t": "多地牛蛙检出兽药残留 涉餐馆、水产店和超市",
-    "s": "闪电新闻",
-    "u": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBLc1Y5akdNcWtHQ1NSM3RCU1JQVTJENHBrdUVHY0Q3RFdudTdXTHV6NGdLRzM0MTMyREE1WlRSZkNWS1ZyemVzWEc1UDZCRE9lZDh4WVVoejRYSnlXNEFpOVdwdkJoeXM?oc=5",
-    "d": "2026-09-27T00:46:00+00:00"
-   },
-   {
-    "t": "小型渔业共管有效性的新兴研究：成功与失败的关键因素",
-    "s": "生物通",
-    "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE41dmc5d3haWGNoYVV1Z0dlYWJYLXFTbW5SUEZ6Z3N2VEF4NV8taWdaeFBVZk5Sd2pJSUc2X3d1RmtJbF9ZSUl5Zm0zRnR2dXREd2pmRXpMZnY5TWQ5LUVxUFhDSTBOY0VsdGd5dg?oc=5",
-    "d": "2026-09-27T00:21:17+00:00"
-   },
-   {
-    "t": "厦门主要市场各类水产品供应充足 品类丰富",
-    "s": "搜狐网",
-    "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ0Y3VXNscVI3X3ZOelJkU2dkLWZ0eUt4X1FCUHNMbEtxbXRXQjVZTUhvdWtOTmJSUGdKSlRDQXk1M05XcFZ3V3Z4RnpRb2IzYm52dUpuOENBOGVUa04ybkRaTnNOX3U0YUhpSnZUT25FSnIzVUoyQ3hJUXZBalNKZ1pqUjZZM0la?oc=5",
-    "d": "2026-09-26T23:45:00+00:00"
    }
   ],
   "ar": [
+   {
+    "t": "الحسيمة .. إستهداف صغار الأسماك يعقد وضعية المصايد وسط مطالب بالتدخل",
+    "s": "Albahr News",
+    "u": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNS01ya01iV2JZRzBIRFlBbThoOVZvTUVxZlNzM3F3UkdiYk9ZbktuMFdlLWRuTnJfbDR1TE5nOUowTW9JVHoySlI3R2p3VEcteVFlTEVKaVloal9fYVdxd1BwbG91dEVFYloyeWhWWkVrS1luY3drbnlqb2QtY3VmbDdjUVBNbVRndDZoQ1Y0UlloVlh2T29XZ1ZZQllROXhWM2NsTGIwUGdYN2RibEJqRk5ORWZockVzQ3J6QWUtQ3M2b2txQjk3MTJrRGRZNF8zNkp2ZWhkNXB5YmJGN3BKeGxYbWZ5UnFfcmdsYkhTdVBTekp0NGhuSGFnbFZVaFp3eUZoMkE1clpxN2s0c2Z4Y1VVV0w4OU13Q05PM0c0VXBtNUVfOEowN1ZVeHBkYkNGeDFTZnN4VE80RG9Fdldwa2lOSQ?oc=5",
+    "d": "2026-09-28T12:45:53+00:00"
+   },
+   {
+    "t": "أسعار السمك اليوم الإثنين بسوق العبور.. الجمبري دوخ الناس",
+    "s": "بوابة مصر 2030",
+    "u": "https://news.google.com/rss/articles/CBMiREFVX3lxTE1vTWhwdFB3cm5PdXA2TGdjdHlZZWFVRTNNbGZfVEowcEtpT3BSZDN4dndsUExmR09sYVBIYmZsYUtPMkIx?oc=5",
+    "d": "2026-09-28T12:29:28+00:00"
+   },
+   {
+    "t": "تغيرات البحر الأبيض المتوسط وتأثيرها على الصيد في تونس",
+    "s": "شبكة تواصل الإخبارية",
+    "u": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE12ZndBdUN5WUEzWGFsaWZ6TFRmUDhSV3JlYUFDQW05dEUwT29KdTMwTGdVY2VlVm1ULVpWc25VS0M5X3ZVRVhWUGNSNFJIN3FJLVdv?oc=5",
+    "d": "2026-09-28T11:07:58+00:00"
+   },
+   {
+    "t": "بوجدور.. إعادة العمل بنسبة 15 % من حصة الأسطول الساحلي من الأسماك السطحية الصغيرة استناداً إلى مؤشرات علمية",
+    "s": "Albahr info",
+    "u": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5NT1dXU2xiRWJwX1J2LU5vdGFubjlsd2lYRUVDanRGV3pmTkUzQjdNdURNSjItTlMzbW00all6SUNXUlF5bnc?oc=5",
+    "d": "2026-09-28T09:16:44+00:00"
+   },
    {
     "t": "لقد اصطادوا عشرات الأطنان من سمك الأنشوجة في ليلة واحدة.",
     "s": "Vietnam.vn",
@@ -305,8 +329,14 @@
     "d": "2026-09-28T03:55:18+00:00"
    },
    {
+    "t": "أسعار الأسماك في بورسعيد اليوم الاثنين 28 سبتمبر 2026",
+    "s": "dostor.org",
+    "u": "https://news.google.com/rss/articles/CBMiREFVX3lxTFBiMkljb2dVZm51RVBrZVlXVVA1WU5YLS05b2hFd192bC15dVVVTzNMOXJ6QTk3RURBOGFtbzRIUS1TWXY5?oc=5",
+    "d": "2026-09-28T02:50:00+00:00"
+   },
+   {
     "t": "البلطي بكام.. أسعار السمك اليوم الأحد بسوق العبور",
-    "s": "aswaqinformation.com",
+    "s": "أسواق للمعلومات",
     "u": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9xaEFWeHVrSDB3VTRKRlpDQVhRemFvQ1AtOFYwWEVzTlhNVl9nc1c3NnBhNDZGdmxaaC1QRWpPUXdWYkhLdUdFb2RzX2hodnpk?oc=5",
     "d": "2026-09-27T13:07:14+00:00"
    },
@@ -335,45 +365,33 @@
     "d": "2026-09-27T00:20:27+00:00"
    },
    {
-    "t": "يشهد موسم صيد سمك الأنشوجة ازدهاراً في كوانغ نغاي.",
-    "s": "Vietnam.vn",
-    "u": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBMdjZhUGJrVThHT09PMUxkTGNEWGhqVnpZVndKSDRoa3A1c3FqS2lianZiTWhvSHhLaG5QSncwVEhFLWFoUzBaVlRRVU42d0V0Y1JvYzFaaWFIWGt5cndoTDlrclR4UzNPSEE?oc=5",
-    "d": "2026-09-26T10:40:42+00:00"
-   },
-   {
-    "t": "أسعار الأسماك في بورسعيد اليوم السبت 26 سبتمبر 2026.. البلطي يبدأ من 65 جنيها",
-    "s": "dostor.org",
-    "u": "https://news.google.com/rss/articles/CBMiREFVX3lxTE9wU2hzckRURUJxRG9hbjkyRjFybU9rbld6QmxXYjBjcVZqOEtVU1lDMlBIWWFHSGxhakVIOHZ2ZWdGQ0tU?oc=5",
-    "d": "2026-09-26T07:56:00+00:00"
-   },
-   {
     "t": "المساء - إنشاء نقاط لبيع الأسماك من المنتج إلى المستهلك",
     "s": "المساء",
     "u": "https://news.google.com/rss/articles/CBMizANBVV95cUxQVDJzTDQtQUlraHNPaUFjYWliSjNFRmExN3JCQkFZU0pwNUlvaFdsX0MzR0ZPYkJoWXRFLUZvRy1vRGI0Y0RRSm5ncW1aTGtneHZ6ZUhGeHNmdXIxT3BNelQxRE42LUV4UFUyUmtwbFJ3VEFLSmJvZGpINzhPNkdOOHFhWkxXam5NSVpmRGdtMFA0NzBvczRlMHV3XzFHaHRDOTQxaEtWclpiWkJXNkZJY2ZEdmhfQVMzQ1FOZ2ZuMkxrZWtZVU5RZkNZQVFkRV9nNzJZR2lLUnlUUUFFUVZRdklpdHI5NnBDcGtGN0NQc1l5R1QxaC15X2RqM3JyYmcyeGRpRElqQTJfTnpUNmJmSnRMM1RSbzhHY09fc1FPRWRDdkludFl3U2IyQ0RUbU9id1JHMEtkdm1MX2VXZ3N3enJURndxbHd6eldIWllRMWQzMV9mejNESWhqSW0xUlFIOG84NUpfZDhyU2FMalliUk1QMlV1NkNwVTBhaklkNFg2M20wQ2pDNFB2Z0xQR3piNW5pa1VwaVh1MXhIeVlpSk15Z2VMN3l3RVRtZ0ZZOU5NTlBoTzEzUG9zT29nSWdJSmFEeWNVZnhnNXM0?oc=5",
-    "d": "2026-09-26T06:53:18+00:00"
-   },
-   {
-    "t": "تنمية الثروة السمكية وصناعة الأعلاف",
-    "s": "بوابة الأهرام",
-    "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9vQllISVJweXdJQVB3NW8wNEN4R1F5cmtTN0ctSlZfRFRSRmM2REVBZks0bGxYY3NLRTVUTm1SUm96YlRBcWt2SWVURU1Rc0M2MVZ6WXkwLXJsM3ZKOUp3STBNbXk?oc=5",
-    "d": "2026-09-25T23:16:34+00:00"
-   },
-   {
-    "t": "بحارة إسبان يرمون محاصيل السمك في البحر احتجاجاً على تدني أسعارها وضعف الطلب «فيديو»",
-    "s": "zaiocity.net | زايوسيتي.نت -",
-    "u": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxPX3JiUzlGaEhFWmVxRW9USHhDN01jTWRPMU4xMzJoTTc1YWxJRW8zWFltNG5SVHdsSmxxUXF0a2pLdDdCcW1WUGQ1SUdXUFRwOVoyQkNsaWc5bWdtMzFaWUgzVjJDa29RWmF1Yl9KZmZZODRuUnZKR08tc0tmX3ZyLXkwbjlrTFpDSFBDX0xaZ29MVkpZMjlTS3V3ZFl2VlhfMXBEbmFmcVVERjZyOEpxUVZTR0VmTldyTVlKdHQ1NXFuMXFJbHhzYnBNUkFtY1J1bzVySEozTGdxTGN5RFBKeVdCY2RpbGFRUnBiVmVLeFVyZ2w2U0w2RVA4T1VOT1BzU1pVazJYaU5Pd2Z1bW5nRmFSV3RHZ08xZmdHTXZ1VHJXLU16MXpzc0V0NnpJVnlZSTRHUjIyZk5TNW53aHpXYXlVSzVhdlVSd0NUVGJQSUU?oc=5",
-    "d": "2026-09-25T22:11:57+00:00"
-   },
-   {
-    "t": "سيدي إفني يعلنها صراحة: الأسماك جيفيني ممنوع ولن يكون هناك تساهل.. 2 مراكب صيد السردين حنشو ليهم محضار بسبب الأنشوبة صغيرة الحجم - البحر انفو - Albahr info | جريدة الكترونية تواكب بشؤون البحر وقضايا البحار",
-    "s": "Albahr info",
-    "u": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1CM1dqTlptWTJjWUs2V0dRcU1DSk9zbXU4MmtlTWRPc2xYMkRYSHY3MTdUbmhqWHVrY2N5Vnh1WVVMZ0lsRVE?oc=5",
-    "d": "2026-09-25T21:16:23+00:00"
+    "d": "2026-09-26T18:48:56+00:00"
    }
   ]
  },
  "local": {
   "fr": [
+   {
+    "t": "Andalousie réclame au Gouvernement des mesures temporaires pour la flotte si l'accord de pêche UE-Mauritanie tombe.",
+    "s": "Demócrata",
+    "u": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOdjhhQWVuX290aVdsdHNMZGtCVEUyaGZibkVVaEdhdjBVSjNvc2Rqam9FaWFnUUtjYXdtQWxqV3A3dlNMNHNpcml5V00tcE93dThDcGtxZUlMcEtseC1VdXdrT2xkbkNKZlFwVl9KSERxS2dRZGo3Zm5wMGJOMnJIaXhDdHFFNXJrOGZUaElmUGs3bkdNQzNvd0pRRnNzb0E3NjZYTngyOGxZelhFaS1tNGxnZFhGTVRad25NbnlkOVpQOF90WFdDOVBSNGZmWl8xMVJUbnN6V2FwNEFNRGxOU0kxQU5RcHJKY2kzedIB7AFBVV95cUxOdjhhQWVuX290aVdsdHNMZGtCVEUyaGZibkVVaEdhdjBVSjNvc2Rqam9FaWFnUUtjYXdtQWxqV3A3dlNMNHNpcml5V00tcE93dThDcGtxZUlMcEtseC1VdXdrT2xkbkNKZlFwVl9KSERxS2dRZGo3Zm5wMGJOMnJIaXhDdHFFNXJrOGZUaElmUGs3bkdNQzNvd0pRRnNzb0E3NjZYTngyOGxZelhFaS1tNGxnZFhGTVRad25NbnlkOVpQOF90WFdDOVBSNGZmWl8xMVJUbnN6V2FwNEFNRGxOU0kxQU5RcHJKY2kzeQ?oc=5",
+    "d": "2026-09-28T12:00:48+00:00"
+   },
+   {
+    "t": "La Junta exige au Gouvernement des mesures transitoires pour la flotte si l'accord de pêche UE-Mauritanie tombe.",
+    "s": "Demócrata",
+    "u": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQQ3hibzNLakdrNURuLUhoLU9IRmtoanAxd0ZGNDJSY2RTaWxXVG53cDZHTXRuVmdrazRPZDRDeDV0NnVrdElaTTNWb1FWWTVodXk2Z2t1dkl4eWQzaGZLUnVIM0NWT0tJYTJpZjB2bUp3M01SRy1JUllpTHB6LUIwTEkyS2RaX2RhdHpBQWRRMWFJV2szUXpPdHJYdm1fLWVua3Q4YThqLXJQRXJrc1JfUjVRQWRMa0xsZV8xNFZPdHcwOW11X2J2Vmpsb25qVzUtbE1XdHYwTHhVbmlOU1ZXUDVGdjJ6c2R4cFlsZTQ3MnRBOGtVRG5JQ3pna0M0Z9IB_gFBVV95cUxQQ3hibzNLakdrNURuLUhoLU9IRmtoanAxd0ZGNDJSY2RTaWxXVG53cDZHTXRuVmdrazRPZDRDeDV0NnVrdElaTTNWb1FWWTVodXk2Z2t1dkl4eWQzaGZLUnVIM0NWT0tJYTJpZjB2bUp3M01SRy1JUllpTHB6LUIwTEkyS2RaX2RhdHpBQWRRMWFJV2szUXpPdHJYdm1fLWVua3Q4YThqLXJQRXJrc1JfUjVRQWRMa0xsZV8xNFZPdHcwOW11X2J2Vmpsb25qVzUtbE1XdHYwTHhVbmlOU1ZXUDVGdjJ6c2R4cFlsZTQ3MnRBOGtVRG5JQ3pna0M0Zw?oc=5",
+    "d": "2026-09-28T11:54:25+00:00"
+   },
+   {
+    "t": "Planas exige à l'UE de conclure dès maintenant l'accord de pêche avec la Mauritanie pour éviter le retrait de la flotte espagnole.",
+    "s": "Demócrata",
+    "u": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOaW5JdWxTMXFPa29QOHV5WGhHY0MzbU1ZZF95Z3AzRVFwVHZScmpVN2NIX0doWDJpakFFNGs4LUpxOUc5UUZwbFFndUdhal9GWnJEOHNZUzVvRmw2WWI1OVE4VjhnSlhZVFJ6WmRCSF9POVVVZHJPY3NGUi1XcktLdklpdkJzbkJyWjUtRldKSTQ4QmRDbGl3QldBZkZSc1NyMTJYWG5tNFRNbzFVdFFBZEZPWHVyVVkySlRkQmkxZ0FOX3AyTkJwTkktYzNjdFd5Rm1TcVJITVFwTHBVUmxMUHM3ZjYwRURLY05aaGFoZmxiVGFZalRTY1R1cjZlZ3l5YWNzd0pSSVNlMkJ2Z3pXadIBlgJBVV95cUxOWGRwRnFtRTBhNWFDOUtlajQ3RWVZa0VZOWlsNndaRmlWd3l5RnI5VUxfaXRCUFM2QXBJcFE5UDRqOWRqSjJoam90enJJSEFPaDFhQURaZDV0Rk1UdHZzZnRZTkZNRXk3YjVQc25hTlc5Q2pGUzA5Y245TFl3cTMwRmdNYXlScVJjVUItcDNISDMzWHdzNUl3WUpUcmRsMTNqTDNCSUplWHRaa2VCbjF4SnlUSFZXZTd4TC1GWG0ycjNHQlpFTVV0RDBONWFkOWJqaGFHUjZXaEpTU3BaM2ItZXgzNHluaGZ5ZEQ0Z0hVMVhsZmRwcV94T05EY0JfT2laUF9LRENDWG55QklqdzFKOHJoOHZYQQ?oc=5",
+    "d": "2026-09-28T08:48:25+00:00"
+   },
    {
     "t": "A bord du navire-école espagnol INTERMARES, visite guidée au profit du Ministre de la Pêche et du corps diplomatique",
     "s": "Cridem",
@@ -415,24 +433,6 @@
     "s": "Cridem",
     "u": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5hc01jNlQteFd2dWkyMFpKbW9oeGVZOFNCWEtFamdoMEdVMGxhdnZ2b25SMEdMcHdiek5nODJ3ZmVKYzZyNHZBTVNjcE9aNHF3WHBFNHlmdzdkMGlNQXlWdA?oc=5",
     "d": "2026-09-15T18:30:00+00:00"
-   },
-   {
-    "t": "Naufrage en Mauritanie : 37 survivants dont 16 Sénégalais secourus par un bateau de pêche plus d'une vingtaine portée disparue",
-    "s": "pressafrik.com",
-    "u": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQT2tacW40R2FPSkVELUZHYUhBNElRT0pKb25jR3E1eFA0dDRKV29BWDV1S3Z1RUd3ZUxLR0Z4Q3R4OEJrT0ZZWDZHODk5bm92VHFGdWhicHE1VXUzWEhPZ1ZhTVppVk1seWJ4MnRJOF8yb2VuUnpXQml2SE5uSV9DZ3dnYzZFbl82SVJUWHIzQzViSm9HRkphb25FY1JZbHFsWXN0Zl9iSGx1d2ZNM25JZE52ZmpCVU5nSHBrbHVvT3hUdllXaDQ4ZmcwTS12VWQ2bDlZWkc2OWdmd3JjYmlQM25tSXNONVBNMWhj?oc=5",
-    "d": "2026-09-14T07:00:00+00:00"
-   },
-   {
-    "t": "Pirogue naufragée, seize Sénégalais réchappés d'une dérive de quatre jours",
-    "s": "NDARINFO",
-    "u": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMzRveVZzd25Ndng2RmdzOEh0Y1dZRFR1R2VlMTd6NksyZFV6Nm9nTFllTXg3aUtlZE83WXBEdXdNSzZCdUwxa296cUtjSVdMTm55WUlrQWZSaUlsMVpUYzlfS0dNdy0tMUVlV2hnR3ZSTVNwUFJwakVyS0N5em5xQ3Z0V2V1WEhsY1d0X3kyU3l3akRKb0dFUWpvMFNyVXFScTFNWG1fRGJIY3pKa1Y4?oc=5",
-    "d": "2026-09-14T07:00:00+00:00"
-   },
-   {
-    "t": "Drame au large de la Mauritanie : Une pirogue partie de Gambie fait naufrage, des dizaines de disparus",
-    "s": "Seneweb",
-    "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWEQwYWhwNXpvX0U2UlZma214T09iVmJGTFBHQkVjX0RDVnlLUDdpNThpSVFYQ3htZ1FqUFhCcVludnpTRDBxOVZFYW5MaHlLczN4aGJyUEFXTjVOOXppNHZDcGs1RkVJV2hTX0tTZWcxSGJtcnBmd2ZoOVZ1OEI0VVF6VEpiaENNYkEzR2huNDY3Mnp0dk1aMTBsMnZsQmFWOG9YQWN1V2ludHBkX19zekJ2ekJLMzZ2YTNrQ2JucEVLeGhoMktiVWdwUXR4YmEweUcwLXZpNjkyRjgteEV4T2t6bHZISWFq?oc=5",
-    "d": "2026-09-14T07:00:00+00:00"
    }
   ],
   "ar": [
@@ -463,8 +463,14 @@
     "d": "2026-09-25T10:27:00+00:00"
    },
    {
+    "t": "Senegal - Trade, Agriculture, Fishing",
+    "s": "Britannica",
+    "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4taTVpemdDV2h6cnYtMnNyN3Eyd2JVM3AwUzd0RjJKQXJwaWM0TS15NEZiemVpWlJDbmNLdVloSjY1dXc1TUpxajNMNkdPaXNjaXhZU2JaVW9LSm5X?oc=5",
+    "d": "2026-09-23T05:00:00+00:00"
+   },
+   {
     "t": "Just add fish: Scientists pursue more rice, less disease in Senegal paddies",
-    "s": "IOL",
+    "s": "iol.co.za",
     "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOY2Uxb0gxaktRMDEzS0ZkNDNiNFlqLVdNWW9FamZKR2FfRFVfVWdZZWxIRUhWU1VtTE1POXk3Ul9PN3dkZmNDWDIwMHZ4RXNSV1dlTUZvQUJxNHY2QnBaUDZhd1ZGVmljTVA1RjNGallkUVpzUkoxQjZJYU1xTDZZOVY3dS1VNlVTUEpzMFBpYnRyV1BCYm16WFE5VXZ6QUxxSklBM3RQamsxY0hvNlJJOWMxMA?oc=5",
     "d": "2026-09-17T20:43:09+00:00"
    },
