@@ -371,7 +371,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    <div class="intents">
     <a href="#rfq" class="intent pri"><b>🛒</b><span><strong data-i="in_buy"></strong><br><small data-i="in_buy_s"></small></span></a>
     <a href="#stock" class="intent"><b>📦</b><span><strong data-i="in_av"></strong><br><small data-i="in_av_s"></small></span></a>
-    <a href="#rfq" class="intent" onclick="meetUs()"><b>🤝</b><span><strong data-i="in_meet"></strong><br><small data-i="in_meet_s"></small></span></a>
+    <a href="#ftcontact" class="intent" onclick="goContact()"><b>🤝</b><span><strong data-i="in_meet"></strong><br><small data-i="in_meet_s"></small></span></a>
    </div>
   </div>
   <div class="hero-card">
@@ -579,7 +579,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    <div><h4 data-i="ft_company"></h4><a href="#about" data-i="nav_about"></a><a href="#services" data-i="ft_trace"></a><a href="#fleet" data-i="nav_fleet"></a><a href="#markets" data-i="nav_markets"></a></div>
    <div><h4 data-i="ft_act"></h4><a href="#services" data-i="sv1t"></a><a href="#services" data-i="sv4t"></a><a href="#services" data-i="sv2t"></a><a href="#products" data-i="nav_products"></a></div>
    <div><h4 data-i="ft_buyers"></h4><a href="#stock" data-i="nav_stock"></a><a href="#rfq" data-i="rq_tag"></a><a href="#news" data-i="nav_news"></a></div>
-   <div><h4 data-i="ft_contact"></h4><a class="js-mail" data-i="ft_email"></a><a href="#rfq" onclick="meetUs()" data-i="ev_book"></a><a href="#rfq" data-i="quote"></a></div>
+   <div><h4 data-i="ft_contact"></h4><a class="js-mail" data-i="ft_email"></a><a href="#ftcontact" onclick="goContact()" data-i="ev_book"></a><a href="#rfq" data-i="quote"></a></div>
   </div>
  </div>
  <div class="ftbot"><div class="wrap"><span>© <span id="yr"></span> AlphaMarr SARL · <span data-i="ft_rights"></span></span><span><span data-i="rc_l"></span> : <span dir="ltr">114439/GU/35448/4629</span> · <span data-i="nif_l"></span> : <span dir="ltr">01201011</span></span></div></div>
@@ -1093,7 +1093,7 @@ function renderPop(){
  const range=fmtD(e.s,{day:'numeric',month:'short'})+' – '+fmtD(e.e,{day:'numeric',month:'short',year:'numeric'});
  box.innerHTML=`<div class="wrap"><span class="evlb"><i></i>${t('ev_next')}</span>
  ${evLogo(e,'evlogo')}<a class="tx" href="${e.u}" target="_blank" rel="noopener"><b>${esc(e.n)}</b> <span>· 📍 ${esc(e.c)} · ${range} — ${t('ev_meet')}</span></a>
- ${cd}<a class="bk" href="#rfq" onclick="meetUs()">${t('ev_book')} ${L==='ar'?'←':'→'}</a><button class="x" aria-label="${t('close')}" onclick="closePop()">×</button></div>`;
+ ${cd}<a class="bk" href="#ftcontact" onclick="goContact()">${t('ev_book')} ${L==='ar'?'←':'→'}</a><button class="x" aria-label="${t('close')}" onclick="closePop()">×</button></div>`;
  return true;
 }
 function closePop(){$('#evbar').classList.remove('on');try{sessionStorage.setItem('am_bar','1')}catch(e){}}
@@ -1195,6 +1195,7 @@ window.addEventListener('hashchange',()=>{if(location.hash==='#ftcontact'){const
 let MEET=false;
 function setMeet(on){const h=$('#rfq .head h2'),p=$('#rfq .head p'),f=$('#rform');if(!h||!f){MEET=on;return}if(!on&&MEET&&Object.values(T).some(x=>x.meet_msg&&f.notes.value.startsWith(x.meet_msg)))f.notes.value='';MEET=on;h.dataset.i=on?'mt_h2':'rq_h2';p.dataset.i=on?'mt_p':'rq_p';h.textContent=t(h.dataset.i);p.textContent=t(p.dataset.i);['species','qty','dest'].forEach(n=>{const el=f.elements[n];if(el)el.required=!on})}
 document.addEventListener('click',e=>{const a=e.target.closest&&e.target.closest('a[href$="#rfq"]');if(a&&!/meetUs/.test(a.getAttribute('onclick')||''))setMeet(false)},true);
+function goContact(){const e=document.getElementById('ftcontact');if(!e)return;setTimeout(()=>{e.classList.add('hl');setTimeout(()=>e.classList.remove('hl'),2000)},60)}
 function meetUs(){
  const f=$('#rform');if(!f)return;setMeet(true);
  const ev=(typeof nextEvent==='function')?nextEvent():null;
