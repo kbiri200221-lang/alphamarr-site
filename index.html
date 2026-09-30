@@ -98,7 +98,7 @@ section{padding:88px 0}
 .pask{margin-top:16px;display:flex;gap:8px;flex-wrap:wrap}
 .pask a{font-size:13px;font-weight:600;padding:8px 12px;border-radius:8px;border:1px solid var(--line)}
 .pask a.w{background:var(--wa);color:#fff;border-color:var(--wa)}
-.alt{background:var(--sand)}.film{background:linear-gradient(135deg,#0b1a2b 0%,#0e3a5c 100%);color:#fff}.film .wrap{display:grid;grid-template-columns:1fr 1.55fr;gap:52px;align-items:center}.film h2{color:#fff}.film p{color:#c9d6e3;font-size:17px;line-height:1.6}.vbox{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.45);aspect-ratio:16/9;background:#06121f}.vbox video{width:100%;height:100%;display:block;object-fit:cover}.vplay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(11,26,43,.18);border:0;cursor:pointer;padding:0}.vplay i{width:86px;height:86px;border-radius:50%;background:var(--sky-d);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .2s}.vplay:hover i{transform:scale(1.08)}.vplay i:after{content:'';border-style:solid;border-width:15px 0 15px 25px;border-color:transparent transparent transparent #fff;margin-left:6px}.vcta{display:inline-flex;align-items:center;gap:10px;margin-top:10px;background:var(--sky-d);color:#fff;border:0;border-radius:999px;padding:12px 22px;font-weight:600;font-size:15px;cursor:pointer;font-family:inherit}@media(max-width:900px){.film .wrap{grid-template-columns:1fr;gap:28px}}
+.alt{background:var(--sand)}.film{background:linear-gradient(135deg,#0b1a2b 0%,#0e3a5c 100%);color:#fff;padding:56px 0 64px}.film .vcta{text-decoration:none}.vbox video{cursor:pointer}.film .wrap{display:grid;grid-template-columns:1fr 1.55fr;gap:52px;align-items:center}.film h2{color:#fff}.film p{color:#c9d6e3;font-size:17px;line-height:1.6}.vbox{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.45);aspect-ratio:16/9;background:#06121f}.vbox video{width:100%;height:100%;display:block;object-fit:cover}.vplay{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(11,26,43,.18);border:0;cursor:pointer;padding:0}.vplay i{width:86px;height:86px;border-radius:50%;background:var(--sky-d);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px rgba(0,0,0,.35);transition:transform .2s}.vplay:hover i{transform:scale(1.08)}.vplay i:after{content:'';border-style:solid;border-width:15px 0 15px 25px;border-color:transparent transparent transparent #fff;margin-left:6px}.vcta{display:inline-flex;align-items:center;gap:10px;margin-top:10px;background:var(--sky-d);color:#fff;border:0;border-radius:999px;padding:12px 22px;font-weight:600;font-size:15px;cursor:pointer;font-family:inherit}@media(max-width:900px){.film .wrap{grid-template-columns:1fr;gap:24px}.film .vbox{order:-1}.film{padding:28px 0 48px}}
 
 .evlogo{display:inline-flex;align-items:center;justify-content:center;background:#fff;border-radius:8px;height:38px;padding:4px 10px;flex:0 0 auto;box-shadow:0 2px 8px rgba(0,0,0,.15)}
 .evlogo img{height:30px;max-width:140px;width:auto;object-fit:contain;display:block}
@@ -346,6 +346,20 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
  </div>
 </header>
 
+<section id="film" class="film">
+ <div class="wrap">
+  <div>
+   <span class="tag" data-i="vd_tag"></span>
+   <h2 data-i="vd_h2"></h2>
+   <p data-i="vd_p"></p>
+   <a href="#rfq" class="vcta"><span data-i="quote"></span> →</a>
+  </div>
+  <div class="vbox">
+   <video id="amVid" autoplay muted loop playsinline preload="auto" poster="video-poster.jpg" onclick="this.paused?this.play():this.pause()"><source src="alphamarr-video.mp4" type="video/mp4"></video>
+  </div>
+ </div>
+</section>
+
 <section class="hero" id="top">
  <!-- HERO MEDIA: put a video (media/hero.mp4) or photo here once available -->
  <div id="heroMedia"></div>
@@ -377,21 +391,6 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
  <span>🔎 <span data-i="s3"></span></span>
  <span>🚢 <span data-i="s4"></span></span>
 </div></div>
-
-<section id="film" class="film">
- <div class="wrap">
-  <div>
-   <span class="tag" data-i="vd_tag"></span>
-   <h2 data-i="vd_h2"></h2>
-   <p data-i="vd_p"></p>
-   <button type="button" class="vcta" onclick="playFilm();document.getElementById('film').scrollIntoView({behavior:'smooth',block:'center'})">▶ <span data-i="vd_play"></span></button>
-  </div>
-  <div class="vbox">
-   <video id="amVid" preload="none" playsinline poster="video-poster.jpg"><source src="alphamarr-video.mp4" type="video/mp4"></video>
-   <button type="button" class="vplay" id="vplay" aria-label="Play" onclick="playFilm()"><i></i></button>
-  </div>
- </div>
-</section>
 
 <section id="about">
  <div class="wrap abgrid">
@@ -1301,7 +1300,7 @@ Object.assign(T.zh,{"vd_tag": "35秒了解 AlphaMarr", "vd_h2": "从渔船到您
 Object.assign(T.ar,{"vd_tag": "ألفا مار في 35 ثانية", "vd_h2": "من القارب إلى مينائكم", "vd_p": "أسطولنا ومنتجاتنا والتخزين المبرّد وتحميل الحاويات — بالصور من نواذيبو.", "vd_play": "شاهد الفيديو"});
 Object.assign(T.tr,{"vd_tag": "35 saniyede AlphaMarr", "vd_h2": "Tekneden limanınıza", "vd_p": "Filomuz, ürünlerimiz, soğuk depolama ve konteyner yüklemesi — Nouadhibou’dan görüntülerle.", "vd_play": "Videoyu izleyin"});
 Object.assign(T.ru,{"vd_tag": "AlphaMarr за 35 секунд", "vd_h2": "От судна до вашего порта", "vd_p": "Наш флот, продукция, холодильное хранение и загрузка контейнеров — в кадрах из Нуадибу.", "vd_play": "Смотреть видео"});
-function playFilm(){const v=document.getElementById('amVid');if(!v)return;document.getElementById('vplay').style.display='none';v.setAttribute('controls','');v.play().catch(()=>{})}
+(()=>{const v=document.getElementById('amVid');if(!v)return;if(matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');v.pause();return}v.muted=true;const p=()=>v.play().catch(()=>{});p();document.addEventListener('visibilitychange',()=>{if(!document.hidden)p()})})();
 function setLang(l){L=T[l]?l:'en';document.documentElement.lang=L==='zh'?'zh-CN':L;document.documentElement.dir=L==='ar'?'rtl':'ltr';$('#langFlag').innerHTML=FLAGS[L]||'';document.querySelectorAll('.langmenu button').forEach(b=>b.classList.toggle('on',b.dataset.l===L));try{localStorage.setItem('am_lang',L)}catch(e){};render()}
 function openWc(){$('#wcModal').classList.add('on')}
 function copyWc(){try{navigator.clipboard.writeText(CONFIG.wechat)}catch(e){};const b=event.target;b.textContent=t('copied');setTimeout(()=>b.textContent=t('copy'),1500)}
