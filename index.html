@@ -572,8 +572,8 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
  <div class="wrap ftg">
   <div class="ftbrand" id="ftcontact">
    <a href="#top" class="ftlogo" aria-label="AlphaMarr"><svg width="54" height="54" viewBox="0 0 64 64" aria-hidden="true"><path d="M44 16c-3 14-8 32-22 32C12 48 8 40 8 32s5-16 14-16c12 0 16 18 26 32" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/><path d="M22 29l4 4-4 4-4-4z" fill="#4fb3e8"/><path d="M52 6l6 6-6 6-6-6z" fill="#4fb3e8"/></svg><span><span class="a">alpha</span>marr</span></a>
-   <div class="ftsoc"><a class="js-li" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><use href="#i-li"/></svg></a><a class="js-wa" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><use href="#i-wa"/></svg></a><a class="js-mailic" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3.5 6l8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a></div>
-   <address>AlphaMarr SARL<br><span data-i="addr"></span><br><span data-i="mr"></span><br><br><a class="js-mail"></a><br><a href="tel:+22245749314" dir="ltr">+222 45 74 93 14</a><br><span data-i="l_fax"></span> : <span dir="ltr">+222 49 82 38 30</span><br>WhatsApp : <a class="js-wa" target="_blank" rel="noopener" dir="ltr">+222 49 82 48 28</a></address>
+   <div class="ftsoc"><a class="js-li" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><use href="#i-li"/></svg></a><a class="js-mailic" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3.5 6l8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a></div>
+   <address>AlphaMarr SARL<br><span data-i="addr"></span><br><span data-i="mr"></span><br><br><a class="js-mail"></a><br><a href="tel:+22245749314" dir="ltr">+222 45 74 93 14</a><br><span data-i="l_fax"></span> : <span dir="ltr">+222 49 82 38 30</span><br>WhatsApp : <a class="js-wa" target="_blank" rel="noopener" dir="ltr">+222 49 82 38 28</a></address>
   </div>
   <div class="ftcols">
    <div><h4 data-i="ft_company"></h4><a href="#about" data-i="nav_about"></a><a href="#services" data-i="ft_trace"></a><a href="#fleet" data-i="nav_fleet"></a><a href="#markets" data-i="nav_markets"></a></div>
@@ -613,7 +613,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    ===================================================================== */
 const CONFIG = {
   email:    'contact@alphamarr.com',
-  whatsapp: '22249824828',
+  whatsapp: '22249823828',
   wechat:   '',            // WeChat ID, e.g. 'alphamarr'
   wechatQr: '',            // optional: 'media/wechat-qr.png'
   linkedin: 'https://www.linkedin.com/company/alphamarr/',
@@ -1266,7 +1266,7 @@ function render(){
   <h3><a class="plink" href="${L}/${p.id}.html">${p.name[L]||p.name.en}</a></h3><div class="latin">${p.latin}</div>
   <p>${p.desc[L]||p.desc.en}</p>${STOCK[p.id]&&STOCK[p.id].qty&&stOf(p)!=='sold_out'?`<div class="qty">● ${isNaN(STOCK[p.id].qty)?STOCK[p.id].qty:STOCK[p.id].qty+' '+t('tons')}${STOCK[p.id].sizes?' · '+STOCK[p.id].sizes:''}</div>`:''}
   <div class="chips">${(p.chips[L]||p.chips.en).map(c=>`<span class="chip">${c}</span>`).join('')}</div>
-  <div class="pask">${CONFIG.whatsapp?`<a class="w" target="_blank" rel="noopener" href="${waLink(t('msg_hello')+' '+(p.name.en))}">${t('ask_wa')}</a>`:''}<a href="${L}/${p.id}.html">${t('pg_more')}</a><a href="#rfq" onclick="reqLot('${p.id}',-1);return false">${t('details')}</a></div>
+  <div class="pask"><a href="${L}/${p.id}.html">${t('pg_more')}</a><a href="#rfq" onclick="reqLot('${p.id}',-1);return false">${t('details')}</a></div>
  </div>`).join('');
  renderStock();
  renderRfq();
