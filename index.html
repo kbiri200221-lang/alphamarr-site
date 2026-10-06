@@ -261,7 +261,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
 .sttype button.on{background:#fff;color:var(--ink);box-shadow:0 2px 8px rgba(11,26,43,.12)}
 .stnote{color:var(--muted);font-size:14px;margin:0 0 26px;max-width:720px}
 .stk td.empty{text-align:center;color:var(--muted);padding:34px}
-.pimg{position:relative}
+.pimg{position:relative}.pimg .rph{width:100%;height:100%;object-fit:cover;cursor:zoom-in}.pimg .recent{position:absolute;left:10px;bottom:10px;background:rgba(11,26,43,.82);color:#fff;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;pointer-events:none}
 
 /* ===== Phase 1: intents, stock filters, RFQ, lot passport ===== */
 .intents{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px;max-width:640px}
@@ -1120,6 +1120,7 @@ async function loadStock(){
   rows.forEach(r=>{const id=g(r,'id'),prod=g(r,'product');if(!id&&!prod)return;
    const typ=(g(r,'type')||'stock').toLowerCase().startsWith('trad')?'trading':'stock';
    const o={id,product:prod,type:typ,status:g(r,'status').toLowerCase().replace(/\s+/g,'_'),qty:g(r,'quantity'),sizes:g(r,'sizes'),packing:g(r,'packing'),origin:g(r,'origin'),updated:g(r,'updated'),photos:toImgs(g(r,'photo')),lot:g(r,'lot'),catch:g(r,'catch'),landing:g(r,'landing'),fao:g(r,'fao'),proc:g(r,'process'),freeze:g(r,'freez'),cont:g(r,'container'),docs:g(r,'doc')};
+   if(o.photos.length&&o.status!=='sold_out')o.status='available';
    STOCK_ROWS.push(o); if(typ==='stock'&&id)STOCK[id]=o; if(o.updated>last)last=o.updated});
   STOCK_TIME=last;STOCK_LIVE=true}catch(e){STOCK_LIVE=false}
  render();checkPassUrl()}
@@ -1137,6 +1138,7 @@ function renderLots(){
   <div class="bd"><h4>${esc(nm||'')}</h4>${info?`<p>${esc(info)}</p>`:''}<p>📍 ${esc(o.origin||'Nouadhibou')}${o.updated?' · '+esc(o.updated):''}</p>
   <a class="ask" href="#rfq" onclick="reqLot('${p?p.id:''}',${STOCK_ROWS.indexOf(o)});return false">${t('ph_ask')}</a></div></div>`}).join('');
 }
+function openLotId(id){if(!LOTS.length)renderLots();const i=LOTS.findIndex(o=>o.id===id&&o.type==='stock');if(i>=0)openLot(i,0)}
 function openLot(i,k){const o=LOTS[i];if(!o)return;const n=o.photos.length;k=(k+n)%n;
  $('#lbc').innerHTML=`<img src="${esc(o.photos[k])}" alt="" referrerpolicy="no-referrer">${n>1?`<button class="nav p" onclick="openLot(${i},${k-1})">‹</button><button class="nav nx" onclick="openLot(${i},${k+1})">›</button>`:''}`;$('#lb').classList.add('on')}
 function renderStock(){
@@ -1261,7 +1263,7 @@ function render(){
  $$('[data-i]').forEach(e=>e.textContent=t(e.dataset.i));
  $('#tabs').innerHTML=['all','europe','asia','africa','fresh','meal'].map(x=>`<button class="${TAB===x?'on':''}" onclick="setTab('${x}')">${t('tab_'+x)}</button>`).join('');
  $('#plist').innerHTML=PRODUCTS.filter(p=>TAB==='all'||p.markets.includes(TAB)).map(p=>`<div class="card">
-  <div class="pimg">${p.img?`<img src="${p.img}" alt="${p.name[L]||p.name.en}" loading="lazy"${p.id==='fishmeal'?' title="Photo: Phu Thinh Co / Wikimedia Commons (CC BY-SA)"':''}>`:(p.icon?`<span class="emo">${p.icon}</span>`:fishSvg(p.color[0],p.color[1]))}</div>
+  <div class="pimg">${(()=>{const s=STOCK[p.id];if(s&&s.photos&&s.photos.length&&s.status!=='sold_out')return `<img src="${esc(s.photos[0])}" alt="${p.name[L]||p.name.en}" loading="lazy" referrerpolicy="no-referrer" class="rph" onclick="openLotId('${p.id}')"><span class="recent">📷 ${t('ph_recent')}${s.updated?' · '+esc(s.updated):''}</span>`;return p.img?`<img src="${p.img}" alt="${p.name[L]||p.name.en}" loading="lazy"${p.id==='fishmeal'?' title="Photo: Phu Thinh Co / Wikimedia Commons (CC BY-SA)"':''}>`:(p.icon?`<span class="emo">${p.icon}</span>`:fishSvg(p.color[0],p.color[1]))})()}</div>
   ${(()=>{const st=stOf(p);return `<span class="badge ${st==='available'?'av':st==='sold_out'?'sold_out':'ss'}">${t(st)}</span>`})()}
   <h3><a class="plink" href="${L}/${p.id}.html">${p.name[L]||p.name.en}</a></h3><div class="latin">${p.latin}</div>
   <p>${p.desc[L]||p.desc.en}</p>${STOCK[p.id]&&STOCK[p.id].qty&&stOf(p)!=='sold_out'?`<div class="qty">● ${isNaN(STOCK[p.id].qty)?STOCK[p.id].qty:STOCK[p.id].qty+' '+t('tons')}${STOCK[p.id].sizes?' · '+STOCK[p.id].sizes:''}</div>`:''}
@@ -1298,6 +1300,7 @@ T.ru={"nav_products": "Продукция", "nav_gallery": "Галерея", "na
 LOC.ru="ru-RU";NEWS_GL.ru="RU:ru";NEWS_Q.ru="рыбная отрасль OR морепродукты OR \"рыбная мука\" OR экспорт рыбы";
 T.en.pg_more="Product sheet";T.fr.pg_more="Fiche produit";T.es.pg_more="Ficha de producto";T.zh.pg_more="产品详情";T.ar.pg_more="بطاقة المنتج";T.tr.pg_more="Ürün sayfası";T.ru.pg_more="Карточка продукта";
 Object.assign(T.en,{"mt_h2": "Book a meeting with AlphaMarr", "mt_p": "At a trade show or by video call — leave your details and preferred dates in the notes, we confirm by email. Species and quantity are optional."});Object.assign(T.fr,{"mt_h2": "Prendre rendez-vous avec AlphaMarr", "mt_p": "Sur un salon ou en visioconférence — laissez vos coordonnées et vos dates préférées dans les notes, nous confirmons par email. L’espèce et la quantité sont facultatives."});Object.assign(T.es,{"mt_h2": "Concertar una reunión con AlphaMarr", "mt_p": "En una feria o por videollamada — deje sus datos y fechas preferidas en las notas, le confirmamos por email. La especie y la cantidad son opcionales."});Object.assign(T.zh,{"mt_h2": "预约与 AlphaMarr 会面", "mt_p": "展会现场或视频会议——请留下您的联系方式，并在备注中注明希望的日期，我们将通过电子邮件确认。品种和数量为选填。"});Object.assign(T.ar,{"mt_h2": "حجز موعد مع ألفا مار", "mt_p": "في معرض أو عبر مكالمة فيديو — اتركوا بياناتكم والتواريخ المفضلة في الملاحظات، وسنؤكد الموعد عبر البريد الإلكتروني. النوع والكمية اختياريان."});Object.assign(T.tr,{"mt_h2": "AlphaMarr ile toplantı ayarlayın", "mt_p": "Fuarda veya görüntülü görüşmeyle — bilgilerinizi ve tercih ettiğiniz tarihleri notlara yazın, e-postayla onaylayalım. Tür ve miktar isteğe bağlıdır."});Object.assign(T.ru,{"mt_h2": "Назначить встречу с AlphaMarr", "mt_p": "На выставке или по видеосвязи — оставьте контакты и удобные даты в примечаниях, мы подтвердим по e-mail. Вид и количество указывать не обязательно."});
+T.en.ph_recent="Recent photo";T.fr.ph_recent="Photo récente";T.es.ph_recent="Foto reciente";T.zh.ph_recent="最新照片";T.ar.ph_recent="صورة حديثة";T.tr.ph_recent="Güncel fotoğraf";T.ru.ph_recent="Свежее фото";
 /* ===== VIDEO ===== */
 Object.assign(T.en,{"vd_tag": "AlphaMarr in 35 seconds", "vd_h2": "From the boat to your port", "vd_p": "Our fleet, our products, cold storage and container loading — in pictures, from Nouadhibou.", "vd_play": "Watch the video"});
 Object.assign(T.fr,{"vd_tag": "AlphaMarr en 35 secondes", "vd_h2": "Du bateau à votre port", "vd_p": "Notre flotte, nos produits, l’entreposage frigorifique et le chargement des conteneurs — en images, depuis Nouadhibou.", "vd_play": "Voir la vidéo"});
