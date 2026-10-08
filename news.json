@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T23:06+00:00",
+ "updated": "2026-10-08T06:06+00:00",
  "items": {
   "en": [
    {
@@ -151,16 +151,22 @@
   ],
   "es": [
    {
+    "t": "A Illa acogerá este domingo un taller de cocina sobre productos del mar en O Regueiro",
+    "s": "La Voz de Galicia",
+    "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQdDBIdzlEcVFTd1B6OFZweHhBankwY2tBdVhJYnY2cG5NcHgyTGhKWGY2YXRLUjNYWjZjajRmbXlHWW1zWGxHSHlvLUhlbGVqZDYtRnJFMzBwNjg0OHhuUEtBbmJTeTJYX3ItNmVwcS1Kb2ExNXRpWHNlRzZtNEJfMlBmZ081SjFtWllWSVh4NFB0Vl9yYUp2Tzhoa243NTB5WmM2aDREZDNlOV9NbWpQSFpPNlplcF9RdUxlS1hzaDA1NGVpbVJXYzl0Q2xoZFdsNElUX3VmUXc5TEJaMGdRUGxPV3N6azdm0gHoAUFVX3lxTFB0MEh3OURxUVN3UHo4VnB4eEFqeTBja0F1WElidjZwbk1weDJMaEpYZjZhdEtSM1haNmNqNGZteUdZbXNYbEdIeW8tSGVsZWpkNi1GckUzMHA2ODQ4eG5QS0FuYlN5Mlhfci02ZXBxLUpvYTE1dGlYc2VHNm00Ql8yUGZnTzVKMW1aWVZJWHg0UHRWX3JhSnZPOGhrbjc1MHlaYzZoNERkM2U5X01talBIWk82WmVwX1F1TGVLWHNoMDU0ZWltUldjOXRDbGhkV2w0SVRfdWZRdzlMQlowZ1FQbE9Xc3prN2Y?oc=5",
+    "d": "2026-10-08T03:00:00+00:00"
+   },
+   {
+    "t": "Conxemar expulsa a una empresa italiana por publicidad sexista de sus productos del mar",
+    "s": "Diario de Santiago",
+    "u": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNQ3ZJLXNWSFVQNFpYc0NGWGZhS0xhdGZ1OHFLcFlOcE9JZGJxWDJEUEc5QWhGLXVYd01WLVQtSFU0OElDNUNRY05pcThiODNmMXlZMDJ3dlJjOHB4RUxyMGpnZHZ6V05tcFRLQ05kSmtGZDdYWUlnZ2NnMk1XdFZRY29JR3NMamw3ZFlFX01TWDlnbUxtY0hLT0x6SFd1WlRORm9IcXR1cUtTVWljSl9ZRzVRWE5CeGVZbXFGLTBZZFNWbXRkZEFB?oc=5",
+    "d": "2026-10-07T23:07:22+00:00"
+   },
+   {
     "t": "Intercambiando sinergias del sector pesquero",
     "s": "Diario de Ferrol",
     "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQZlhmRFJia25aX0dCTHN5cWRsUDJmVlVRNFN5Mmg5THRIRGVndXg0UWdVbzhXdHNYR3ZqUzNyV1p3UW96U1ljUjFWM2FOYWdzbVdBUk9aNklRZEFpNmt0ZnRCXzhHMjBjV2NlYnQxOURfRTlJYXdYeHY3OVFfVldVaklwWWE5bVpBWWdGRDBoblVwYWNUaDhUclhhV3ZWYkxvenpiMjZkczYxWVUyZ19Xc1UyQlRQM1dYYURiYWcxMWZ3Z1ZMZmRnQmdDRQ?oc=5",
     "d": "2026-10-07T22:30:00+00:00"
-   },
-   {
-    "t": "Conxemar expulsa a una empresa italiana por publicidad sexista de sus productos del mar",
-    "s": "Infobae",
-    "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPWUJxVXRBX3psSENTVk9STlBYWDFBUElzQTJLdkJzZXBhT190MlhWVTVXMkpZN0xtVmVWbHYtUlhMcXFMZG9iOTdhVjNxMktsNF96NnpEbVRNMWItb2hvQlBwU1NWMjZPM1pleXluUGRrT3VVaEwxb1ZFNWsxVFljcTZyeEdkcVRrNkhpT24ySmg2Xzg4cVdiM29hRWRIUTF5TVRiSXhWbnlJMVNma2ZjdlZBN2FMUmVGbjN6dElOd1ByUTd2aVpxNF9WaUJXYkR2YzAzNm5B0gHwAUFVX3lxTE5LZWZDdmdFT05TYjh0OGFRYTZKVFRVSkJ0Mkk1Zi1LbS1yOTNxSFFlS1FnYVNkak1LSzRqZzRZYklrZXBfaFhUek9ZMl90ZHZmcUJtdHhaT1duU1k4dGtGS0x3ZTZHOEg5TThJN3NpTW8yMjFBOXhEckg3V2ZBYzhLLWJYZDEwalBqekJOQzBkNldDdGI0U21hV2Y3TG0yQ293c0s5SDl6c0Q4dXE5VHViWTU0N2xvN1VsTFJrTzhYOGdaaS0xYmNrZVRjdGVybDdHdEdNNi1MN3h4Q043VmVDcWtzUEJlakhaRUJzSnUwaw?oc=5",
-    "d": "2026-10-07T20:52:37+00:00"
    },
    {
     "t": "Xunta y el sector pesquero de la Patagonia argentina se reúnen en Conxemar en Vigo",
@@ -173,6 +179,12 @@
     "s": "Demócrata",
     "u": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOZWRaaENlOUdRU3YxYVY3SkkzY2gwUTg2X3otN3Ftc3JxZE1GRU9pdk1LSGhLemsxRTk4cDFLNjJra3ZMMjE1RVg0X3pfSjlTazBmamVFSXNrWFZhSGhKMkw5blNIWGxQWXg4b0dMT2R4OEtrWktwbEVFZV9HT0h5YUpQSFlDd3J5SnhTdlk0Zk5TLUJvT3BaWFYyQ0UwSXluWTFTQ1hwbHBNV3BzdFJ4THZfQ055ZWFrOGdWNGYxdjlLckFHUGhidGZMQ0NCd2JIZDdPWk1pUDdobDJyMjZn0gHkAUFVX3lxTE5sNjlrdXV3RU9CQ1JBVUUxN1hxbk1pRDh6ZFhYdFcyanBVWGZwTlR1Y2IwYUJRMmZ0dlhDTnRaNnRKQkdOS1ZrX1k0azhXcmg0S3pERkxIaFBTSWZDalBmTGZ2N3RPR2ZpQ1UwaEs0ekJMX0d2N2tDTG9hdTlVNE1BeDExT1lxSlRxNFk2WXZ6bVBRN1Nob0Mzek9mc1NKRllSelBQSEVXZmZ5ZmhVRmFKS3N4WGVycDJ0S1B2U1lGQUZlOXNfM2ZQMDlTWlliN1VWa0RNeE5FNUlXbFRDaUxKYUJ2dw?oc=5",
     "d": "2026-10-07T17:42:31+00:00"
+   },
+   {
+    "t": "Mar se reúne con representantes del sector pesquero de la Patagonia argentina en el marco de Conxemar",
+    "s": "GaliciaPress",
+    "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbUY4UjB1MzV1am1KOEZmZWN5VlE3bFg2SVlDOTlGMTJtYkhUTHpfRWhzTkU5Vjc4anlaV0w3WjVUU0RueGk4cWx3MDRtUkoyczc3dW5kSUFpLWVFbmdCQ045MVJWNC1MYkNtWlR6dEpqSGhFTGRsUTA4M2pUeUtvZmdmeUkyR2ZFT3AtdTYwWTFfdjJscnNYNlFwbXB1WktiNm0xSnBZNkpHYXhLeElCYnpPRjNNZU0wNWJsZlpoMm5VTDJUME1KTXlvRGZ6aGhvd0I4ZDFNOA?oc=5",
+    "d": "2026-10-07T17:39:00+00:00"
    },
    {
     "t": "La Xunta mantiene un encuentro con representantes del sector pesquero de la Patagonia argentina en el marco de Conxemar",
@@ -193,15 +205,9 @@
     "d": "2026-10-07T14:38:24+00:00"
    },
    {
-    "t": "[INFOGRAFÍA] Las exportaciones de productos del mar de Vietnam superan los 9.100 millones de dólares tras 9 meses.",
-    "s": "Vietnam.vn",
-    "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTTVSUTRud3BsLVlCbEY3TGpUVGRuMEc1bGtkZlNoZ3YtclNPQ244NU5MaFAtVjhudUZBV01WcVgyVWNqN2NfaF9UcXZmWVhZa2xJNHlvTklFM1luOHo5LTc4VHRrT3c2Y1ZZVGdmUVg4Rk1VbWZPb3R6bHdUM3FTSVVyZzhvaGl5T0tjVDA4MDhZenFoZ2ZPSQ?oc=5",
-    "d": "2026-10-07T14:18:31+00:00"
-   },
-   {
     "t": "El gambón argentino culmina su certificación MSC y busca desde Conxemar valorizar el esfuerzo realizado por el sector",
     "s": "Industrias pesqueras",
-    "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1qTEIzYUtSbDBVSVMxZlVTSV9Yc0xpY3U1Y3pRVkFFVUp3TEliU0o0RzRsSHQ0MGVXUTlQdzZXQVN4dUdVWU5RTlZoUzAwamljNTdlWVVEaktzSEc4TWZ2VnlBVl9Uc0dac1JmMGpSeklOOGRDVnV4Ug?oc=5",
+    "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0ta1RmOEFXNEhNVjBlMWM0d1paaEcxU0taZVQzSVZmc3JoQXAyYzgycHY3LWZsVFpMSjVzNFhsbW1XcjFfSG9VcVpwZ216NTk4TDUyelJoM1pNN2JBUUNKU2pzOHBGOXBSYXN3eDF2Q3FUdVJqaW14TQ?oc=5",
     "d": "2026-10-07T13:52:38+00:00"
    },
    {
@@ -215,15 +221,39 @@
     "s": "Aqua.cl",
     "u": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWHdIMUpHb3U5dDlZUDJobURlQlNRSWRjdGIyZ2Zuc3BYX2JxT0dWeE50VkM3SkJxRXUtS1RYZmwyRFhlSTJadXFWODZNQk4tOW1vVVE0bWhVMGxIUUpvZU9SS0p4dnlSdVZVVXZ4SFBRTjdWbmRoM2ttWWJWb0doRWctMTFYOTNYMzlnOVJTeENKa29TTjhDYldSYld5M2JPUXU4MEFJY2s1ajFEX3E2QQ?oc=5",
     "d": "2026-10-07T10:11:20+00:00"
-   },
-   {
-    "t": "Playa de Santiago mejora la conservación del pescado con una nueva máquina de hielo",
-    "s": "La Voz Canaria",
-    "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOSVlUNDZVQTItZWdsU09UYVBDSGhjbmtCZDVPaVJUZ2Z5bFZUelZocEJQNlZHNDgyZEMxMWhKckM2aDVEU0tDOGtNMlNxUXNabTlxNFJ1U0d4SjhYSnM2NjEwczc5T0RrR0QzejNCVVkySWY4Z19OSW1ZcGRiXzJDaE84ZWhBMkhFdTd6YlU2OF9reXlwcDlDZjIxQTM0Wk1Ed0QwV2tuaG1ZSFVZSVJWQm11MUpUV0thZnBGRGh0WDl5TGVC?oc=5",
-    "d": "2026-10-07T09:59:25+00:00"
    }
   ],
   "zh": [
+   {
+    "t": "厄尔尼诺恐冲击农渔业 末沙布有信心获额外拨款",
+    "s": "诗华日报",
+    "u": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9GYWpvYk5TeHpDank2SGR1bWkyT1BISWVxcEkyZlZuNnFoS1pwUDZvVnhrLW5mME5CUmlRSjVRNTAtYU9McE50dDZFeVBfUQ?oc=5",
+    "d": "2026-10-08T05:12:39+00:00"
+   },
+   {
+    "t": "2026年10月8日青岛市城阳蔬菜水产品批发市场有限公司价格行情_综合资讯",
+    "s": "证券之星",
+    "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE96VHh1NldRSEl4bV9UQVlubTFfeUtjT1VCQlVSVGRQXy1ReEM1WUttT09xdGFzZ1Z2VU1fcWZRQ0h5Z2t2NlkzTDZiZ21qOFZUbG5KNTdnYjJ1d1lUb1JBTmYtbGU?oc=5",
+    "d": "2026-10-08T05:09:14+00:00"
+   },
+   {
+    "t": "前九个月水产养殖产量达到564794吨。",
+    "s": "Vietnam.vn",
+    "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE83alBIcGhKUG96Wm41Vnk3b1pJenhhbXFmeEdtd3Q3Y3BtX05DWGM0amtPZkp6dWRZNlJhODZfbWJpRVdOaGNBaGNKUzFOaDUzUlJNZG9nNVdjVUd4a05rT19NV18zaFhPZENQX1Z5c0cyVFVYMlg2c21CVQ?oc=5",
+    "d": "2026-10-08T03:34:19+00:00"
+   },
+   {
+    "t": "基于数据管理渔业资源…海洋水产部发布管理创新方案",
+    "s": "亚洲日报",
+    "u": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBWTW9GUGtsbUlrcWZnZ0pRUE9PenZUc2R2YWE4NHp5Q1ZOMk5GVXFMbk5HeGJndWp5TWR0eFlETDJSbDRTZmZHNzg5OHJNMnl4YjdNSHhlQ1RjU1E?oc=5",
+    "d": "2026-10-08T03:04:00+00:00"
+   },
+   {
+    "t": "加勒比海礁鱼类的热脆弱性及其对生计渔业的影响：基于生理信息物种分布模型（pSDM）的预测与中美洲礁长期监测验证",
+    "s": "生物通",
+    "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTE4tWXpSSHFjUUJZd2JvMWRVLTI0RHlnZkRrM0xrZ0NnXzg5eXF1N1dpTno0d2FoQXhGWXZaRWRETk1ZcmZCM1Y5QUlUVmk2SW1mMFVRYjd1ZXM4Q3VuU1V0MXRtVU1UR2phWWl6YWd3?oc=5",
+    "d": "2026-10-08T00:11:51+00:00"
+   },
    {
     "t": "基于时空模型辅助生态系统渔业管理：新西兰查塔姆海隆中深海域案例研究",
     "s": "生物通",
@@ -265,44 +295,20 @@
     "s": "证券之星",
     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBUS1Q2d0RrTXV1VUxrdVZzeVg1NHRIYUFTdnNCel9DTFB1dUhTYU9aTjFJOGVZWVBpOXNzYjlUOHVLWWJobFR1WldIS1VjT1haQWI0emxoXzctdnVfd185MWM1cEY?oc=5",
     "d": "2026-10-07T05:07:01+00:00"
-   },
-   {
-    "t": "森州海龟巢6年增3倍·渔业局：优先提升保育意识暂不设保护区",
-    "s": "Malaysia-China Insight",
-    "u": "https://news.google.com/rss/articles/CBMi2gJBVV95cUxOOG1iY0NVekhWT3N6SmNVZE93QmJ3amMyaE1zRlFtSFNoNnlkS3hHUVd3RnliTDFjbDJGWFBUZklQVnlPMVVBbF9STWxhYWtwOVNVdUR4azZFTFZjT3k4MnNXdUhWb3A0d1JUaEFjZmh0SGVUeEVCTW53aWV2cjZGem1odjV0MWZVc19HdV9wM1hRLWxQTjN2VDhFbnhsZXlncm9JZURSN1BER0FQbU9hbWRYaXNwS0U2ZXhBNEFxOVlQQy1nWHllbG43NDZnU0lQSWh5M1c5dFU4ZTNFNm1kVTZUQUptaF91bEhzUEFfMkpEeGpQSXlmdEVwSWdFU2xwcU5tZWxweXdmRVl4T1QwMnFiZzBPUkd3MjhBLTJYbXBMMFR2dVg1YjNVU2VaU2pTS1BnWjFsSjFRalh3d3BFRHNTRFUxZWxmcEI5X1hzSVIwRHhrcEVDUG1B?oc=5",
-    "d": "2026-10-07T04:18:48+00:00"
-   },
-   {
-    "t": "秦皇岛为2500余艘渔船系紧“安全带”",
-    "s": "秦皇岛新闻",
-    "u": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB3Q1NPUzVRTk12Y2Y1b2wxZ0hPcFFIX3RPS3RqZm5kUlowLVBkQmF5aXF0bzk5SXIwU2tYX2l2QmRLeHRjbkx4RUJPdUhzRGhPRmhaZWJSR3lZbTRicnJwODZLWQ?oc=5",
-    "d": "2026-10-07T00:51:57+00:00"
-   },
-   {
-    "t": "解除IUU“黄牌”：严格管理渔船，确保依法出海",
-    "s": "Thông tấn xã Việt Nam (TTXVN)",
-    "u": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxOSlYwNlctZDA1VUZiWHh2SEpiYmJDdWZwSGFaNXNvQU96RXFScFhRSEZBNVBic01abzUydXJYbEQ2Z0d1OGNlVFJ6SEpQVTl1ZHM3SGtFeFVIMVBMbERScGdfVE5meFBEdDkxV3VCY3U1OEN2cDZTd0h6b3FOTTcwbW9EdW5MVWF0VkNwWWdhaDNhODF6Z0VHQTN1Q2FoLUdCREQzR3pPRDJGXzVacllPc2MwZTNpRU1KV2tHX1BzR0lhZVBCaUFhdW0yYU9LVlVOQ18tU2VRc1VabTdIR0RaUnRNQ2p3N2g2THliTXVrYzhDa21oaHo2MXViX2NZMExTc3JZaTA1UnFGbTY4OFJpZENObU1WSF8tMXJObmdLdENaR0UwRHJUdGs3cGhtc1otRHJBeWJjUmo2X0UydFFMSQ?oc=5",
-    "d": "2026-10-06T21:07:32+00:00"
-   },
-   {
-    "t": "2026年8月阿根廷渔业生产指数下降17.2% - 新闻和统计",
-    "s": "IndexBox",
-    "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNSzFCcDdsd0NWQTVPZVVjeE44dUxEemw0QzI0eEdYOG9fWjZCU0JOY3RIdTZIREt2R0tHc05DZC00bUR6YkpJVGdGYVpqMXhtNkZnYUdhMWllaDhTWEU3UUtWTGpacnJNQ3dXYURaQ3hZOHpMQk9tTGkzU0xqT1dyUHNsRUpidjluSFdHM2hLWUQ?oc=5",
-    "d": "2026-10-06T19:20:28+00:00"
-   },
-   {
-    "t": "英国《2024年海洋渔业》报告在登陆量格式更正后修订 - 新闻和统计",
-    "s": "IndexBox",
-    "u": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVE1ncWlNSDNUVTVIXzEtd0tjXzVJX2NSdDUwNDJESV94TXE5a18ySWUwVEhOelMwam9oNTFwSWhOeVJKd21BRk1qNEZaNExySlVqby00YlNRYnUwWEVodkJkZXB4c3hiNDJIOE1odG5YVnA4b05wckhVSFRPNElMWEVzZENrZV9NckhIeGk1U3cwaTRGdXlkcTlKbmp4MkpzUmc?oc=5",
-    "d": "2026-10-06T13:30:36+00:00"
    }
   ],
   "ar": [
    {
-    "t": "من النيل إلى السوق.. مهنة صيد الأسماك تستعيد عافيتها في أم درمان",
-    "s": "آخر خبر",
-    "u": "https://news.google.com/rss/articles/CBMikwRBVV95cUxNZXZidDlWSDJKZEM1ZENmTnFJOGtSb1gtZzZqUG13MGZjclZlTG1xVDBEMFVtZFRNbkVPQ2xKNzJ4dS01TEphSmVuX3RDNjE1d2tUaW9YV2U3ZjNNWnl6bU1GbFRJYlNhQlY5dDFub1hRa1M2WHVyajFTMG8xazJHVl9yU3c0dHd2dkdkeW8wSm52N1U3NzdRS2ZkR3RXR21TdUJmX0lobmRqbjZQQy1aXzFjdGFRQUxLUmJ2NThPWWNocWtEVTlPWTdqRHlwMG1TTXVDOVludTlRMTdEY0x1T3RBY3VFNVJ0b0tOTWRWX1VFbThIdDI0V2lPSDFqeVhVT0FsdDVxZlVCX2xTem0zcVpiNElwR2RkenFWcEd0ZmticVU0N09sOHdaQUNKQ2Z3SmY4dk1FX0phMjUySkI2NEtZQjQ3UlJjZGFuUEVGUDNSaEpqU1owQzFGNkVHWldEWFMzVjBiWE1ZNG85NE8yNHRKeklkMjZfSk95MEdxYUdzMFAtOXdNNHAwRWtTZS11cW04U3RhU2d0cVE3Y2N1UGIwZlhYeHV3eW9hRGdtTmhaTlc1cW1Xc3E4djNyZ0VmcC1DbjdiRGJrOS16YzBGU0VGa3FjMlF1MmNCalFpWE1zZHlUY0NGT0FURFROUWt5T05TdzJkOFE0S09yQVdNclV1QmVOVThHQ3N3NmlEUmd4N2c?oc=5",
-    "d": "2026-10-07T18:03:44+00:00"
+    "t": "الجزء الثاني: إيجاد اتجاه لإدارة سلسلة توريد المأكولات البحرية في الاتحاد الأوروبي.",
+    "s": "Vietnam.vn",
+    "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5QR2dIb0pwSEhKVk8tcmpvTUxjdzd3aEt0VGpDMktMLXZrQTNNdE1tTUc1NFktS01jd1V2RVlpZHpxR0Y1bC01UU11aUp5YkYzVERBNnp6V2dwZUJ3MHk4cXpWbWVtbXhhVF9UR2JMM0FQUV9tWE52MFdnSQ?oc=5",
+    "d": "2026-10-08T01:30:10+00:00"
+   },
+   {
+    "t": "وزير الفلاحة يستعرض مع نظيرته النرويجية سبل تعزيز التعاون في مجال الصيد البحري وتربية المائيات",
+    "s": "جريدة آخر الأخبار",
+    "u": "https://news.google.com/rss/articles/CBMixgJBVV95cUxNamNsVENRWVVWLWNjcGNwN1NDVHU0SFRENGpXckx5UGVEMjFXZWR3Yzl6Rkxra09jdXVKUUlWRy1kcURGdGEwNmxiY3hYQm9zWFpSaGhWemZwVEhGZ2dfYnFVWUJ1WHg4cHl5bDdZUHBHWkN5b3BSeUJMNXg3VmpNcFhIZlUwM3VTQm80bDRycWhqUkpHbFJKMVpnQUlnYUFQOExoOENZbHRQYzVMTFd6cFloV3I4emtid20wU1N6UFZuS1RtcDVXd0VyZlQzNW1IMnF2N2lMTEZmcFJxN3RTSnUwbW1sS0RxbWdSQzJacFRVWmlfYUVYeklqdTZoYWM0NjFtUzg5Q3ltTmNIY2xnS3ZTaTlIX213c3E3WFdVcnBMRzhqU0Z6dGRYVk9XaXZVc056aEVvRThYc1MxRzFuSzk5N3ZWZw?oc=5",
+    "d": "2026-10-07T17:31:54+00:00"
    },
    {
     "t": "مندوبية الصيد ببوجدور ترفع درجة اليقظة بعد فقدان القارب المرافق لمركب السردين «مارومار 1».",
@@ -337,7 +343,7 @@
    {
     "t": "خبراء «مصائد التونة» يتفقدون أسواق وموانئ الصيد في سلطنة عُمان - الشبيبة | آخر أخبار سلطنة عمان المحلية وأخبار العالم",
     "s": "Shabiba",
-    "u": "https://news.google.com/rss/articles/CBMi3wNBVV95cUxPbHBna0EwQldiN2wtWWZPZlJnNjU1dTdxVFVwRmtXeC1OREFUSlpicUhDYWRfdGJqdXEyVXdkc1RpRldfTWQwTmRXdGVnLVpHbzhudWpVcFRvQnAyMnZ2QXZNa1hFcW9zSTd2T05WckI5UWVLUDF2eGQ3Z3M5YVJ1bHdFcllNcVFqeTJyeHJ4WmRlS04yNldITVdXOXdOU1p4MXMtZ08xUVNwM2U5THBhZXZWcTVJZV9qQXh0eWZ2RXpJUVA1SGVudThvWFFPSXVFM084MXJIME5CX0RlNTQ4WlFKV0p2dFU4NE1RT3dDVVRTVzAyUEZXcFY1djNxREZ0a21pck1EMHpDWG1uTHdNZy1yeE92V0RzVkpXVE9OYnVfVW4xZVNKQkVXUER5OVY2OFBiUGd6d3gtSTFfWTNzcDJNdy1hTzZlRmlwMVdvaWtYR0VTNnJvODZ2TXJpOUZXNVF2M3Z0U1JWaTNBeE1GSV95M1RxSWxJMDV2ZU1sZUJrRHBzV2JPZEd1X0s5Q0QtQUZma24wVUJuNjhlTVFyTkJBYVBYQ2hqWURJT044QVo2T2JrUzVRS09qakdrQk9iVUVhTUNuMWJKX3FMY3pZdWg5eDZDNVdkNS13NENqbw?oc=5",
+    "u": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE9NQnhfRGpMTEdNc0EwbTd0bUo2OVM3MGszcjlCX09zaVhwS0VkbGhzcHd3TU16SXdwaEhranNjVUs2QQ?oc=5",
     "d": "2026-10-07T04:57:47+00:00"
    },
    {
@@ -363,12 +369,6 @@
     "s": "جريدة الوطن السعودية",
     "u": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0yRzlJSTNxZG1UNW5ySUxjT3BSLW1oNlpTLWZjc2tTeDhxbmFEa1JqOTRsZEtVVXRBT0VfUUJTcXJ6cnk3YUVJYzNEdVRwV1B4QVhibNIBWEFVX3lxTE5WMjlFQUFPZDFpMWp5Mm1MRElGaFR2UGhSWkFyRmZEUm9zakVTQzF5NHpDMDVTdjZ3UDMxNG1MSzV3TkhINXFFVUpxUU5ySkY2Z3RVSVBUeV8?oc=5",
     "d": "2026-10-05T21:40:00+00:00"
-   },
-   {
-    "t": "صيادو الشمال يعتصمون في طرابلس: لدعم المازوت ووقف الصيد بالمتفجرات",
-    "s": "اسلام تايمز",
-    "u": "https://news.google.com/rss/articles/CBMiogRBVV95cUxOYzZoU2RBbXhkXzZQd2pVd3FiT2V3cHgtZlpyRnRqMjJMYmo0dEhjWGphdjVBUFhIRGJhNF9UMGJ5OVh5Y1M5X1RKNElHbVhUbkRObHI0UkVtRW1RYUxLZEJOek9TQ1IyQmZKTkIzcGpnQ3dwczQ4VWw0cmZ0X2pDY0hjZThfODNKcXlad1hwT25sQnhSZTJuQjZ1V3k1eTgycmlzaTR1YnV1YUFEWmwzUUoxc2IyT2VYeC1URlRzMF9Kb2wzcHp1NktzU3cyR1ZMQ2ZSR3NTRDVTbVYwZk84NFNFT290cW91WWNSZmduUzk4NE1xWEtiYmFxUzYwbFBoU0NudTBtbVg2eDc5VEk1cFN1RlhKR09XRTFLcHM5VkRUQzVVQUFTZkR5S2hDSGloOGE5WWY4RUZWRVFyb1lLeUd2RTRoekZiTFdyY0FWOWpPTkQzYWpaQ0NPVzQyZkZmSERsUVJpSHRVcGhVOTdPUmtqYTFRTnJsVkhGc29pRXNPTjhBWTQ3S3VXVjQ4Z2d3TnVfQ09DV3Y4dlJlT0hsaWFOc2tjUjVnb19VcjhqYjM0c1AtVVBVamFUcUtxeGdfUlFjU3JNSHE2T0xKa0hLOXlyejFIUHRzWWJhbndmeFEwWWtaTG1Zby1UN290dzdoT1J4S2VOUE9ieVVLTzlyUmR5c2RaUHJOdktyeWExUWVpdEVtX1E0bTMtem1EYl9Xa0E?oc=5",
-    "d": "2026-10-05T14:13:43+00:00"
    }
   ]
  },
