@@ -1123,7 +1123,9 @@ async function loadStock(){
    if(o.photos.length&&o.status!=='sold_out')o.status='available';
    STOCK_ROWS.push(o); if(typ==='stock'&&id)STOCK[id]=o; if(o.updated>last)last=o.updated});
   STOCK_TIME=last;STOCK_LIVE=true}catch(e){STOCK_LIVE=false}
- render();checkPassUrl()}
+ applyForce();render();checkPassUrl()}
+const FORCE={fishmeal:{status:'available',qty:'250',packing:'Bags',origin:'Nouadhibou',type:'stock',updated:'2026-10-11'},fishoil:{status:'available',qty:'230',packing:'Flexitank',origin:'Nouadhibou',type:'stock',updated:'2026-10-11'}};
+function applyForce(){for(const k in FORCE){const f=FORCE[k],s=STOCK[k];if(!s||!s.updated||s.updated<f.updated)STOCK[k]=Object.assign({id:k,photos:[]},s||{},f);if(!STOCK_TIME||f.updated>STOCK_TIME)STOCK_TIME=f.updated}}
 const stOf=p=>(STOCK[p.id]&&STOCK[p.id].status)||p.status||'on_order';
 // Photos from the Sheet "photo" column: Google Drive share links or direct image URLs (several separated by space/comma)
 function toImgs(v){return (v||'').split(/[\s,;]+/).filter(Boolean).map(u=>{const m=u.match(/\/d\/([\w-]{20,})/)||u.match(/[?&]id=([\w-]{20,})/);return m?'https://lh3.googleusercontent.com/d/'+m[1]+'=w1400':(/^https?:\/\//.test(u)?u:'')}).filter(Boolean)}
