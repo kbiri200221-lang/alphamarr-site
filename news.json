@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T11:55+00:00",
+ "updated": "2026-10-14T17:12+00:00",
  "items": {
   "en": [
    {
@@ -7,6 +7,12 @@
     "s": "Inside Climate News",
     "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMTI5bEpIVE41UHo1TmNJX3hBWjBGV19DclhVa0FBS2JyTTcwUlQ4Uk1wenlHc1F6eC1wTUpRQnBaWWxINjlDcmRrX2hMU1R5R2dTT1lDc0tYbndxSDZXUHo1VjlORlJoSnkxOGNuNTFLTDRKS0VSUlA0NkFFVHZvb1FOMVprR2lLOEtrRkNTcjg?oc=5",
     "d": "2026-10-14T09:00:00+00:00"
+   },
+   {
+    "t": "'Sloppy brush': Industry pushes back on Outlaw Ocean's sweeping fish feed investigation",
+    "s": "IntraFish",
+    "u": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVmhKTVFCaHFBM2d1QnNQTFVVX19VSjBiYzM3c2hWa2ZGR1ZndkZ1Y2N1aUl1LXhqN2hWYWtfemR1UlUxaVEzZmNMN1JrSURBdTdLZWdFN2hsaEtFOEU5ZWdwR3IzbFZUWUdGSmdkZjBUdENGVzBBU3gwc2hjRGVPLXdXSVA5TVZsTUpjcnBkcW5aMUxtbkRBa29tSTdibmp1SzQzNzZrZkZKS2RqWElLM2ZCd2g1bmZaQ1k1NTdSTDV4Vl9Y?oc=5",
+    "d": "2026-10-14T07:51:29+00:00"
    },
    {
     "t": "Aquaculture sector urged to seize export opportunities in India",
@@ -25,12 +31,6 @@
     "s": "Vietnam.vn",
     "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPYWVucDR6UWFCRnJIMHlkSUR5T1lYWkV1Nlo1MDA3Zkp6aWVQdGl5azBWT3QxT3NrZHRQVlZhN1JZbmJBb3pnbU5xNWtRMlhCa29qMjdoYTk2akd2ZnNKUGtoblFWeHFlYThIQm8yOTdOZVpqRmFnQTFteTEtQnpYaGtVdEpCU3M4clBTLXVnV0JfNzd0T2xIeTBQVVRpdw?oc=5",
     "d": "2026-10-14T04:39:49+00:00"
-   },
-   {
-    "t": "Somalia: Gadale Seafood Ltd Advances Somalia's International Fisheries and Maritime Trade",
-    "s": "Sunatimes.com",
-    "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNUW9JckZROXlLZVhXSVdfSDc3ZGI2VWtXMG1Reko1ZHNubi1RZ0xUU2dWcFFxbnRaRkxUUVpoazNpX0xRSW5KNmVVekdGQl9xQm40OUFUaE5rZEtFX09EZjJNOEtXVmlrQ3V0bEdxNmtYNTlkYnhELVNSWnlyWDNzYkV6bmQ2bHA0T3N2YWxMSGtiYkxYaG52VEZqSUlTVWhCc01OMGVMc041RzY1TUtHOTBKMTkzLXJ0SkhoX21POA?oc=5",
-    "d": "2026-10-14T01:29:17+00:00"
    },
    {
     "t": "Foul Fishmeal Factories: The Stench That Rich Nations Leave Behind",
@@ -80,7 +80,13 @@
     "t": "Les coûts cachés de l'aquaculture : la nouvelle enquête de Ian Urbina",
     "s": "Vakita",
     "u": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBheVBvRDZuMTJoWE1jZF9lWGdRZy1pM3JyWHlydmhjaURmSDJ2SlphYXVmbWd4aDRMSU10bDFqYktMYTM3ZVFkRzI0M085dDE2TzZycklHVHY?oc=5",
-    "d": "2026-10-14T07:32:01+00:00"
+    "d": "2026-10-14T13:32:01+00:00"
+   },
+   {
+    "t": "Réseau de blanchiment et fraudes dans le commerce des produits de la mer",
+    "s": "Il Mattino",
+    "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTE5DSktKajVoRHFsUDctTEtkRHZReUQyX2hBVTROM3FuOUN1Sm9IaTgtMzBKdldEaUdoaFVLU1BHMU9IRFd5VW1QVlNIbXcwdVZUUC1vZnVLaG5lZDZWSVJBQldBRlI1NGt1c1hUb3BWZWc4OTlkcElkbWg3ZUhXVnkxZHI5c05DbUt6cWdYM2FjZWRrdUVMLWFJVmhoSVRrdE9vNXBWeGgtdG5MYjNudEh6UHV1YWh60gG4AUFVX3lxTE5MTkNKS0pqNWhEcWxQNy1MS2REdlF5RDJfaEFVNE4zcW45Q3VKb0hpOC0zMEp2V0RpR2hoVUtTUEcxT0hEV3lVbVBWU0htdzB1VlRQLW9mdUtobmVkNlZJUkFCV0FGUjU0a3VzWFRvcFZlZzg5OWRwSWRtaDdlSFdWeTFkcjlzTkNtS3pxZ1gzYWNlZGt1RUwtYUlWaGhJVGt0T281cFZ4aC10bkxiM250SHpQdXVhaHo?oc=5",
+    "d": "2026-10-14T11:28:26+00:00"
    },
    {
     "t": "Les exportations de produits de la mer dépassent les 9 milliards de dollars, les crevettes et le pangasius conservant fermement leur place de premier plan.",
@@ -113,6 +119,12 @@
     "d": "2026-10-13T08:09:00+00:00"
    },
    {
+    "t": "Renforcer les directives à l'intention des pêcheurs afin d'améliorer l'efficacité de l'exploitation des produits de la mer et d'assurer la sécurité des personnes et des navires de pêche opérant en mer.",
+    "s": "Vietnam.vn",
+    "u": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQNXBTSkJJS21NVnc1eW94d2pZeXYwNDhNZ29VbnJJRXh1OW9rQ01iZDJTdENZUWpQOE9jTjcyQjlEMEoyYVFHdV9mb1BpNTJ6bVRFek55Wnd0SkEyZVlGOEI0U1NNQTg2elZSWW0wb2pOTkJmaHAza25yWmxvcjA2OVUyZnV1ajZlRjc5NS0tUEs4QTJzaFRMT0xXNzlLbVpORGREYnhJUTFFQmdRMlRRSEk0ME05MmNBOTdfRmxWT0ZWNlFfQVhSeEc1QXlqbHRGSHpFMkRlYXE0b1MxMV80?oc=5",
+    "d": "2026-10-13T07:00:00+00:00"
+   },
+   {
     "t": "Les entreprises de produits de la mer de Cà Mau renforcent la technologie et augmentent la valeur des crevettes",
     "s": "Laodong.vn",
     "u": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYUZfWDd4SjlhaXYwaEMyVjlDQ3ctRUtnRVBKaTI2N3RRdTFvRWhURmEzNmMydm5XenNJbzVTUGo0NTBiczJHeFp2T1ZweUJTbGlzMFdDRDJOak5Na2U3TjNFSm53dW1jZ2hib2xnOWRiTmszekY4VEdrTEtsLURjcENla3dud2JTQnFmenhic1Q5MlBBRGxTOEhnSC1ReWxTTXdfNHRSRVI4b2VkamtXV2VqUQ?oc=5",
@@ -135,26 +147,44 @@
     "s": "Xalima",
     "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOMFVTbGlIUVd1QlV1REFoMnY5RFFQY2J6ZWYwUlJvYkJtY0dvSm1oQWtPTzRGYkRWUHlmN0Nja05PWVczLTNqYXNVVGNwZlg1bjN4cWFZMDI0YXRDdTJOTjFCVWg0TEtqMDdIendGdTZjSlRFMGlMekdNcDFtNDJLUXJzVVF4WHpsT1VkWTc3bVBmaTNsNkIyQXRQak5BUXNWek9wMnlCUFhKeHMwb1o0cnNLVmFheGEyQTBDRGZvU3lQTzFfbmFad0xsV1c0M0lzb2oxdV9n?oc=5",
     "d": "2026-10-12T18:21:22+00:00"
-   },
-   {
-    "t": "Élément Terre, la quotidienne - Enquête sur le poisson d'élevage: un drame environnemental et humain",
-    "s": "France 24",
-    "u": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNZXV1OTR1TVgyR0VqMDExN2ZncE5iQWNYaF9uR3o1SUZEWExQdUN2Z3NBeTVJbThrX3lYQTZPUVFkWDRfUWcwbHpfYjFENGNlb05IdDB4bHM3TFVMSXRTNkhjaHZRNGVsWlZPOGlXOGhvel9HbHVWN1Y0WU9Bbk9YTFZ2WUlnd2R4VWZzREs0aGhjVjRPek81X2k2Z3N6ajd6NWZNcFA4aklDOE50eXdPVGdRdHd2SWZ4NFlrMzdBZVpjVmY0czRSOE9Jcjd4dWw5TGx1SWlZS3ZXcE91V1pVQkhpdHdfZzNWNEpQRm55dDRGLVdTMVFJN2lpNEM?oc=5",
-    "d": "2026-10-12T18:19:50+00:00"
-   },
-   {
-    "t": "Les entreprises vietnamiennes de produits de la mer doivent revoir leurs additifs lorsqu'elles exportent vers les États-Unis.",
-    "s": "Vietnam.vn",
-    "u": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcWhRbWlYYnlJY1J6bWREZ19aNFBnbHB6S2cxN1dyREJadEJQRVpDVWo2TzhwSDZsU05SdURxcmpxN1lpOHVxV19td1BNUW11bkJUZndFd1R1clJ6cjNZVG53Wm1fS2NEYU5QdEx1ZGNGcnN5akVCMTVwZThoeGZFaVVFR1JiY2UtanlUNHRzdGl4Vm0wUWFpcVpkajdvckU?oc=5",
-    "d": "2026-10-12T15:52:13+00:00"
    }
   ],
   "es": [
    {
     "t": "Landes lleva su oferta de productos del mar a feria internacional en España",
-    "s": "www.aqua.cl",
+    "s": "Aqua.cl",
     "u": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTjBHSERheHM4NldYemdsd21zaURoU3gwNE42ZDZIeXB1TGFpRUpJWHFXMVBReGNZZWFoS0psR2RzX3pFSzN4VFE0N3JGc2M0RVNWeGpfckc3QlBhLVJGeVNHTDlqLWZpaTdfN2d6SGFUODNCb3B6UWFaMjB3Mkc1Tm0ydWI4emhCN3dDeVNoZGZtOVlfWE9qNUxUdDc?oc=5",
-    "d": "2026-10-14T09:51:16+00:00"
+    "d": "2026-10-14T15:44:47+00:00"
+   },
+   {
+    "t": "El sector pesquero aplaude el apoyo europeo a la reforma del plan plurianual del Mediterráneo",
+    "s": "Demócrata",
+    "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNeFVwNzFHNncwYl9weWpEVl85ZERFVk9RMDNGYlJNRjdZLUVGcEs0WExXSTdiemRRMFBERzdJLXl5bVgzSHZJU1ZxR2Q1UEdSVzZ1MXRySW5RejdEQlpwR0VjSndMQnB5VzljTkhVakxkYUVJUy1LYXJuWGFlckZ5clFKZFZTY1BEMl9VNGMxTjJLcmRRR0Q0cE4zbXl1cmlfUUlFUEdjVG5VcTA3WllPeE80M2VlYTd4N1ZTVFh1akRnaUxfQkJWZ2NKN1IwcGlFVUFiSkZaSWxDcDlY0gHiAUFVX3lxTFBTczRBTVRCdVhmcHFGSTlYSGh4aml5MFgzRjRhTE5TSU91R2MxQTlNVnI1MVpJYWhWLVZ1VXpuM1NvX0xscFV0bDVPd3lHM3labDRuRzl1SDFxWGdqMWloMS1wd2xycGJJOUNJLVFCQVlQa3RyYVowcTVid3AyRU1lQ2xibldLMy0yVmIxdi1RRkd5bHJGQTJxUmd3aVZqU2Z3aVIzX3ZoSTMycmIxUHBIXzVLMWVHZzk4ZTZkdTNBWnFnX2JHU3l4Y2ZMR3BLZEZjUy1EdUNSeTVIMFFsLXZqelE?oc=5",
+    "d": "2026-10-14T15:18:26+00:00"
+   },
+   {
+    "t": "Carrefour firma más de 20 acuerdos para distribuir 230 toneladas de pescado en primer semestre, un 20% más",
+    "s": "PressDigital",
+    "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQZDlXMWRCckRybVVOQU43NjhWRzlVYVNTYnB3cnUxbFQxMlFOc0JzR1Q1ME96MGRFS3lWMEZidmphV0JUd042LVo3d0JwYTRwS0JkVUpZdjBKZnRrd3MzQ0RhNU44RFgtNUoxX21iN0wtd2RzaWJ1LUNmM3ZPbjA0eWVRZ3cyRXlTQVZ1eUtWT0pLcDh5YVJaRHZ4QVRuaVlPVTFBRWRQUk9xRXo2REZRc3ZDeUJDcC1xamxIVkpwQXJGOGJZd2p4MFhraWxrNklRemU4Rmp1QzFhcDE1?oc=5",
+    "d": "2026-10-14T14:34:00+00:00"
+   },
+   {
+    "t": "Sector pesquero trabaja en el fortalecimiento de la producción",
+    "s": "CiudadCCS",
+    "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYVVXTTlPRi1XZE1RQVhfTHR2bGswc2M0V2U2YUN3V20wSktDZVpsYjgwaHp0Qlh6NG9XRi1wUGpxc21FRnFtT0ZFbUtFc3MwcHhjcnpvSUEyek1WaFFPWVRRenBFOVEyemhRX040YUVGRXFuMThnX2F2bnBtUi1vdFRSOTB3VHg5R2w5bHNuTUFyRnpZS1dIWlNEQm4xTE1Id1dyZDBsY1VSV2dkSlZacEFreng3ZDA0?oc=5",
+    "d": "2026-10-14T13:09:41+00:00"
+   },
+   {
+    "t": "Ganh Hao necesita aprovechar sus ventajas en el sector pesquero y acelerar el desarrollo de infraestructuras.",
+    "s": "شبكة تواصل الإخبارية",
+    "u": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBUb3pjWlVCZlBEcU85RV9PbXdjcWQ3a1RJNHE4T2tWVHhCcno0QU9RWG5YOXpDOV84a3QwZ2lrVXlyZk53T1p5X0R1NGk1ZW9WeGtR?oc=5",
+    "d": "2026-10-14T12:34:55+00:00"
+   },
+   {
+    "t": "El sector pesquero pide una revisión del plan del Mediterráneo Occidental para evitar la pérdida de empleo",
+    "s": "Naucher",
+    "u": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTW0zek5lem1relpXZ2Vqa0I1WXVfZkhIVzFtS2xKbElQOFNHOGZNOFE2TXhLMkxNcGZ3SXA1ZjdpeDN4N0RfZWNlckpaZU54WExrOWs2RHVnMzFXczJwLTBPSUhyaDJLT1RnU2c5MUJQU3p4VHBjMUtFYmlYbnIwenU3LTE0MUZUVTIydTZ1Ym52dUhvODgxeEk3QlBXU2s3LUJobmIwV3k5b2ViTDdzaEVzc192ME43bzA4cWg1QjV0UU53VEtVU2ZXQQ?oc=5",
+    "d": "2026-10-14T10:25:47+00:00"
    },
    {
     "t": "Carrefour eleva un 20% sus acuerdos con el sector pesquero",
@@ -163,22 +193,22 @@
     "d": "2026-10-14T08:46:39+00:00"
    },
    {
-    "t": "Carrefour firma más de 20 acuerdos para distribuir 230 toneladas de pescado en primer semestre, un 20% más",
-    "s": "PressDigital",
-    "u": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQZDlXMWRCckRybVVOQU43NjhWRzlVYVNTYnB3cnUxbFQxMlFOc0JzR1Q1ME96MGRFS3lWMEZidmphV0JUd042LVo3d0JwYTRwS0JkVUpZdjBKZnRrd3MzQ0RhNU44RFgtNUoxX21iN0wtd2RzaWJ1LUNmM3ZPbjA0eWVRZ3cyRXlTQVZ1eUtWT0pLcDh5YVJaRHZ4QVRuaVlPVTFBRWRQUk9xRXo2REZRc3ZDeUJDcC1xamxIVkpwQXJGOGJZd2p4MFhraWxrNklRemU4Rmp1QzFhcDE1?oc=5",
-    "d": "2026-10-14T08:30:00+00:00"
-   },
-   {
     "t": "Carrefour ha distribuido en el primer semestre un 20% más de productos del mar de origen nacional",
     "s": "- Financial Food",
     "u": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUjFpa0Y1b09fakpqMXhwcFRpNzkyQVprWENSV09GNDRyOHkyTXNPYXZSdEFUQTB4YURhS1JiSmJUTHBSTkRLcWNGY3ROTUh6QWs1V1ZuVXV5NHdpTXNscVVsMDJhdHlhazVFNm5zeWcydHI3Z08yRXRVd3k4T2JmbS1rS0dYVE4weTZuaDI3a3ZsOG81azJ3Q0xmamcycjVGd2h6Y3ZlSEx5bWJXX2FndElNU2RxSUJoS0V6REt0Zw?oc=5",
-    "d": "2026-10-14T08:27:26+00:00"
+    "d": "2026-10-14T08:40:42+00:00"
    },
    {
     "t": "Carrefour comercializó un 20% más de productos del mar en el primer semestre",
     "s": "Servimedia",
     "u": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWkhta3M3SlNOMUttZ1BvNVlwTFJWeUlNU25MQUgtQ1luT2hWblRRdHFjVFZEV0ZwUnFhZFQ1N1oxQjhPbldqRVdQNzNJV1FEajVydnBaSXdyLVVjZTdhWEZ3d08wY0h0eE84QXpyc1F5Ums3QVFvUWx0R0x4YmJOSDl3c3psOE93cmlaNzdpdU9RNTlReHNRa2kxOTVRY1hRUjNxRzR5NkM?oc=5",
     "d": "2026-10-14T08:10:00+00:00"
+   },
+   {
+    "t": "Las exportaciones de productos del mar superan los 9.000 millones de dólares, y el camarón y el pangasius mantienen firmemente su posición de liderazgo.",
+    "s": "Vietnam.vn",
+    "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOdW1pODk1eDhidHZKWG1qdHdEWUlObzd2aVF0NERYcWpTbmwwdm5scl9Cd1ExX201UEhtUGRzZ0w3bzV0Mk02cTB5M2JiVmRLYkFHVnhLSHRNTFp4VXVoTXpVMVV0ZUVobUhwalpadExqeWtHZDMwNXVUMkZqSEdsZjFKOW8tLW9fU3lFS200VmxyVUIyTzl4Sg?oc=5",
+    "d": "2026-10-14T06:43:28+00:00"
    },
    {
     "t": "Digitalizar la gestión de los buques pesqueros y garantizar la transparencia en el origen de los productos del mar.",
@@ -191,39 +221,15 @@
     "s": "Vietnam.vn",
     "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOb3dTVGtTTG9fYjI5aFJJZ2tac2M2SDM5T2NvT2Q3TmI4Q2hsYjJFdDhzSGZpZDJuaGllaVpjNS05Q2dFR3FLcWd3RVgxSzd3VDdXYVJXNmxqS0pXMF9TalA4Q0Nib3pfUVpzMVo1SU9hZ0h2cVoyZEJWdUYzeDhKV1BJdVFKN2h6NUVKRGdkd1VIc3lGekt5VlhrQU5SaVAtb2hWdkoyellUdnZKemJtdWx5TkpZajl3?oc=5",
     "d": "2026-10-13T10:07:02+00:00"
-   },
-   {
-    "t": "Conxemar: IA y trazabilidad digital en el sector pesquero",
-    "s": "El Ecosistema Startup",
-    "u": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNcUtCekVhS1lka28tZnVXME9GUlJNNGtLZHBaMHJCbnhnVlkwaW9YRUJFeGRNMFBJR2FwZ2VraHk2Sk5LTFMyUDVERkNsMXFjZFBwNjZGOUFBUDRrTng5SUpFZkhKUm5TaFZRaXRrNWpONkk0TlJaVkRzZ2hKSWpjcWxfNHNqV0FjajRUeDI2QWU?oc=5",
-    "d": "2026-10-13T09:27:37+00:00"
-   },
-   {
-    "t": "Construir un sector pesquero transparente, responsable, eficiente y sostenible.",
-    "s": "Vietnam.vn",
-    "u": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPV2d4X1RJWWtjNEJ1RzU2M3BzV0taaHRNb1BwRjZsM0ZlZDVaN0RtR00tZmVCZGVZanc3bXF4bTloX0x6LWF3WVVsNGZyUmdaNjgyc2lhYnJfWmZmejg5VXpZNUdPRTB1ZkI3WExkdm1FY0pqMldpT0VrVVkxS0R2NVJQR2RNejNabWt1NmdGMDhwUnpIZGZyTlYwclRoaDk2?oc=5",
-    "d": "2026-10-13T09:23:13+00:00"
-   },
-   {
-    "t": "La trazabilidad digital y la inteligencia artificial marcan el futuro del sector pesquero",
-    "s": "Interempresas Media",
-    "u": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBfWHhhMVA2VzJtSzJ3Yzhrb0tkWlNoZ00wdXR3S1NyUXh2THFldWVrUUNHSEJOd3VRTkdBRzM1NmlUVXJwOGo0cmlpa3VjQQ?oc=5",
-    "d": "2026-10-13T08:55:37+00:00"
-   },
-   {
-    "t": "Harina de pescado: cae la oferta mundial y las exportaciones argentinas crecen 74% en dólares",
-    "s": "Pescare",
-    "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaEZRNS1GejhnaHZUNHNuVmtpTWRlT01oaGxLV1dNNTkwazFjU3ZyOHNpU3N0M1FCNlFheDFhN0l5ZHU4TGFUdDZEV3BNQUFfRGVJQU9CWEVpTzByVlRiRTBXTjJkaWJrcTNYVS1ETHZMRm5VRGNuWVhZU241ZzE5V21SSUdLY0VZRWd6UUwtZFhjUUt3ZVQ3ejc0ZU1FV29UUTYybGk2V21MZGExNDhra2p4UzExUQ?oc=5",
-    "d": "2026-10-13T07:03:00+00:00"
-   },
-   {
-    "t": "OpMallorca visibiliza el trabajo de los pescadores de langosta profesionales y su modelo de etiquetado y trazabilidad",
-    "s": "Industrias pesqueras",
-    "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9USDhELUs0V3NkTXBVMkUtY1Vkdll3dmw1NFhtUTBhdUhESjRSeHRtYUVEYXpfVEpOU0xZQTR1aGpBVUxEbFFnNHlLX21HaW9Nb2Y4TW0ta21tWFQ5bE5Ra21vd2tZUW5qRDh5d2tsSmYyYTZQay1xNFI1Ui03QQ?oc=5",
-    "d": "2026-10-13T06:28:14+00:00"
    }
   ],
   "zh": [
+   {
+    "t": "哈夫病是一种怎样的病症？野生水产还能放心吃吗？",
+    "s": "搜狐",
+    "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSXAwYWNxZXJEOHBxZHlidUM0YVhTNUtaS0ZOcFZkMkhJWnNNblNUSk13SmNFMmduRkRTZjVWakhKQzZSODBwdWZKVjNHTjBDLUlUd3U1bFkzT0lFNjRWcG56Y3NOcGdVSWNwMngwY1F3aGh3Q2pBX09UVGRES211V09PRGNXYjlH?oc=5",
+    "d": "2026-10-14T13:00:19+00:00"
+   },
    {
     "t": "【瑞弘甜菜碱特约】突发暴涨500-600元！鱼粉24000元/吨重返历史最高，全球鱼粉产量创十年新低",
     "s": "搜狐",
@@ -237,12 +243,6 @@
     "d": "2026-10-14T09:17:03+00:00"
    },
    {
-    "t": "察布查尔县特色水产迎丰收 全链条布局做强富民产业",
-    "s": "中新网·新疆",
-    "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNUV94WV9wRzc1dXNTSXpPSVNLT0tXaXI4aTRyR0lDaEZVYnhkUnBOWW1ZNmhKUHFsNzE0VVVkSmkzTnJYcDh6bXBYU2wzYlpFSGxlWV8zbkgtaWFLQjFSRUFFNlVVV1BrRjE5X05qMmdBMU8xNEFqQkFHc0czY0c2cWhpaw?oc=5",
-    "d": "2026-10-14T08:52:32+00:00"
-   },
-   {
     "t": "黄海四年没见这画面！中韩执法船重新并肩，一条渔业新闻藏信号！",
     "s": "搜狐",
     "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQVnI2ZTBBM19JRmRKR2FkQjRNSkpUazlTemtDWFY2aVlnd0lzV3hsa0QycHFCLTBJWElHVlhzSzhScm9yOGVMc0J0aXpId0JGN2pZVFdLM0lOUDQ4WGVVTHZoakwzTDVFS1NPMlZnZjNuTDVla0VnY2hhblVDU3dsMVpBZkJRMEJWcnB5dg?oc=5",
@@ -253,6 +253,12 @@
     "s": "证券之星",
     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE13dlFXTkpmNGtMNGVRTzBoaXIwMVNTYTYwT1YtUTZXdUp0QWVEMW80ZFRkRTZBYXVLUEwyaC01SjNHcEFHaTY2OXFHZ3BtWmFYSjJZMnlVTE1vZE9PYlRQT1BNU0c?oc=5",
     "d": "2026-10-14T05:09:04+00:00"
+   },
+   {
+    "t": "青年渔业经营者描绘渔村未来……韩国海洋水产开发院在丽水举办协同成长论坛- 阿视亚经济",
+    "s": "아시아경제",
+    "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5XOThab1JWamFuWlE5eDd0WXpDaDl3WmlWeWt1MGZCRTFGNWppY0RPOXB2MXZLOGxhNGhObnZaejNhV1VtUnRnbTFrbFVwNkFjVTFnUVdNck9OUlRpc3ZOOUZtQTY?oc=5",
+    "d": "2026-10-14T04:40:57+00:00"
    },
    {
     "t": "新征程上的奋斗者丨赵虎炯：守海岛、护渔民的“阿拉气象局长”",
@@ -269,7 +275,7 @@
    {
     "t": "水产板块早盘走高 百洋股份4连板",
     "s": "观点网",
-    "u": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5sR3BlWldHYUxBa0tjSjJVYkY0Nl9tcjZTejR3UXpIcTRmb3ZxYUZpd2ZranFrQTJGLUk4R1VmRkJ6dS1NbkZBNzRoVnRRQQ?oc=5",
+    "u": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5naE1PVW1sVmptbTY5U3NBdl9LZktBR0t3YmR0QWZmeXF3S1VtdjhvRTZ1VFNHOEFBS3g4aHdLZ0s2eTVrY2xPSDZQemNQbDNuWl9qcVVjMFdYWHFUTkFUZkl3?oc=5",
     "d": "2026-10-14T02:56:12+00:00"
    },
    {
@@ -289,15 +295,15 @@
     "s": "中华网",
     "u": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5pNWdBTmRiSHNwNVZ6aHpzaWcxOFhYY3ltdUZKbHRzVWVoOUFGX2w1QnVWRVd1RDFtdUV2c1Y2dXlaQ3JVQUo5c2ROMFlsRWFfa1ZwMDZFNE5CRlZZWHZZeW1xRjJWeldjNVRLag?oc=5",
     "d": "2026-10-14T02:38:29+00:00"
-   },
-   {
-    "t": "利用人工智能提升渔业安全与服务",
-    "s": "亚洲日报",
-    "u": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1aVGp0bmx0RGpLRmY1Q0pNQlh1QnJpSnlWSzlGRnlnTkVjUmtaVER3Vmd4eGpBdDBidjF5TlppS1lOM200dlQ0YUxoQ1lZRGVUV0VNUlVDQkFsc1k?oc=5",
-    "d": "2026-10-14T02:04:10+00:00"
    }
   ],
   "ar": [
+   {
+    "t": "بوجدور.. تنسيق بين مندوبية الصيد البحري والمكتب الوطني للصيد يرصد مخالفة للأحجام القانونية لأسماك الكوربين",
+    "s": "Albahr info",
+    "u": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1MVnpIV09yeXJpZUU5MVRyd2NQX1Z5eXd5d2dLVWYtakhONjBnSHJwQ3ExVkNkMThKcDZRbHZMNXNtd3I0SHc?oc=5",
+    "d": "2026-10-14T16:18:59+00:00"
+   },
    {
     "t": "ميناء الصويرة يسجل ارتفاعا لافتا في مفرغات الصيد البحري رغم تراجع قيمتها التجارية",
     "s": "اكسبريس TV",
@@ -317,10 +323,10 @@
     "d": "2026-10-14T10:09:12+00:00"
    },
    {
-    "t": "مفرغات الصيد بميناء الصويرة ترتفع بـ63%.. والقيمة التجارية تتراجع بـ20%",
+    "t": "الصويرة : مفرغات الصيد التقليدي و الساحلي ترتفع بـ63%.. والقيمة التجارية تتراجع بـ20%",
     "s": "Albahr info",
     "u": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE04dWhzY0JPZFI2Mm9FM2lLZzMtVXBkY1dEMW5aRU03bFRmb1l1S2lNV1dqbGwxemU1dmVYeGN6WENhUU9TcGc?oc=5",
-    "d": "2026-10-14T09:50:56+00:00"
+    "d": "2026-10-14T09:58:34+00:00"
    },
    {
     "t": "هندسة الخداع المالي .. صيد الأسماك الذي انتهى بالغرق في الديون",
@@ -363,12 +369,6 @@
     "s": "ميديا15 جريدة الكترونية المصداقية والدقة في نقل الخبر",
     "u": "https://news.google.com/rss/articles/CBMiywJBVV95cUxOYW1zYTBLaEZkQ2dJVW9RSG96bjNab0oyVjczRlg3UXZPYnFVMzhzLXo3dXFGbVdIUXc1c1BhOTM4eFlYcExEd1ZMZHNVUkdmYThhRnZUc0RxNFZfUi1lZ2tPUzVtOWhyejhfUk40ekFYdzRNSy1EeERtR2NmUy1YTy02d1VzSW82TGFUdjd0MlF6bDlKWkRqTjIxWUFPbmFnLVotQ1pQOTFBVUpmWjdfT05CZEx1Z1Z6MjhYQWdneUpKSmZoUmZYdkluSnFWM3BfT1d4VUtXRTVwZ3MyNm51Q29hc2FWRVhjUFJUZHJHdk5HWUdkcXNoT3ZuQ013LUZ2LXljTkVzTmZfOElhVnJoMkZzZnkxU2VWRjZERzlWWEV2NXMxaGd6SW50a0pfSm9ZTXZtM0NLSHJVZmNHdWhILVFub0w3NzAyb0ZR?oc=5",
     "d": "2026-10-13T13:48:42+00:00"
-   },
-   {
-    "t": "الداخلة .. توقيف ناقلة يقود لحجز كميات من الأسماك تفتقد للوثائق الثبوتية",
-    "s": "Albahr News",
-    "u": "https://news.google.com/rss/articles/CBMivAJBVV95cUxNTktCcUpNcnpCUXBpQjRuZnRCWXAySUxORWV0SXpNcmFNZkdhazFuYnhNcEFZZ3VEcTZjRTRzYlRoMGRNZTA3U1cwZjBKbERCMk42NnZjWC0wYWxXREZNNVVSUDdjdnBwM1J3UHNKQ0JfdU1vZThFV0RIaF9FS3U0VUtZbno2NFV5NFM5MGhJbzJLd08tNTJzT19wUXJJM3RNRG5NYUJrdld0MGhFOFZkVWxmWDNoSDBPR2ZMbE43MHUxaUpGd2twR3hxLVp3V1A1NDkwSjJ2ZGFLdmsxbzVLNTdoRjd0bTNGTWFpeWtMYmlTaXlpUGFhUFZFV0EwLU5SQWxpWlZPSDJLLW9OOTVTaVVOdEpLMTZOVXY0aW1CZFJIT0tXNWdqZHZRbEJqNkM4eFJibWRzWU1sZEYy?oc=5",
-    "d": "2026-10-13T12:19:49+00:00"
    }
   ]
  },
@@ -441,9 +441,21 @@
     "s": "aqlame",
     "u": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE1oMVZxM1BoTU13Z0tVQ0JkNXlIS1VzSDZoZzNqWGxkQlJQNlJBdTIxaTl1dXlaalBwYkI2RDhrNzQ4bTQ?oc=5",
     "d": "2026-10-10T09:39:17+00:00"
+   },
+   {
+    "t": "سرفانتيس يطلق دورات متخصصة في الإسبانية بمجالي الفلاحة والصيد البحري بالمغرب",
+    "s": "يابلادي",
+    "u": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1RV1NJRU1KRnFFRFR5Zm0tU3ZUNUFIX2FOakNkOUZNRUY5RmJlV2I0Tl9mbExIeXE3N3laeGRDaVRvVFlzd0pmcU9VMGMzak9LZFhtYmEwVVBUNm52eGtEM0Zybw?oc=5",
+    "d": "2026-10-06T10:39:27+00:00"
    }
   ],
   "en": [
+   {
+    "t": "'They cannot compete with the prices that fish factories will pay': How demand for fish meal takes priority over feeding people",
+    "s": "Live Science",
+    "u": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPeF9IU3RiZmladVA2NmVXR1dxN016N0taUnlEX2cwbzhyNTVsNGdfcnJfbDktNzVUdG9obWE1MWRMR1FDUnJYT016ZHdhcFRxODBVaW9vWnpjbTlUdnpVZ1RhbW5rVlllUm40Z3o1VGpnNDh6WllPTk04X09ZWURqTGQ2NFJXUlhzNTBhajdVVE9tR1BxTTZQYndSMjJmN3A5LTBDZjJQWm1WMXBKaHpPRGJNOW5hMm1xNkQ0aDhwRGRjTkFtLTNsZ3d4UUZpamlEMWZleHF4MnVBeFhsSy1QM0ZBMzNFOFYxakFoMDVranpKdTZlVUtLTQ?oc=5",
+    "d": "2026-10-14T16:22:59+00:00"
+   },
    {
     "t": "‘Sustainable’ farmed salmon is cannibalising the world’s wild fish",
     "s": "The Observer",
@@ -461,12 +473,6 @@
     "s": "Daily Maverick",
     "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNeDdPaktCcjBKaWZhOWxfMXhMZUZPMkd3aFNjYnowUWxYZU9hXzZpQ213eGNGejBuNDh5VFNMVVA4dkZEM0ltaXRYdFFRa1ptSlVEbkhsclRzbm1kOW5YTHlvTHpXaEhmUE5nOWdWeG1UYmZKNVlGdVU3XzltWVM1aTVqWGFGOHNTRTE3b282SHpSczFHUExMTWN1aGpmSXV3emVHSTBUX3JZZWNZcWs3aXRRN0hZZDA?oc=5",
     "d": "2026-10-09T22:17:58+00:00"
-   },
-   {
-    "t": "Outlaw Ocean investigation raises concerns over fishmeal supply chains",
-    "s": "Undercurrent News",
-    "u": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNUVqZF85N3E3aW1ObVFLQTVGaXFmOUhTRUxsTHVxMGx1Z29SUkxsbHphcG01bWx0WUNYeTJ1bno1NjRRZDl5dDhuQmdLQkFxUEItano0SG8tb3VkcDkzeFZsczlqanVUZHU0eU1Qc2d5MmVhYWdELVFBWENMU2pQWkoycTZBWFQ2TWhiX3B6a1EyMU5tNzB2NFg2Q1I1czgtVjdzSFk4QUROWExBbEZ1RlJLdGVZdw?oc=5",
-    "d": "2026-10-09T16:43:00+00:00"
    },
    {
     "t": "What is your seafood eating? Investigation traces problems in global feed supply",
