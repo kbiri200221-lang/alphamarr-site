@@ -663,10 +663,10 @@ const PRODUCTS = [
   name:{en:'Ribbonfish',fr:'Poisson ceinture (sabre)',es:'Pez sable',zh:'带鱼'},
   desc:{en:'Silver ribbonfish, whole round, graded by width — a staple in China and Korea.',fr:'Poisson ceinture argenté, entier, calibré par largeur — incontournable en Chine et en Corée.',es:'Pez sable plateado, entero, calibrado por ancho — básico en China y Corea.',zh:'银色带鱼，整条，按宽度分级——中韩市场主流产品。'},
   chips:{en:['Whole round','Graded'],fr:['Entier','Calibré'],es:['Entero','Calibrado'],zh:['整条','分级']}},
- {id:'sole',markets:['asia'],status:'available',img:'sole-card.webp?v=2',latin:'Solea spp. · Cynoglossus spp.',color:['#b59b7a','#f3ece3'],
+ {id:'sole',markets:['europe','asia'],status:'available',img:'sole-card.webp?v=2',latin:'Solea spp. · Cynoglossus spp.',color:['#b59b7a','#f3ece3'],
   name:{en:'Sole fish',fr:'Sole',es:'Lenguado',zh:'鳎鱼'},
-  desc:{en:'Wild Atlantic sole, whole or gutted, carefully packed.',fr:'Sole sauvage de l’Atlantique, entière ou vidée, soigneusement emballée.',es:'Lenguado salvaje del Atlántico, entero o eviscerado, cuidadosamente embalado.',zh:'大西洋野生鳎鱼，整条或去脏，精心包装。'},
-  chips:{en:['Whole / Gutted','IQF'],fr:['Entière / Vidée','IQF'],es:['Entero / Eviscerado','IQF'],zh:['整条 / 去脏','单冻']}},
+  desc:{en:'New season open — wild Atlantic sole: Sole Rubio, Sole Lengua and Sole Tiger. Whole, carefully packed.',fr:'La saison est ouverte — sole sauvage de l’Atlantique : sole rubio, sole lengua et sole tigre. Entière, soigneusement emballée.',es:'Temporada abierta — lenguado salvaje del Atlántico: lenguado rubio, lengua y tigre. Entero, cuidadosamente embalado.',zh:'新捕捞季已开始——大西洋野生鳎鱼：Rubio、Lengua、Tiger三种。整条，精心包装。'},
+  chips:{en:['New season','Rubio · Lengua · Tiger','IQF'],fr:['Nouvelle saison','Rubio · Lengua · Tigre','IQF'],es:['Nueva temporada','Rubio · Lengua · Tigre','IQF'],zh:['新捕捞季','Rubio · Lengua · Tiger','单冻']}},
  {id:'lobster',markets:['europe','asia'],status:'season',img:'lobster-card.webp',latin:'Panulirus spp.',color:['#d9674f','#fbe2dc'],
   name:{en:'Rock lobster',fr:'Langouste rouge',es:'Langosta roja',zh:'红龙虾'},
   desc:{en:'Spiny lobster from Mauritanian waters, whole frozen, graded by weight.',fr:'Langouste des eaux mauritaniennes, entière congelée, calibrée au poids.',es:'Langosta de aguas mauritanas, entera congelada, calibrada por peso.',zh:'毛里塔尼亚海域龙虾，整只冷冻，按重量分级。'},
@@ -951,7 +951,7 @@ skate:['أجنحة الراي','أجنحة الراي بالجلد، مقطعة 
 johndory:['سمك القديس بطرس','سمك أبيض فاخر يحظى بتقدير كبير في المطاعم الأوروبية، كامل، يُعامل بعناية.'],
 cymbium:['حلزون السيمبيوم (ييت)','حلزون بحري كبير من غرب أفريقيا، لحم منظف — منتج فاخر للأسواق الآسيوية.'],
 ribbonfish:['سمك الحزام (السيف)','سمك الحزام الفضي، كامل، مصنف حسب العرض — أساسي في الصين وكوريا.'],
-sole:['سمك موسى','سمك موسى أطلسي بري، كامل أو منزوع الأحشاء، معبأ بعناية.'],
+sole:['سمك موسى','بدأ الموسم — سمك موسى أطلسي بري: روبيو، لينغوا وتايغر. كامل ومعبأ بعناية.'],
 lobster:['جراد البحر الأحمر','جراد بحر من المياه الموريتانية، كامل مجمد، مصنف حسب الوزن.'],
 leatherjacket:['سمك الجلد (ليذر جاكيت)','كامل أو منزوع الجلد، مطلوب بقوة في الصين وجنوب شرق آسيا.'],
 sardinella:['سردينيلا مستديرة (أوريتا)','منتجنا الرئيسي من حيث الكميات، يصطاده أسطول زوارقنا. تتوفر أحجام كبيرة.'],
@@ -1124,7 +1124,7 @@ async function loadStock(){
    STOCK_ROWS.push(o); if(typ==='stock'&&id)STOCK[id]=o; if(o.updated>last)last=o.updated});
   STOCK_TIME=last;STOCK_LIVE=true}catch(e){STOCK_LIVE=false}
  applyForce();render();checkPassUrl()}
-const FORCE={fishmeal:{status:'available',qty:'250',packing:'Bags',origin:'Nouadhibou',type:'stock',updated:'2026-10-11'},fishoil:{status:'available',qty:'230',packing:'Flexitank',origin:'Nouadhibou',type:'stock',updated:'2026-10-11'}};
+const FORCE={sole:{status:'available',sizes:'Sole Rubio · Sole Lengua · Sole Tiger',packing:'IQF / Block',origin:'Nouadhibou',type:'stock',updated:'2026-10-18',photos:['https://alphamarr.com/media/sole/sole-1.jpg','https://alphamarr.com/media/sole/sole-2.jpg','https://alphamarr.com/media/sole/sole-3.jpg']},fishmeal:{status:'available',qty:'250',packing:'Bags',origin:'Nouadhibou',type:'stock',updated:'2026-10-11'},fishoil:{status:'available',qty:'230',packing:'Flexitank',origin:'Nouadhibou',type:'stock',updated:'2026-10-11'}};
 function applyForce(){for(const k in FORCE){const f=FORCE[k],s=STOCK[k];if(!s||!s.updated||s.updated<f.updated)STOCK[k]=Object.assign({id:k,photos:[]},s||{},f);if(!STOCK_TIME||f.updated>STOCK_TIME)STOCK_TIME=f.updated}}
 const stOf=p=>(STOCK[p.id]&&STOCK[p.id].status)||p.status||'on_order';
 // Photos from the Sheet "photo" column: Google Drive share links or direct image URLs (several separated by space/comma)
