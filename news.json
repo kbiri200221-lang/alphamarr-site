@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T04:49+00:00",
+ "updated": "2026-10-26T13:05+00:00",
  "items": {
   "en": [
    {
@@ -69,10 +69,10 @@
     "d": "2026-10-23T13:12:06+00:00"
    },
    {
-    "t": "Scottish seafood takes centre stage at Paris night market",
-    "s": "Dunoon Observer and Isle of Bute News",
-    "u": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWjR4RTdlRUxDRUxiSEpmQ1I0YjhCVmZIeXR6Y3F4eVM0cDJDS0YxS01QN0xTUFdkcUFIanhHdDhuZFdKWGhsMi1oM09OQkRYNjZPX2dZd3F0d1c4TTlBYmNsSFNPdGVaQThnc1lQNTFYZDNKM1RaLW9RZkZDUHFfZzc2ZXN2RFJKVzNHMG1B?oc=5",
-    "d": "2026-10-23T09:44:00+00:00"
+    "t": "Fisheries Investors & Exporters Conclave 2026 to Focus on Investment, Value Addition and Export Opportunities in Inland Fisheries",
+    "s": "Odisha Diary",
+    "u": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQOEdUcGNwTzlNVUNveHpPdFZxX2ZLTlp2ZEhmNEhXblh5bmp6Q0hZSC1IdVdsU3ZIRmFfQl9BYmtDVEIwbEZVZjM4WVBTLW5GVjBZVHR5alNSaUtzRmNaakkxcHYzLTZmWVI0Y2VFb3NUX1M4MVFYa1BsUHdvNUlKTlNQeXhjdmpWeV93UGphZjVSUUxUOXFqdmliNm1NYS04Zk5QLWNJT3p3TlNFMWFtWVU1T0UyUzJ6bklyVGNURzhaMXlBUlpSTXd3QlZ5ZzdOVmRuWjM4VFhfQTlyY0MycFl5N0RoS2lG?oc=5",
+    "d": "2026-10-23T11:40:26+00:00"
    }
   ],
   "fr": [
@@ -93,6 +93,12 @@
     "s": "Le Courrier d'Algérie",
     "u": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNeXFiWVFha0RyR3RwN0lPdVZNdkVZUVp1LTdpNFRkSVJEd0d6Qm1ZYThlamNPaWprVDYwcUJwUUZoRU56eE9lUThVOTFnLUtZamxCOENCWTZiYzEwSzROMGxsWGtUR3Jza2piYlZ0aDJzUHlKNktsUzFaZXhHRVVnS1dJczJlZm9PU09uandlVmNCY1NtZnpFRmtSQXdtNDN0c281UmJNSG5HOGthVVdVNHBGb2l6QTlUdXhQOVpER2ZBdw?oc=5",
     "d": "2026-10-24T23:07:00+00:00"
+   },
+   {
+    "t": "Gia Lai s'inspire de l'expérience japonaise pour accroître la valeur du thon de mer.",
+    "s": "Vietnam.vn",
+    "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPV2JaZnROQjZPa0ZSQ3o4QVQtbU5jN1RKa0FSZTZTZkZDRVdyekNzaGkzSFg4NGZjOEVqNTAydnA0VFJ2N1Jxam9JOE1XaXh3X2dYaVpRMXM4OWVMTXFwRFFMYTlBSWV2V21vYnpXOXl2clc1ODRDTy1sbllFbE9jNERiR0k4UkVueEVMTDRzTklSLVFFNVE?oc=5",
+    "d": "2026-10-24T19:37:34+00:00"
    },
    {
     "t": "Ha Tinh accroît le taux de traçabilité électronique des produits de la mer, s'attaquant ainsi au problème du carton jaune pour la pêche INN.",
@@ -141,15 +147,33 @@
     "s": "Vietnam.vn",
     "u": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNOGhqV3hfTGdnTXRuczlocTAydlJCTUVhRjF3c2lZRVh4T3dBSlVqdVY3S1dqM2lzWFFuRjR3M0hQd2d4eDhvTUtzQ1RrRnVkOFo2LXhwa0p1YVZYajdxaWRKVXJFWUVUaGNwNW5BTVpPa2llNlVWdUwtZk5hXzE3NFoxSWMwa3VDX2x2LWQ4SmQtT25WS09tal9TT29qclVsdTNnZWlnczZmTlBrWnc?oc=5",
     "d": "2026-10-22T16:22:18+00:00"
-   },
-   {
-    "t": "Sardinelle : de l’Afrique de l’Ouest aux élevages de saumon, le coût caché d’une filière mondiale",
-    "s": "Afrik",
-    "u": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZWtkUnVDS2VzLUFVdXBZRHhSRmRTM0V6MUFRSG5iZkx1TExWNEdVZlN4VFlaUjVkVXdBYmE1NGw0UzhaNDZxQ2g4dFJiZmIxX09LZ1dUZm1tWm90dDNyLV9UaUdVRUFxZFlPWjlUc3JlZFJyMXRjOWJrdldKQnQyYUNmM0ZQRVhjMW9VLThFdW9aS3hVWE5veHVkOHlzbHZtaUpzV21JVGJKTW5MbXlEU1NxNXlRd1k?oc=5",
-    "d": "2026-10-21T22:10:49+00:00"
    }
   ],
   "es": [
+   {
+    "t": "El sector pesquero almeriense desmiente el Informe de Oceana: “Es sensacionalista, carece de rigor científico\"",
+    "s": "Diario de Almería",
+    "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNdE12ZngzZzdnMk1kOW1NeFlJX09jU1VzR3BSaFBJaVc0UEhyZ0swd1Z2VER4bWJudkxkT1pYX1RjRHVqZGlKcjA2b09pVEZmVGFJekhCZzJzUzdJX3JGakpBUko3Y1U4ZFpmUFRzcmU0cVhpMmNrcEtPZmx1aERpMndIczRPSjUtYkVRT1hxMmY0WlJ1WXpETDNZNTJFc2dZVjRMall2Y19LTVhFVGlMU1VVNW5lMm5jSVdZYm5R0gHDAUFVX3lxTFBKSmxaRHRzMjdzRTJnVElyZGlTX2V2UDZfbUpkUGtmbElkQkZrY3dXVUQ1YjZCZ19mUkRvdi1sdHFUck5hWW5QWUJYYVpJejY2TVJ3ZkhSUnhOMG0wTGJ3TUxKQURaeU9xaWg1VXZxM2thT056dzV6VG9Xc0tiTFZQbFhjMVFMNHI0MVJuSVRoLXFQNHd0b1RsQ2hoQjVHbnk4eDItcjlEUXNFVHpHZmZhd1kteDNiLXIwYXp0SHo5c2R6dw?oc=5",
+    "d": "2026-10-26T11:26:04+00:00"
+   },
+   {
+    "t": "El sector pesquero acusa a la Autoridad Portuaria de defender a la concesionaria de la lonja de El Puerto",
+    "s": "Diario de Cádiz",
+    "u": "https://news.google.com/rss/articles/CBMingFBVV95cUxPSFNRczhqUi13cFdSaENYY2cxT0xZQzdDZ3BXdjg5aFRmTi1QcklxQVlpbFY5MllleXFtajNPUlpodW1uenFOODdJZGV4T2h6elh0U044N3dMQXZ0UnRybWszYm1FdUt1TXNJd1c4WVRfdVNaZHM4RnM5RUdwMVVGNjJiaHJ0Y0VUN09rbHZhYUR2MUhjOWtMb3NJR25NZ9IBowFBVV95cUxOWVpBMjJiS2VBQ0tkN2lYbXFGTUhqMTBQNmtMQzNQS2pGTGZpQ3ZrNkZwNktmODZhNWZMTEdUWkJqeU5XRUJxUGd0WF9KWUJ0UndpdTNhZGQ2QjlxUGZ0MFhrZGdEZUl0cTRERGpSWXZMUmJTYlh0ZnhITGRvWTBIQnA3M0FHNDF4d25OTHNkZ2tqMGtTMThjSlV1Q0dyanJ6VkZR?oc=5",
+    "d": "2026-10-26T10:55:43+00:00"
+   },
+   {
+    "t": "Sector pesquero de Vigo pide al Gobierno agilidad para ayudas para combustible",
+    "s": "Ruta Pesquera",
+    "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVGptamFQMmtOd0NOa1haeHR1eHZZT281UWQtRjE5dUhuYlNPcnduU0VFaFVQNGJyQ0RsMWRVS1gwcmZmaHU5WkNzYmtaZDQyalJ0MGdraWtLWDFXMGpvcVRjMVZtOWFEczRGZnJTb3RONXZVYVAyRXNVTE5oamctVXUtSVFFUUhPaFlOb3NjeDV1aFBpS0lSU2VZNWNocmdOSnNPd3AtWHl0Slp4?oc=5",
+    "d": "2026-10-26T09:02:43+00:00"
+   },
+   {
+    "t": "Anmupesca celebra diez años de trabajo en defensa de la igualdad y la visibilidad del talento femenino en el sector pesquero",
+    "s": "Industrias pesqueras",
+    "u": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA1UldpVzEwejNlaEhWM2dUZ0pkYlhoRGI0MFZTYzhwcm4wLVB5aWQ5ckVHOVE0S3BGT3FCRFZhUnpNenpEaFphZWhZRFFTc191bGQtNnJKN1RsRmZlQ054SmhXWTI1ckpvdllMT1E0ZUVCZk56aHZ1bHpsRXZ1dw?oc=5",
+    "d": "2026-10-26T07:12:26+00:00"
+   },
    {
     "t": "Desde la mar | Jornadas del Sector Pesquero de Celeiro: 30 años mirando al mar y pensando en el futuro",
     "s": "Diario de Ferrol",
@@ -161,6 +185,12 @@
     "s": "Vietnam.vn",
     "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNM0lXSjI2akxLZVY1dG5pU2JfcVNjbm9vcDVSaUZHTVFBTXpDVWlQdGtubWtoY3MyYzd6X1JNUkNUajBYcUQ2d0pKd1QzbklUWlBzY0JpUUVQMi1idFRQZ0hmUElfTFAyUEZiNXpOOHRhZ21SbTEtNjdfZkpGdGpjcmREaHNoZ1dQVGxoT1Iwdw?oc=5",
     "d": "2026-10-25T13:01:24+00:00"
+   },
+   {
+    "t": "👑 La princesa Leonor elogia el sacrificio histórico del sector pesquero en la entrega del Pueblo Ejemplar de Asturias 2026 🎥 EFE #PrincesaLeonor #FamiliaReal #PuebloEjemplar2026 #Asturias #España",
+    "s": "Facebook",
+    "u": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQalplcHBnZjlzYTZkSFVvOHNYdE1GSzBGdlZTT0lqdkphWW1oTzNCb0VtQWg0MktUNVJzbXduUDNxWUlkZnZFWFczMEhzaWhQZWktXzF2MDBkX3RjMGwxRmlTdi1GQjc3alRXWXVoQjZXTlprVDhpWFFEM0ZxdTBKQW1CbWZrVHVFanJRaEtrblVtMlVETEVWMUM3dlRQQmt3RkFnNG9ibG1oOWZwX1ZpcmlxdlJyNDZMV2FhUE43djRBVU84UlB4SkpxRl9PZzY5MGFWdDhQRXpPZkllcjN3V0trbw?oc=5",
+    "d": "2026-10-25T09:29:57+00:00"
    },
    {
     "t": "Anmupesca reivindica igualdad en el sector pesquero y más presencia en los órganos de decisión",
@@ -176,7 +206,7 @@
    },
    {
     "t": "Leonor reivindica en Llanes el \"sacrificio\" del sector pesquero y el papel de las mujeres",
-    "s": "LNE",
+    "s": "La Nueva España",
     "u": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPNVZGVVNuaHE0OURYcWVLOHloeUxrX2hhdXk3TWtNUndITDhvNGp4cXdHaVJzMHVjN0VRSWYyR0tqODNfeTljT0hMYWc4TWphcGpmY25zUHA0eUF0X1k1djJpREZvN0V5RDAyTDdsUzQxVURCUkN0QUJuRmUxam1jVUdfVmxrV09YRGpOR2ppZklBc01GNUMybHZySdIBoAFBVV95cUxNUm4yQzdmbGJNMkEwSzRfdTlSdWJMNVVMemZMUjZWSDh3Wm9lcnR2a3ZsZDZHOExmMERId0RYM2hnR0pPUjNpQjdMS1k4MGhMM3JzUFVKcWdCY1lDU0R6UDU4X3lqdi14Vk9nZ2lLNXA5M01MY2Rwand5OTZxdFJQS29kcTRmcmZmMThheklHeDdaMmxHY2tkU3p3RlVBSzNt?oc=5",
     "d": "2026-10-25T03:00:24+00:00"
    },
@@ -191,56 +221,56 @@
     "s": "Infobae",
     "u": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPUldNNFY5akdwQVhlQ25uSGo4aDBGZG50UkgwUkRTVE9zRGxvMTJQdlF1R1AxbXBjNUN0RXRWMndVNDNjalI5OGZObVZxenVOYmFZMTVSR2tkSGtidS1kVGhoc0tqNUxEZ3ZFMl9sakxLU1Zoc3RKTVlMOXp2QWU0WHFDUEJUTWp0cVJfR2NYZzk3OUVVZTF0WWJnLWt2enFqb2FLUm42ZGVYWUpvXzZuVFJ1ZEQ4LWVwUldVbGpISXBQRkV1YnB1Zlc3Nk1HUmkwa2d6ZDJtSjBRWkNqd0YwSEMzcTlVMWEwVHc5ZVZuam02TW9uWF800gH3AUFVX3lxTE9SV000VjlqR3BBWGVDbm5IajhoMEZkbnRSSDBSRFNUT3NEbG8xMlB2UXVHUDFtcGM1Q3RFdFYyd1U0M2NqUjk4Zk5tVnF6dU5iYVkxNVJHa2RIa2J1LWRUaGhzS2o1TERndkUyX2xqTEtTVmhzdEpNWUw5enZBZTRYcUNQQlRNanRxUl9HY1hnOTc5RVVlMXRZYmcta3Z6cWpvYUtSbjZkZVhZSm9fNm5UUnVkRDgtZXBSV1VsakhJcFBGRXVicHVmVzc2TUdSaTBrZ3pkMm1KMFFaQ2p3RjBIQzNxOVUxYTBUdzllVm5qbTZNb25YXzQ?oc=5",
     "d": "2026-10-24T18:54:21+00:00"
-   },
-   {
-    "t": "La princesa Leonor ensalza en Llanes, premiado como pueblo ejemplar, el \"sacrificio\" de los hombres y mujeres del sector pesquero",
-    "s": "heraldo.es",
-    "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQajFOVV9HejJETUdfZTZUVjlMUHBta1RhTklmQjJSck1iRjBpb1kzdjBiNHRPWUlRNXdKQzl4ck5Ma3NZNXp4b1NreWdQUmtUbV8wREk5X3VGMk53M3MxWkZqdDExdTgyX0N5ZEIzc1Q4N1h6dWNSZ0lQbGNjY3otdWNTam0tWVlyY01YMHNsRlJGblliYnAyd1YycV9lU2dkc19KVTYyUVUwZUNsOUtpR3kxZzNXU29hbnBDclROZzhZYW1qakUwanZ3?oc=5",
-    "d": "2026-10-24T13:50:34+00:00"
-   },
-   {
-    "t": "Perú.- MTPE crea grupo de trabajo para evaluar medidas laborales en sector pesquero ante El Niño",
-    "s": "notiperú",
-    "u": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOaDNURmdQcE9uamJEUmRzaXdIa3BrZjVTbnNTako4Z0NzbFBmaVk1ZlM0OFNhWVJPX19OSFkyOUNmWC01T1JWQzhtaUVad1g2UV9ueUt5YmdUNmR0UWtranEwV3BEeGpFaHFWUXJzSnNhdjJzNUI2Qm03b2p2RUk2X0oyWDNhaDlIX2NiQUd2RkZlYjVrUDVrTlV5WGlJaDZ5Njh2Q2doLUZUcWdLbW0xLVlQRjlxYVQ5am9kbGloVkFOYUdpLVdhQ2Y5Z0t0ajg2Z1ZKcnFfdw?oc=5",
-    "d": "2026-10-24T13:35:31+00:00"
-   },
-   {
-    "t": "La princesa Leonor ensalza en Asturias el “sacrificio” de los hombres y mujeres del sector pesquero",
-    "s": "Servimedia",
-    "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNeGJpMFhuU1E5OE5jNTh4NmE3eklIeFFBZDhXU043Z1hSX3NidTAzRW1EOVFZeUVoR1RtdGFnU3lMbkhFcF9DU1FvSTk1SlBkeXMwU0pUd2ZCYnc0aE1XTVNuZkx6T193Ml9BcThwSTB6TUtJR3Zia3JCb2dEQ3VfMkR4UzFhVVd2Mi1rZ3g2UmU0ckZjUmt4MkRJZHlNNmZETTdNOFdHOUNYbms2TEFFdG9XdWROMjFfQ0JKZHF3?oc=5",
-    "d": "2026-10-24T13:10:00+00:00"
-   },
-   {
-    "t": "El encarecimiento de la harina de pescado acelera la búsqueda de alternativas para la acuicultura",
-    "s": "Pescare",
-    "u": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQdXhzQWUwaGtrMGpFREdpMmM5N0N3SFVPQkJaTmNRTDBXZFV3b0xGTURBclVCVDllT24wUnVYbldiWmMzeHExN3VlSG9LWGNaRDEyZ0U4UHNqVlJ3TVVUOFlmMDVsQlo4U0NaMlFwcXNYaklfYWREZEtKb3R3ZzI1c3VZbVlwR2oxVHpGcFZVcmFqTWstU25QbThhdjdGTkhTR2NVREF1TkVQbFRyVTgzd1F0Y25YN0ZDbEJWTndB?oc=5",
-    "d": "2026-10-24T08:45:00+00:00"
-   },
-   {
-    "t": "El sector pesquero pide al Gobierno agilidad para tramitar ayudas para combustible",
-    "s": "El Debate",
-    "u": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPX3Bmb2hZdTNYdzdwZkNPWEZDVDVaR3N5WjdybTFlSFpKSGcxb2NzRW9DTW0tcVoxR3JKekw2bGNrSzE0OGdDeFBrRlo0S0VPOGNJOUdnTS1jNkc1MWJNWUlOTGhIVjVZZW93RGN5WGhManFHOXNCNGhqMVFjTktDbVJHV2NBaWVvdUxNTFpqVTBlZjZuUllENmxySWwyb1pWWUdpbmFQV1d1SGo0WklQdWZMdmZtcDQtTDJNaTNHNHFCOVXSAcgBQVVfeXFMUGdyc2o2c2ZNRktQalNKLTdGUXhxc3Y3RFA5T3JwbFhGNW9TX2RIV1luUTBGVXZ3Sk1GMTFNN2ctM3pVUlJPWFZkZVFUTVNNSXdTaDN1OS1Obk9PS3dVWU1qQnhnRVA0MTZMVGxzTnF5Q1BQM3VvV1VjOUFTWWxKZ2dkYWx4U0kycmw4Vk5heThiVFdUMWN0YnBPRUZpXzU4b1hfcHU4Y3RIdzJMb0ZGUjVsUWJlS1Mwa1hITFZFUTUyakI3ckpVb0Y?oc=5",
-    "d": "2026-10-24T06:38:24+00:00"
    }
   ],
   "zh": [
    {
-    "t": "吃粪便、腐肉、重金属长大，塘鲺鲶鱼有多脏？究竟能不能吃",
-    "s": "手机搜狐网",
-    "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS0Y0dENRTGN5enVGZzU4NVFsTjVWZ2I2Nnp5NUpXd3VjMlpnWmluRDhOazlLWGJZXzg4M2tNRDQ4c2U5YXdHMWdqSHNLSXhPcXgtd3Y2QWpQMFBfSDE1LWlLek43WHdVeTFNNWdtZnQwUXdoYmk5b19WSEtTbm45UVV5V1ZhQUpSYm9KbA?oc=5",
-    "d": "2026-10-26T03:04:00+00:00"
+    "t": "农业科技发布厅｜科技兴渔，“京”彩纷呈——北京市渔业创新团队助力首都渔业高质量发展",
+    "s": "Sohu",
+    "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSVE0Yk9DeFQ4cUZsWWZJMDhmVXhBN2JUTC02OWI1Ukc0V0F2R1ZZZTlfQ09saEJkb2piZ1k5ODNzQ1RzX3FBeGhxRUJRdTVyUzY5LUY2ZHQxZzA0anJxSFF0VUs3SUFwYkQwNTBKMS1uaWpzQ1lUaGg4ejdZNHVLOWlLa0lXTnFu?oc=5",
+    "d": "2026-10-26T08:59:00+00:00"
+   },
+   {
+    "t": "茂名滨海新区国家级渔港经济区产业建设稳步推进",
+    "s": "茂名网",
+    "u": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBMcjFmMWlRRFVTWUYzOUotbjg4aGVIQ1FmLURpNkJZbWJpbkF1QUdtekN1UUFWNmhvMGotaUtGeU44aHNYM1cwNDJQVHJOTjZ5OG1FTG1OYXcwVDA?oc=5",
+    "d": "2026-10-26T08:44:00+00:00"
+   },
+   {
+    "t": "台商赞十项涉台政策措施：渔业交流进一步拉动两岸民间感情",
+    "s": "中新网福建",
+    "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5WY1NIa2ZnSUtyVUZ5eVFKTmVwbUs2aWxDekRzLUZMcXhUVEgyN3hncWoxQmxHLTk1R0w0cXloSzhjQm1PYnJzRWYzOU5mN2tTVWl3SWxzZmpGWWFmT3p0VEJUamd6NzZ2ZFlMY1IwREM?oc=5",
+    "d": "2026-10-26T07:35:36+00:00"
+   },
+   {
+    "t": "2026水产品质量安全与控制论坛在烟台成功举行_山东各地_山东新闻_新闻",
+    "s": "齐鲁网",
+    "u": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9GeHlidnlZSFFYZXpKeGZibHdadUwwN1FpbllabmdFQ0U3UHJuUk8tT0hITE1NYzd4dk1fT3FNbXVyY09NUWxPQWJpVTZaOUxFS0dmSC0wMXAtN3NuOGJtaDhFa2czSGFiRGs4NC1sc2NSLUI4Ymc?oc=5",
+    "d": "2026-10-26T06:34:10+00:00"
+   },
+   {
+    "t": "以制度创新推动海洋渔业高质量发展",
+    "s": "台州新闻",
+    "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1mbTdZZDZNVmVnMlhKM2dYaE1hTnA1VVdpdDVpOENlcEZicnQ1eUVPUzdlbEhRcVkyU0ppbk1sVko0VEpUODNNU3Eza0ZlRGRoSHo0a1I2X2drbnRGVkExNlVEb1JORl9XY2dF?oc=5",
+    "d": "2026-10-26T03:25:25+00:00"
+   },
+   {
+    "t": "藏粮于海 为现代渔业插上“中国芯”——访中国工程院院士、湖南师范大学教授刘少军",
+    "s": "台州新闻",
+    "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5hZkxoTmFsYUhnMWVUMFdIb1JIUkxFR0MxMTNveDZhbnJHT21oX01MeHVYWW1UZTVhMDNJYl9SVXNQbkNHVFR4RHo2VW1xTlNocmQyNURWaERSS2hhbWhZcHBhVTZqYUstZlRV?oc=5",
+    "d": "2026-10-26T03:25:25+00:00"
+   },
+   {
+    "t": "东营国投退出黄河口渔业，此前已无偿划转东营城建13%股权",
+    "s": "泰山财经",
+    "u": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9FVmJnbGdQNHFGNllZVF9YRzFTTkNiNDdMekVnX003TEQyaWU4c3g4RnFqX2I4azBoWDRTZTFrSjJyT2l1RFN6Q2pJVFRleElyalVwTHF4SWx4QlduU1I3M0RTd3F6a3c?oc=5",
+    "d": "2026-10-26T01:01:59+00:00"
    },
    {
     "t": "《农民日报》：净水渔业转型促水更清、鱼更优、民更富——密云水库的“三本账”",
     "s": "手机搜狐网",
     "u": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZGhLU2VJWW0wVERrNUV0X0xCQVZXazlVcVN5dEdDSjVBcG9SckNISnM2ZWpEbktYQklzNWRXS3RCX09hY3JqakNSSWJtYUMydlhTbVBUV0NtM3BoeFV6OUhXMjBDZ3cyQUtrUWo1TE42MHBuSERwQWczOW9odHBmU05GTGYzVnFGb0RnLWlMRzVJWVBTQU1ONG01RFQzak1uRnZqdw?oc=5",
     "d": "2026-10-26T00:40:58+00:00"
-   },
-   {
-    "t": "加马威加化鼓励年轻人积极投身农业食品领域 善用农业、渔业、畜牧业及食品工业商机",
-    "s": "诗华日报",
-    "u": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAxTjlOajRiUXgzVm1oMVR6RHJSaG9wbUhJekZWV1psbldqNmtUUkZBLXRBSWhNcXpSVHhkV3QtMHkxZHFmTUtrV2JVMldZQQ?oc=5",
-    "d": "2026-10-25T12:59:27+00:00"
    },
    {
     "t": "海南文昌休闲渔业中心揭牌启用",
@@ -255,49 +285,43 @@
     "d": "2026-10-25T10:20:00+00:00"
    },
    {
-    "t": "2026年10月25日龙门实业（集团）有限公司西三街农副水产品市场价格行情_综合资讯",
-    "s": "证券之星",
-    "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5WcDNibkhTZDhpSHhTd2dYUVR3NjlTazlCWXJkNXFqVERUYjVnQWx4RmtqYk5sdGFXR3RkOTNDWGwzYWdUdzFkTlNfMmNPUTRWczZ3VGNjbVg4VFhQR3FORnRCeWQ?oc=5",
-    "d": "2026-10-25T05:07:21+00:00"
+    "t": "赵云峰率队考察渔港建设管理 督导渔业安全生产工作",
+    "s": "新浪财经",
+    "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPOXZlWlVsZE1XUEZFeTlqeEtkS2NjTlRwZjhocXpBeS1CM0tsQzI4ZXRKa0laLTM0ZjJNYTU3d1VQS1RDYXNFRV8yenV3SktQNTY0c2stdXd5alNDbGVWalprSXcwMGtmN3lFSHFUMERIVzUwcDVTVVdxRDVxNHc1TTBaX2E?oc=5",
+    "d": "2026-10-25T05:21:37+00:00"
    },
    {
     "t": "2026年10月25日青岛市城阳蔬菜水产品批发市场有限公司价格行情_综合资讯",
     "s": "证券之星",
     "u": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE85S01NRmU2aDIwRFk1WXA1QzRYN0lPRm5TRi1sNVc0ZHUxWG1JbXp1amRvOWYzZ3JPdjQyN09uc1VMcGE0elFZcnNXY21yS094NjhxUmZVRFJheGU1WjZwcGVlUGQ?oc=5",
     "d": "2026-10-25T05:06:57+00:00"
-   },
-   {
-    "t": "乌干达维多利亚湖沿岸渔业社区青少年女性多重性传播感染患病率及相关因素分析",
-    "s": "生物通",
-    "u": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5nMDE3d09TV1Q0Rnp6MlRSNml0MWJPeHBIWHEwTE9INXV1NW9NM2RhLVA5X1FlZ3ltQ1ZJdWJtaDB2T3ZrZzdwWllYZkY4VmVNMXVoZzg1OE9BZ3V2aENJM0ZCNUtDQ3IwU1JRSzZ3?oc=5",
-    "d": "2026-10-25T03:44:50+00:00"
-   },
-   {
-    "t": "「美国优先」海鲜新标章上线，政府直击进口水产造假",
-    "s": "https://haiwaiwai.com/",
-    "u": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE56eFI2TG45N1owYzhoLU1mMVdONmdQOVpGOU4yek5nZFlKX0FfRFRTMGliVGxfcktfa1dtcWdHMmtER2pTRXpIcg?oc=5",
-    "d": "2026-10-24T22:55:41+00:00"
-   },
-   {
-    "t": "珠海鲻鱼“游”进天山 “南鱼北养”激活戈壁渔场",
-    "s": "珠海网",
-    "u": "https://news.google.com/rss/articles/CBMid0FVX3lxTE8zb1NxSjJQUXBMYmNIV2hEdEtxM0g2cldTTFFKVFRIeklqZnNoRUdGRWxrWHk4aE9wRzlQd2ZWNkJuUENCRWFIdlp1Z0NEdG5FenB5WEdFTkRTNUdsNTNjTWY3YnZFekdOdW5uY0tOdzdqT3V0MGRR?oc=5",
-    "d": "2026-10-24T12:05:00+00:00"
-   },
-   {
-    "t": "台商赞十项涉台政策措施：渔业交流进一步拉动两岸民间感情",
-    "s": "中国新闻网",
-    "u": "https://news.google.com/rss/articles/CBMie0FVX3lxTE40R2tiQ0JTUk40ZmZvU3hra1NOVmVuZWoxWHA0QjhIX21tcmJ2QVpfcVljVHQ5WDZwaFM5M3J4ejlzaGpPN2lFa3hRSlk1bzN3UHlKYjVDU09KTWJUeDZRa21OSFVwSUtTYTdrREs1eUIwcDRsM0M4TVpzNA?oc=5",
-    "d": "2026-10-24T06:01:00+00:00"
-   },
-   {
-    "t": "特定渔产不足需仰赖进口 渔业局吁投入水产养殖业",
-    "s": "诗华日报",
-    "u": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9QVjFGT0dNcTY5clk5MjZIaFZ4UlF6T0JUTDc3U3FiTGk0eEM1RzlCRW1tbXBWR2JweFZMUDluaGdSMG1FNEpvVWx4Wllrdw?oc=5",
-    "d": "2026-10-24T05:17:05+00:00"
    }
   ],
   "ar": [
+   {
+    "t": "مشروع مالية 2027 يضع السردين والأسماك في قلب رهان ضبط الأسواق وتأمين التموين",
+    "s": "Albahr News",
+    "u": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxOM3R6bUh5cl9mUHJXRWVuQUREVzBGVm9ZdDBrQndjWHZOb2hhVGxmWW9FWl9MTm1BMzRQRzc2dDVoLVRreW5uYWd4aEg3bmJvQVgwcmRUMEVpUkJERU1xWTdNMF9OUUhqNC0wQkh6UmdVdU9ZM0RxNVgtb1FGNFQ4UDJJQnBjdGpQQmd6OGg3LWRSeEVDWk5KbjhWb0RVR1lRUDRVTDFDSUt2a0Y0R05uOTFWUDNxbHcwVkEzcmZUalVMZDNETEEyZTRndEl6Mzhtd0JsamZTdlY3ek5ZcWxtM21WZUZBMDRJWWY0UmJGTzl3UW90TG91MXRiOVUxV3ktdzRlb2cxNjQtTU5rQjMzLXVGdnNocXJFdkdSdmhKa1BZT3lQSzVqYXR4dVRoZ3EtQW44QUU5dW42bGpMeEtEYUdYdw?oc=5",
+    "d": "2026-10-26T11:40:41+00:00"
+   },
+   {
+    "t": "استمرار معاناة بحارة الصيد التقليدي بالشمال يسائل بركة",
+    "s": "www.alakhbar.press.ma",
+    "u": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxPVjh6NlNqSG5Gc0xhNWtleXhRZDRLdVBMbS1tWmZqMk93SFJ1anZuWU9pOTUtWlFwSkhabFFYd3RjbjlhNGJDeFJLNlpvSl9PSkRRNHdtaW94bENXejVobFZKZTNlZ3Q2NGZtRWgtTjRrZ2wyTkNaeW9IYU55XzdOQ21IVFBvaDVWQ3Y3WF9VQ3dXWFVHbWtZeDYwM3cxajVtUk5qaElTamgzenJLbHBUUFE3WG5MN3ppUDgtV28yVURVOFdEUDNhMXpoWUpPUEJ3MTBGdUw4Ykx6RkpHWlZEU3A0aGJteUdrZk1HRkZOenFjTTkzZVJmR2hSV1diUEZFZ2d2R013NVVLTF9SZ21JLVZ2MnJGeW5WVmFqd2RBRWJfM1BzaXZNZXhiVFlkYmNiVjRvOHNYcmJ6Q2ZsSUNhWGFWNF9pRlZpSVBjMFQ3cVFlY2daM3hkM0VVbw?oc=5",
+    "d": "2026-10-26T10:43:36+00:00"
+   },
+   {
+    "t": "الثروة السمكية في موريتانيا بين الجهود الحكومية ومعوقات ميدانية تهدد البيئة البحرية",
+    "s": "الثوابت الموريتاني",
+    "u": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOS3N5dmh4UzV1RGE2dnd0OWdWLTBicllmMGZCX2JNVE1mQ2VTQkhBMVJ4ZG13Uy16MVpvV2Z3dFhjNlhCdTRBdG05cmhTQTBUZ2h4V2VHYU9NdmFDdFNnQkRIelc0djZrd1cyUllFQ3RUVnl6UUFxcUVGSzJITVZFOXdqMFVsS3F0aEo2VzlhcEYwSVdLcUZscnlEWVM4b0w1ck9nRU9FLUk4TUNDUy1ZQlNaejg1T2dMRnVZX3ZoU01JcTZDeVpOV1d3TTJBTk1PTk0takQwaG5BYWxBUktzYWlnSTc5cUtoV19ibENpX3JvekRSQ1NBeU8xeEdmemtETWs5V010N3JvUzRoY1ZVWWR6dlpxRzZTcm5ZRFJRQXUyLXNFLUdKdTRxeW80Y1NRQzgtdkViSG5vYUR0eF9XWjV1RUFvNFk?oc=5",
+    "d": "2026-10-26T07:35:51+00:00"
+   },
+   {
+    "t": "ميناء الصويرة يفرغ 18.893 طنا من الأسماك بارتفاع 63 في المائة",
+    "s": "موجز24",
+    "u": "https://news.google.com/rss/articles/CBMivAJBVV95cUxQU0J0T2FHcHFLMkdPQkk0UngwMFBPZldIVWQ3Y19qbi13M05vSVY3S1BzZmJpQ0RSc1AyLVNEc25CR3h6eF9LaTBub0RfMWFHVjhaWnh1VzRwOGRiY3FsbTFsY1ZfcXNTQzgxVUVJc1VoRHhVeS1sRUJJbjAtTWhhbEZuQ2o5T2VsZFFQNmlfc2ZRZGw5MUgwOGswdlVpR3p6TEMtV2M1M2ViUEtBZ3dvOUxXRldrcUxRbUFDb1RrQXE2RkoxbV9odkktTUJyemN4YTJCZmlUa1AtYV9HS0hiODBROERLRHF5bWR2UkI4WDExcFZxQWdueUlmSnc2TXdDalQ1cmpDRU5xemE5Y1ZiRW5JdllEUm05Wm9GTGNJMnQ4MG5mUDExSWtxVGtYTmdQdFhwLUpUT2lKaW1h?oc=5",
+    "d": "2026-10-26T07:04:04+00:00"
+   },
    {
     "t": "توقعات إيجابية لموسم الصيد الرئيسي.",
     "s": "Vietnam.vn",
@@ -312,7 +336,7 @@
    },
    {
     "t": "غلاء المحروقات وملفات اجتماعية تنتظر المزواري في قطاع الصيد البحري",
-    "s": "Hespress",
+    "s": "Hespress - هسبريس جريدة إلكترونية مغربية",
     "u": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxPYV81b0d3YkVKc2lLaWt5V2lxYWxfZE9tNG9rQVNFTWdKSmR0SGhfb2JOTzZwVzlPcnFIQzlZTHJkdklaenBQd1pwRl9lU0lwVnhKSk1VYUdxZVBzS213NTc1WlRBYnhBYkdJQmRFX0l2em0zZV9odGEtSXYtZUcwWGZ4akpPY3lZMHlwUmZqb0h5bFBscjFOdmFnVXRac1pKSWVNcUhEMS1nZUdnTXJFTEFGV2o3aERyZUtWVkdTRVJUaXA3VFJ0alZLNTJIUmNjMFJNNzdYOElEUzZUOHZjU2U0b3BHWlN6SVNCUTRLb1FyM0VNLUR3OU5nYWNadTkyQ1Bsc0xPc1N1TTgxX3NpZlZRc29tYkszOXhPYjdjaC1VVlV4R29XUEF4YmF1MTk3NnNxRzlmTEJSOV9lZm1SeFhiSXNtZF9tVjBXVW9qbnhRTmdL?oc=5",
     "d": "2026-10-25T04:02:54+00:00"
    },
@@ -345,35 +369,29 @@
     "s": "صحيفة الوطن",
     "u": "https://news.google.com/rss/articles/CBMiogRBVV95cUxOU2dWcjUtRHplTVZwQURIZDhCSGNUdGwwamFORUtZVTdleTIxSDRZbUFGVF8zb2VpaGlnMVlwV3BiemRKb25tam1CZ2hFWWhKV2Vvb21NQy1xUGNfcm16bFVQTTdOWmVMNE00RHBENmdFWF9ONi1xUnprU2F3ODY5RkFxdlNGTWUtWTFRLUEwUWNCRzR0cDRlSlFHbE5kbE9kS055c1FMQ3NHdjA2U25qQTFUaG9WdFdHOFloZURLdEhjQ3N2WmwtUGtndS1LeHU1U2VlMlU3QmRnLURFT000MkRhOGdYYi1PNU02azQ5bm1aeG5Lek1qSlk1LWdQT1pTQkVaNnBicGprZklrTHF3QVp2Q2RUemlOUEN6VmdVbUljMUliWmo0elRFM1lIYmJYNm4tRkg2d0cwc19WYVlVSUZ6Z2x3Ry1OS2VuaHRoaW9IVHlVelF5N2FaRjZVYmJKSXRIRElfVG9xd2cyaGtraFhDa0Z0WTNjS3ZIa2RNUlFDcVZPLTl4Zk52N1lfb3VwUk1rRGt3dFBVOUgxZnhENUZVcml6VW0zYlZDaFIwajVWLWdISzZaQS1MaVhmZUl4dmFicE94ekJTVGMyY09paUZ4clZ1Rm5GLWJYTU5CeWVDS0FkbzlKdktCQU1PTXlEX3pNU1I1R1VWTC0zV3VoejEzR2dYeXBTRmoxUDFkQmZRV1VHdVU0WVBKQnFrVmVaSVHSAVRBVV95cUxPVGpJeU51REpNelNkN01ZcHpKVnRPYmw3dHVCNWYwMnVNeWNLZmFSZkFmMjcxM1pQa0dVZzl0QW9SSDFnQ2F3eEJZMUtKTVJDaWoweGw?oc=5",
     "d": "2026-10-23T23:08:19+00:00"
-   },
-   {
-    "t": "حظر تأجير رخص الصيد ومنع السفن الأجنبية من الصيد بالمياه البحرينية",
-    "s": "جريدة البلاد",
-    "u": "https://news.google.com/rss/articles/CBMickFVX3lxTE40aHctSGtUM0FRbDFXaTFqdmk1Y0RSR2hDdzJfVHZrQnhaRXVHTnFsUjVzNkhSbEdBU0N5ZWtCS3NpMnRYUWt6MUFGME9Tb0xzaFlZSTlFdmhuVFdDVGg2aEVfMUQ2VzBfTUNjSFpGdTluZw?oc=5",
-    "d": "2026-10-23T21:49:30+00:00"
-   },
-   {
-    "t": "مهرجان صيد فى الإسكندرية بمشاركة 18 فريقًا.. من فاز بجائزة أكبر سمكة؟ (صور)",
-    "s": "المصري اليوم",
-    "u": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5WOVkxaHVvdDhGWVdDLUx3YVFrQV9fdDFIcWdHUEJqYUZVeHZ3Rmo4STBVOC1yTVNybGV2ZnlzUTc2cmN5aDdvdktsU2ZPMWpSMTBpbnZtdzdMcWtqcnlR?oc=5",
-    "d": "2026-10-23T19:53:00+00:00"
-   },
-   {
-    "t": "نادي الصيد بالإسكندرية يختتم مهرجانه السنوي بمشاركة 18 فريقًا (صور)",
-    "s": "Masrawy",
-    "u": "https://news.google.com/rss/articles/CBMisgRBVV95cUxPSmhIWC1XZ2llWFY0SEY5Y2YxMEtyM010X09DTkN5Y2RLb3pIYVdfQ1BVbGh0YmlzcjRoZDcySV8teWdHam1Nc0JtX0dxcThNa2t5emhYbHVPY0tWZ2FLOWx4M0lWc20yYUVNWkQ2SjhiSTVhMjFYYWtSWDA0NWkxUm16ZnpEY2RrcUhXNWlBOE1XVDFtdHF4SzBUVXJWQXBMbHFudFhkbE5XanlldzBvRlJpbVUycXgtRUx1RFNEWllEZTkxU0tXekJ6dTgxUXBUMFJYQkloZkJYVTYwUW5RUkdVYjB4RGJ4SkZSV3ctRlZ4V2l4akNaakZiR0t1SUVWVERHRTFWZmw4WnpnRnlJcGp2UzlORnE4cEtNWllud1ZuZmx2b0ZtTV9FZDd0ZnRGNjhYejhwZGpwMlZhXzJTZmZrb2tYdnVxMFJtRnYyUkQ4bjU0UDUwZmtzLXpXMzFWckNmVU9hUjZFOEtQMGhFZ3hNZnN6aDNDSkRXSnFoZ2ZXc2NrUWNlbVVmMHhsdXlUY3ZuOFFmSXlVeXZjd0k1SmJmMnB4THAtb0JzeEJkdjhFekhzc2RtdFFSRjlYcUgyYUZwUXRoWm1ScVhQcGxHR1B5VThqd0JtSVI0aEQ5ZnRJQko5UzVoRHg0V0RMWkhfcjVwMVFPRzdYQmJYeHZRaVpiVldxTFc0YW4yZU9HQ3V3T0dJMUVlU2t6RGNLbm54MnNBNU01cFhxYmJfbjhwS1VB0gG3BEFVX3lxTE1sYjJkUGZVaGxiVEdCVzJyTDk0U1Q3QnZqODhuQlJGSU42b3NQMzc0enZsWTExQzNHcE5sNDY0UFJURE5RUEh5S1pLN0Y2bEJFbVNqZUpjajdxNWQyaGRfbkFXUkhhTzlfcTRMZXYzalg1c185bUR6bVJrM3AxbmlUd3ozSEp1S3J5QzVDLUM3RHZiUDN4bGRoVDBWdFFhb1dIdzBvMkp0UlE0akk5dWZYMndPaloxc1I4aUR3cVdHdlllYW1FT3AtNkRRbURORlpjNVhOak8wd3FQeGZYSmtlbVV1N2p5UzgzRUdFNnpSb0pXT0RXY2VTeHFjWlNQQW45TFNtTGhOcE1ycUZMbkNXV1Zxa2VzRlZxUmUxeFgzbmhaQnBXWFh4X0FISXY4OGxRSHhxbWFYMnZSM0JGVVBfNEk1bTlfa1REeDBJYWxHcm9Veks4NjE4V0tRNFhGTUdub2g3LXVNUlpjQmNaY1NZbGlXZXFFOWM4eVhVNWJiUGc4X3lnUWRJR1F0dzlTdmRDcm9TVjJlY1l4cnF6RS03ZzE3VU1hazFCbU5UMkN6aXF5SGVJUGk1ZVlGdXhhYlJaSGZjTEZqU1NBLUxMc0FVR0VaX0dzeDNnRlFfLWtQUTNzMTZGdThvREtjR1BPRGlYc0FHSEZ0dlEwVE9JcmpvX0piTjBOZjJMeGw4TkxUb3JfeHFCRlFSOEFxUlByUkxjblJWZkNrRWFJU1pBQkpuYTE0OEJLZw?oc=5",
-    "d": "2026-10-23T19:48:47+00:00"
-   },
-   {
-    "t": "تبادل الخبرات في الصيد البحري بين القالة وطبرقة التونسية – الشروق أونلاين",
-    "s": "الشروق أونلاين",
-    "u": "https://news.google.com/rss/articles/CBMizgJBVV95cUxOVF9mQTU4ckRRd0tnZ0ZsQjFSVzdxRlVpdVUxcTlKajZWQU0xdTBTWEt6emtLUWFKbWNOYnhUOXk3OUJkb1lleGhzR3VEV1pqcDlIdUFlZTlKWlR6Zk1oaWp0bHRoN1VlaVBVUk05MENCdnFGYXdVVXlPbnp6d0JmUThhbFFXaGFZemxOUHRoRmdzRGNmbEctWVY2aGI2VGo5UnFkaGdMMTNvTURNb0RQY2Q1Z3h2VHRCYVFJRjE1REZvYnFhLTJOVXNPTnFocFBVOVVHQmFFOEE1TnRlaVNnYWZUQXV2VEM3aTMyV1Vjb1Y1eVBqb2IzdWtUNDBxaE1zd2l4Zzlxem5iTmFSUnBZZG15bmx6alFQb0NFVkw5Um5wQ2xBRTBaTV82NzlyR1JHMUFIOXpGVHVkYzU4eUxMd2Uxam93ellBXzBjTU93?oc=5",
-    "d": "2026-10-23T19:29:10+00:00"
    }
   ]
  },
  "local": {
   "fr": [
+   {
+    "t": "Lagouira: la Marine royale expulse des bateaux de pêche sénégalais et mauritaniens",
+    "s": "La Releve.ma",
+    "u": "https://news.google.com/rss/articles/CBMiQEFVX3lxTE15QzFXdW52cEt3c0xJN05JbHRUeXdVWWJ6TEtwNDhqQ0RQN3Z5Vkc3d3JXSVdiWFdESlhJdGZ2V2U?oc=5",
+    "d": "2026-10-26T11:30:12+00:00"
+   },
+   {
+    "t": "La Marine royale marocaine expulse des bateaux de pêche mauritaniens et sénégalais",
+    "s": "Atlasinfo",
+    "u": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPb0FCbDV5SmljanhKS2NXd3pRa0RIa2pXTkROb3QxUk9KYjlFR1R0WUJ5MUdIdUYwdndZUkNxVHJNRUNuaGhkSUd2Yl95SGlFT3dBZmRHbWpDN0oyQlAtc3k5Vjg5aFBPY0dIb2R2Z1ZTQ094eWhXLVE4WXlNdDlhOUI5aWNoWU4tMFphMm9qbkY4UDBORS1YZWxCcmlkSi1aS1V0bUlDRzRaSGFP?oc=5",
+    "d": "2026-10-26T10:14:00+00:00"
+   },
+   {
+    "t": "Planas espère un accord rapide pour que la flotte européenne continue à pêcher en Mauritanie",
+    "s": "Demócrata",
+    "u": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPQVR2aU5HZ2ZIWGs2cEpTTEhaeXc4NHo3UTdFbkROUjFRVUJKZXZLVVI4NFRmaE9wczFzVld6TFFkZVhsM3A4OTNfaVpFU0pPQlI1aHNfYVRtS2V0SHV3ZUZwT0dIMWtyakNqbTVSMmFjaUxzTUNRUGVSVTJ2S1RXTW1FeTZtQnh0SXVwNWNIMHRSTUlubFAtTHN3OXhmMlg1N2ZiYW9jb05HOXNtN1JZR1dDV2FfbjF6WmJ5MkgxYWlLU1VFR0JKQXB30gHPAUFVX3lxTE9FckFxUU04VU5uS1NjX1dJRVRPQVlGZUVWLTlhcEwwRUZwRVVtdXRHcXQyQ3lMODB3ZUJ6X2NuNEVpRnF5dzRhNFJ3TFJzVjg3OHRYdEFQVjdUN3JIVktnQklHM2k3bl9hb255TTVqRFJQam5ZVkxsUVZVMlcyVm5lZ2F1eG1SMExtR3VEeW5TWTJULXNaMVI3S25Yb1NxeUI5TDBLRlNZWDhHUXZDUFhYa3Foa05VRXM1ZjJqV2l5dF9tNXdQTTlUU3lFMHR1bw?oc=5",
+    "d": "2026-10-26T09:46:50+00:00"
+   },
    {
     "t": "Lagouira : la Marine royale marocaine expulse des bateaux de pêche sénégalais et mauritaniens",
     "s": "Yabiladi.com",
@@ -385,12 +403,6 @@
     "s": "Points Chauds Online",
     "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNEpDUHNsc1RuYkZWbmVwbUVTZVhScWgzaEdiN3FWcFlZRWJGX2JwbHVCUzlWOVY3RGRyUkQ5RW1XUzVsOHNGRlJ2Y0dYMEFoeTVyelpBaEtlLVJVUHd1SUNzOGtZZXMxTWtYbW1OeGRHdVEtQVUzSEZzbEVhRkl4WWx0R0hFZFhzaE5iU3h2MnRZSWxXcUZQbUYxbmJEdU82TlJhcDZCWnI2ckNGSmNWQlhLRldvOXUxMWdvaFl6SkNLZlVIR21EUzM0RWRKZXBB?oc=5",
     "d": "2026-10-25T19:45:00+00:00"
-   },
-   {
-    "t": "Accord de pêche : Nouakchott et Bruxelles entrent dans la dernière ligne droite",
-    "s": "Webmanagercenter",
-    "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQOTl5WXpHMzZpNjhVY05nQ2hMRjduNThPQkJEOG1WSWQxZTR3My1va1RocFZaQm96N2EwMzhuRTZvTE5DbGUtdVdDNmw2N3Y1UG1XYmJKejZUYThhTHRVRmE5X2xsV19OZ0hKb1BhZThXM1A1eGRqZW1USno5QTJZLTBhUHBUVmE5b2N0U2w1WTBVQ3g4bGc0Y3c5d3Z2S2p4c1d4QTFlNnNneHJEa2VyN2JybDVMVm4xNFdkdmxMMU8wM0JrRjRFaQ?oc=5",
-    "d": "2026-10-24T13:00:42+00:00"
    },
    {
     "t": "Pêche INN : la CSRP mobilise la Mauritanie",
@@ -433,15 +445,33 @@
     "s": "Demócrata",
     "u": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOWEVpRnl2MThoMFc2MVNtWnM0VHR1WWVUWkcwTWZmZDhUcGpKaGVsQldtLWFjRXR2My1GRnMzVVdXemY2LTNTVTFOTXdNMWxlbmU1ZmNmNjc2T2pfeV91NWtqRHNCeFpFb2p0bnlBSXBPY25WNUZjeXRxQ1pONlNhakIwT19hZzlHcFhLUTRObVlIcXlsT0VrRXo4TzVnS25kb2JwRENyZF90MWJNNzA2WlhXV0V0eHdMY0dlazhvVC1tNzhwU3JaNGd3X1l5cVHSAdQBQVVfeXFMUC16MjZUSDBWU2ViY3lYVmlaR29YSUNmSUNwcVZpeXRLSm9GcXd0R2p5Z1A1WVg1RUR2SEFBdEE1WW5adEZyUjdjZUxOeS0wdkdKT1B3elVzSDRmZ213enctVS1IUm92M0FqLThKem5fTWQzMldVTWJiTlZrdmx0U0t6QVlFSUdyTkdxd3VELVhXbmNLRDh6VzNDZlhLZlFUNXFGSWhuYnV6YUxscVFTMExlTlJHa1h1MlBmWEhSY3Z1d3Z0Nm9XZzYzaW9KdVkxSkxUY2s?oc=5",
     "d": "2026-10-13T15:13:18+00:00"
-   },
-   {
-    "t": "Aïssata Lam, une femme à la tête du département des Pêche en Mauritanie, une première",
-    "s": "Cridem",
-    "u": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE1Ja3JTSmNtald1MGRoT21ZcG9rWGZvamFfT3BRckJzQUZNbmR6VjVvRm5ucGhZTWRQVlVNcDJ3WlYxSHpMdnBDdmhiOTdxUFc3RHZXbmVjdw?oc=5",
-    "d": "2026-10-12T07:00:00+00:00"
    }
   ],
   "ar": [
+   {
+    "t": "إعلام مغربي: البحرية تبعد قوارب صيد موريتانية وسنغالية قبالة لكويرة",
+    "s": "aqlame",
+    "u": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE05THFlanRIdEd4dGNscWJmNkFhbkVnMElCeThCXzBlLVFSQldFb1gyOFd1bXEyaTZpYlRlWnBzVFJHakQybHpBWg?oc=5",
+    "d": "2026-10-26T11:36:54+00:00"
+   },
+   {
+    "t": "البحرية الملكية تطرد صيادين موريتانيين وسنغاليين من سواحل الكويرة(فيديو)",
+    "s": "بلبريس",
+    "u": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNaWhpUGZFN1RxMHVkTE8zU2FtYW0xZmNnM0ZnbzV5VVRod2VjNVFoai1rSHBwRXRWUUZfbENudU1fbC1oS0p6Rk5oSUxZcXJXVGotUHk1VnVVS2FLMFp4QXlIMkNRVFZJZVBUWXoxdFBPcDFxQWotZ0k5dXU5clh1TVdoclhSaWF1OWttcWJ1Nkxqc2QyblpNTzhMTTRhN19MTThyRUd5VEl2ckwwRHVfVWFOMWdCNzU2S3Y2RGdnQmZXSUZxNHVQc21KTTdpNlZMQ2ZaaExHWEg1b1hVbzNBY19BQWQxUlpXS3diQmNBVUJJYmx0REdHNUxVNWVoZnNRWGYtdFlqSDZKWUdoWHBmV3ptcFBheTlQZzV0Q09tYnVISDJqcU1VbEc2UVBGN3l0Tk5Dam5RYVNvd2hTUDlhNXNnYmVaOFl0UWt4VzdhRQ?oc=5",
+    "d": "2026-10-26T11:03:03+00:00"
+   },
+   {
+    "t": "البحرية الملكية تطرد قوارب صيد موريتانية وسنغالية من مياه الكويرة",
+    "s": "يابلادي.كوم",
+    "u": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1EVjdGc3YxVTFHVFZ3cDVFR2N3WHgtTTMxNzQzeW93VzlPNlQyZEZSa0hranlfVUlkQWF1UlRoZmNRSDRGXzE1a1hIYXBwdnd4d2E4MDhLcHl3UkU?oc=5",
+    "d": "2026-10-26T09:39:00+00:00"
+   },
+   {
+    "t": "الثروة السمكية في موريتانيا بين الجهود الحكومية ومعوقات ميدانية تهدد البيئة البحرية",
+    "s": "الثوابت الموريتاني",
+    "u": "https://news.google.com/rss/articles/CBMixwJBVV95cUxOS3N5dmh4UzV1RGE2dnd0OWdWLTBicllmMGZCX2JNVE1mQ2VTQkhBMVJ4ZG13Uy16MVpvV2Z3dFhjNlhCdTRBdG05cmhTQTBUZ2h4V2VHYU9NdmFDdFNnQkRIelc0djZrd1cyUllFQ3RUVnl6UUFxcUVGSzJITVZFOXdqMFVsS3F0aEo2VzlhcEYwSVdLcUZscnlEWVM4b0w1ck9nRU9FLUk4TUNDUy1ZQlNaejg1T2dMRnVZX3ZoU01JcTZDeVpOV1d3TTJBTk1PTk0takQwaG5BYWxBUktzYWlnSTc5cUtoV19ibENpX3JvekRSQ1NBeU8xeEdmemtETWs5V010N3JvUzRoY1ZVWWR6dlpxRzZTcm5ZRFJRQXUyLXNFLUdKdTRxeW80Y1NRQzgtdkViSG5vYUR0eF9XWjV1RUFvNFk?oc=5",
+    "d": "2026-10-26T07:35:51+00:00"
+   },
    {
     "t": "سفينة الدورية الإسبانية «سنتينيلا» تتجه إلى نواذيبو للتعاون مع البحرية الموريتانية",
     "s": "الحرية نت",
@@ -489,30 +519,6 @@
     "s": "مدار21",
     "u": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE41NDdJTk0yX181YVM2R0ZmU0RVVmlfNXY3M2lvVWdkdzNQYV9hdXBTZWhiUmVxNGVSNi1KdnZzSlg2TThuX3c?oc=5",
     "d": "2026-10-23T00:34:47+00:00"
-   },
-   {
-    "t": "وزيرة الصيد تبحث مع المفوض الأوروبي للصيد والمحيطات تعزيز مسار المفاوضات بين موريتانيا والاتحاد الأوروبي",
-    "s": "صحيفة نواكشوط",
-    "u": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5MT2dLZDh2S3ZMWlhnMFJnWWdCT2JjQnB6TV9YSGJKUTJOWXZVcmxwRDZBalRJNDVBN2hoY05OUnlQb2djWjNSU3dDeTdLeGp6?oc=5",
-    "d": "2026-10-22T18:56:15+00:00"
-   },
-   {
-    "t": "وزيرة الصيد تبحث مع المفوض الأوروبي تعزيز مسار المفاوضات الثنائية في مجال الصيد البحري",
-    "s": "الوكالة الموريتانية للأنباء",
-    "u": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9YV00xM0cxazY4Nk45Z19qbzZ6TVNtQU9YUWhlZVRBMG9QZ3p2c3dFSmx2N214eXpCZko0eHhHUzBVdVVESFd6MWpB?oc=5",
-    "d": "2026-10-22T15:35:05+00:00"
-   },
-   {
-    "t": "مباحثات لإزالة العراقيل أمام تجديد اتفاق الصيد بين موريتانيا والاتحاد الأوروبي",
-    "s": "بوابة الشروق",
-    "u": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNd2N3Ynpud2V4OHBDMS1KcnM0SnhEMkZTeWFnZnFRczJmbEpvcWUxQzFYMXpfeXBYa3JSNFJQT2F0MkR0ZUMzeTJMNlhBcHZUS0c1UzNMdGVzRmFsbkVQREVqTTlTODlBaWhjMzhxYVk0VmQ1NzZtZ2t4YzJ0RWpGRVgxUExvRGVXYlJLMWN6VFRncWdhR0ZVMF9WbmctUVVwVzZGemhXaw?oc=5",
-    "d": "2026-10-22T13:01:49+00:00"
-   },
-   {
-    "t": "موريتانيا والاتحاد الأوروبي يناقشان تجديد اتفاقية الصيد %",
-    "s": "صــحــراء مــيــديــا",
-    "u": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE9fQ2lMNXl6N0h2ZDN3ZnlteVFJaGxtZlJpOWgyT09iN3MyOWZNREpBWTdhS0h1OG5iNEdPMUdfQ0htS0NaR0ZF?oc=5",
-    "d": "2026-10-22T11:19:41+00:00"
    }
   ],
   "en": [
