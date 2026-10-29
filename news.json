@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T22:36+00:00",
+ "updated": "2026-10-29T05:49+00:00",
  "items": {
   "en": [
    {
@@ -77,7 +77,7 @@
   ],
   "fr": [
    {
-    "t": "Mise sur pied d’une commission mixte initiée par le ministère délégué de la Pêche maritime et la CNSS",
+    "t": "Mise sur pied d’une commission mixte initiée par le ministère délégué chargé de la Pêche maritime et la CNSS",
     "s": "libération",
     "u": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNakxWSy1MX1N5bEJrMWhPVG1JSWpIQmRvcVN2RG1GNjRObE84U182YVBSVEZCTEgtazVQZV9ONHpyWllXR2JqeFdZczhWXzhORDVJN3JHMlZjX3I3TkI3WVg1ZVcyUlZpbmM4MEtMbEdObW5wTGVIY0lHNlpwTU9zMFFjYWhKREVOc0VMMGFnSjJTU19KclJOUl9fa2JTRnd6bVNVcnppY2tKYkJSSUU3NmI1ZUZzTUpB?oc=5",
     "d": "2026-10-28T16:59:00+00:00"
@@ -125,12 +125,6 @@
     "d": "2026-10-27T16:01:02+00:00"
    },
    {
-    "t": "Pêche à la coquille Saint-Jacques : une ressource en baisse en baie de Seine et le long des côtes de la Seine-Maritime",
-    "s": "Actu.fr",
-    "u": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOOXF0a3VXd0tpN3VlRkJtRXJ0MGZOcFVXcnBHa2VLZHFVQmYzQXRKTktpdXoxLVBIQlZMSi0yMVJzZ0psOFBrWGtUMGZqREIzWWs4SDNLRWtHbWx3dnNHNVhnb28xYkx6aHhHV0tPYWRhcE5MNHd2Um5XQnd0RVdnXy1BMVlsOHNROXVMelctM29UZVZ0cUJWWEVGTkJsVEtPQWFjdHhuanQyMDkxM2Q3YkY4RHBuOFFIMFZPUmphSnNZdFN0SWs0amVheXVnN3hHRTdLY2pXSjc5ZUVKdzdyQnV1d2t3UTFUb1FnQ0t3LXNxRlRzdkVmMjBLMUlGZw?oc=5",
-    "d": "2026-10-27T13:24:45+00:00"
-   },
-   {
     "t": "L'accord de libre-échange Europe-Ville (VEFTA) offre une double opportunité à l'industrie des produits de la mer vietnamienne.",
     "s": "Vietnam.vn",
     "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9oMzNVVjNacjZDY016TmJTdWstZ3MzYXhreVdfZjVsNllZb0xTaWRYZEhHQURHNUNLQUU5ZGtvdEVBeWluZWk4N2JDNTlDY2tvLXd1bEpHb3ZUT0dmZzN5YjJuRzF2MF9aeUZISjNOQ0s?oc=5",
@@ -143,6 +137,12 @@
     "d": "2026-10-27T08:31:00+00:00"
    },
    {
+    "t": "La commune de Hon Dat annonce la création d'un point de collecte de poissons d'une capacité de 366 tonnes par an.",
+    "s": "Vietnam.vn",
+    "u": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcU55MWN3aDVaVmhva0w0ZEphVWY5RWdVVC1YT3MyR3NSZUt4a09QTkhUZWkzaHU0UXhBRnRBaXZ5dlVEOGN0akVTZ3p4anFaZnFZMEJiUWVneng3ZC1qN0lYeTFmOGNxdjNOT2N0bVRyUU80OV9HUS1OdFhtM25GR2NB?oc=5",
+    "d": "2026-10-26T19:25:59+00:00"
+   },
+   {
     "t": "Pêche : les armateurs européens réclament six mois de répit en Mauritanie, Bruxelles dit ne pas avoir de mandat",
     "s": "Points Chauds Online",
     "u": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQNEpDUHNsc1RuYkZWbmVwbUVTZVhScWgzaEdiN3FWcFlZRWJGX2JwbHVCUzlWOVY3RGRyUkQ5RW1XUzVsOHNGRlJ2Y0dYMEFoeTVyelpBaEtlLVJVUHd1SUNzOGtZZXMxTWtYbW1OeGRHdVEtQVUzSEZzbEVhRkl4WWx0R0hFZFhzaE5iU3h2MnRZSWxXcUZQbUYxbmJEdU82TlJhcDZCWnI2ckNGSmNWQlhLRldvOXUxMWdvaFl6SkNLZlVIR21EUzM0RWRKZXBB?oc=5",
@@ -150,6 +150,18 @@
    }
   ],
   "es": [
+   {
+    "t": "29ª Exposición de Pesca y Productos del Mar de China comienza en Qingdao",
+    "s": "Xinhua Español",
+    "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMk5WRms4RHVQdGtRWkxCTjkzalpyZjY1NWtNektkRjF6WFAxanZjX3FIOEZxdV9OZ0xhbVIwZmlFODY1Y1I5Rm1NaG9yRmEzZ2J0b0xFUGNxYm9JNldlTTM5Z0s0N1RzY0tVOTBqV3p5Sm1hUFo2b2JVSzRoNTZtZ0k5SQ?oc=5",
+    "d": "2026-10-29T03:15:59+00:00"
+   },
+   {
+    "t": "Perú cierra pesca de anchoveta: Chile y los otros países que cubrirían demanda de harina",
+    "s": "Gestión",
+    "u": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVXRuaFFLV19obk83NXdJVmNrX3ZpenRuZ0pGQVBHSkVLR3VxcnF2NVIzQS0wX0ctMkEzY1gteHF5ZDlwbU1wUlNpQks3cXdSVXo1LWQ3TkdZVUQ1NzV0Sk8walMzMkVteldteEFGOUdCbktvYjJkZFd1QXM3TDg3R0wwRzVRU3djbE9Dal9xaHphdjByUVNWUjd3QlB5YVJZV3B2TEZieFQyRnB5d0ZONUJTS01LT0FyQ0E?oc=5",
+    "d": "2026-10-28T22:56:00+00:00"
+   },
    {
     "t": "Anfaco pide un IVA superreducido para los productos del mar y una estrategia nacional para el sector",
     "s": "El Español",
@@ -175,10 +187,22 @@
     "d": "2026-10-28T03:48:52+00:00"
    },
    {
+    "t": "Sector pesquero impulsa el desarrollo económico y abastecimiento nacional",
+    "s": "Radio Miraflores",
+    "u": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNU010ZTl3NV95V1JHRmJWZ1Awb0JQeEJiNUVjYU8yMUoyR2N3Qk5ZalRkODhvbWQwMmJTaDJicTBvT1B1eFdlUjZQY1lDMjBLdEpIWHlzZHVuSUtNY3A0YVVxakM0d2lVVUIzUzhRS05PdDh4eldFTV8zWnJxRmJ4bGg5MA?oc=5",
+    "d": "2026-10-28T01:00:58+00:00"
+   },
+   {
     "t": "Resaltan impacto positivo del sector pesquero venezolano",
     "s": "DiarioVea",
     "u": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPa1Awem1qdWdYTlBlbURIY1FaRG5ISm1SaWlINFhZaDFTNUUwUkVtVUtHSUFnYTJBbndrd0NjNU9tX053U2xhU1czMFZWd19WSHM0eVZOUVptamhhUy11U0dRYk5aa0FPUjZ6Y1lMbUlDSjVSQTJkZ2tRM1RFazlSZWdyMmFyYXRCMFE?oc=5",
     "d": "2026-10-27T19:53:04+00:00"
+   },
+   {
+    "t": "Sector pesquero, hostelería y expertos se reúnen en Soutomaior para impulsar los productos de la ría",
+    "s": "Zoompontevedra",
+    "u": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQeGJmaVpTSkhsZWFDbjJRMnM4TDFCdVFndEdMQkFZMTVRRURSYS1oYmJDTnJpWnJJRmR0dEEyaWJiTWUyVzBOYnIzOTZ2cEdGTkJfMUF5elVPNksxR2lCTnNvWDNtcm9NWGxHaW9ONUdlZXZUc1JONnpYNzU2NjZ1NHpfanVzU3dsNFp6bmZJUmQ3d0Q4WXFyRm0tS2tJUDF4dUNSZlNMX2tHUURPY0FfUGc2M1pvZF9seUFLd2dpclYyNVlQVjhCYw?oc=5",
+    "d": "2026-10-27T19:44:00+00:00"
    },
    {
     "t": "Empresas de Los Lagos lucirán sus productos del mar en China",
@@ -187,60 +211,36 @@
     "d": "2026-10-27T17:31:00+00:00"
    },
    {
-    "t": "La ciudad de Ho Chi Minh está reestructurando su sector pesquero para lograr un desarrollo fundamental.",
-    "s": "Vietnam.vn",
-    "u": "https://news.google.com/rss/articles/CBMihgFBVV95cUxORlNCdEdnMUNfa2hxZzB6Yng5U0ZQejV6RzVXUVZPdlhuV3lkcHEtaTFhdHJfQUltZkJwbjJmemh2MVBKZktfck8zWU9wb3VzOXpHRXJDWERIQjhobERzRHBqdkpaQ3FtNWUzWWFJV0NLU01sVlIyb1ltd2s0QzJtT2VISWtKZw?oc=5",
-    "d": "2026-10-27T08:59:32+00:00"
+    "t": "Fernando Pejerrey ofrece pescado fresco y gran variedad de productos del mar en Laboulaye",
+    "s": "Nexos del Sur",
+    "u": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9GVHhPZ0JHLUNOR1hLS1J0ZXNQc3YzaHdqZC1sRnF0X0xvMGNxUmxDTFBxT0FjTWZqVkRTSURyM1JLanU1akhjaVlSQXpfMmJ2?oc=5",
+    "d": "2026-10-27T14:10:13+00:00"
    },
    {
     "t": "Informe: el sector acuícola utilizó más de 357.000 toneladas adicionales de harina de pescado",
     "s": "Salmonexpert",
     "u": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQRGlaTzdraU91NnIyZkY5NXhtUldXNF9uRXZVam5EVFN0aGdXSjFqdmRBREtST21qRmItVkJ4enlSZ1ZSLWZxdVZJMWdLNDVyNHpYNDRDVU83QjZGMDZJZHNSaWlPQmo3ZkZUclQ4SE9oZVpxMFE2cTdzcjVuZVJockliSVlyUWFlVW1wdk5iUXFpWkVlWk1abW9DbFYzNk9DMmc0UERNTDczSUtvejdXSHpUTU50aW1MdnVYa3ktZnBpXy11R19oVktaNkEtd0NEWnJZVzA2MndHNnQ0U3VvQ0VWaW1paXN1eENmcWFrY0pVNk9TTGhEUFM5OVJlaWhkZTBTZDd1cw?oc=5",
     "d": "2026-10-27T08:10:00+00:00"
-   },
-   {
-    "t": "Huelva acoge VIMAR, un escaparate para visibilizar la calidad de los productos del mar andaluces y la 'fortaleza' del sector",
-    "s": "Industrias pesqueras",
-    "u": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNbjg5aHV3UW1Xa2FlNHZ2cEdrS2ZjdXFfcHpTeGFYTmlwX1diakduV0ZWTHFDcVdVb3lUVTZkNkZ0UmUweVd6al9sNldPa1dYbVdNeWJsRklOZTd0bVFHdTZCS1FBZm9tWjV1b2Jta0xNaVdQOEp2UjZadU5qNXAyTg?oc=5",
-    "d": "2026-10-27T07:03:59+00:00"
-   },
-   {
-    "t": "Un movimiento reimagina un futuro compartido para el sector de los productos del mar en Asia Oriental",
-    "s": "Global Seafood Alliance",
-    "u": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOM3NIekpWNW90cWxQcFpSNm5vaGVqODVGUk9xSloybUNVMmZDRnpWREd3VVJQb0xiNzBpN2pWRllVUG1mYlVYb3dGTUIxVGJhOFdNeW9EbG5fYnJuN1BCXzJiWVJMWTJkbW9RLXJQNzJ3b1lmc2EwOENCRlZoMW9uSEtwQ0xjYTBVZ3haejlPMFRYeEdBWmxvY1pyWGc3MG1mZ1pzOWpKZmJYWUNlWGRxdFR1Y3JtWFVVd0VNUHJVRFN0NkI5aV9NTEp2TTNHLUVnbVNETHhsWUY?oc=5",
-    "d": "2026-10-26T22:18:52+00:00"
-   },
-   {
-    "t": "Cambio de temporada: los productos del mar que comienzan a ganar espacio en las cartas de los restaurantes",
-    "s": "G5noticias",
-    "u": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNWTBtbF9lZXlZOG1xSXlwWkJLN3Zqak5BcUV6V2R1S0ZyQmtOems3Tk1WejBnRlY4bjVVNUlwbERhN1hQTWxkYkpKTDFOcWpRdlJPUGNoMmMxT1R5Zi1lbmlvUzRoTEZoTmN5OTBSZXRJRGhNRGhWVzg2YS1fRC1idXVzbkZ5OXpfR1FVXy1vZm95ZmNFZTVuV0pULWdzdFh0Z1lvX01fRm1oSFJpNXc1ckVuRVhZbVRiaVJMZVZBczlnbW5aNjVMc01XYlB3NUpocGlUVm1n?oc=5",
-    "d": "2026-10-26T20:27:25+00:00"
-   },
-   {
-    "t": "VIMAR reúne a más de 55 expositores en Huelva para promocionar los vinos del Condado y los productos del mar",
-    "s": "Huelva Información",
-    "u": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdjYtejZEU0VGS1RkTVRGY0VEeUNVeW9ENmFweVhkRjB1S3hJbmw4YlBhUGVwVFhNMV9hVkVOOFJva25Ia29TLThnODdSWk5OLTBNbDRyQ1lZeVQ0ZXVsZFBvT1RhS2hnZzYzYThHVWxUeUQxZ1JNWUw4by1SSzlHZkF2LWNHckFhSnRhQ1JjMjQwRjVwT0HSAZsBQVVfeXFMTlU2UUtDek5BQmU5RjFZRDNheGY4aU9fZWlJNTY3VVVIVzVabE9URDZNYVhLUFFlMi05M2d3R09vYnV0YlU3VURTUFRNLU0zSzdRNE91dFZtd2N4MS1TQmV6RkFxT0puakpXN1dPU3hmaUlFRjAxLVJaQUJPREdVeWVvQTc4QTJjVkFHay0ycUh5ZU4weGxxTXBQNmM?oc=5",
-    "d": "2026-10-26T18:09:31+00:00"
    }
   ],
   "zh": [
+   {
+    "t": "青岛渔业：面积做“加法”，质效做“乘法”",
+    "s": "新浪网",
+    "u": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTFI4ck5kY0ZSb2g3YjE4RkJ6cnJVbU5SMjVlOHppZEttWlJLMzhkREJfbGJac1ZJN0xJY3Y4UlZ3ZFhKZ2JvcFFuRUNtMnhPMTZhNTloN2Znd2xxdEN3ektsUVZPdUtkNHl5LW16ODJGSTZpZFp0LWRuYW9Rc0FDV202RnR6Z3Z2azB2STBvODhsWnZkSEFyXw?oc=5",
+    "d": "2026-10-29T02:28:16+00:00"
+   },
+   {
+    "t": "全球水产拓市场 渔博会上寻商机- 经济",
+    "s": "中工网",
+    "u": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE5abmdNbEtjUWV0YVF4bklsZ3Zob1NRanRibTNpVVBpZjBkc2RRSDRlcWRlN3BnRk5laGg4T1BPam9WWmt6WDllYnBfaXZ0enBVQS1Cb1pFQUxpY3dMOG93?oc=5",
+    "d": "2026-10-28T19:31:00+00:00"
+   },
    {
     "t": "汇聚全球水产资源，激活蓝色海洋新动能！见证青岛走进中国国际渔业博览会",
     "s": "青岛新闻网",
     "u": "https://news.google.com/rss/articles/CBMickFVX3lxTE0yWU1PQkpka2RSS1QtUUVkS2V0ZFdLTy1MYV8zOHNHUGNzY2kzWVMySUJ6bTBreUE1c3FwZ2NjTW5UaFREbkRjTnBMN2lvNDU3TTdJME05R2JXSWVHYlJNV0pmdHNIRGhRSWxnVXRSaU1BUQ?oc=5",
     "d": "2026-10-28T14:37:00+00:00"
-   },
-   {
-    "t": "链通全球渔业共建产业生态！2026渔业发展合作交流会在青岛举办",
-    "s": "搜狐网",
-    "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOeWRVZU9rMHZtdEQxWk13ZmFORDRFM01sOGVjU1dlWEtIOExMbEtCRjJyYm11RFdwLS1Pc2JBVGpWQ0k1aUtrN3R0Z0JxcFZ6dVYyWkNrMENYM29qNlJtNGhuVjZRbkQxWXhwczN0amlOQnR6T3haN3c1d19XZHNDZzV0UnFxVjZxcl9BeQ?oc=5",
-    "d": "2026-10-28T13:05:34+00:00"
-   },
-   {
-    "t": "全球水产拓市场 渔博会上寻商机",
-    "s": "阿勒泰",
-    "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5QZkJYcVM4MkNpWTZpM1QxNHhZMjNtY0hIYmUtYzFNclNOc3RkdFA0MWRSd1JCN21Mei1oV012VnJaOTM3RldpeFJRT1FmajFuTFd0QWl3WVlIXzJKcHBFYW1IcFlVTGZHN01j?oc=5",
-    "d": "2026-10-28T12:02:06+00:00"
    },
    {
     "t": "自贸护航，水产安心——海南水产品质量安全科普系列活动走进海南科技职业大学- 中国日报网",
@@ -249,10 +249,10 @@
     "d": "2026-10-28T11:50:41+00:00"
    },
    {
-    "t": "1600余家顶尖企业亮相，第29届中国国际渔业博览会在青启幕",
-    "s": "搜狐网",
-    "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQemlfbDFYUmNBSHRQSDVUVzJVVFZmQmtBbDg5T3BwN1puMmM3SXE3TlhRM1FSRm4xczRpMk1NTEMyYzlPQTFBSkRhY0xBNXF6VWdqTFVkU0NjNUtSdDNNTmh2Ym1BcXRFYkFNWWdSNFc4emE4Wk9JT20ySWJnTzZFTEFTaTFMRkJE?oc=5",
-    "d": "2026-10-28T11:00:00+00:00"
+    "t": "金融赋能特色渔业 国寿财险落地澳龙养殖险",
+    "s": "新浪财经",
+    "u": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5rd0Y1TGZDNUdYZHZfUWduOU1vYTdxdE5IZG5tdVdvQ05najRDZzRDZm05SkdKTUtLMGc1cUJsSDBvQ29CT1JUdXgxTU9ST0ZTYlFZd1Btc3hLd1dndWdBTlVVUzVUT285Z0hHT0w4MWoyNTZidERxcw?oc=5",
+    "d": "2026-10-28T11:05:05+00:00"
    },
    {
     "t": "第29届中国国际渔业博览会在青开幕",
@@ -261,16 +261,10 @@
     "d": "2026-10-28T09:30:00+00:00"
    },
    {
-    "t": "渔业板块10月28日跌0.37%，獐子岛领跌，主力资金净流入2877.61万元",
-    "s": "搜狐网",
-    "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQd0hzT1dpdkdMOEowbzlibkNqa0pSTlA2V0dybEhrb3h6bnhNUWNaTHh6R25jSGJYcHlaNi16RktvTzNGMWVsOFpvV1ZzeVBqc2IwY0VLcUMyUVBVb3NrXzBTZDVRTG9TNWpQTC1HVXptWXZDYk5fT0dTRWNuZWlKdFJaVTFOSTl5cm5BeA?oc=5",
-    "d": "2026-10-28T09:08:15+00:00"
-   },
-   {
-    "t": "“蓝海101”号调查船启航印度洋，执行渔业资源综合科学调查任务",
-    "s": "搜狐网",
-    "u": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSWx4dzR3YmFCam5OWXZRLWE4UmdKMGhSdV9TS05kdzJqbUxJMzVaWEctOTFaRUdFTEdkb01EYl9JaXp6b05tSl92bUNETmdkZWdLYjVfb1RGRmRtWlFLVUdfRXJOeDRFN21IZjloNG1CY0ZEUDlCSGZUVHlBRGtYRURuSUtra2Vq?oc=5",
-    "d": "2026-10-28T09:00:00+00:00"
+    "t": "全球水产拓市场 渔博会上寻商机",
+    "s": "新华网",
+    "u": "https://news.google.com/rss/articles/CBMif0FVX3lxTFAzdXBFRjE3QlUtSEF5cDNySDdlTllrZXA5aHoxdzNrZkpNcDB5cjRWRlYxQ0RMYVRIUWRUWlFtQmlacEh4THNkTDdIeEpsdmFJU0J4SmVTbHo4a0h5dDA2bkNmRnRnbmc0bTlFcUxOWnN1WGR6TTFDd2dtbkFuUTg?oc=5",
+    "d": "2026-10-28T08:47:38+00:00"
    },
    {
     "t": "链接全球渔业资源，国信水产亮相第29届渔博会",
@@ -279,22 +273,28 @@
     "d": "2026-10-28T08:00:00+00:00"
    },
    {
-    "t": "国台办：越来越多台湾渔产品走入大陆 两岸渔业合作再结硕果",
-    "s": "中华网",
-    "u": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5qazJFVzJBUy15cGxfbmVQQzdMYWRLaUxTdTd2TWE0X1NDNG84X1RCdmdGN1FXOEZxQTNqRkpWb0U3a2pEYTRVVHVwMTRRTGVVS2wtUDhjN3lHdVZvQW9tN0dmVjlLUnVzUC1YUG1HRzA?oc=5",
-    "d": "2026-10-28T06:29:03+00:00"
+    "t": "全球冰鲜直达！海南首个进境冰鲜水产品指定监管场地获批",
+    "s": "新浪财经",
+    "u": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOcFY1bkxaQVo2SHUxRkNmQno5VWJFWDlPUC03MXB2MnBfVXpQZmdZak9UYXd4UG5NM2tMZmNKQXQzaXoxX1p1eE1IWnlXM1c1cDFkczRYWWdBTlltZWJCaHYzX1NKTnJzMy0yMVpvSjdGbWhObmRKTXJYX01EMVoxREdXUm4?oc=5",
+    "d": "2026-10-28T07:41:23+00:00"
    },
    {
     "t": "链通全球渔业共建生态圈，2026渔业发展合作交流会在青岛举办",
     "s": "搜狐网",
-    "u": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPVG5DbWFHcklVYnc1Snp5THRNS1Yzek1tVk1UbFdXMTAzU3dnVWR1RldhQkxMYUxnMk1FclB6c25ZdEdqbXd4R2FnUUpJNTFEOUhfWEoyanY5NG1vWk5pMGtQWW1OZk1HTEdFa1gwbXZ5Z3lYZ2hCcVhRYXpySlhTRnV4Si1CbzRSWUd4eA?oc=5",
+    "u": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbk53dEptV1NKcTJ2cjFmVlFBZXEwNHV4eHZBMmVHVUs1elljSEV2aG9jRWtZNHllRnRNdkpmLXM3S1dHLWJhSEw4eVJuQTU1Rl9XWW9hMWh2QzN4OUVWY3BsUjg4amg3YzVVVkk2YVNQQlRicVN1UlVwckcyS045Yko0eEZad1REU3E0TW5GZw?oc=5",
     "d": "2026-10-28T04:30:50+00:00"
    },
    {
-    "t": "MYSC促成投资对接11家海洋渔业初创企业……Willog和Donghae Hyungssi入围综合演示日",
-    "s": "벤처스퀘어",
-    "u": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5wYVE4WXhGemhYUUxWTmt0Ml8xUHhQR2w1ZVBKMDZOM2FyMEx1TE9na3R2MkdKeGpPX1M3T3hZcmNQV1ZhU3A3LTFfQm9wb193Mk5B?oc=5",
-    "d": "2026-10-28T03:42:52+00:00"
+    "t": "海能海用：一台波浪能平台如何把渔业推向深蓝",
+    "s": "中国网",
+    "u": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9ZTjBmT1RMTlVPRHRaX3BfazM4UmN4LW95SVFsVDdNV3VBUkVBLXdvMFNiVzYzcldMNEVQRHVaQVlITmpCQXZadGNRSEJxQm5jaFVocHotcTF3UWU5UjY2M2NqVXpZTk1seHBV?oc=5",
+    "d": "2026-10-28T03:18:00+00:00"
+   },
+   {
+    "t": "数智赋能水产养殖｜番禺区渔业协会走进渔易科技，共话智慧渔业新发展",
+    "s": "电子工程专辑",
+    "u": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5pTE1HMUNzdUJmbFB3Q1pvUjRCRjJCUlVMa3ZIYnNnckdQWmx1WWNDWkxNR1k0NFRmc1lhLVFOcEk4a0IzdDFqb2FMOWpSTTE1Vzh3?oc=5",
+    "d": "2026-10-28T02:00:00+00:00"
    }
   ],
   "ar": [
@@ -307,7 +307,7 @@
    {
     "t": "مشاركة مغربية بروما في الدورة 49 للهيئة العامة لمصايد الأسماك بالبحر الأبيض المتوسط",
     "s": "2M",
-    "u": "https://news.google.com/rss/articles/CBMi5ANBVV95cUxPalZtSklNN0cwX3dlLVJ2ZnZIUUdrc21McmpSSkp3R3JJekIzRERHSlVuWGZ0MUZsWkUxbVlpV1loYUJJc3ZvNDlYQ3JJR1hWOGowYWZ1ZTZMVjY0MmxWY2Z4Yk1LLV85MlpISW4xT0x5TDBwWmlPdkJrdmNwUUpiNldrWXlJMDR1TVNZck10emNWZmxZZ2NnMndlR253T1RENmMyM0ZpTUg0VTlwbjdscHkwbG0wQmh3a3BnQ015blktajQyMjIycWF4Tld1cGQ4X1llWnRhR0I2ZnBQbUh0SDRKZDlMZkhaWThrVGVrYkJRTlZfYkNPc3l1LTloZ3UzZzh6WGJhX0RrNFZycm9CeW8wMmRPVWdySEN4OUxJT3pHakxyMXN3WGExVlRRenB6WTNid2NsekhJaU9QM2dOOGtSdmR3ZnJhekdKejgzWW5qd1JRN19xT1NpSWF6Qld4LVAweFRHdzJFa3JRQjBteWZ6RkJHSGtXOGc2TWJKTlVKQWtLakpSOUlEVm9vOURzbUlaUE5kM0tkQ0ZDSTFkQWh2aURSYUdibmN6TGtrSnRGS2tVZDVxeFpuRHVlY1hTbEx2WV9ZZWdzbkhxaHBsczYxTV9MdlFGdlN3NHdXSUdLZnJn?oc=5",
+    "u": "https://news.google.com/rss/articles/CBMi5ANBVV95cUxPRXJad3lTSnF1eFNPT2JfNHkxVVBYdGdDM3Y0cHRhTENvVDVqMkJyWVRXSWNOUlMzdThtcS1jMmV3VkFZZkllRmhDRUFWZmU4SDhzb3hUay1XMmt6VGlxb0dfWGNmNm9adl9YR2hnVmJ6Nk1CRzV2SkVXRl8yYmI0TTRFYXFJQ09TSUphQXVIQ3VtNXdydVotVzNFdkZtc09MUXdDb0FiRkZMOVYyTW40S0s0N1hzdzJjX0tFVWVnYkcwaW5OUVhxTGotLWxfZkp1UUpEVmhERDJGR0RBUUNxbUg4bkJzaGRPMS1vZDZiY2ZIOWZRQ05BVkk2a1VDOS1RNmNYMFhUaXJwR1FhNEJkWFZ2RFI2YzJhSFVXTzRJSU5uWEg5UmcxX3VQTElFcnM5aVlMRjF1YnNfcUlaMTBOcmphM0R6MFN0c1FKSE9RUHBOeXI4RnhlNVN4Zmp4VGFuQ2FncGZ3MlFydUxtY193X2NaV2ZkdXItQm5WVkF0a0JQTXhrcVVORWxiTk5vV2hzXzZNaGYzMzJ0QkFBWTg2ekx6RmxxUHctU0lBQmJ2VG5iMGtLWkt4S3hsT3I3TzRIdWFsLTN0V2FBbTN5UjVKcWFvX0RLaEFqSzV5TkdfcjdVcjVG?oc=5",
     "d": "2026-10-28T19:45:00+00:00"
    },
    {
@@ -321,12 +321,6 @@
     "s": "الوكالة الموريتانية للأنباء",
     "u": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBUQ2Z0WVdDWUppeXE2MHVBMzVZbVlQRTZQRFFSNGhuM3lqQktKSVZWNGlTZFEwU2xEQjNKeWd1cVZ3N0dHVVlfUkRR?oc=5",
     "d": "2026-10-28T15:42:50+00:00"
-   },
-   {
-    "t": "بكام البلطي.. أسعار السمك اليوم الأربعاء بسوق العبور",
-    "s": "بوابة مصر 2030",
-    "u": "https://news.google.com/rss/articles/CBMiREFVX3lxTE4ydlNXM0oxY2xRT1JHNlE0UjdJdEVvOGdQLXNaRTNEZ1JEVElILXpVdlZMVl9iTE9lMV9rWkZOSG82MU9D?oc=5",
-    "d": "2026-10-28T12:58:07+00:00"
    },
    {
     "t": "صيد الأسماك بالمتفجّرات قبالة كفرعبيدا… وزارة الزراعة تتحرّك",
@@ -369,6 +363,12 @@
     "s": "جريدة آخر الأخبار",
     "u": "https://news.google.com/rss/articles/CBMixgJBVV95cUxQWi1KNWZhUE5WWmE4MVdjczJ6VkpQX2pJUlR3OERDeWVvQmJ4bkZxTnZhYlFDZGI4VS1KUVYwM1k2NmlNS201VHBwS0ZtM0JyeXVadFV6WUdDYXgwMTIzRGk4eGlNbUJiUXBoNE5oLUxUazIxWHlGNmpEWjJ4Z3ltdlhSTlZPbFJOcXlxNjdfSThoeUlScFJoR0ljQ1Itb2ZndXRBcktERXpnSllxUTJoRy13LVhjMXRXZkRfSFdiVVFISW5kUF9peVJwc2tmS0JKQTQxQS1LckVpak1zZ3pyRm1SRUY2Nm1CMmNldDl1dktGcVlqMjhWTDZBWEdnQURsY3dkOElqZ3FGa0lzVFV3RXlHcmZXaGlyc1I5UGVvcWN6S0djdGFjalJGMFJoSlRhY1FZZXA1c2wzcTU2X2VycDlSUG0yQQ?oc=5",
     "d": "2026-10-26T13:14:26+00:00"
+   },
+   {
+    "t": "سمك أبيض .. 1,38 مليار درهم مليار دهم قيمة مفرغات الصيد الساحلي والتقليدي عند متم شتنبر",
+    "s": "Albahr News",
+    "u": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxPSGh2dzJLenozUGZJR21zTGFGT0hBNVV0YjRyRjVXWktCUURGTEhsX0xPbVBmek9xWFdlZnNaWUNDU3NneDZ6aDI1QUlwTzlIZXpreW1tS0tJM0tycmE4cVRsbFNvNEh1Ymk0enlaUTFFZzltSExFQjh1NXNMLUMwLTBmNENZakxnMDg0bVhfM3doM2pUT1NFaGxjLU9wQzZGQVBKX0o1V1JaYkp4WktWLWNSNHRBeEFFVVYyYzVnLVhRU3NWQ25xZ1BqX1M1dmphX1h1XzdkczVXQTVkSFJuQmFLem93aXJTYUg4em1nNmlzbElKR0tDZ1ZTMWRURVlBclltYVdDNkxZYlNUcjcwRXgxbnJCYnloLTY2SjN4cnNPZGJDNHQ3bFdZbkNBNVNaZ0dYa0dJenRZOG8?oc=5",
+    "d": "2026-10-26T12:53:23+00:00"
    }
   ]
  },
@@ -480,15 +480,15 @@
    },
    {
     "t": "الكويرة.. من ميناء مزدهر للصيد إلى مدينة أشباح",
-    "s": "يابلادي.كوم",
-    "u": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5XZmh0Z0ZRT01qa0pTTmVvdGhRVG11anJhd2lEUUxKZHNHZVY0WWoyOFlFVlNSek5xM1diWTZiNDVPRUp5M0ZicHVHNWNKNTZtWHZlTUozWXlnVXV6?oc=5",
+    "s": "Yabiladi.com",
+    "u": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPeEpfbVVxb0tkN0lWSE11WEJ0cjRVZUt0dTJMMzJieHFzQTdQRk0xZmJuZ1Z4SHVpeXZpWDZuTHpXY0U0TVBMUFpNdGpfbk9ESmp2bTY4VjIyNk93YmVPbHNoZFhaLTU4QlR3ZGJ5bHlhcTNncWlyWE9QdkpSVW54VGtVWGk5dUFUMlFMcmZWVmNUUHBpT1RHMUxpNmVnS29KYUNjREctWG0ySDN0VEI3dHd4ckM4SDQybWxzV0pQVmlzbFVJVjNYZy0tZFhjOEJkSDUzeDg0ZHA1a2NLNWc0TjBwVC0wNmZGMW1SZ2F4VnpsSDZUczhoRTBWWEN0bV9reHlzU251aHZIUFJYc2VYTkM4M05wMVNpRlpEQWF0SWRRVDlDYklqVDB3?oc=5",
     "d": "2026-10-26T16:55:00+00:00"
    },
    {
     "t": "إعلام مغربي: البحرية تبعد قوارب صيد موريتانية وسنغالية قبالة لكويرة",
     "s": "aqlame",
-    "u": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE05THFlanRIdEd4dGNscWJmNkFhbkVnMElCeThCXzBlLVFSQldFb1gyOFd1bXEyaTZpYlRlWnBzVFJHakQybHpBWg?oc=5",
-    "d": "2026-10-26T11:36:54+00:00"
+    "u": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTE9Lel9YR05WcXZtQ1F4bTFrRzM2WHk5aTUwelVCWkhtOGt5OUQ2RXVTUE9OZ2FGbGxWMVhRZFhkU0JaUkE?oc=5",
+    "d": "2026-10-26T11:36:30+00:00"
    },
    {
     "t": "البحرية الملكية تطرد صيادين موريتانيين وسنغاليين من سواحل الكويرة(فيديو)",
@@ -515,10 +515,10 @@
     "d": "2026-10-25T22:48:57+00:00"
    },
    {
-    "t": "صحيفة مغربية تفتح ملف الحدود البحرية قرب نواذيبو.. هل تتجاوز قضية لكويرة الخلاف البري؟",
-    "s": "aqlame",
-    "u": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBFRzdxVE83WFZ6TzBHcGhvZ2E0cG0zSkpiMXBSa1ZzcjRWU2Q4Y1VoTzR1RGwxa3BHVUZtMzgtS2hBRUE?oc=5",
-    "d": "2026-10-25T13:42:25+00:00"
+    "t": "حدث وتعليق/ الثروة السمكية.. جهود حكومية لتحويل الوفرة إلى قيمة مستدامة",
+    "s": "وكالة الوئام الوطني للأنباء الموريتانية",
+    "u": "https://news.google.com/rss/articles/CBMiQkFVX3lxTE10b1hWVGo3UjRXTHV4QkttendoTzE0Nlk2LUV0a25lQS1JbVBoWGw2cUN5SS1SRFJRRWRvYzNoTm9WUQ?oc=5",
+    "d": "2026-10-25T20:30:38+00:00"
    }
   ],
   "en": [
