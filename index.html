@@ -721,7 +721,7 @@ const PRODUCTS = [
   name:{en:'Red snapper',fr:'Vivaneau rouge',es:'Pargo rojo',zh:'红鲷鱼'},
   desc:{en:'High-value red snapper, whole round or gutted, for restaurants and retail.',fr:'Vivaneau rouge à forte valeur, entier ou vidé, pour la restauration et la distribution.',es:'Pargo rojo de alto valor, entero o eviscerado, para restauración y distribución.',zh:'高价值红鲷鱼，整条或去脏，适合餐饮和零售。'},
   chips:{en:['Whole / Gutted','IQF'],fr:['Entier / Vidé','IQF'],es:['Entero / Eviscerado','IQF'],zh:['整条 / 去脏','单冻']}},
- {id:'croaker',markets:['africa','asia'],status:'available',img:'croaker-card.webp',latin:'Pseudotolithus spp.',color:['#b8b08a','#f2f0e6'],
+ {id:'croaker',markets:['africa','asia'],status:'on_order',img:'croaker-card.webp',latin:'Pseudotolithus spp.',color:['#b8b08a','#f2f0e6'],
   name:{en:'Croaker',fr:'Courbine / Otolithe',es:'Corvina',zh:'黄鱼 (石首鱼)'},
   desc:{en:'West African croaker, whole round, firm white flesh — very popular in Africa and Asia.',fr:'Courbine ouest-africaine, entière, chair blanche et ferme — très demandée en Afrique et en Asie.',es:'Corvina de África occidental, entera, carne blanca y firme — muy demandada en África y Asia.',zh:'西非黄鱼，整条，肉质洁白紧实——非洲和亚洲热销。'},
   chips:{en:['Whole round','Block / IQF'],fr:['Entier','Bloc / IQF'],es:['Entero','Bloque / IQF'],zh:['整条','块冻 / 单冻']}},
@@ -1126,7 +1126,8 @@ async function loadStock(){
    STOCK_ROWS.push(o); if(typ==='stock'&&id)STOCK[id]=o; if(o.updated>last)last=o.updated});
   STOCK_TIME=last;STOCK_LIVE=true}catch(e){STOCK_LIVE=false}
  applyForce();render();checkPassUrl()}
-const FORCE={sole:{status:'available',sizes:'Sole Rubio · Sole Lengua · Sole Tiger',packing:'IQF / Block',origin:'Nouadhibou',type:'stock',updated:'2026-10-18',photos:['https://alphamarr.com/media/sole/sole-1.jpg','https://alphamarr.com/media/sole/sole-2.jpg','https://alphamarr.com/media/sole/sole-3.jpg']},fishmeal:{status:'available',qty:'700',packing:'Bags',origin:'Nouadhibou',type:'stock',updated:'2026-10-31'},fishoil:{status:'available',qty:'150',packing:'Flexitank',origin:'Nouadhibou',type:'stock',updated:'2026-10-31'}};
+const HIDE_TRADING=['croaker'];
+const FORCE={croaker:{status:'on_order',updated:'2026-10-31'},sole:{status:'available',sizes:'Sole Rubio · Sole Lengua · Sole Tiger',packing:'IQF / Block',origin:'Nouadhibou',type:'stock',updated:'2026-10-18',photos:['https://alphamarr.com/media/sole/sole-1.jpg','https://alphamarr.com/media/sole/sole-2.jpg','https://alphamarr.com/media/sole/sole-3.jpg']},fishmeal:{status:'available',qty:'700',packing:'Bags',origin:'Nouadhibou',type:'stock',updated:'2026-10-31'},fishoil:{status:'available',qty:'150',packing:'Flexitank',origin:'Nouadhibou',type:'stock',updated:'2026-10-31'}};
 function applyForce(){for(const k in FORCE){const f=FORCE[k],s=STOCK[k];if(!s||!s.updated||s.updated<f.updated)STOCK[k]=Object.assign({id:k,photos:[]},s||{},f);if(!STOCK_TIME||f.updated>STOCK_TIME)STOCK_TIME=f.updated}}
 const stOf=p=>(STOCK[p.id]&&STOCK[p.id].status)||p.status||'on_order';
 // Photos from the Sheet "photo" column: Google Drive share links or direct image URLs (several separated by space/comma)
@@ -1155,7 +1156,7 @@ function renderStock(){
  if(STTYPE==='stock'){
   rows=PRODUCTS.filter(p=>STTAB==='all'||p.markets.includes(STTAB)).map(p=>({p,s:STOCK[p.id]||{},st:stOf(p)}));
  }else{
-  rows=STOCK_ROWS.filter(o=>o.type==='trading').map(o=>({p:P(o.id),s:o,st:o.status||'available'})).filter(x=>STTAB==='all'||!x.p||x.p.markets.includes(STTAB));
+  rows=STOCK_ROWS.filter(o=>o.type==='trading'&&!HIDE_TRADING.includes(o.id)).map(o=>({p:P(o.id),s:o,st:o.status||'available'})).filter(x=>STTAB==='all'||!x.p||x.p.markets.includes(STTAB));
  }
  const nq=STQ.trim().toLowerCase();
  if(nq)rows=rows.filter(({p,s})=>[p&&p.name[L],p&&p.name.en,p&&p.latin,s.product,s.sizes].filter(Boolean).join(' ').toLowerCase().includes(nq));
