@@ -1126,7 +1126,7 @@ async function loadStock(){
    STOCK_ROWS.push(o); if(typ==='stock'&&id)STOCK[id]=o; if(o.updated>last)last=o.updated});
   STOCK_TIME=last;STOCK_LIVE=true}catch(e){STOCK_LIVE=false}
  applyForce();render();checkPassUrl()}
-const FORCE={sole:{status:'available',sizes:'Sole Rubio · Sole Lengua · Sole Tiger',packing:'IQF / Block',origin:'Nouadhibou',type:'stock',updated:'2026-10-18',photos:['https://alphamarr.com/media/sole/sole-1.jpg','https://alphamarr.com/media/sole/sole-2.jpg','https://alphamarr.com/media/sole/sole-3.jpg']},fishmeal:{status:'available',qty:'250',packing:'Bags',origin:'Nouadhibou',type:'stock',updated:'2026-10-11'},fishoil:{status:'available',qty:'230',packing:'Flexitank',origin:'Nouadhibou',type:'stock',updated:'2026-10-11'}};
+const FORCE={sole:{status:'available',sizes:'Sole Rubio · Sole Lengua · Sole Tiger',packing:'IQF / Block',origin:'Nouadhibou',type:'stock',updated:'2026-10-18',photos:['https://alphamarr.com/media/sole/sole-1.jpg','https://alphamarr.com/media/sole/sole-2.jpg','https://alphamarr.com/media/sole/sole-3.jpg']},fishmeal:{status:'available',qty:'700',packing:'Bags',origin:'Nouadhibou',type:'stock',updated:'2026-10-31'},fishoil:{status:'available',qty:'150',packing:'Flexitank',origin:'Nouadhibou',type:'stock',updated:'2026-10-31'}};
 function applyForce(){for(const k in FORCE){const f=FORCE[k],s=STOCK[k];if(!s||!s.updated||s.updated<f.updated)STOCK[k]=Object.assign({id:k,photos:[]},s||{},f);if(!STOCK_TIME||f.updated>STOCK_TIME)STOCK_TIME=f.updated}}
 const stOf=p=>(STOCK[p.id]&&STOCK[p.id].status)||p.status||'on_order';
 // Photos from the Sheet "photo" column: Google Drive share links or direct image URLs (several separated by space/comma)
