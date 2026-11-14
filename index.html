@@ -314,7 +314,29 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
 .ppft .btn.sec{background:#eef2f6;color:var(--ink)}
 @media(max-width:640px){.ppbd{grid-template-columns:1fr}.ppdocs ul{grid-template-columns:1fr}}
 @media print{body>*:not(#pp){display:none!important}#pp{position:static;display:block;background:#fff;padding:0}.ppcard{box-shadow:none;max-width:none}.ppft,.pphd .x{display:none}}
-.menu a.suplink{color:#fff;background:var(--sky-d,#1f6fb2);padding:6px 12px;border-radius:18px;font-weight:700;white-space:nowrap}
+.supbtn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#ffb703,#fb8500);color:#0b1a2b!important;font-weight:800;border:0;box-shadow:0 4px 14px rgba(251,133,0,.45);animation:supglow 2.6s ease-in-out infinite;white-space:nowrap}
+.supbtn svg,.supbig svg{width:18px;height:18px}
+.supbtn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(251,133,0,.6);background:linear-gradient(135deg,#ffc933,#ff9500)}
+@keyframes supglow{0%,100%{box-shadow:0 4px 14px rgba(251,133,0,.4)}50%{box-shadow:0 4px 24px rgba(255,183,3,.85)}}
+@media(max-width:900px){.right .btn[data-i="quote"]{display:none}}
+@media(max-width:420px){.supbtn span{display:none}.supbtn{padding:10px 12px}}
+.intents{grid-template-columns:repeat(2,1fr)}
+.intent.sup{background:linear-gradient(135deg,#ffb703,#fb8500);border-color:#ffb703;color:#0b1a2b}
+.intent.sup small{opacity:1}
+.supband{background:linear-gradient(120deg,#0e3a5c 0%,#1f8ecb 100%);color:#fff;padding:46px 0;position:relative;overflow:hidden}
+.supband:before{content:"";position:absolute;inset-inline-end:-80px;top:-80px;width:280px;height:280px;border-radius:50%;background:rgba(255,183,3,.18)}
+.supband .wrap{display:grid;grid-template-columns:1.6fr 1fr;gap:30px;align-items:center;position:relative}
+.supband .sbtag{display:inline-block;background:#ffb703;color:#0b1a2b;font-weight:800;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:14px;margin-bottom:12px}
+.supband h2{font-size:clamp(22px,3vw,32px);line-height:1.2;margin-bottom:10px;color:#fff}
+.supband p{opacity:.92;max-width:620px;margin-bottom:14px}
+.supband ul{list-style:none;display:grid;gap:8px}
+.supband li{padding-inline-start:30px;position:relative;font-weight:600}
+.supband li:before{content:"✓";position:absolute;inset-inline-start:0;top:0;width:21px;height:21px;border-radius:50%;background:#ffb703;color:#0b1a2b;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center}
+.supband .sbcta{text-align:center}
+.supbig{display:inline-flex;align-items:center;gap:10px;font-size:18px;padding:16px 28px;border-radius:40px;background:linear-gradient(135deg,#ffb703,#fb8500);color:#0b1a2b!important;font-weight:800;box-shadow:0 10px 28px rgba(0,0,0,.25);animation:supglow 2.6s ease-in-out infinite}
+.supbig i{font-style:normal;transition:.2s}.supbig:hover i{transform:translateX(5px)}[dir=rtl] .supbig i{transform:scaleX(-1)}
+.supbig svg{width:22px;height:22px}
+@media(max-width:800px){.supband .wrap{grid-template-columns:1fr}.supband .sbcta{text-align:start}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"AlphaMarr — Seafood export & trading from Nouadhibou, Mauritania","description":"Our pirogue fleet, octopus, lobster, mullet roe, ribbonfish, fishmeal & fish oil trading, cold storage, container loading and export services.","thumbnailUrl":"https://alphamarr.com/video-poster.jpg","uploadDate":"2026-09-30","duration":"PT35S","contentUrl":"https://alphamarr.com/alphamarr-video.mp4"}</script>
 </head>
@@ -336,13 +358,13 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
       <a href="#markets" data-i="nav_markets"></a>
    <a href="#news" data-i="nav_news"></a>
    <a href="#ftcontact" data-i="ft_contact"></a>
-   <a href="market/" class="suplink" data-i="nav_supplier"></a>
   </nav>
   <div class="right">
    <div class="langsel" id="langsel">
     <button type="button" class="lang" id="langBtn" aria-label="Language" onclick="event.stopPropagation();document.getElementById('langsel').classList.toggle('open')"><span id="langFlag"></span><span class="car">▾</span></button>
     <div class="langmenu"><button type="button" data-l="en" title="English" aria-label="English" onclick="setLang('en');closeLang()"><svg viewBox="0 0 60 30"><clipPath id="u"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="t"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#u)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#t)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg></button><button type="button" data-l="fr" title="Français" aria-label="Français" onclick="setLang('fr');closeLang()"><svg viewBox="0 0 3 2"><path fill="#ED2939" d="M0 0h3v2H0z"/><path fill="#fff" d="M0 0h2v2H0z"/><path fill="#002395" d="M0 0h1v2H0z"/></svg></button><button type="button" data-l="es" title="Español" aria-label="Español" onclick="setLang('es');closeLang()"><svg viewBox="0 0 3 2"><path fill="#AA151B" d="M0 0h3v2H0z"/><path fill="#F1BF00" d="M0 .5h3v1H0z"/></svg></button><button type="button" data-l="zh" title="中文" aria-label="中文" onclick="setLang('zh');closeLang()"><svg viewBox="0 0 30 20"><path fill="#DE2910" d="M0 0h30v20H0z"/><path fill="#ffde00" d="M5 3l.9 2.7h2.8L6.4 7.4l.9 2.7L5 8.4 2.7 10.1l.9-2.7L1.3 5.7h2.8z"/><circle cx="10" cy="2" r=".8" fill="#ffde00"/><circle cx="12" cy="4" r=".8" fill="#ffde00"/><circle cx="12" cy="7" r=".8" fill="#ffde00"/><circle cx="10" cy="9" r=".8" fill="#ffde00"/></svg></button><button type="button" data-l="ar" title="العربية" aria-label="العربية" onclick="setLang('ar');closeLang()"><svg viewBox="0 0 30 20"><path fill="#D01C1F" d="M0 0h30v20H0z"/><path fill="#00A95C" d="M0 3h30v14H0z"/><path fill="#FFD700" d="M9.2 8.6a5.8 5.8 0 0 0 11.6 0 6.4 5.6 0 0 1-11.6 0z"/><path fill="#FFD700" d="M15 5l.6 1.8h1.9l-1.5 1.1.6 1.8-1.6-1.1-1.6 1.1.6-1.8-1.5-1.1h1.9z"/></svg></button><button type="button" data-l="tr" title="Türkçe" aria-label="Türkçe" onclick="setLang('tr');closeLang()"><svg viewBox="0 0 30 20"><path fill="#E30A17" d="M0 0h30v20H0z"/><circle cx="11" cy="10" r="5" fill="#fff"/><circle cx="12.25" cy="10" r="4" fill="#E30A17"/><path fill="#fff" d="M15.00 10.00L16.49 9.48L16.52 7.91L17.47 9.16L18.98 8.71L18.08 10.00L18.98 11.29L17.47 10.84L16.52 12.09L16.49 10.52z"/></svg></button><button type="button" data-l="ru" title="Русский" aria-label="Русский" onclick="setLang('ru');closeLang()"><svg viewBox="0 0 30 20"><path fill="#fff" d="M0 0h30v20H0z"/><path fill="#0039A6" d="M0 6.67h30v6.66H0z"/><path fill="#D52B1E" d="M0 13.33h30V20H0z"/><path fill="none" stroke="#d0d7de" stroke-width=".6" d="M.3.3h29.4v19.4H.3z"/></svg></button></div>
    </div>
+   <a href="market/#inscription" class="btn supbtn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16l1.5 5a3 3 0 0 1-5.5 1.7A3 3 0 0 1 12 12a3 3 0 0 1-4-1.3A3 3 0 0 1 2.5 9zM5 13.5V20h14v-6.5M9.5 20v-4h5v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span data-i="nav_supplier"></span></a>
    <a href="#rfq" class="btn" data-i="quote"></a>
    <button class="burger" onclick="document.getElementById('menu').classList.toggle('open')" aria-label="Menu">☰</button>
   </div>
@@ -375,6 +397,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
     <a href="#rfq" class="intent pri"><b>🛒</b><span><strong data-i="in_buy"></strong><br><small data-i="in_buy_s"></small></span></a>
     <a href="#stock" class="intent"><b>📦</b><span><strong data-i="in_av"></strong><br><small data-i="in_av_s"></small></span></a>
     <a href="#ftcontact" class="intent" onclick="goContact()"><b>🤝</b><span><strong data-i="in_meet"></strong><br><small data-i="in_meet_s"></small></span></a>
+    <a href="market/#inscription" class="intent sup"><b>🏭</b><span><strong data-i="in_sup"></strong><br><small data-i="in_sup_s"></small></span></a>
    </div>
   </div>
   <div class="hero-card">
@@ -394,6 +417,12 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
  <span>🔎 <span data-i="s3"></span></span>
  <span>🚢 <span data-i="s4"></span></span>
 </div></div>
+
+<section class="supband" id="suppliers"><div class="wrap">
+ <div class="sbtxt"><span class="sbtag">AlphaMarr Market</span><h2 data-i="sb_h"></h2><p data-i="sb_p"></p>
+  <ul><li data-i="sb_1"></li><li data-i="sb_2"></li><li data-i="sb_3"></li></ul></div>
+ <div class="sbcta"><a href="market/#inscription" class="btn supbig"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16l1.5 5a3 3 0 0 1-5.5 1.7A3 3 0 0 1 12 12a3 3 0 0 1-4-1.3A3 3 0 0 1 2.5 9zM5 13.5V20h14v-6.5M9.5 20v-4h5v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span data-i="sb_cta"></span><i>→</i></a></div>
+</div></section>
 
 <section id="about">
  <div class="wrap abgrid">
@@ -1334,7 +1363,7 @@ if(CONFIG.heroVideo)$('#heroMedia').innerHTML=`<video src="${CONFIG.heroVideo}" 
 else if(CONFIG.heroImage)$('#heroMedia').innerHTML=`<img class="bgimg" src="${CONFIG.heroImage}" alt="">`;
 if(CONFIG.fleetMedia)$('#fleetMedia').innerHTML=/\.mp4|\.webm/i.test(CONFIG.fleetMedia)?`<video src="${CONFIG.fleetMedia}" autoplay muted loop playsinline></video>`:`<img src="${CONFIG.fleetMedia}" alt="AlphaMarr fleet">`;
 $('#yr').textContent=new Date().getFullYear();
-T.en.nav_supplier='Become a supplier';T.fr.nav_supplier='Devenir fournisseur';T.es.nav_supplier='Ser proveedor';T.zh.nav_supplier='成为供应商';if(T.ar)T.ar.nav_supplier='كن موردًا';if(T.tr)T.tr.nav_supplier='Tedarikçi olun';if(T.ru)T.ru.nav_supplier='Стать поставщиком';
+if(T.en)Object.assign(T.en,{"nav_supplier": "Become a supplier", "in_sup": "Are you a producer?", "in_sup_s": "List your products for free", "sb_h": "Producers and plants: export with AlphaMarr", "sb_p": "Register your company, upload your lots with photos and sizes. We check them, then present them to our buyers in Europe, Africa and Asia.", "sb_1": "Free registration and listing", "sb_2": "Every product checked and approved by AlphaMarr", "sb_3": "Access to international buyers", "sb_cta": "Become a supplier"});if(T.fr)Object.assign(T.fr,{"nav_supplier": "Devenir fournisseur", "in_sup": "Vous êtes producteur ?", "in_sup_s": "Publiez vos produits gratuitement", "sb_h": "Producteurs et usines : vendez à l’export avec AlphaMarr", "sb_p": "Inscrivez votre société, déposez vos lots avec photos et calibres. Nous les vérifions, puis nous les présentons à nos acheteurs en Europe, en Afrique et en Asie.", "sb_1": "Inscription et publication gratuites", "sb_2": "Chaque produit vérifié et approuvé par AlphaMarr", "sb_3": "Accès à des acheteurs internationaux", "sb_cta": "Devenir fournisseur"});if(T.ar)Object.assign(T.ar,{"nav_supplier": "كن موردًا", "in_sup": "هل أنت منتج؟", "in_sup_s": "اعرض منتجاتك مجانًا", "sb_h": "المنتجون والمصانع: صدِّروا مع ألفامار", "sb_p": "سجّل شركتك وأضف دفعاتك مع الصور والمقاسات. نتحقق منها ثم نعرضها على مشترينا في أوروبا وأفريقيا وآسيا.", "sb_1": "التسجيل والنشر مجانًا", "sb_2": "كل منتج تتم مراجعته واعتماده من ألفامار", "sb_3": "الوصول إلى مشترين دوليين", "sb_cta": "كن موردًا الآن"});if(T.es)Object.assign(T.es,{"nav_supplier": "Ser proveedor", "in_sup": "¿Es usted productor?", "in_sup_s": "Publique sus productos gratis", "sb_h": "Productores y plantas: exporte con AlphaMarr", "sb_p": "Registre su empresa y suba sus lotes con fotos y calibres. Los verificamos y los presentamos a nuestros compradores en Europa, África y Asia.", "sb_1": "Registro y publicación gratuitos", "sb_2": "Cada producto verificado y aprobado por AlphaMarr", "sb_3": "Acceso a compradores internacionales", "sb_cta": "Ser proveedor"});if(T.zh)Object.assign(T.zh,{"nav_supplier": "成为供应商", "in_sup": "您是生产商吗？", "in_sup_s": "免费发布您的产品", "sb_h": "生产商和加工厂：与AlphaMarr一起出口", "sb_p": "注册您的公司，上传带照片和规格的货批。我们审核后，向欧洲、非洲和亚洲的买家推荐。", "sb_1": "免费注册和发布", "sb_2": "每个产品均经AlphaMarr审核批准", "sb_3": "接触国际买家", "sb_cta": "成为供应商"});if(T.tr)Object.assign(T.tr,{"nav_supplier": "Tedarikçi olun", "in_sup": "Üretici misiniz?", "in_sup_s": "Ürünlerinizi ücretsiz listeleyin", "sb_h": "Üreticiler ve tesisler: AlphaMarr ile ihracat yapın", "sb_p": "Şirketinizi kaydedin, partilerinizi fotoğraf ve kalibrelerle yükleyin. Kontrol ediyor, ardından Avrupa, Afrika ve Asya’daki alıcılarımıza sunuyoruz.", "sb_1": "Ücretsiz kayıt ve listeleme", "sb_2": "Her ürün AlphaMarr tarafından kontrol edilip onaylanır", "sb_3": "Uluslararası alıcılara erişim", "sb_cta": "Tedarikçi olun"});if(T.ru)Object.assign(T.ru,{"nav_supplier": "Стать поставщиком", "in_sup": "Вы производитель?", "in_sup_s": "Размещайте продукцию бесплатно", "sb_h": "Производители и заводы: экспортируйте с AlphaMarr", "sb_p": "Зарегистрируйте компанию, загрузите партии с фото и калибрами. Мы проверим их и предложим нашим покупателям в Европе, Африке и Азии.", "sb_1": "Бесплатная регистрация и размещение", "sb_2": "Каждый товар проверяется и утверждается AlphaMarr", "sb_3": "Доступ к международным покупателям", "sb_cta": "Стать поставщиком"});
 let start='en';try{start=localStorage.getItem('am_lang')||''}catch(e){}
 const QS=new URLSearchParams(location.search);if(QS.get('lang')&&T[QS.get('lang')])start=QS.get('lang');
 if(!start){const n=(navigator.language||'en').slice(0,2);start=T[n]?n:'en'}
