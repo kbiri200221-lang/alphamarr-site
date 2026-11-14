@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AlphaMarr Market – Espace fournisseurs</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="../favicon-64.png">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/exifr@7.1.3/dist/lite.umd.js"></script>
+<style>
+:root{--navy:#0b1a2b;--blue:#1f6fb2;--sky:#4fb3e8;--bg:#f4f7fa;--card:#fff;--line:#d9e1e8;--muted:#5a6b7d;--ok:#16a765;--warn:#d98e04;--bad:#c0392b}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--navy);font-size:15px;line-height:1.5}
+header{background:var(--navy);color:#fff;padding:12px 16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+header a{color:#fff;text-decoration:none}header .brand{font-weight:bold;font-size:18px}header .brand span{color:var(--sky)}
+header nav{display:flex;gap:12px;margin-left:auto;flex-wrap:wrap;align-items:center}header nav a{opacity:.85}header nav a:hover{opacity:1}
+main{max-width:1000px;margin:0 auto;padding:20px 16px 60px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:16px}
+h1{font-size:22px;margin:0 0 12px}h2{font-size:18px;margin:0 0 10px}h3{font-size:15px;margin:14px 0 6px}
+label{display:block;font-weight:bold;font-size:13px;margin:10px 0 4px}label small{font-weight:normal;color:var(--muted)}
+input,select,textarea{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:7px;font:inherit;background:#fff}
+textarea{min-height:70px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:640px){.row{grid-template-columns:1fr}}
+button,.btn{display:inline-block;background:var(--blue);color:#fff;border:0;border-radius:7px;padding:10px 16px;font:inherit;font-weight:bold;cursor:pointer;text-decoration:none}
+button.sec{background:#e8eef4;color:var(--navy)}button.ok{background:var(--ok)}button.bad{background:var(--bad)}button.small{padding:5px 10px;font-size:13px}
+button:disabled{opacity:.5;cursor:wait}
+.muted{color:var(--muted);font-size:13px}.err{color:var(--bad);font-weight:bold}.okmsg{color:var(--ok);font-weight:bold}
+.badge{display:inline-block;padding:2px 9px;border-radius:12px;font-size:12px;font-weight:bold;background:#e8eef4}
+.b-en_attente{background:#fff3d6;color:#8a5a00}.b-valide,.b-approuve{background:#dcf5e7;color:#0d6b3e}.b-rejete,.b-refuse,.b-suspendu{background:#fbe0dc;color:#8e2418}.b-retire{background:#eee;color:#555}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left;vertical-align:top}th{font-size:12px;color:var(--muted);text-transform:uppercase}
+.cal input{padding:6px}.photos{display:flex;gap:8px;flex-wrap:wrap}.photos img{width:120px;height:120px;object-fit:cover;border-radius:7px;border:1px solid var(--line)}
+.ph{position:relative}.ph .d{position:absolute;left:4px;bottom:4px;background:rgba(0,0,0,.65);color:#fff;font-size:11px;padding:1px 5px;border-radius:5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.prod img{width:100%;height:190px;object-fit:cover;border-radius:7px}.wm{position:relative}.wm:after{content:"alphamarr";position:absolute;right:8px;bottom:8px;background:rgba(255,255,255,.9);color:var(--navy);font-weight:bold;font-size:12px;padding:2px 8px;border-radius:10px}
+.check{display:flex;gap:8px;align-items:flex-start;margin-top:12px}.check input{width:auto;margin-top:4px}
+.tabs{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}.tabs button{background:#e8eef4;color:var(--navy)}.tabs button.on{background:var(--navy);color:#fff}
+.hide{display:none}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="../">alpha<span>marr</span> · Market</a>
+  <nav id="nav"></nav>
+</header>
+<main id="app"><div class="card">Chargement…</div></main>
+
+<script>
+const SUPABASE_URL='https://spkmrhkusgwkkffrjldg.supabase.co';
+const SUPABASE_KEY='sb_publishable_nFHrkq9IcGj_ijoDotbW3w_gP1g08JZ';
+const CGU_URL='cgu.html';
+const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const STAT={en_attente:'En attente',valide:'Validé',rejete:'Refusé',suspendu:'Suspendu',approuve:'Approuvé',refuse:'Refusé',retire:'Retiré'};
+const CAT={congele:'Congelé',frais:'Frais',farine:'Farine de poisson',huile:'Huile de poisson'};
+const badge=s=>`<span class="badge b-${s}">${STAT[s]||s}</span>`;
+const fmtD=d=>d?new Date(d).toLocaleDateString('fr-FR'):'—';
+const daysOld=d=>(Date.now()-new Date(d).getTime())/864e5;
+let S={user:null,admin:false,f:null};
+
+async function signedUrl(bucket,path){if(!path)return null;const {data}=await sb.storage.from(bucket).createSignedUrl(path,3600);return data?.signedUrl}
+async function upload(bucket,file){
+  const ext=(file.name.split('.').pop()||'jpg').toLowerCase().replace(/[^a-z0-9]/g,'');
+  const path=`${S.user.id}/${Date.now()}-${Math.random().toString(36).slice(2,8)}.${ext}`;
+  const {error}=await sb.storage.from(bucket).upload(path,file,{upsert:false,contentType:file.type});
+  if(error)throw error;return path;
+}
+function nav(){
+  let h=`<a href="#catalogue">Catalogue</a>`;
+  if(!S.user)h+=`<a href="#connexion">Connexion</a><a class="btn" href="#inscription">Devenir fournisseur</a>`;
+  else{ if(S.admin)h+=`<a href="#admin">Administration</a>`; else h+=`<a href="#espace">Mon espace</a>`; h+=`<a href="#" id="logout">Déconnexion</a>`;}
+  $('#nav').innerHTML=h; const lo=$('#logout'); if(lo)lo.onclick=async e=>{e.preventDefault();await sb.auth.signOut();location.hash='#catalogue';};
+}
+async function loadSession(){
+  const {data:{session}}=await sb.auth.getSession(); S.user=session?.user||null; S.admin=false; S.f=null;
+  if(S.user){ const {data:a}=await sb.rpc('is_admin'); S.admin=!!a;
+    const {data:f}=await sb.from('fournisseurs').select('*').eq('id',S.user.id).maybeSingle(); S.f=f; }
+}
+async function route(){
+  await loadSession(); nav();
+  const r=(location.hash||'#catalogue').slice(1).split('?')[0];
+  const views={catalogue:vCatalogue,connexion:vLogin,inscription:vSignup,espace:vEspace,admin:vAdmin,nouveau:vNouveau};
+  try{await (views[r]||vCatalogue)();}catch(e){$('#app').innerHTML=`<div class="card err">Erreur : ${esc(e.message)}</div>`;}
+  window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',route);
+sb.auth.onAuthStateChange((ev)=>{if(ev==='SIGNED_IN'||ev==='SIGNED_OUT')route();});
+
+/* ---------- CATALOGUE ---------- */
+async function vCatalogue(){
+  const {data,error}=await sb.rpc('catalogue'); if(error)throw error;
+  let h=`<h1>Produits disponibles</h1><p class="muted">Tous les produits sont contrôlés et approuvés par AlphaMarr SARL – Nouadhibou, Mauritanie. Prix et disponibilités sur demande : <a href="mailto:contact@alphamarr.com">contact@alphamarr.com</a></p>`;
+  if(!data.length){h+=`<div class="card">Aucun produit publié pour le moment.</div>`;$('#app').innerHTML=h;return;}
+  h+=`<div class="grid">`;
+  for(const p of data){
+    const img=p.photos[0]?await signedUrl('photos-produits',p.photos[0]):null;
+    const cal=p.calibres.map(c=>`${esc(c.calibre)} (${c.nb_cartons} ctn)`).join(', ');
+    const price=p.prix_public?`${Number(p.prix_public).toLocaleString('fr-FR')} ${p.devise}/${p.unite_prix}`:'Prix sur demande';
+    h+=`<div class="card prod">${img?`<div class="wm"><img src="${img}" alt=""></div>`:''}
+      <h2 style="margin-top:10px">${esc(p.espece)}</h2>
+      <div class="muted">${CAT[p.categorie]} ${p.forme?'· '+esc(p.forme):''} · produit le ${fmtD(p.date_production)}</div>
+      <p><b>Calibres :</b> ${cal||'—'}<br><b>Prix :</b> ${price}${p.conditions_publiques?`<br><b>Conditions :</b> ${esc(p.conditions_publiques)}`:''}</p>
+      <a class="btn" href="mailto:contact@alphamarr.com?subject=${encodeURIComponent('Demande : '+p.espece+' ('+p.id.slice(0,8)+')')}">Demander une offre</a></div>`;
+  }
+  $('#app').innerHTML=h+`</div>`;
+}
+
+/* ---------- AUTH ---------- */
+function vLogin(){
+  $('#app').innerHTML=`<div class="card" style="max-width:440px;margin:auto"><h1>Connexion</h1>
+  <form id="f"><label>Email</label><input type="email" name="email" required autocomplete="email">
+  <label>Mot de passe</label><input type="password" name="pw" required autocomplete="current-password">
+  <p><button>Se connecter</button></p><p id="m"></p></form>
+  <p class="muted">Pas encore de compte ? <a href="#inscription">Devenir fournisseur</a> · <a href="#" id="reset">Mot de passe oublié</a></p></div>`;
+  $('#f').onsubmit=async e=>{e.preventDefault();const f=e.target;f.querySelector('button').disabled=true;
+    const {error}=await sb.auth.signInWithPassword({email:f.email.value.trim(),password:f.pw.value});
+    f.querySelector('button').disabled=false;
+    if(error){$('#m').innerHTML=`<span class="err">${error.message.includes('confirm')?'Confirmez d\'abord votre email (lien reçu par email).':'Email ou mot de passe incorrect.'}</span>`;return;}
+    location.hash=S.admin?'#admin':'#espace';};
+  $('#reset').onclick=async e=>{e.preventDefault();const em=$('#f').email.value.trim();if(!em){$('#m').innerHTML='<span class="err">Saisissez votre email.</span>';return;}
+    await sb.auth.resetPasswordForEmail(em,{redirectTo:location.origin+location.pathname+'#espace'});$('#m').innerHTML='<span class="okmsg">Email de réinitialisation envoyé.</span>';};
+}
+function vSignup(){
+  $('#app').innerHTML=`<div class="card" style="max-width:520px;margin:auto"><h1>Devenir fournisseur</h1>
+  <p class="muted">Étape 1 : créez votre compte. Vous recevrez un email de confirmation, puis vous compléterez le dossier de votre société.</p>
+  <form id="f"><label>Email professionnel</label><input type="email" name="email" required autocomplete="email">
+  <label>Mot de passe <small>(8 caractères minimum)</small></label><input type="password" name="pw" minlength="8" required autocomplete="new-password">
+  <p><button>Créer mon compte</button></p><p id="m"></p></form>
+  <p class="muted">Déjà inscrit ? <a href="#connexion">Connexion</a></p></div>`;
+  $('#f').onsubmit=async e=>{e.preventDefault();const f=e.target;f.querySelector('button').disabled=true;
+    const {data,error}=await sb.auth.signUp({email:f.email.value.trim(),password:f.pw.value,options:{emailRedirectTo:location.origin+location.pathname+'#espace'}});
+    f.querySelector('button').disabled=false;
+    if(error){$('#m').innerHTML=`<span class="err">${esc(error.message)}</span>`;return;}
+    if(data.session){location.hash='#espace';return;}
+    $('#m').innerHTML='<span class="okmsg">Compte créé. Ouvrez l\'email de confirmation que nous venons de vous envoyer, puis revenez vous connecter.</span>';};
+}
+
+/* ---------- ESPACE FOURNISSEUR ---------- */
+async function vEspace(){
+  if(!S.user){location.hash='#connexion';return;}
+  if(S.admin){location.hash='#admin';return;}
+  if(!S.f||S.f.statut==='rejete')return vDossier();
+  let h=`<h1>Mon espace fournisseur</h1><div class="card"><h2>${esc(S.f.societe)} ${badge(S.f.statut)}</h2>
+   <div class="muted">${esc(S.f.nom_complet)} · ${esc(S.f.telephone)} · agrément ${esc(S.f.agrement_usine)}</div>`;
+  if(S.f.statut==='en_attente')h+=`<p>Votre dossier est en cours de vérification par AlphaMarr (téléphone, pièce d'identité, agrément). Vous pourrez déposer vos produits dès sa validation.</p>`;
+  if(S.f.statut==='suspendu')h+=`<p class="err">Compte suspendu. ${esc(S.f.motif||'')} Contact : contact@alphamarr.com</p>`;
+  h+=`</div>`;
+  if(S.f.statut==='valide'){
+    const {data:ps}=await sb.from('produits').select('id,espece,categorie,date_production,statut,motif,created_at,prix_fournisseur,devise,unite_prix').order('created_at',{ascending:false});
+    h+=`<div class="card"><h2>Mes produits</h2><p><a class="btn" href="#nouveau">+ Déposer un produit</a></p>`;
+    if(!ps.length)h+=`<p class="muted">Aucun produit déposé.</p>`;
+    else{h+=`<table><tr><th>Produit</th><th>Production</th><th>Mon prix</th><th>Statut</th><th></th></tr>`;
+      for(const p of ps)h+=`<tr><td>${esc(p.espece)}<div class="muted">${CAT[p.categorie]}</div></td><td>${fmtD(p.date_production)}</td><td>${p.prix_fournisseur??'—'} ${p.devise}/${p.unite_prix}</td><td>${badge(p.statut)}${p.motif?`<div class="muted">${esc(p.motif)}</div>`:''}</td>
+      <td>${['en_attente','approuve'].includes(p.statut)?`<button class="small sec" data-ret="${p.id}">Retirer</button>`:''}</td></tr>`;
+      h+=`</table>`;}
+    h+=`</div>`;
+  }
+  $('#app').innerHTML=h;
+  document.querySelectorAll('[data-ret]').forEach(b=>b.onclick=async()=>{if(!confirm('Retirer ce produit ?'))return;
+    const {error}=await sb.from('produits').update({statut:'retire'}).eq('id',b.dataset.ret);if(error)alert(error.message);route();});
+}
+function vDossier(){
+  const f=S.f||{};
+  $('#app').innerHTML=`<div class="card"><h1>Dossier de la société</h1>
+  ${f.statut==='rejete'?`<p class="err">Dossier refusé : ${esc(f.motif||'')} – corrigez puis renvoyez.</p>`:''}
+  <p class="muted">Étape 2 : ces informations sont vérifiées par AlphaMarr avant toute publication. Votre pièce d'identité est stockée dans un espace privé, visible uniquement par AlphaMarr.</p>
+  <form id="f">
+   <div class="row"><div><label>Nom et prénom du responsable *</label><input name="nom_complet" required value="${esc(f.nom_complet)}"></div>
+   <div><label>Nom de la société *</label><input name="societe" required value="${esc(f.societe)}"></div></div>
+   <div class="row"><div><label>NIF <small>(si existe)</small></label><input name="nif" value="${esc(f.nif)}"></div>
+   <div><label>N° d'agrément de l'usine de traitement (ONISPA) *</label><input name="agrement_usine" required value="${esc(f.agrement_usine)}"></div></div>
+   <div class="row"><div><label>Téléphone (avec indicatif) *</label><input name="telephone" required placeholder="+222 ..." value="${esc(f.telephone)}"></div>
+   <div><label>Email</label><input value="${esc(S.user.email)}" disabled></div></div>
+   <label>Pièce d'identité du responsable * <small>(photo ou PDF, 10 Mo max)</small></label>
+   <input type="file" name="piece" accept="image/*,application/pdf" ${f.piece_identite_path?'':'required'}>
+   ${f.piece_identite_path?'<div class="muted">Pièce déjà envoyée – choisissez un fichier seulement pour la remplacer.</div>':''}
+   <div class="check"><input type="checkbox" id="cgu" required><label for="cgu" style="font-weight:normal;margin:0">J'ai lu et j'accepte les <a href="${CGU_URL}" target="_blank">Conditions générales fournisseur</a> d'AlphaMarr, dont la commission de 5 %, la clause de non-contournement et le traitement de mes données personnelles. Je certifie que les informations et documents fournis sont exacts.</label></div>
+   <p><button>Envoyer mon dossier</button></p><p id="m"></p></form></div>`;
+  $('#f').onsubmit=async e=>{e.preventDefault();const fm=e.target,btn=fm.querySelector('button');btn.disabled=true;$('#m').textContent='Envoi…';
+    try{let path=f.piece_identite_path||null;const file=fm.piece.files[0];
+      if(file){if(file.size>10485760)throw new Error('Fichier trop lourd (10 Mo max).');path=await upload('pieces-identite',file);}
+      const row={id:S.user.id,nom_complet:fm.nom_complet.value.trim(),societe:fm.societe.value.trim(),nif:fm.nif.value.trim()||null,agrement_usine:fm.agrement_usine.value.trim(),
+        telephone:fm.telephone.value.trim(),email:S.user.email,piece_identite_path:path,cgu_acceptees_le:new Date().toISOString()};
+      const {error}=S.f?await sb.from('fournisseurs').update(row).eq('id',S.user.id):await sb.from('fournisseurs').insert(row);
+      if(error)throw error; location.hash='#espace'; route();
+    }catch(err){$('#m').innerHTML=`<span class="err">${esc(err.message)}</span>`;btn.disabled=false;}};
+}
+
+/* ---------- NOUVEAU PRODUIT ---------- */
+function calRow(){return `<tr><td><input name="cal" required placeholder="ex. 300-500 g"></td><td><input name="nb" type="number" min="1" required></td><td><input name="brut" type="number" step="0.01" min="0.01" required></td><td><input name="net" type="number" step="0.01" min="0.01" required></td><td><button type="button" class="small sec" onclick="this.closest('tr').remove();tot()">✕</button></td></tr>`}
+function tot(){let c=0,n=0;document.querySelectorAll('#cals tbody tr').forEach(r=>{const nb=+r.querySelector('[name=nb]').value||0,net=+r.querySelector('[name=net]').value||0;c+=nb;n+=nb*net;});
+  const t=$('#tot');if(t)t.textContent=`Total : ${c} cartons · ${(n/1000).toLocaleString('fr-FR',{maximumFractionDigits:3})} tonnes nettes`;}
+async function vNouveau(){
+  if(!S.user||!S.f||S.f.statut!=='valide'){location.hash='#espace';return;}
+  const today=new Date().toISOString().slice(0,10);
+  $('#app').innerHTML=`<div class="card"><h1>Déposer un produit</h1><p class="muted">Le produit sera visible des acheteurs uniquement après approbation par AlphaMarr.</p>
+  <form id="f">
+   <div class="row"><div><label>Catégorie *</label><select name="categorie" required><option value="congele">Congelé</option><option value="frais">Frais</option><option value="farine">Farine de poisson</option><option value="huile">Huile de poisson</option></select></div>
+   <div><label>Espèce *</label><input name="espece" required placeholder="ex. Sole tigre, Poulpe, Sardinelle…"></div></div>
+   <div class="row"><div><label>Nom scientifique</label><input name="nom_scientifique" placeholder="ex. Octopus vulgaris"></div>
+   <div><label>Forme</label><input name="forme" placeholder="ex. entier, vidé, IQF, bloc…"></div></div>
+   <div class="row"><div><label>Date de production *</label><input type="date" name="date_production" required max="${today}"></div>
+   <div><label>Lieu de stockage</label><input name="lieu_stockage" placeholder="ex. entrepôt frigorifique, Nouadhibou"></div></div>
+   <h3>Calibres *</h3>
+   <table id="cals" class="cal"><thead><tr><th>Calibre</th><th>Nb de cartons</th><th>Poids brut / carton (kg)</th><th>Poids net / carton (kg)</th><th></th></tr></thead><tbody>${calRow()}</tbody></table>
+   <p><button type="button" class="small sec" id="addcal">+ Ajouter un calibre</button> <span class="muted" id="tot"></span></p>
+   <div class="row"><div><label>Mon prix FOB Nouadhibou *</label><input name="prix" type="number" step="0.01" min="0" required></div>
+   <div class="row"><div><label>Devise</label><select name="devise"><option>USD</option><option>EUR</option></select></div><div><label>Par</label><select name="unite"><option value="tonne">tonne</option><option value="kg">kg</option></select></div></div></div>
+   <label>Photos du produit * <small>(au moins 2, avec une feuille datée posée sur le produit – photos de 3 jours maximum)</small></label>
+   <input type="file" name="photos" accept="image/*" multiple required><div id="phinfo" class="muted"></div>
+   <div id="anaBox" class="hide"><label>Fiche d'analyse récente du lot * <small>(PDF ou photo)</small></label><input type="file" name="analyse" accept="application/pdf,image/*"></div>
+   <label>Remarques</label><textarea name="remarques"></textarea>
+   <p><button>Envoyer pour approbation</button></p><p id="m"></p></form></div>`;
+  const fm=$('#f');
+  $('#addcal').onclick=()=>{$('#cals tbody').insertAdjacentHTML('beforeend',calRow());};
+  $('#cals').addEventListener('input',tot);
+  fm.categorie.onchange=()=>{const need=['farine','huile'].includes(fm.categorie.value);$('#anaBox').classList.toggle('hide',!need);fm.analyse.required=need;};
+  let exif={};
+  fm.photos.onchange=async()=>{exif={};const out=[];for(const f of fm.photos.files){let d=null;try{const x=await exifr.parse(f,['DateTimeOriginal','CreateDate']);d=x?.DateTimeOriginal||x?.CreateDate||null;}catch(_){}
+      exif[f.name]=d; if(d&&daysOld(d)>3)out.push(`<span class="err">⚠ ${esc(f.name)} : photo prise le ${fmtD(d)} (plus de 3 jours) – elle sera refusée.</span>`);}
+    $('#phinfo').innerHTML=out.join('<br>')||(fm.photos.files.length?`${fm.photos.files.length} photo(s) sélectionnée(s).`:'');};
+  fm.onsubmit=async e=>{e.preventDefault();const btn=fm.querySelector('button[type=submit],button:not([type])');btn.disabled=true;$('#m').textContent='Envoi en cours…';
+    try{
+      const files=[...fm.photos.files]; if(files.length<2)throw new Error('Ajoutez au moins 2 photos.');
+      for(const f of files){if(exif[f.name]&&daysOld(exif[f.name])>3)throw new Error(`La photo ${f.name} a plus de 3 jours. Reprenez des photos récentes avec la feuille datée.`);}
+      const cals=[...document.querySelectorAll('#cals tbody tr')].map(r=>({calibre:r.querySelector('[name=cal]').value.trim(),nb_cartons:+r.querySelector('[name=nb]').value,poids_brut_kg:+r.querySelector('[name=brut]').value,poids_net_kg:+r.querySelector('[name=net]').value}));
+      if(!cals.length)throw new Error('Ajoutez au moins un calibre.');
+      if(cals.some(c=>c.poids_net_kg>c.poids_brut_kg))throw new Error('Le poids net ne peut pas dépasser le poids brut.');
+      let ana=null; if(['farine','huile'].includes(fm.categorie.value)){const a=fm.analyse.files[0];if(!a)throw new Error("La fiche d'analyse est obligatoire pour la farine et l'huile.");ana=await upload('analyses',a);}
+      const {data:p,error}=await sb.from('produits').insert({fournisseur_id:S.user.id,categorie:fm.categorie.value,espece:fm.espece.value.trim(),nom_scientifique:fm.nom_scientifique.value.trim()||null,
+        forme:fm.forme.value.trim()||null,date_production:fm.date_production.value,lieu_stockage:fm.lieu_stockage.value.trim()||null,prix_fournisseur:+fm.prix.value,devise:fm.devise.value,unite_prix:fm.unite.value,
+        analyse_path:ana,remarques:fm.remarques.value.trim()||null}).select('id').single();
+      if(error)throw error;
+      const {error:e2}=await sb.from('produit_calibres').insert(cals.map(c=>({...c,produit_id:p.id})));if(e2)throw e2;
+      for(const f of files){if(f.size>10485760)throw new Error(`${f.name} : 10 Mo max.`);const path=await upload('photos-produits',f);
+        const {error:e3}=await sb.from('produit_photos').insert({produit_id:p.id,path,prise_le:exif[f.name]?new Date(exif[f.name]).toISOString():null});if(e3)throw e3;}
+      alert('Produit envoyé. AlphaMarr va le vérifier.');location.hash='#espace';
+    }catch(err){$('#m').innerHTML=`<span class="err">${esc(err.message)}</span>`;btn.disabled=false;}};
+}
+
+/* ---------- ADMIN ---------- */
+let ATAB='produits';
+async function vAdmin(){
+  if(!S.admin){location.hash=S.user?'#espace':'#connexion';return;}
+  let h=`<h1>Administration AlphaMarr</h1><div class="tabs"><button data-t="produits" class="${ATAB==='produits'?'on':''}">Produits à approuver</button><button data-t="fournisseurs" class="${ATAB==='fournisseurs'?'on':''}">Fournisseurs</button><button data-t="tous" class="${ATAB==='tous'?'on':''}">Tous les produits</button></div><div id="adm">Chargement…</div>`;
+  $('#app').innerHTML=h; document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{ATAB=b.dataset.t;vAdmin();});
+  if(ATAB==='fournisseurs')return admFournisseurs(); return admProduits(ATAB==='produits');
+}
+async function admFournisseurs(){
+  const {data}=await sb.from('fournisseurs').select('*').order('created_at',{ascending:false});
+  let h='';
+  for(const f of data){const idu=await signedUrl('pieces-identite',f.piece_identite_path);
+    h+=`<div class="card"><h2>${esc(f.societe)} ${badge(f.statut)}</h2>
+    <table><tr><th>Responsable</th><td>${esc(f.nom_complet)}</td><th>NIF</th><td>${esc(f.nif||'—')}</td></tr>
+    <tr><th>Téléphone</th><td>${esc(f.telephone)} ${f.telephone_verifie?'✅ vérifié':'<span class="muted">(à appeler)</span>'}</td><th>Email</th><td>${esc(f.email)}</td></tr>
+    <tr><th>Agrément usine</th><td>${esc(f.agrement_usine)}</td><th>Pièce d'identité</th><td>${idu?`<a href="${idu}" target="_blank">Ouvrir</a>`:'—'}</td></tr>
+    <tr><th>CGU acceptées</th><td>${fmtD(f.cgu_acceptees_le)} (v${esc(f.cgu_version)})</td><th>Inscrit le</th><td>${fmtD(f.created_at)}</td></tr></table>
+    ${f.motif?`<p class="muted">Motif : ${esc(f.motif)}</p>`:''}
+    <p><label style="display:inline"><input type="checkbox" style="width:auto" data-tel="${f.id}" ${f.telephone_verifie?'checked':''}> Téléphone vérifié</label></p>
+    <p><button class="ok small" data-fv="${f.id}">Valider</button> <button class="bad small" data-fr="${f.id}">Refuser</button> <button class="sec small" data-fs="${f.id}">Suspendre</button></p></div>`;}
+  $('#adm').innerHTML=h||'<div class="card">Aucun fournisseur.</div>';
+  const upd=async(id,v)=>{const {error}=await sb.from('fournisseurs').update(v).eq('id',id);if(error)alert(error.message);admFournisseurs();};
+  document.querySelectorAll('[data-tel]').forEach(c=>c.onchange=()=>upd(c.dataset.tel,{telephone_verifie:c.checked}));
+  document.querySelectorAll('[data-fv]').forEach(b=>b.onclick=()=>upd(b.dataset.fv,{statut:'valide',motif:null}));
+  document.querySelectorAll('[data-fr]').forEach(b=>b.onclick=()=>{const m=prompt('Motif du refus :');if(m!==null)upd(b.dataset.fr,{statut:'rejete',motif:m});});
+  document.querySelectorAll('[data-fs]').forEach(b=>b.onclick=()=>{const m=prompt('Motif de la suspension :');if(m!==null)upd(b.dataset.fs,{statut:'suspendu',motif:m});});
+}
+async function admProduits(pendingOnly){
+  let q=sb.from('produits').select('*,fournisseurs(societe,telephone),produit_calibres(*),produit_photos(*)').order('created_at',{ascending:false});
+  if(pendingOnly)q=q.eq('statut','en_attente');
+  const {data,error}=await q; if(error)throw error;
+  let h='';
+  for(const p of data){
+    let ph='';for(const x of p.produit_photos){const u=await signedUrl('photos-produits',x.path);const old=daysOld(p.created_at)>=0&&x.prise_le&&(new Date(p.created_at)-new Date(x.prise_le))/864e5>3;
+      ph+=`<a class="ph" href="${u}" target="_blank"><img src="${u}"><span class="d" style="${old?'background:#c0392b':''}">${x.prise_le?'prise '+fmtD(x.prise_le):'date inconnue'}</span></a>`;}
+    const ana=await signedUrl('analyses',p.analyse_path);
+    const cals=p.produit_calibres.map(c=>`<tr><td>${esc(c.calibre)}</td><td>${c.nb_cartons}</td><td>${c.poids_brut_kg}</td><td>${c.poids_net_kg}</td><td>${(c.nb_cartons*c.poids_net_kg/1000).toFixed(3)} t</td></tr>`).join('');
+    h+=`<div class="card"><h2>${esc(p.espece)} ${badge(p.statut)}</h2>
+    <div class="muted">${esc(p.fournisseurs?.societe)} (${esc(p.fournisseurs?.telephone)}) · ${CAT[p.categorie]} ${p.forme?'· '+esc(p.forme):''} · production ${fmtD(p.date_production)} · déposé le ${fmtD(p.created_at)} ${p.lieu_stockage?'· '+esc(p.lieu_stockage):''}</div>
+    <table style="margin-top:8px"><tr><th>Calibre</th><th>Cartons</th><th>Brut kg</th><th>Net kg</th><th>Total net</th></tr>${cals}</table>
+    <p><b>Prix fournisseur :</b> ${p.prix_fournisseur} ${p.devise}/${p.unite_prix} ${ana?` · <a href="${ana}" target="_blank">Fiche d'analyse</a>`:''}</p>
+    ${p.remarques?`<p class="muted">Remarques : ${esc(p.remarques)}</p>`:''}
+    <div class="photos">${ph}</div>
+    <div class="row" style="margin-top:10px"><div><label>Prix public (${p.devise}/${p.unite_prix}) <small>marge AlphaMarr incluse</small></label><input id="pp-${p.id}" type="number" step="0.01" value="${p.prix_public??''}"></div>
+    <div><label>Conditions affichées aux acheteurs</label><input id="cp-${p.id}" value="${esc(p.conditions_publiques||'FOB Nouadhibou · paiement 50 % à la commande, solde contre documents')}"></div></div>
+    <p><button class="ok small" data-pa="${p.id}">Approuver et publier</button> <button class="bad small" data-pr="${p.id}">Refuser</button> ${p.statut==='approuve'?`<button class="sec small" data-px="${p.id}">Retirer</button>`:''}</p></div>`;
+  }
+  $('#adm').innerHTML=h||'<div class="card">Aucun produit en attente.</div>';
+  const upd=async(id,v)=>{const {error}=await sb.from('produits').update(v).eq('id',id);if(error)alert(error.message);vAdmin();};
+  document.querySelectorAll('[data-pa]').forEach(b=>b.onclick=()=>{const id=b.dataset.pa,pp=$('#pp-'+id).value;
+    upd(id,{statut:'approuve',motif:null,prix_public:pp===''?null:+pp,conditions_publiques:$('#cp-'+id).value.trim()||null});});
+  document.querySelectorAll('[data-pr]').forEach(b=>b.onclick=()=>{const m=prompt('Motif du refus (visible par le fournisseur) :');if(m!==null)upd(b.dataset.pr,{statut:'refuse',motif:m});});
+  document.querySelectorAll('[data-px]').forEach(b=>b.onclick=()=>upd(b.dataset.px,{statut:'retire'}));
+}
+route();
+</script>
+</body>
+</html>
