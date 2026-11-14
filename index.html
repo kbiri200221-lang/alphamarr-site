@@ -314,6 +314,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
 .ppft .btn.sec{background:#eef2f6;color:var(--ink)}
 @media(max-width:640px){.ppbd{grid-template-columns:1fr}.ppdocs ul{grid-template-columns:1fr}}
 @media print{body>*:not(#pp){display:none!important}#pp{position:static;display:block;background:#fff;padding:0}.ppcard{box-shadow:none;max-width:none}.ppft,.pphd .x{display:none}}
+.menu a.suplink{color:#fff;background:var(--sky-d,#1f6fb2);padding:6px 12px;border-radius:18px;font-weight:700;white-space:nowrap}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"AlphaMarr — Seafood export & trading from Nouadhibou, Mauritania","description":"Our pirogue fleet, octopus, lobster, mullet roe, ribbonfish, fishmeal & fish oil trading, cold storage, container loading and export services.","thumbnailUrl":"https://alphamarr.com/video-poster.jpg","uploadDate":"2026-09-30","duration":"PT35S","contentUrl":"https://alphamarr.com/alphamarr-video.mp4"}</script>
 </head>
@@ -335,6 +336,7 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
       <a href="#markets" data-i="nav_markets"></a>
    <a href="#news" data-i="nav_news"></a>
    <a href="#ftcontact" data-i="ft_contact"></a>
+   <a href="market/" class="suplink" data-i="nav_supplier"></a>
   </nav>
   <div class="right">
    <div class="langsel" id="langsel">
@@ -1332,6 +1334,7 @@ if(CONFIG.heroVideo)$('#heroMedia').innerHTML=`<video src="${CONFIG.heroVideo}" 
 else if(CONFIG.heroImage)$('#heroMedia').innerHTML=`<img class="bgimg" src="${CONFIG.heroImage}" alt="">`;
 if(CONFIG.fleetMedia)$('#fleetMedia').innerHTML=/\.mp4|\.webm/i.test(CONFIG.fleetMedia)?`<video src="${CONFIG.fleetMedia}" autoplay muted loop playsinline></video>`:`<img src="${CONFIG.fleetMedia}" alt="AlphaMarr fleet">`;
 $('#yr').textContent=new Date().getFullYear();
+T.en.nav_supplier='Become a supplier';T.fr.nav_supplier='Devenir fournisseur';T.es.nav_supplier='Ser proveedor';T.zh.nav_supplier='成为供应商';if(T.ar)T.ar.nav_supplier='كن موردًا';if(T.tr)T.tr.nav_supplier='Tedarikçi olun';if(T.ru)T.ru.nav_supplier='Стать поставщиком';
 let start='en';try{start=localStorage.getItem('am_lang')||''}catch(e){}
 const QS=new URLSearchParams(location.search);if(QS.get('lang')&&T[QS.get('lang')])start=QS.get('lang');
 if(!start){const n=(navigator.language||'en').slice(0,2);start=T[n]?n:'en'}
