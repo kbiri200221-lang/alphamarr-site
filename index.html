@@ -737,6 +737,10 @@ const PRODUCTS = [
   name:{en:'Grey mullet',fr:'Mulet gris',es:'Lisa / Mújol',zh:'鲻鱼'},
   desc:{en:'Firm white flesh, whole round in several size grades.',fr:'Chair blanche et ferme, entier en plusieurs calibres.',es:'Carne blanca y firme, entero en varios calibres.',zh:'肉质洁白紧实，整条，多种规格。'},
   chips:{en:['Whole round','Block frozen'],fr:['Entier','Bloc'],es:['Entero','Bloque'],zh:['整条','块冻']}},
+ {id:'lichia',markets:['africa','europe'],status:'available',img:'',latin:'Lichia amia',color:['#7f97a3','#e3ebef'],
+  name:{en:'Leerfish (Lichia)',fr:'Liche',es:'Palometa (Lichia)',zh:'Lichia'},
+  desc:{en:'Lichia from Mauritania, whole round, frozen and packed in cartons for export.',fr:'Liche de Mauritanie, entière, congelée et conditionnée en cartons pour l\u2019export.',es:'Lichia de Mauritania, entera, congelada y envasada en cajas para exportación.',zh:'毛里塔尼亚 Lichia，整条冷冻，纸箱包装出口。'},
+  chips:{en:['Whole round','Frozen'],fr:['Entier','Congelé'],es:['Entero','Congelado'],zh:['整条','冷冻']}},
 
  // ---------- FRESH FISH ----------
  {id:'fresh',markets:['fresh','europe'],status:'available',img:'fresh-card.webp',latin:'Sparidae · Dorade, pagre, sar…',color:['#9aa7b0','#eaeef1'],
@@ -1158,7 +1162,7 @@ async function loadStock(){
   STOCK_TIME=last;STOCK_LIVE=true}catch(e){STOCK_LIVE=false}
  applyForce();render();checkPassUrl()}
 const HIDE_TRADING=['croaker'];
-const FORCE={croaker:{status:'on_order',updated:'2026-10-31'},sole:{status:'available',sizes:'Sole Rubio · Sole Lengua · Sole Tiger',packing:'IQF / Block',origin:'Nouadhibou',type:'stock',updated:'2026-10-18',photos:['https://alphamarr.com/media/sole/sole-1.jpg','https://alphamarr.com/media/sole/sole-2.jpg','https://alphamarr.com/media/sole/sole-3.jpg']},fishmeal:{status:'available',qty:'700',packing:'Bags',origin:'Nouadhibou',type:'stock',updated:'2026-10-31'},fishoil:{status:'available',qty:'150',packing:'Flexitank',origin:'Nouadhibou',type:'stock',updated:'2026-10-31'}};
+const FORCE={mackerel:{status:'available',sizes:'L',packing:'Cartons',origin:'Nouadhibou',type:'stock',updated:'2026-11-23',photos:['https://alphamarr.com/media/mackerel/mackerel-1.jpg','https://alphamarr.com/media/mackerel/mackerel-2.jpg','https://alphamarr.com/media/mackerel/mackerel-3.jpg']},horse:{status:'available',sizes:'White & black horse mackerel',packing:'Cartons',origin:'Nouadhibou',type:'stock',updated:'2026-11-16',photos:['https://alphamarr.com/media/horse/horse-1.jpg','https://alphamarr.com/media/horse/horse-2.jpg','https://alphamarr.com/media/horse/horse-3.jpg']},sardinella:{status:'available',sizes:'Sardinella aurita (Obo)',packing:'Cartons',origin:'Nouadhibou',type:'stock',updated:'2026-11-16'},lichia:{status:'available',packing:'Cartons',origin:'Nouadhibou',type:'stock',updated:'2026-11-18',photos:['https://alphamarr.com/media/lichia/lichia-1.jpg','https://alphamarr.com/media/lichia/lichia-2.jpg']},croaker:{status:'on_order',updated:'2026-10-31'},sole:{status:'available',sizes:'Sole Rubio · Sole Lengua · Sole Tiger',packing:'IQF / Block',origin:'Nouadhibou',type:'stock',updated:'2026-10-18',photos:['https://alphamarr.com/media/sole/sole-1.jpg','https://alphamarr.com/media/sole/sole-2.jpg','https://alphamarr.com/media/sole/sole-3.jpg']},fishmeal:{status:'available',qty:'700',packing:'Bags',origin:'Nouadhibou',type:'stock',updated:'2026-10-31'},fishoil:{status:'available',qty:'150',packing:'Flexitank',origin:'Nouadhibou',type:'stock',updated:'2026-10-31'}};
 function applyForce(){for(const k in FORCE){const f=FORCE[k],s=STOCK[k];if(!s||!s.updated||s.updated<f.updated)STOCK[k]=Object.assign({id:k,photos:[]},s||{},f);if(!STOCK_TIME||f.updated>STOCK_TIME)STOCK_TIME=f.updated}}
 const stOf=p=>(STOCK[p.id]&&STOCK[p.id].status)||p.status||'on_order';
 // Photos from the Sheet "photo" column: Google Drive share links or direct image URLs (several separated by space/comma)
