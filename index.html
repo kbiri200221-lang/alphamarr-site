@@ -339,6 +339,11 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
 @media(max-width:800px){.supband .wrap{grid-template-columns:1fr}.supband .sbcta{text-align:start}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"AlphaMarr — Seafood export & trading from Nouadhibou, Mauritania","description":"Our pirogue fleet, octopus, lobster, mullet roe, ribbonfish, fishmeal & fish oil trading, cold storage, container loading and export services.","thumbnailUrl":"https://alphamarr.com/video-poster.jpg","uploadDate":"2026-09-30","duration":"PT35S","contentUrl":"https://alphamarr.com/alphamarr-video.mp4"}</script>
+<script>(function(){var m=location.pathname.match(/\/(about|stock|news|contact)(?:\.html)?$/);document.documentElement.setAttribute('data-page',m?m[1]:'home')})();</script>
+<style>html[data-page=home] #about,html[data-page=home] #fleet,html[data-page=home] #news,html[data-page=home] #stock{display:none}
+html[data-page=about] body section:not(#about):not(#fleet):not(#why):not(#markets),html[data-page=stock] body section:not(#stock):not(#rfq),html[data-page=news] body section:not(#news),html[data-page=contact] body section:not(#rfq){display:none}
+html[data-page=about] #about,html[data-page=stock] #stock,html[data-page=news] #news,html[data-page=contact] #rfq{padding-top:56px}
+.menu a.cur{color:#1f8ecb}</style>
 </head>
 <body>
 
@@ -350,14 +355,14 @@ table.stk{width:100%;border-collapse:collapse;font-size:15px;min-width:720px}
    <span><span class="a">alpha</span>marr</span>
   </a>
   <nav class="menu" id="menu">
-   <a href="#about" data-i="nav_about"></a>
-   <a href="#services" data-i="nav_services"></a>
-   <a href="#products" data-i="nav_products"></a>
-   <a href="#stock" class="livelink"><i class="dot"></i><span data-i="nav_stock"></span></a>
-   <a href="#fleet" data-i="nav_fleet"></a>
-      <a href="#markets" data-i="nav_markets"></a>
-   <a href="#news" data-i="nav_news"></a>
-   <a href="#ftcontact" data-i="ft_contact"></a>
+   <a href="/about.html" data-i="nav_about"></a>
+   <a href="/#services" data-i="nav_services"></a>
+   <a href="/#products" data-i="nav_products"></a>
+   <a href="/stock.html" class="livelink"><i class="dot"></i><span data-i="nav_stock"></span></a>
+   <a href="/about.html#fleet" data-i="nav_fleet"></a>
+      <a href="/#markets" data-i="nav_markets"></a>
+   <a href="/news.html" data-i="nav_news"></a>
+   <a href="/contact.html" data-i="ft_contact"></a>
   </nav>
   <div class="right">
    <div class="langsel" id="langsel">
@@ -1378,5 +1383,14 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLb();$('#wcMod
 </script>
 <div class="ppov" id="pp" onclick="if(event.target===this)closePass()"><div class="ppcard" id="ppCard"></div></div>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "bc858a43dedb4665a188a9dc31a11fcb"}'></script><!-- End Cloudflare Web Analytics -->
+<script>(function(){var PG=document.documentElement.getAttribute('data-page');
+var OWN={about:'/about.html',fleet:'/about.html',stock:'/stock.html',news:'/news.html',rfq:'/contact.html'};
+function hidden(id){var e=document.getElementById(id);return e&&e.tagName==='SECTION'&&getComputedStyle(e).display==='none'}
+function dest(id){return (OWN[id]||'/')+location.search.replace(/[?&]lot=[^&]*/,'')+'#'+id}
+var h=location.hash.slice(1);if(h&&hidden(h)){location.replace(dest(h));return}
+document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a[href^="#"]');if(!a)return;var id=a.getAttribute('href').slice(1);if(id&&hidden(id)){ev.preventDefault();location.href=dest(id)}},true);
+var map={home:'/',about:'/about.html',stock:'/stock.html',news:'/news.html',contact:'/contact.html'};
+document.querySelectorAll('#menu a').forEach(function(a){if(a.getAttribute('href')===map[PG])a.classList.add('cur')});
+})();</script>
 </body>
 </html>
