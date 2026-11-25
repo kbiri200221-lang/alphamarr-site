@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Keep marketplace database awake
+        run: curl -s -o /dev/null -w "%{http_code}\n" "https://spkmrhkusgwkkffrjldg.supabase.co/rest/v1/produits?select=id&limit=1" -H "apikey: sb_publishable_nFHrkq9IcGj_ijoDotbW3w_gP1g08JZ" || true
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: python fetch_news.py
